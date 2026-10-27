@@ -1,0 +1,180 @@
+name: Alerta - Comex Stat mensal
+
+# Avisa (push no app ntfy) quando sai a base mensal nova do Comex Stat.
+#
+# Janela: checa do dia 1 ao dia 12 de cada mês (horário de Brasília). Do dia 28 em diante o robô
+# já fica "aquecido" (rodando sem checar) para não depender do agendamento do GitHub no dia 1.
+# Fora disso, não faz nada.
+#
+# Funciona em "corrente": cada execução fica ~5h50 checando a cada 2 min e, ao terminar,
+# dispara a próxima. O cron abaixo é só rede de segurança para religar a corrente.
+#
+# Duas fontes, alerta pela primeira que mudar:
+#  1) Data de modificação do arquivo CSV de importação do ano de referência (IMP_AAAA.csv).
+#     O servidor desses arquivos está com certificado vencido; a verificação é ignorada SÓ
+#     nesse endereço, e só para ler a data (nada é enviado).
+#  2) Data de atualização da API oficial (/general/dates/updated), quando a API estiver no ar.
+#
+# Estado (última data vista de cada fonte) fica em estado/comexstat.env.
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  push:
+    paths:
+      - ".github/workflows/alerta-comexstat.yml"
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Teste: faz uma checagem só, ignorando a janela de datas"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: alerta-comexstat
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-comex-c9e146ff0ec1
+  API_URL: https://api-comexstat.mdic.gov.br/general/dates/updated
+  CSV_BASE: https://balanca.economia.gov.br/balanca/bd/comexstat-bd/ncm
+  LINK: https://comexstat.mdic.gov.br/pt/geral
+  INTERVALO: "120"
+  DURACAO: "21000"
+  DIA_INICIO: "1"
+  DIA_FIM: "12"
+  DIA_AQUECER: "28"
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - name: Está na época?
+        id: epoca
+        run: |
+          d=$(TZ=America/Sao_Paulo date +%-d)
+          if [ "${{ inputs.teste }}" = "true" ]; then
+            echo "rodar=1" >> $GITHUB_OUTPUT; echo "teste=1" >> $GITHUB_OUTPUT
+          elif [ "$d" -le "$DIA_FIM" ] || [ "$d" -ge "$DIA_AQUECER" ]; then
+            echo "rodar=1" >> $GITHUB_OUTPUT
+          else
+            echo "Dia $d: fora da janela, nada a fazer."
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.epoca.outputs.rodar == '1'
+
+      - name: Checar em loop
+        if: steps.epoca.outputs.rodar == '1'
+        env:
+          TESTE: ${{ steps.epoca.outputs.teste }}
+        run: |
+          if [ "$TESTE" = "1" ]; then DURACAO=60; DIA_FIM=31; fi
+          mkdir -p estado
+          touch estado/comexstat.env
+          source estado/comexstat.env
+
+          push() { # titulo, prioridade, tags, mensagem
+            curl -sS -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $LINK" \
+              -d "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || echo "falha no ntfy"
+          }
+          salvar() {
+            cat > estado/comexstat.env <<EOF
+          CSV_URL_VISTO="$CSV_URL_VISTO"
+          CSV_DATA_VISTA="$CSV_DATA_VISTA"
+          API_VISTA="$API_VISTA"
+          EOF
+            sed -i 's/^ *//' estado/comexstat.env
+            git config user.name "github-actions"
+            git config user.email "github-actions@users.noreply.github.com"
+            git add estado/comexstat.env
+            git commit -q -m "Comex Stat: $1" || true
+            git pull --rebase -q || true
+            git push -q || echo "falha ao salvar estado"
+          }
+
+          fim=$(( $(date +%s) + DURACAO ))
+          fora_desde=""; avisou_fora=""; ultimo_ping=""
+          while [ "$(date +%s)" -lt "$fim" ]; do
+            dia=$(TZ=America/Sao_Paulo date +%-d); hora=$(TZ=America/Sao_Paulo date +%H)
+            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
+            if [ "$dia" -gt "$DIA_FIM" ]; then
+              if [ "$dia" -lt "$DIA_AQUECER" ]; then echo "$agora janela encerrada."; exit 0; fi
+              sleep "$INTERVALO"; continue   # aquecendo: espera o dia 1
+            fi
+
+            # Ano de referência = ano do mês anterior
+            ano=$(TZ=America/Sao_Paulo date -d "$(TZ=America/Sao_Paulo date +%Y-%m-01) -1 day" +%Y)
+            csv_url="$CSV_BASE/IMP_$ano.csv"
+            ok_fontes=0
+
+            # Fonte 1: data do CSV (certificado vencido: -k só aqui)
+            lm=$(curl -sSk -I -m 30 -A "Mozilla/5.0" "$csv_url" 2>/dev/null | tr -d '\r' | grep -i '^last-modified:' | cut -d' ' -f2-)
+            if [ -n "$lm" ]; then
+              ok_fontes=$((ok_fontes+1))
+              if [ "$csv_url" != "$CSV_URL_VISTO" ] || [ "$lm" != "$CSV_DATA_VISTA" ]; then
+                if [ -z "$CSV_DATA_VISTA" ]; then
+                  echo "$agora CSV: primeira leitura ($lm), guardada como referência."
+                else
+                  lm_br=$(TZ=America/Sao_Paulo date -d "$lm" '+%d/%m %H:%M')
+                  push "Comex Stat: base nova saiu" urgent rotating_light \
+                    "Arquivo de importação $ano atualizado ($lm_br, horário de Brasília). Detectado às $agora."
+                  echo "$agora CSV MUDOU: $CSV_DATA_VISTA -> $lm"
+                fi
+                CSV_URL_VISTO="$csv_url"; CSV_DATA_VISTA="$lm"; salvar "CSV $lm"
+              fi
+            fi
+
+            # Fonte 2: API (quando estiver no ar)
+            api=$(curl -sS -m 30 -A "Mozilla/5.0" -w "\n%{http_code}" "$API_URL" 2>/dev/null)
+            api_code=$(echo "$api" | tail -1); api_body=$(echo "$api" | sed '$d' | tr -d '\n ')
+            if [ "$api_code" = "200" ] && [[ "$api_body" == \{* ]]; then
+              ok_fontes=$((ok_fontes+1))
+              if [ "$api_body" != "$API_VISTA" ]; then
+                if [ -z "$API_VISTA" ]; then
+                  echo "$agora API: primeira leitura ($api_body), guardada como referência."
+                else
+                  push "Comex Stat: base nova saiu (API)" urgent rotating_light \
+                    "A API indica nova atualização: $api_body. Detectado às $agora."
+                  echo "$agora API MUDOU: $API_VISTA -> $api_body"
+                fi
+                API_VISTA="$api_body"; salvar "API $api_body"
+              fi
+            fi
+
+            # Fora do ar: aviso único se as duas fontes falharem por mais de 1h
+            if [ "$ok_fontes" = "0" ]; then
+              [ -z "$fora_desde" ] && fora_desde=$(date +%s)
+              if [ -z "$avisou_fora" ] && [ $(( $(date +%s) - fora_desde )) -gt 3600 ]; then
+                push "Comex Stat fora do ar" default warning "CSV e API sem resposta há mais de 1h ($agora). Sigo tentando."
+                avisou_fora=1
+              fi
+            else
+              fora_desde=""; avisou_fora=""
+            fi
+            echo "$agora fontes ok: $ok_fontes (csv=${lm:-sem resposta} api=$api_code)"
+
+            # Aviso de vida: 9h, uma vez por dia, só dentro da janela
+            hoje=$(TZ=America/Sao_Paulo date '+%d/%m')
+            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ]; then
+              n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô Comex funcionando ($hoje)" || true)
+              [ "$n" = "0" ] && push "Robô Comex funcionando ($hoje)" low robot "Base nova ainda não saiu. Sigo checando a cada 2 min."
+              ultimo_ping=$hoje
+            fi
+            sleep "$INTERVALO"
+          done
+          echo "Fim do turno."
+
+      - name: Disparar o próximo turno
+        if: steps.epoca.outputs.rodar == '1' && steps.epoca.outputs.teste != '1' && !cancelled()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          d=$(TZ=America/Sao_Paulo date +%-d)
+          if [ "$d" -le "$DIA_FIM" ] || [ "$d" -ge "$DIA_AQUECER" ]; then
+            gh workflow run alerta-comexstat.yml --repo "$GITHUB_REPOSITORY" --ref main
+          fi
