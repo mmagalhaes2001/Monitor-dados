@@ -1,0 +1,5 @@
+
+################ Executado em: 2026-10-27 02:28 UTC ################
+http_code=200 url_final=https://informacoes.anatel.gov.br/aviso/manutencao-sistemas.html tamanho=3529
+STATUS: em manutenção
+Título: ANATEL - Agência Nacional de Telecomunicações
