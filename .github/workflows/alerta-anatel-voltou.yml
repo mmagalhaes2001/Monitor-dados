@@ -27,6 +27,7 @@ concurrency:
 
 env:
   NTFY_TOPIC: mm-anatel-1972ee28a387
+  NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
   PAINEL: https://informacoes.anatel.gov.br/paineis/acessos
   INTERVALO: "120"      # segundos entre checagens
   DURACAO: "21000"      # ~5h50 por execução (limite do GitHub é 6h)
@@ -68,7 +69,7 @@ jobs:
             if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$dia" ]; then
               ja_mandou=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô Anatel funcionando ($dia)" || true)
               if [ "$ja_mandou" = "0" ]; then
-                curl -sS -m 20 -H "Title: Robô Anatel funcionando ($dia)" -H "Priority: low" -H "Tags: robot" \
+                curl -sS -m 20 -H "Title: Robô Anatel funcionando ($dia)" -H "Priority: low" -H "Tags: robot" ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
                   -d "Painel ainda em manutenção. Sigo checando a cada 2 min." "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || true
               fi
               ultimo_ping=$dia
@@ -88,6 +89,7 @@ jobs:
             -H "Priority: urgent" \
             -H "Tags: rotating_light" \
             -H "Click: $PAINEL" \
+            ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
             -d "O painel de acessos saiu da manutenção ($QUANDO). Confira se o mês novo já está lá." \
             "https://ntfy.sh/$NTFY_TOPIC" || echo "falha no ntfy"
           gh issue create --repo "$GITHUB_REPOSITORY" \
