@@ -8,3 +8,8 @@ Título: ANATEL - Agência Nacional de Telecomunicações
 http_code=200 url_final=https://informacoes.anatel.gov.br/aviso/manutencao-sistemas.html tamanho=3529
 STATUS: em manutenção
 Título: ANATEL - Agência Nacional de Telecomunicações
+
+################ Executado em: 2026-10-27 15:33 UTC ################
+http_code=200 url_final=https://informacoes.anatel.gov.br/aviso/manutencao-sistemas.html tamanho=3529
+STATUS: em manutenção
+Título: ANATEL - Agência Nacional de Telecomunicações
