@@ -1,0 +1,44 @@
+name: Teste Comex Stat (conectividade)
+
+# Teste único: verifica se a API e os arquivos do Comex Stat respondem a partir do GitHub.
+# Roda ao subir este arquivo e pode ser rodado manualmente na aba Actions.
+on:
+  push:
+    paths:
+      - ".github/workflows/teste-comexstat.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Chamar API e arquivos
+        run: |
+          mkdir -p resultados
+          out=resultados/teste-comexstat.txt
+          echo "Executado em: $(date -u '+%Y-%m-%d %H:%M UTC')" > $out
+          for u in \
+            https://api-comexstat.mdic.gov.br/general/dates/updated \
+            https://api-comexstat.mdic.gov.br/general/dates/years \
+            https://balanca.economia.gov.br/balanca/bd/comexstat-bd/ncm/IMP_2026.csv ; do
+            echo "" >> $out
+            echo "== $u" >> $out
+            # -I só para o CSV (não baixar o arquivo inteiro)
+            if [[ "$u" == *.csv ]]; then flag="-I"; else flag=""; fi
+            curl -sS -m 30 $flag -A "Mozilla/5.0" \
+              -w "\n[http_code=%{http_code}]\n" "$u" 2>&1 | head -c 1500 >> $out || echo "[falhou]" >> $out
+          done
+          cat $out
+
+      - name: Salvar resultado no repositório
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add resultados/
+          git commit -m "Resultado do teste de conectividade Comex Stat" || echo "nada a commitar"
+          git push
