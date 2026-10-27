@@ -1,0 +1,75 @@
+name: Alerta - painel Anatel voltou
+
+# Checa a cada 5 min se o painel de acessos da Anatel saiu da manutenção.
+# Quando sair, manda push (app ntfy) e abre uma issue no repositório (notificação do GitHub),
+# grava estado/anatel-voltou.txt e não avisa de novo.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  push:
+    paths:
+      - ".github/workflows/alerta-anatel-voltou.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: alerta-anatel
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-anatel-1972ee28a387
+  PAINEL: https://informacoes.anatel.gov.br/paineis/acessos
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Já avisou antes?
+        id: estado
+        run: |
+          if [ -f estado/anatel-voltou.txt ]; then echo "ja=1" >> $GITHUB_OUTPUT; echo "Já avisado em: $(cat estado/anatel-voltou.txt)"; fi
+
+      - name: Checar painel
+        id: checa
+        if: steps.estado.outputs.ja != '1'
+        run: |
+          res=$(curl -sS -L -m 30 -A "Mozilla/5.0" -o pagina.html -w "%{http_code} %{url_effective}" "$PAINEL" 2>&1 || echo "000 erro")
+          code=${res%% *}; final=${res#* }
+          echo "Resposta: $code $final"
+          # Só considera "voltou" se respondeu 200, não caiu na página de aviso e não fala em manutenção
+          if [ "$code" = "200" ] && [[ "$final" != *"/aviso/"* ]] && ! grep -qi "manuten" pagina.html; then
+            echo "voltou=1" >> $GITHUB_OUTPUT
+            echo "PAINEL VOLTOU"
+          else
+            echo "Ainda fora/em manutenção."
+          fi
+
+      - name: Avisar (push no celular + issue no GitHub)
+        if: steps.checa.outputs.voltou == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
+          curl -sS -m 20 \
+            -H "Title: Painel da Anatel VOLTOU" \
+            -H "Priority: urgent" \
+            -H "Tags: rotating_light" \
+            -H "Click: $PAINEL" \
+            -d "O painel de acessos saiu da manutenção ($agora). Confira se o mês novo já está lá." \
+            "https://ntfy.sh/$NTFY_TOPIC" || echo "falha no ntfy"
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Painel da Anatel voltou ($agora)" \
+            --body "O painel de acessos saiu da manutenção em $agora (horário de Brasília): $PAINEL" || echo "falha na issue"
+          mkdir -p estado
+          echo "$agora" > estado/anatel-voltou.txt
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add estado/
+          git commit -m "Painel da Anatel voltou ($agora)"
+          git pull --rebase -q || true
+          git push
