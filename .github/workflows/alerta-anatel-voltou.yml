@@ -1,13 +1,16 @@
 name: Alerta - painel Anatel voltou
 
-# Checa a cada 5 min se o painel de acessos da Anatel saiu da manutenção.
-# Quando sair, manda push (app ntfy) e abre uma issue no repositório (notificação do GitHub),
-# grava estado/anatel-voltou.txt e não avisa de novo.
-# Aviso de vida: todo dia às 9h (Brasília) manda um push curto dizendo que o robô está rodando.
+# O agendamento do GitHub (cron) não é confiável para checagens frequentes: em repositório novo
+# ele chega a rodar uma vez a cada várias horas. Por isso este robô roda em "corrente":
+# cada execução fica ~5h50 checando o painel a cada 2 min e, ao terminar, dispara a próxima.
+# O cron abaixo é só uma rede de segurança para religar a corrente se ela quebrar.
+#
+# Quando o painel sair da manutenção: push no app ntfy + issue no repositório,
+# grava estado/anatel-voltou.txt e para de vez.
+# Aviso de vida: um push por dia por volta das 9h (Brasília) enquanto estiver em manutenção.
 on:
   schedule:
-    - cron: "*/5 * * * *"
-    - cron: "3 12 * * *"
+    - cron: "*/30 * * * *"
   push:
     paths:
       - ".github/workflows/alerta-anatel-voltou.yml"
@@ -16,6 +19,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 
 concurrency:
   group: alerta-anatel
@@ -24,64 +28,82 @@ concurrency:
 env:
   NTFY_TOPIC: mm-anatel-1972ee28a387
   PAINEL: https://informacoes.anatel.gov.br/paineis/acessos
+  INTERVALO: "120"      # segundos entre checagens
+  DURACAO: "21000"      # ~5h50 por execução (limite do GitHub é 6h)
 
 jobs:
   checar:
     runs-on: ubuntu-latest
+    timeout-minutes: 358
     steps:
       - uses: actions/checkout@v4
 
       - name: Já avisou antes?
         id: estado
         run: |
-          if [ -f estado/anatel-voltou.txt ]; then echo "ja=1" >> $GITHUB_OUTPUT; echo "Já avisado em: $(cat estado/anatel-voltou.txt)"; fi
-
-      - name: Checar painel
-        id: checa
-        if: steps.estado.outputs.ja != '1'
-        run: |
-          res=$(curl -sS -L -m 30 -A "Mozilla/5.0" -o pagina.html -w "%{http_code} %{url_effective}" "$PAINEL" 2>&1 || echo "000 erro")
-          code=${res%% *}; final=${res#* }
-          echo "Resposta: $code $final"
-          # Só considera "voltou" se respondeu 200, não caiu na página de aviso e não fala em manutenção
-          if [ "$code" = "200" ] && [[ "$final" != *"/aviso/"* ]] && ! grep -qi "manuten" pagina.html; then
-            echo "voltou=1" >> $GITHUB_OUTPUT
-            echo "PAINEL VOLTOU"
-          else
-            echo "Ainda fora/em manutenção."
+          if [ -f estado/anatel-voltou.txt ]; then
+            echo "ja=1" >> $GITHUB_OUTPUT
+            echo "Já avisado em: $(cat estado/anatel-voltou.txt). Nada a fazer."
           fi
 
-      - name: Aviso de vida diário (9h)
-        if: github.event.schedule == '3 12 * * *' && steps.estado.outputs.ja != '1' && steps.checa.outputs.voltou != '1'
+      - name: Checar o painel em loop
+        id: loop
+        if: steps.estado.outputs.ja != '1'
         run: |
-          curl -sS -m 20 \
-            -H "Title: Robô Anatel funcionando" \
-            -H "Priority: low" \
-            -H "Tags: robot" \
-            -d "Painel ainda em manutenção. Sigo checando a cada 5 min." \
-            "https://ntfy.sh/$NTFY_TOPIC" || echo "falha no ntfy"
+          fim=$(( $(date +%s) + DURACAO ))
+          while [ "$(date +%s)" -lt "$fim" ]; do
+            res=$(curl -sS -L -m 30 -A "Mozilla/5.0" -o pagina.html -w "%{http_code} %{url_effective}" "$PAINEL" 2>/dev/null || echo "000 erro")
+            code=${res%% *}; final=${res#* }
+            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
+            if [ "$code" = "200" ] && [[ "$final" != *"/aviso/"* ]] && ! grep -qi "manuten" pagina.html; then
+              echo "$agora PAINEL VOLTOU ($code $final)"
+              echo "voltou=1" >> $GITHUB_OUTPUT
+              echo "quando=$agora" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+            echo "$agora ainda fora/em manutenção ($code)"
+
+            # Aviso de vida: entre 9h00 e 9h59 (Brasília), uma vez por dia (marcado no ntfy pelo título do dia)
+            hora=$(TZ=America/Sao_Paulo date '+%H'); dia=$(TZ=America/Sao_Paulo date '+%d/%m')
+            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$dia" ]; then
+              ja_mandou=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô Anatel funcionando ($dia)" || true)
+              if [ "$ja_mandou" = "0" ]; then
+                curl -sS -m 20 -H "Title: Robô Anatel funcionando ($dia)" -H "Priority: low" -H "Tags: robot" \
+                  -d "Painel ainda em manutenção. Sigo checando a cada 2 min." "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || true
+              fi
+              ultimo_ping=$dia
+            fi
+            sleep "$INTERVALO"
+          done
+          echo "Fim do turno sem novidade."
 
       - name: Avisar (push no celular + issue no GitHub)
-        if: steps.checa.outputs.voltou == '1'
+        if: steps.loop.outputs.voltou == '1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          QUANDO: ${{ steps.loop.outputs.quando }}
         run: |
-          agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
           curl -sS -m 20 \
             -H "Title: Painel da Anatel VOLTOU" \
             -H "Priority: urgent" \
             -H "Tags: rotating_light" \
             -H "Click: $PAINEL" \
-            -d "O painel de acessos saiu da manutenção ($agora). Confira se o mês novo já está lá." \
+            -d "O painel de acessos saiu da manutenção ($QUANDO). Confira se o mês novo já está lá." \
             "https://ntfy.sh/$NTFY_TOPIC" || echo "falha no ntfy"
           gh issue create --repo "$GITHUB_REPOSITORY" \
-            --title "Painel da Anatel voltou ($agora)" \
-            --body "O painel de acessos saiu da manutenção em $agora (horário de Brasília): $PAINEL" || echo "falha na issue"
+            --title "Painel da Anatel voltou ($QUANDO)" \
+            --body "O painel de acessos saiu da manutenção em $QUANDO (horário de Brasília): $PAINEL" || echo "falha na issue"
           mkdir -p estado
-          echo "$agora" > estado/anatel-voltou.txt
+          echo "$QUANDO" > estado/anatel-voltou.txt
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add estado/
-          git commit -m "Painel da Anatel voltou ($agora)"
+          git commit -m "Painel da Anatel voltou ($QUANDO)"
           git pull --rebase -q || true
           git push
+
+      - name: Disparar o próximo turno
+        if: steps.estado.outputs.ja != '1' && steps.loop.outputs.voltou != '1' && !cancelled()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run alerta-anatel-voltou.yml --repo "$GITHUB_REPOSITORY" --ref main
