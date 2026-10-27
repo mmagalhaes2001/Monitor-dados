@@ -1,0 +1,53 @@
+name: Teste Anatel acessos (conectividade)
+
+# Teste temporário: verifica se o painel de acessos da Anatel responde a partir do GitHub
+# e se ainda está em manutenção. Roda a cada 3 horas até 28/10/2026 03:00 UTC
+# (27/10 meia-noite em Brasília) e depois não faz mais nada.
+on:
+  push:
+    paths:
+      - ".github/workflows/teste-anatel.yml"
+  schedule:
+    - cron: "47 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checar se o período de teste acabou
+        id: prazo
+        run: |
+          if [ "$(date -u +%s)" -gt "$(date -u -d '2026-10-28 03:00' +%s)" ]; then
+            echo "fim=1" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.prazo.outputs.fim != '1'
+
+      - name: Acessar o painel
+        if: steps.prazo.outputs.fim != '1'
+        run: |
+          mkdir -p resultados
+          out=resultados/teste-anatel.txt
+          u=https://informacoes.anatel.gov.br/paineis/acessos
+          echo "" >> $out
+          echo "################ Executado em: $(date -u '+%Y-%m-%d %H:%M UTC') ################" >> $out
+          curl -sS -L -m 30 -A "Mozilla/5.0" -o pagina.html \
+            -w "http_code=%{http_code} url_final=%{url_effective} tamanho=%{size_download}\n" "$u" >> $out 2>&1 || echo "[falhou]" >> $out
+          if grep -qi "manuten" pagina.html 2>/dev/null; then echo "STATUS: em manutenção" >> $out; else echo "STATUS: sem aviso de manutenção" >> $out; fi
+          echo "Título: $(grep -o '<title>[^<]*' pagina.html | head -1 | sed 's/<title>//')" >> $out
+          tail -c 1000 $out
+
+      - name: Salvar resultado no repositório
+        if: steps.prazo.outputs.fim != '1'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add resultados/
+          git commit -m "Resultado do teste do painel da Anatel" || echo "nada a commitar"
+          git pull --rebase -q || true
+          git push
