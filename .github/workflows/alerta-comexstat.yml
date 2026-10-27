@@ -32,6 +32,7 @@ on:
 permissions:
   contents: write
   actions: write
+  issues: write
 
 concurrency:
   group: alerta-comexstat
@@ -72,6 +73,8 @@ jobs:
         if: steps.epoca.outputs.rodar == '1'
         env:
           TESTE: ${{ steps.epoca.outputs.teste }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
         run: |
           if [ "$TESTE" = "1" ]; then DURACAO=60; DIA_FIM=31; fi
           mkdir -p estado
@@ -79,8 +82,18 @@ jobs:
           source estado/comexstat.env
 
           push() { # titulo, prioridade, tags, mensagem
-            curl -sS -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $LINK" \
-              -d "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || echo "falha no ntfy"
+            # ntfy.sh limita mensagens por IP e os IPs do GitHub são compartilhados: tenta 3x e,
+            # se falhar num alerta importante, abre uma issue no repositório (chega por e-mail do GitHub).
+            for t in 1 2 3; do
+              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $LINK" \
+                   ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                   -d "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              sleep 20
+            done
+            echo "falha no ntfy: $1"
+            if [ "$2" != "low" ]; then
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$4 ($LINK)" || echo "falha na issue"
+            fi
           }
           salvar() {
             cat > estado/comexstat.env <<EOF
