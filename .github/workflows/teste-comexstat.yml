@@ -1,11 +1,14 @@
 name: Teste Comex Stat (conectividade)
 
-# Teste único: verifica se a API e os arquivos do Comex Stat respondem a partir do GitHub.
-# Roda ao subir este arquivo e pode ser rodado manualmente na aba Actions.
+# Teste temporário: verifica se a API e os arquivos do Comex Stat respondem a partir do GitHub.
+# Roda a cada 3 horas até 28/10/2026 03:00 UTC (27/10 meia-noite em Brasília) e depois não faz mais nada.
+# Também pode ser rodado manualmente na aba Actions.
 on:
   push:
     paths:
       - ".github/workflows/teste-comexstat.yml"
+  schedule:
+    - cron: "17 */3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,30 +18,56 @@ jobs:
   teste:
     runs-on: ubuntu-latest
     steps:
+      - name: Checar se o período de teste acabou
+        id: prazo
+        run: |
+          if [ "$(date -u +%s)" -gt "$(date -u -d '2026-10-28 03:00' +%s)" ]; then
+            echo "fim=1" >> $GITHUB_OUTPUT
+            echo "Período de teste encerrado."
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.prazo.outputs.fim != '1'
+
+      - name: Completar a cadeia de certificado do servidor dos CSVs (sem desligar a verificação)
+        if: steps.prazo.outputs.fim != '1'
+        run: |
+          host=balanca.economia.gov.br
+          cp /etc/ssl/certs/ca-certificates.crt bundle.pem
+          echo | openssl s_client -connect $host:443 -servername $host 2>/dev/null | openssl x509 > leaf.pem || true
+          url=$(openssl x509 -in leaf.pem -noout -text 2>/dev/null | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
+          echo "Intermediário: $url"
+          if [ -n "$url" ]; then
+            curl -sS -m 30 -o inter.der "$url"
+            openssl x509 -inform DER -in inter.der -out inter.pem 2>/dev/null || cp inter.der inter.pem
+            cat inter.pem >> bundle.pem
+          fi
 
       - name: Chamar API e arquivos
+        if: steps.prazo.outputs.fim != '1'
         run: |
           mkdir -p resultados
           out=resultados/teste-comexstat.txt
-          echo "Executado em: $(date -u '+%Y-%m-%d %H:%M UTC')" > $out
+          {
+            echo ""
+            echo "################ Executado em: $(date -u '+%Y-%m-%d %H:%M UTC') ################"
+          } >> $out
           for u in \
             https://api-comexstat.mdic.gov.br/general/dates/updated \
-            https://api-comexstat.mdic.gov.br/general/dates/years \
             https://balanca.economia.gov.br/balanca/bd/comexstat-bd/ncm/IMP_2026.csv ; do
-            echo "" >> $out
             echo "== $u" >> $out
-            # -I só para o CSV (não baixar o arquivo inteiro)
-            if [[ "$u" == *.csv ]]; then flag="-I"; else flag=""; fi
-            curl -sS -m 30 $flag -A "Mozilla/5.0" \
-              -w "\n[http_code=%{http_code}]\n" "$u" 2>&1 | head -c 1500 >> $out || echo "[falhou]" >> $out
+            if [[ "$u" == *.csv ]]; then extra="-I --cacert bundle.pem"; else extra=""; fi
+            curl -sS -m 30 $extra -A "Mozilla/5.0" \
+              -w "\n[http_code=%{http_code}]\n" "$u" 2>&1 | grep -v -i '<script' | head -c 800 >> $out || echo "[falhou]" >> $out
           done
-          cat $out
+          tail -c 2000 $out
 
       - name: Salvar resultado no repositório
+        if: steps.prazo.outputs.fim != '1'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add resultados/
           git commit -m "Resultado do teste de conectividade Comex Stat" || echo "nada a commitar"
+          git pull --rebase -q || true
           git push
