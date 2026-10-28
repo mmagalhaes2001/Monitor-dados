@@ -1,0 +1,148 @@
+name: Alerta - acessos Anatel (arquivos)
+
+# Avisa (push no app ntfy) quando a Anatel publica os zips novos de acessos (móvel e banda larga fixa)
+# e já entrega a planilha de market share pronta no repositório (resultados/anatel/).
+#
+# Como detecta: lê só o cabeçalho "Last-Modified" dos dois zips (não baixa nada) a cada 5 min.
+# Quando muda, roda anatel/acessos.py, que lê do zip só os arquivos do período recente (~1 min).
+#  - Mês novo  -> push urgente "acessos de MM/AA saíram" com os principais shares.
+#  - Mesmo mês -> push normal "base revisada" (a Anatel às vezes republica e revisa meses antigos).
+#
+# Não depende do painel (BI) da Anatel: funciona mesmo com o painel em manutenção.
+# Roda em "corrente" (~5h50 por execução, depois dispara a próxima); o cron é rede de segurança.
+# Estado (último Last-Modified e último mês visto) fica em estado/anatel-acessos.env.
+on:
+  schedule:
+    - cron: "15,45 * * * *"
+  push:
+    paths:
+      - ".github/workflows/alerta-anatel-acessos.yml"
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Teste: uma checagem só e gera a planilha mesmo sem mudança"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: alerta-anatel-acessos
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-anatel-1972ee28a387
+  BASE: https://www.anatel.gov.br/dadosabertos/paineis_de_dados/acessos
+  INTERVALO: "300"
+  DURACAO: "21000"
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install -q -r anatel/requirements.txt
+
+      - name: Checar em loop
+        env:
+          TESTE: ${{ inputs.teste }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          if [ "$TESTE" = "true" ]; then DURACAO=1; fi
+          mkdir -p estado
+          touch estado/anatel-acessos.env
+          source estado/anatel-acessos.env
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+
+          push() { # titulo, prioridade, tags, mensagem, link
+            for t in 1 2 3; do
+              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $5" \
+                   ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                   --data-binary "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              sleep 20
+            done
+            echo "falha no ntfy: $1"
+            if [ "$2" != "low" ]; then
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$4 ($5)" || echo "falha na issue"
+            fi
+          }
+          lm() { curl -sS -I -m 30 -A "Mozilla/5.0" "$BASE/$1.zip" 2>/dev/null | tr -d '\r' | grep -i '^last-modified:' | cut -d' ' -f2-; }
+
+          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; fora_desde=""; avisou_fora=""
+          while :; do
+            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
+            m=$(lm acessos_telefonia_movel); b=$(lm acessos_banda_larga_fixa)
+
+            if [ -z "$m" ] && [ -z "$b" ]; then
+              [ -z "$fora_desde" ] && fora_desde=$(date +%s)
+              if [ -z "$avisou_fora" ] && [ $(( $(date +%s) - fora_desde )) -gt 10800 ]; then
+                push "Anatel: arquivos de acessos fora do ar" default warning "Sem resposta há mais de 3h ($agora). Sigo tentando." "$BASE/"
+                avisou_fora=1
+              fi
+              echo "$agora sem resposta"
+            else
+              fora_desde=""; avisou_fora=""
+              mudou=""
+              [ -n "$m" ] && [ "$m" != "$LM_MOVEL" ] && mudou=1
+              [ -n "$b" ] && [ "$b" != "$LM_BLF" ] && mudou=1
+              echo "$agora movel=$m blf=$b ${mudou:+MUDOU}"
+
+              if [ -n "$mudou" ] || [ "$TESTE" = "true" ]; then
+                if python anatel/acessos.py --saida resultados/anatel > saida.json; then
+                  mes=$(python -c "import json;d=json.load(open('saida.json'));print(max(d['mes_movel'],d['mes_blf']))")
+                  texto=$(python -c "import json;print(json.load(open('saida.json'))['texto'])")
+                  arq=$(python -c "import json;print(json.load(open('saida.json'))['arquivo'])")
+                  link="https://github.com/$GITHUB_REPOSITORY/blob/main/$arq"
+                  mm="${mes:5:2}/${mes:2:2}"
+                  if [ -z "$LM_MOVEL$LM_BLF" ]; then
+                    echo "Primeira leitura: guardada como referência ($mes)."
+                  elif [ "$TESTE" = "true" ] && [ -z "$mudou" ]; then
+                    push "Teste: acessos Anatel ($mm)" low test_tube "$texto" "$link"
+                  elif [ "$mes" != "$MES_VISTO" ]; then
+                    push "Anatel: acessos de $mm saíram" urgent rotating_light "$texto" "$link"
+                  else
+                    push "Anatel: base de acessos revisada ($mm)" default memo "Arquivos republicados, mesmo último mês. $texto" "$link"
+                  fi
+                  LM_MOVEL="$m"; LM_BLF="$b"; MES_VISTO="$mes"
+                  printf 'LM_MOVEL="%s"\nLM_BLF="%s"\nMES_VISTO="%s"\n' "$LM_MOVEL" "$LM_BLF" "$MES_VISTO" > estado/anatel-acessos.env
+                  git add estado/anatel-acessos.env resultados/anatel
+                  git commit -q -m "Anatel acessos: $mm" || true
+                  git pull --rebase -q || true
+                  git push -q || echo "falha ao salvar"
+                else
+                  # Pode ser a Anatel no meio da troca do arquivo: tenta de novo na próxima volta
+                  echo "$agora arquivos mudaram mas o script falhou; tento de novo."
+                fi
+              fi
+            fi
+
+            # Aviso de vida: 9h, uma vez por dia
+            hoje=$(TZ=America/Sao_Paulo date '+%d/%m'); hora=$(TZ=America/Sao_Paulo date +%H)
+            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ] && [ "$TESTE" != "true" ]; then
+              n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô acessos Anatel ok ($hoje)" || true)
+              [ "$n" = "0" ] && push "Robô acessos Anatel ok ($hoje)" low robot "Último mês publicado: ${MES_VISTO:-?}. Sigo checando a cada 5 min." "https://github.com/$GITHUB_REPOSITORY"
+              ultimo_ping=$hoje
+            fi
+
+            [ "$(date +%s)" -ge "$fim" ] && break
+            sleep "$INTERVALO"
+          done
+          echo "Fim do turno."
+
+      - name: Disparar o próximo turno
+        if: inputs.teste != true && !cancelled()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run alerta-anatel-acessos.yml --repo "$GITHUB_REPOSITORY" --ref main
