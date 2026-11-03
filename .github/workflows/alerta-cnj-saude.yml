@@ -1,0 +1,177 @@
+name: Alerta - CNJ painel saúde
+
+# Avisa (push no app ntfy) quando o painel de saúde do CNJ (Justiça em Números, Power BI)
+# é atualizado: https://justica-em-numeros.cnj.jus.br/painel-saude/
+#
+# Como detecta: abre o painel num navegador headless e lê a frase "Painel atualizado em DD/MM/AAAA".
+# Se a data mudar, avisa.
+#
+# Janela: checa a cada 10 min do dia 5 ao dia 30 (horário de Brasília). Do dia 1 ao 4 fica
+# "aquecido" (rodando sem checar). Depois que avisar no mês, para até o dia 1 do mês seguinte.
+#
+# Roda em "corrente" (~5h50 por execução, depois dispara a próxima); o cron é rede de segurança.
+# Estado em estado/cnj-saude.env.
+# Toda alteração no código (push) roda uma checagem de teste e manda um push "Teste CNJ saúde".
+on:
+  schedule:
+    - cron: "5,35 * * * *"
+  push:
+    paths:
+      - ".github/workflows/alerta-cnj-saude.yml"
+      - "cnj/**"
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Teste: uma checagem só, ignorando a janela, e manda push de teste"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: alerta-cnj-saude
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-cnj-395edfecd355
+  LINK: https://justica-em-numeros.cnj.jus.br/painel-saude/
+  INTERVALO: "600"
+  DURACAO: "21000"
+  DIA_INICIO: "5"
+  DIA_FIM: "30"
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Está na época?
+        id: epoca
+        env:
+          TESTE: ${{ inputs.teste || github.event_name == 'push' }}
+        run: |
+          touch estado/cnj-saude.env 2>/dev/null || { mkdir -p estado; touch estado/cnj-saude.env; }
+          source estado/cnj-saude.env
+          d=$(TZ=America/Sao_Paulo date +%-d); mes=$(TZ=America/Sao_Paulo date +%Y-%m)
+          if [ "$TESTE" = "true" ]; then
+            echo "rodar=1" >> $GITHUB_OUTPUT
+          elif [ "$MES_AVISADO" = "$mes" ]; then
+            echo "Já avisou a atualização de $mes. Volta no dia 1 do mês que vem."
+          elif [ "$d" -le "$DIA_FIM" ]; then
+            echo "rodar=1" >> $GITHUB_OUTPUT
+          else
+            echo "Dia $d: fora da janela."
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.epoca.outputs.rodar == '1'
+        with:
+          python-version: "3.12"
+
+      - name: Instalar navegador
+        if: steps.epoca.outputs.rodar == '1'
+        run: |
+          pip install -q playwright==1.48.0
+          python -m playwright install --with-deps chromium > /dev/null
+
+      - name: Checar em loop
+        id: loop
+        if: steps.epoca.outputs.rodar == '1'
+        env:
+          TESTE: ${{ inputs.teste || github.event_name == 'push' }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          [ "$TESTE" = "true" ] && DURACAO=1
+          source estado/cnj-saude.env
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+
+          push() { # titulo, prioridade, tags, mensagem
+            for t in 1 2 3; do
+              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $LINK" \
+                   ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                   --data-binary "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              sleep 20
+            done
+            echo "falha no ntfy: $1"
+            if [ "$2" != "low" ]; then
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$4 ($LINK)" || echo "falha na issue"
+            fi
+          }
+          salvar() {
+            printf 'ATUALIZADO_VISTO="%s"\nDADOS_ATE_VISTO="%s"\nMES_AVISADO="%s"\n' \
+              "$ATUALIZADO_VISTO" "$DADOS_ATE_VISTO" "$MES_AVISADO" > estado/cnj-saude.env
+            git add estado/cnj-saude.env
+            git commit -q -m "CNJ saúde: $1" || true
+            git pull --rebase -q || true
+            git push -q || echo "falha ao salvar"
+          }
+
+          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""
+          while :; do
+            dia=$(TZ=America/Sao_Paulo date +%-d); mes=$(TZ=America/Sao_Paulo date +%Y-%m)
+            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
+            if [ "$TESTE" != "true" ]; then
+              if [ "$dia" -gt "$DIA_FIM" ]; then echo "$agora janela encerrada."; exit 0; fi
+              if [ "$dia" -lt "$DIA_INICIO" ]; then
+                [ "$(date +%s)" -ge "$fim" ] && break
+                sleep "$INTERVALO"; continue   # aquecendo
+              fi
+            fi
+
+            r=$(python cnj/painel_saude.py 2>/dev/null); echo "$agora $r"
+            ok=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin).get('ok',False))" 2>/dev/null)
+            if [ "$ok" = "True" ]; then
+              falha_desde=""; avisou_falha=""
+              atu=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin)['atualizado'])")
+              ate=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin)['dados_ate'])")
+              if [ "$TESTE" = "true" ]; then
+                push "Teste CNJ saúde" low test_tube "Leitura ok. Painel atualizado em $atu, dados até $ate."
+              elif [ -z "$ATUALIZADO_VISTO" ]; then
+                echo "Primeira leitura ($atu), guardada como referência."
+                ATUALIZADO_VISTO="$atu"; DADOS_ATE_VISTO="$ate"; salvar "referência $atu"
+              elif [ "$atu" != "$ATUALIZADO_VISTO" ]; then
+                push "CNJ saúde: painel atualizado" urgent rotating_light \
+                  "Painel atualizado em $atu (antes: $ATUALIZADO_VISTO). Dados até ${ate:-?}. Detectado às $agora."
+                ATUALIZADO_VISTO="$atu"; DADOS_ATE_VISTO="$ate"; MES_AVISADO="$mes"
+                salvar "atualizado em $atu"
+                echo "parar=1" >> $GITHUB_OUTPUT
+                exit 0
+              fi
+            else
+              [ -z "$falha_desde" ] && falha_desde=$(date +%s)
+              if [ -z "$avisou_falha" ] && [ $(( $(date +%s) - falha_desde )) -gt 3600 ]; then
+                push "CNJ saúde: não consigo ler o painel" default warning \
+                  "Há mais de 1h sem conseguir ler a data do painel ($agora). Pode ser fora do ar ou mudança de layout."
+                avisou_falha=1
+              fi
+            fi
+
+            # Aviso de vida: 9h, uma vez por dia, dentro da janela
+            hoje=$(TZ=America/Sao_Paulo date '+%d/%m'); hora=$(TZ=America/Sao_Paulo date +%H)
+            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ] && [ "$TESTE" != "true" ]; then
+              n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô CNJ ok ($hoje)" || true)
+              [ "$n" = "0" ] && push "Robô CNJ ok ($hoje)" low robot "Ainda sem atualização (última: ${ATUALIZADO_VISTO:-?}). Sigo checando a cada 10 min."
+              ultimo_ping=$hoje
+            fi
+
+            [ "$(date +%s)" -ge "$fim" ] && break
+            sleep "$INTERVALO"
+          done
+          echo "Fim do turno."
+
+      - name: Disparar o próximo turno
+        if: steps.epoca.outputs.rodar == '1' && inputs.teste != true && github.event_name != 'push' && steps.loop.outputs.parar != '1' && !cancelled()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          d=$(TZ=America/Sao_Paulo date +%-d)
+          if [ "$d" -le "$DIA_FIM" ]; then
+            gh workflow run alerta-cnj-saude.yml --repo "$GITHUB_REPOSITORY" --ref main
+          fi
