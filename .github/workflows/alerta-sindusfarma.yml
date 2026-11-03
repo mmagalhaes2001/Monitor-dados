@@ -1,0 +1,176 @@
+name: Alerta - Sindusfarma vendas
+
+# Avisa (push no app ntfy) quando sai o mês novo no BI "Vendas do Mercado Farmacêutico" do Sindusfarma
+# (Power BI público linkado em sindusfarma.org.br/mercado/indicadores-economicos).
+#
+# Como detecta: abre o BI num navegador headless e lê a tabela mês × ano nas 5 métricas
+# (Unidades, R$ PPP, R$ PMB, US$ PPP, US$ PMB). Guarda a tabela inteira em estado/sindusfarma.json.
+#  - Mês novo preenchido -> push urgente com o número do mês e as revisões de meses anteriores.
+#  - Mês anterior mudou sem mês novo -> push normal "dados revisados".
+#
+# Janela: checa a cada 10 min do dia 8 ao dia 22 (horário de Brasília; o normal é 10 a 20).
+# Do dia 1 ao 7 fica "aquecido". Depois que avisar o mês novo, para até o dia 1 do mês seguinte.
+# Roda em "corrente" (~5h50 por execução, depois dispara a próxima); o cron é rede de segurança.
+# Toda alteração no código (push) roda uma checagem de teste e manda um push "Teste Sindusfarma".
+on:
+  schedule:
+    - cron: "25,55 * * * *"
+  push:
+    paths:
+      - ".github/workflows/alerta-sindusfarma.yml"
+      - "sindusfarma/**"
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Teste: uma checagem só, ignorando a janela, e manda push de teste"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: alerta-sindusfarma
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-sindus-63ac9456718c
+  LINK: https://app.powerbi.com/view?r=eyJrIjoiMGZlMGQ1M2EtYWI2NC00MmEzLTgwMzctMzQ4ODJmOTFhNzhhIiwidCI6ImQwOGY1MzU5LTdhOWEtNDQ0Yi04MzhjLTBkZDA0ZjI1ODI3YiJ9
+  INTERVALO: "600"
+  DURACAO: "21000"
+  DIA_INICIO: "8"
+  DIA_FIM: "22"
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Está na época?
+        id: epoca
+        env:
+          TESTE: ${{ inputs.teste || github.event_name == 'push' }}
+        run: |
+          mkdir -p estado; touch estado/sindusfarma.env; source estado/sindusfarma.env
+          d=$(TZ=America/Sao_Paulo date +%-d); mes=$(TZ=America/Sao_Paulo date +%Y-%m)
+          if [ "$TESTE" = "true" ]; then
+            echo "rodar=1" >> $GITHUB_OUTPUT
+          elif [ "$MES_AVISADO" = "$mes" ]; then
+            echo "Já avisou o mês novo em $mes. Volta no dia 1 do mês que vem."
+          elif [ "$d" -le "$DIA_FIM" ]; then
+            echo "rodar=1" >> $GITHUB_OUTPUT
+          else
+            echo "Dia $d: fora da janela."
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.epoca.outputs.rodar == '1'
+        with:
+          python-version: "3.12"
+
+      - name: Instalar navegador
+        if: steps.epoca.outputs.rodar == '1'
+        run: |
+          pip install -q playwright==1.48.0
+          python -m playwright install --with-deps chromium > /dev/null
+
+      - name: Checar em loop
+        id: loop
+        if: steps.epoca.outputs.rodar == '1'
+        env:
+          TESTE: ${{ inputs.teste || github.event_name == 'push' }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          [ "$TESTE" = "true" ] && DURACAO=1
+          source estado/sindusfarma.env
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+
+          push() { # titulo, prioridade, tags, mensagem
+            for t in 1 2 3; do
+              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $LINK" \
+                   ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                   --data-binary "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              sleep 20
+            done
+            echo "falha no ntfy: $1"
+            if [ "$2" != "low" ]; then
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$4 ($LINK)" || echo "falha na issue"
+            fi
+          }
+          salvar() {
+            cp leitura.json estado/sindusfarma.json
+            printf 'MES_AVISADO="%s"\n' "$MES_AVISADO" > estado/sindusfarma.env
+            git add estado/sindusfarma.json estado/sindusfarma.env
+            git commit -q -m "Sindusfarma: $1" || true
+            git pull --rebase -q || true
+            git push -q || echo "falha ao salvar"
+          }
+          campo() { python -c "import sys,json;print(json.load(open('cmp.json'))['$1'])"; }
+
+          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""
+          while :; do
+            dia=$(TZ=America/Sao_Paulo date +%-d); mes=$(TZ=America/Sao_Paulo date +%Y-%m)
+            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
+            if [ "$TESTE" != "true" ]; then
+              if [ "$dia" -gt "$DIA_FIM" ]; then echo "$agora janela encerrada."; exit 0; fi
+              if [ "$dia" -lt "$DIA_INICIO" ]; then
+                [ "$(date +%s)" -ge "$fim" ] && break
+                sleep "$INTERVALO"; continue   # aquecendo
+              fi
+            fi
+
+            if python sindusfarma/painel.py > leitura.json && python sindusfarma/comparar.py leitura.json estado/sindusfarma.json > cmp.json; then
+              falha_desde=""; avisou_falha=""
+              ev=$(campo evento); ref=$(campo ref)
+              echo "$agora evento=$ev último mês=$ref"
+              if [ "$TESTE" = "true" ]; then
+                push "Teste Sindusfarma" low test_tube "Leitura ok. Último mês no BI: $ref. Evento: $ev."
+              elif [ "$ev" = "primeira" ]; then
+                salvar "referência $ref"
+              elif [ "$ev" = "novo_mes" ]; then
+                push "$(campo titulo)" urgent rotating_light "$(campo mensagem)"
+                MES_AVISADO="$mes"; salvar "$ref saiu"
+                echo "parar=1" >> $GITHUB_OUTPUT
+                exit 0
+              elif [ "$ev" = "revisao" ]; then
+                push "$(campo titulo)" default memo "$(campo mensagem)"
+                salvar "revisão (último mês $ref)"
+              fi
+            else
+              echo "$agora falha na leitura: $(head -c 300 leitura.json)"
+              [ -z "$falha_desde" ] && falha_desde=$(date +%s)
+              if [ -z "$avisou_falha" ] && [ $(( $(date +%s) - falha_desde )) -gt 3600 ]; then
+                push "Sindusfarma: não consigo ler o BI" default warning \
+                  "Há mais de 1h sem conseguir ler a tabela ($agora). Pode ser fora do ar ou mudança de layout."
+                avisou_falha=1
+              fi
+            fi
+
+            # Aviso de vida: 9h, uma vez por dia, dentro da janela
+            hoje=$(TZ=America/Sao_Paulo date '+%d/%m'); hora=$(TZ=America/Sao_Paulo date +%H)
+            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ] && [ "$TESTE" != "true" ]; then
+              n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô Sindusfarma ok ($hoje)" || true)
+              [ "$n" = "0" ] && push "Robô Sindusfarma ok ($hoje)" low robot "Ainda sem mês novo (último: ${ref:-?}). Sigo checando a cada 10 min."
+              ultimo_ping=$hoje
+            fi
+
+            [ "$(date +%s)" -ge "$fim" ] && break
+            sleep "$INTERVALO"
+          done
+          echo "Fim do turno."
+
+      - name: Disparar o próximo turno
+        if: steps.epoca.outputs.rodar == '1' && inputs.teste != true && github.event_name != 'push' && steps.loop.outputs.parar != '1' && !cancelled()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          d=$(TZ=America/Sao_Paulo date +%-d)
+          if [ "$d" -le "$DIA_FIM" ]; then
+            gh workflow run alerta-sindusfarma.yml --repo "$GITHUB_REPOSITORY" --ref main
+          fi
