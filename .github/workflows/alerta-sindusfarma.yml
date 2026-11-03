@@ -130,7 +130,7 @@ jobs:
               ev=$(campo evento); ref=$(campo ref)
               echo "$agora evento=$ev último mês=$ref"
               if [ "$TESTE" = "true" ]; then
-                push "Teste Sindusfarma" low test_tube "Leitura ok. Último mês no BI: $ref. Evento: $ev."
+                push "Teste Sindusfarma" high test_tube "Leitura ok. Último mês no BI: $ref. Evento: $ev."
               elif [ "$ev" = "primeira" ]; then
                 salvar "referência $ref"
               elif [ "$ev" = "novo_mes" ]; then

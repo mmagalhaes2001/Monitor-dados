@@ -132,7 +132,7 @@ jobs:
               atu=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin)['atualizado'])")
               ate=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin)['dados_ate'])")
               if [ "$TESTE" = "true" ]; then
-                push "Teste CNJ saúde" low test_tube "Leitura ok. Painel atualizado em $atu, dados até $ate."
+                push "Teste CNJ saúde" high test_tube "Leitura ok. Painel atualizado em $atu, dados até $ate."
               elif [ -z "$ATUALIZADO_VISTO" ]; then
                 echo "Primeira leitura ($atu), guardada como referência."
                 ATUALIZADO_VISTO="$atu"; DADOS_ATE_VISTO="$ate"; salvar "referência $atu"
