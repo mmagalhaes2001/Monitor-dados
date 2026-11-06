@@ -3,7 +3,9 @@ name: Alerta - acessos Anatel (arquivos)
 # Avisa (push no app ntfy) quando a Anatel publica os zips novos de acessos (móvel e banda larga fixa)
 # e já entrega a planilha de market share pronta no repositório (resultados/anatel/).
 #
-# Como detecta: lê só o cabeçalho "Last-Modified" dos dois zips (não baixa nada) a cada 5 min.
+# Como detecta: lê só o cabeçalho "Last-Modified" dos zips (não baixa nada) a cada 2 min.
+# Também vigia a base de portabilidade numérica (portabilidade.zip), com push próprio
+# ("portabilidade de MM/AA saiu"); estado em estado/anatel-portabilidade.env.
 # Quando muda, roda anatel/acessos.py, que lê do zip só os arquivos do período recente (~1 min).
 #  - Mês novo  -> push urgente "acessos de MM/AA saíram" com os principais shares.
 #  - Mesmo mês -> push normal "base revisada" (a Anatel às vezes republica e revisa meses antigos).
@@ -17,6 +19,7 @@ on:
   push:
     paths:
       - ".github/workflows/alerta-anatel-acessos.yml"
+      - "anatel/portabilidade.py"
   workflow_dispatch:
     inputs:
       teste:
@@ -36,8 +39,10 @@ concurrency:
 env:
   NTFY_TOPIC: mm-anatel-1972ee28a387
   BASE: https://www.anatel.gov.br/dadosabertos/paineis_de_dados/acessos
-  INTERVALO: "300"
+  INTERVALO: "120"
   DURACAO: "21000"
+  PORT_URL: https://www.anatel.gov.br/dadosabertos/paineis_de_dados/portabilidade/portabilidade.zip
+  PORT_LINK: https://dados.gov.br/dados/conjuntos-dados/portabilidade-numerica
 
 jobs:
   checar:
@@ -63,6 +68,9 @@ jobs:
           mkdir -p estado
           touch estado/anatel-acessos.env
           source estado/anatel-acessos.env
+          touch estado/anatel-portabilidade.env
+          P_LM_VISTO=$(. estado/anatel-portabilidade.env; echo "$LM_VISTO")
+          P_MES_VISTO=$(. estado/anatel-portabilidade.env; echo "$MES_VISTO")
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
 
@@ -128,11 +136,48 @@ jobs:
               fi
             fi
 
+            # ---- Portabilidade numérica (arquivo separado, push separado) ----
+            p=$(curl -sS -I -m 30 -A "Mozilla/5.0" "$PORT_URL" 2>/dev/null | tr -d '\r' | grep -i '^last-modified:' | cut -d' ' -f2-)
+            if [ -n "$p" ] && { [ "$p" != "$P_LM_VISTO" ] || [ "$TESTE" = "true" ]; }; then
+              echo "$agora portabilidade Last-Modified: $p (antes: ${P_LM_VISTO:-nenhum})"
+              if curl -sSf -m 300 -A "Mozilla/5.0" -o port.zip "$PORT_URL" && python anatel/portabilidade.py port.zip > port.json; then
+                pmes=$(python -c "import json;print(json.load(open('port.json'))['mes'])")
+                pref="${pmes:5:2}/${pmes:2:2}"
+                ptxt=$(python - <<'PY'
+          import json
+          d = json.load(open("port.json"))
+          f = lambda v: f"{v:,}".replace(",", ".")
+          p = lambda a, b: f"{(b / a - 1) * 100:+.1f}%".replace(".", ",") if a else "n/d"
+          m = d["mes"]
+          print(f"Portabilidades móveis em {m[5:]}/{m[2:4]}: {f(d['smp'])} "
+                f"({p(d['smp_mes_anterior'], d['smp'])} m/m, {p(d['smp_ano_anterior'], d['smp'])} a/a).")
+          PY
+                )
+                if [ "$TESTE" = "true" ] && [ "$p" = "$P_LM_VISTO" ]; then
+                  push "Teste: portabilidade Anatel ($pref)" low test_tube "$ptxt" "$PORT_LINK"
+                elif [ -z "$P_LM_VISTO" ]; then
+                  echo "Portabilidade: primeira leitura guardada ($pref)."
+                elif [ "$pmes" != "$P_MES_VISTO" ]; then
+                  push "Anatel: portabilidade de $pref saiu" urgent rotating_light "$ptxt" "$PORT_LINK"
+                else
+                  push "Anatel: base de portabilidade republicada ($pref)" default memo "Mesmo último mês, arquivo novo. $ptxt" "$PORT_LINK"
+                fi
+                P_LM_VISTO="$p"; P_MES_VISTO="$pmes"
+                printf 'LM_VISTO="%s"\nMES_VISTO="%s"\n' "$P_LM_VISTO" "$P_MES_VISTO" > estado/anatel-portabilidade.env
+                git add estado/anatel-portabilidade.env
+                git commit -q -m "Portabilidade Anatel: $pref" || true
+                git pull --rebase -q || true
+                git push -q || echo "falha ao salvar"
+              else
+                echo "$agora portabilidade mudou mas falhou ao baixar/ler; tento de novo."
+              fi
+            fi
+
             # Aviso de vida: 9h, uma vez por dia
             hoje=$(TZ=America/Sao_Paulo date '+%d/%m'); hora=$(TZ=America/Sao_Paulo date +%H)
             if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ] && [ "$TESTE" != "true" ]; then
               n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô acessos Anatel ok ($hoje)" || true)
-              [ "$n" = "0" ] && push "Robô acessos Anatel ok ($hoje)" low robot "Último mês publicado: ${MES_VISTO:-?}. Sigo checando a cada 5 min." "https://github.com/$GITHUB_REPOSITORY"
+              [ "$n" = "0" ] && push "Robô acessos Anatel ok ($hoje)" low robot "Último mês publicado: ${MES_VISTO:-?}. Sigo checando a cada 2 min (acessos e portabilidade)." "https://github.com/$GITHUB_REPOSITORY"
               ultimo_ping=$hoje
             fi
 
