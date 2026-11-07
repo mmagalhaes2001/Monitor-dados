@@ -1,0 +1,404 @@
+{
+ "vistos": {
+  "1574266": {
+   "entrega": "05/10/2026 16:34",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574266",
+   "nome": "Raia Drogasil",
+   "protocolo": "1574266",
+   "ref": "09/2026",
+   "ticker": "RADL3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1574267": {
+   "entrega": "05/10/2026 16:35",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574267",
+   "nome": "Raia Drogasil",
+   "protocolo": "1574267",
+   "ref": "09/2026",
+   "ticker": "RADL3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1574316": {
+   "entrega": "05/10/2026 17:25",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574316",
+   "nome": "Bemobi",
+   "protocolo": "1574316",
+   "ref": "09/2026",
+   "ticker": "BMOB3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1574317": {
+   "entrega": "05/10/2026 17:27",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574317",
+   "nome": "Bemobi",
+   "protocolo": "1574317",
+   "ref": "09/2026",
+   "ticker": "BMOB3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1575475": {
+   "entrega": "08/10/2026 17:08",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575475",
+   "nome": "Bradsaude",
+   "protocolo": "1575475",
+   "ref": "09/2026",
+   "ticker": "SAUD3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1575479": {
+   "entrega": "08/10/2026 17:09",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575479",
+   "nome": "Bradsaude",
+   "protocolo": "1575479",
+   "ref": "09/2026",
+   "ticker": "SAUD3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576011": {
+   "entrega": "09/10/2026 16:31",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576011",
+   "nome": "Intelbras",
+   "protocolo": "1576011",
+   "ref": "09/2026",
+   "ticker": "INTB3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576012": {
+   "entrega": "09/10/2026 16:32",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576012",
+   "nome": "Intelbras",
+   "protocolo": "1576012",
+   "ref": "09/2026",
+   "ticker": "INTB3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576067": {
+   "entrega": "09/10/2026 16:44",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576067",
+   "nome": "Vivo",
+   "protocolo": "1576067",
+   "ref": "08/2026",
+   "ticker": "VIVT3",
+   "tipo": "Posição Consolidada",
+   "versao": "2"
+  },
+  "1576069": {
+   "entrega": "09/10/2026 16:48",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576069",
+   "nome": "Vivo",
+   "protocolo": "1576069",
+   "ref": "09/2026",
+   "ticker": "VIVT3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576071": {
+   "entrega": "09/10/2026 16:50",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576071",
+   "nome": "Vivo",
+   "protocolo": "1576071",
+   "ref": "09/2026",
+   "ticker": "VIVT3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576076": {
+   "entrega": "09/10/2026 17:03",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576076",
+   "nome": "Hapvida",
+   "protocolo": "1576076",
+   "ref": "07/2026",
+   "ticker": "HAPV3",
+   "tipo": "Posição Consolidada",
+   "versao": "2"
+  },
+  "1576091": {
+   "entrega": "09/10/2026 17:10",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576091",
+   "nome": "Hapvida",
+   "protocolo": "1576091",
+   "ref": "09/2026",
+   "ticker": "HAPV3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576092": {
+   "entrega": "09/10/2026 17:10",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576092",
+   "nome": "Blau",
+   "protocolo": "1576092",
+   "ref": "09/2026",
+   "ticker": "BLAU3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576093": {
+   "entrega": "09/10/2026 17:10",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576093",
+   "nome": "LWSA",
+   "protocolo": "1576093",
+   "ref": "09/2026",
+   "ticker": "LWSA3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576097": {
+   "entrega": "09/10/2026 17:11",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576097",
+   "nome": "LWSA",
+   "protocolo": "1576097",
+   "ref": "09/2026",
+   "ticker": "LWSA3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576098": {
+   "entrega": "09/10/2026 17:11",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576098",
+   "nome": "Blau",
+   "protocolo": "1576098",
+   "ref": "09/2026",
+   "ticker": "BLAU3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576198": {
+   "entrega": "09/10/2026 17:46",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576198",
+   "nome": "Anima",
+   "protocolo": "1576198",
+   "ref": "09/2026",
+   "ticker": "ANIM3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576207": {
+   "entrega": "09/10/2026 17:48",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576207",
+   "nome": "Anima",
+   "protocolo": "1576207",
+   "ref": "09/2026",
+   "ticker": "ANIM3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576215": {
+   "entrega": "09/10/2026 17:58",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576215",
+   "nome": "Yduqs",
+   "protocolo": "1576215",
+   "ref": "09/2026",
+   "ticker": "YDUQ3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576216": {
+   "entrega": "09/10/2026 17:59",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576216",
+   "nome": "Yduqs",
+   "protocolo": "1576216",
+   "ref": "09/2026",
+   "ticker": "YDUQ3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576220": {
+   "entrega": "09/10/2026 18:00",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576220",
+   "nome": "Hypera",
+   "protocolo": "1576220",
+   "ref": "09/2026",
+   "ticker": "HYPE3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576222": {
+   "entrega": "09/10/2026 18:00",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576222",
+   "nome": "TIM",
+   "protocolo": "1576222",
+   "ref": "09/2026",
+   "ticker": "TIMS3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576224": {
+   "entrega": "09/10/2026 18:01",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576224",
+   "nome": "Totvs",
+   "protocolo": "1576224",
+   "ref": "09/2026",
+   "ticker": "TOTS3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576226": {
+   "entrega": "09/10/2026 18:01",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576226",
+   "nome": "TIM",
+   "protocolo": "1576226",
+   "ref": "09/2026",
+   "ticker": "TIMS3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576227": {
+   "entrega": "09/10/2026 18:01",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576227",
+   "nome": "Totvs",
+   "protocolo": "1576227",
+   "ref": "09/2026",
+   "ticker": "TOTS3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576233": {
+   "entrega": "09/10/2026 18:02",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576233",
+   "nome": "Hypera",
+   "protocolo": "1576233",
+   "ref": "09/2026",
+   "ticker": "HYPE3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576257": {
+   "entrega": "09/10/2026 18:08",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576257",
+   "nome": "Dasa",
+   "protocolo": "1576257",
+   "ref": "09/2026",
+   "ticker": "DASA3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576259": {
+   "entrega": "09/10/2026 18:08",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576259",
+   "nome": "Dasa",
+   "protocolo": "1576259",
+   "ref": "09/2026",
+   "ticker": "DASA3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576320": {
+   "entrega": "09/10/2026 18:35",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576320",
+   "nome": "Rede D'Or",
+   "protocolo": "1576320",
+   "ref": "09/2026",
+   "ticker": "RDOR3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576329": {
+   "entrega": "09/10/2026 18:36",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576329",
+   "nome": "Rede D'Or",
+   "protocolo": "1576329",
+   "ref": "09/2026",
+   "ticker": "RDOR3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1576462": {
+   "entrega": "10/10/2026 14:22",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576462",
+   "nome": "Fleury",
+   "protocolo": "1576462",
+   "ref": "09/2026",
+   "ticker": "FLRY3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1576463": {
+   "entrega": "10/10/2026 14:25",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576463",
+   "nome": "Fleury",
+   "protocolo": "1576463",
+   "ref": "09/2026",
+   "ticker": "FLRY3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1583720": {
+   "entrega": "04/11/2026 10:16",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1583720",
+   "nome": "Hapvida",
+   "protocolo": "1583720",
+   "ref": "09/2026",
+   "ticker": "HAPV3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1584886": {
+   "entrega": "05/11/2026 18:26",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1584886",
+   "nome": "Bemobi",
+   "protocolo": "1584886",
+   "ref": "10/2026",
+   "ticker": "BMOB3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1584889": {
+   "entrega": "05/11/2026 18:27",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1584889",
+   "nome": "Bemobi",
+   "protocolo": "1584889",
+   "ref": "10/2026",
+   "ticker": "BMOB3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1585310": {
+   "entrega": "06/11/2026 10:15",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585310",
+   "nome": "Blau",
+   "protocolo": "1585310",
+   "ref": "10/2026",
+   "ticker": "BLAU3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1585311": {
+   "entrega": "06/11/2026 10:18",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585311",
+   "nome": "Blau",
+   "protocolo": "1585311",
+   "ref": "10/2026",
+   "ticker": "BLAU3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1585631": {
+   "entrega": "06/11/2026 18:02",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585631",
+   "nome": "Bradsaude",
+   "protocolo": "1585631",
+   "ref": "10/2026",
+   "ticker": "SAUD3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1585636": {
+   "entrega": "06/11/2026 18:04",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585636",
+   "nome": "Bradsaude",
+   "protocolo": "1585636",
+   "ref": "10/2026",
+   "ticker": "SAUD3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  }
+ }
+}

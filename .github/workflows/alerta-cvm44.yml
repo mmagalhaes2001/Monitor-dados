@@ -1,0 +1,135 @@
+name: Alerta - CVM 44 (negociação de administradores)
+
+# Avisa (push no app ntfy) quando uma das empresas de cvm44/empresas.csv entrega o
+# formulário "Valores Mobiliários Negociados e Detidos" (art. 11 da Res. CVM 44, antiga ICVM 358).
+# Fonte: consulta externa do ENET da CVM (mesma que o site da B3 usa). Um push por empresa,
+# com link para abrir o PDF. Corrige-versões (v2, v3...) também avisam.
+#
+# Janela: o mês inteiro, a cada 10 min do dia 1 ao 12 (prazo é o dia 10) e a cada 30 min no resto.
+# Aviso de vida às 9h, com quem já entregou o mês de referência e quem falta.
+# Roda em "corrente" (~5h50 por execução, depois dispara a próxima); o cron é rede de segurança.
+# Estado em estado/cvm44.json. Para adicionar empresa: uma linha em cvm44/empresas.csv (código CVM
+# com 6 dígitos, como aparece em dados.cvm.gov.br CAD).
+# Toda alteração no código (push) roda uma checagem de teste e manda um push "Teste CVM 44".
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  push:
+    paths:
+      - ".github/workflows/alerta-cvm44.yml"
+      - "cvm44/**"
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Teste: uma checagem só e manda push de teste (não grava estado)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: alerta-cvm44
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-cvm44-7bbf28c67eaf
+  LINK: https://www.rad.cvm.gov.br/ENETWeb/frmConsultaExternaCVM.aspx
+  INTERVALO_CEDO: "600"
+  INTERVALO_TARDE: "1800"
+  DIA_CEDO_FIM: "12"
+  DURACAO: "21000"
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Checar em loop
+        id: loop
+        env:
+          TESTE: ${{ inputs.teste || github.event_name == 'push' }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+
+          push() { # titulo, prioridade, tags, click, mensagem
+            for i in 1 2 3; do
+              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $4" \
+                   ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                   --data-binary "$5" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              sleep 20
+            done
+            echo "falha no ntfy: $1"
+            if [ "$2" != "low" ]; then
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$5 ($4)" || echo "falha na issue"
+            fi
+          }
+          enviar_pushes() { # lê o JSON do processar.py em $1 e manda cada push
+            python cvm44/listar_pushes.py "$1" | while IFS=$'\x1f' read -r t p g c m; do
+              push "$t" "$p" "$g" "$c" "$m"
+            done
+          }
+          salvar() {
+            git add estado/cvm44.json
+            git commit -q -m "CVM 44: $1" || true
+            git pull --rebase -q || true
+            git push -q || echo "falha ao salvar"
+          }
+
+          if [ "$TESTE" = "true" ]; then
+            python cvm44/processar.py --teste > /tmp/r.json; cat /tmp/r.json
+            enviar_pushes /tmp/r.json
+            exit 0
+          fi
+
+          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""
+          while :; do
+            dia=$(TZ=America/Sao_Paulo date +%-d); hora=$(TZ=America/Sao_Paulo date +%H)
+            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M'); hoje=$(TZ=America/Sao_Paulo date '+%d/%m')
+
+            # Aviso de vida: 9h, uma vez por dia
+            flag=""
+            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ]; then
+              n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô CVM 44 ok ($hoje)" || true)
+              [ "$n" = "0" ] && flag="--ping"
+              ultimo_ping=$hoje
+            fi
+
+            python cvm44/processar.py $flag > /tmp/r.json 2>/dev/null || echo '{"ok":false,"erro":"script falhou","pushes":[]}' > /tmp/r.json
+            ok=$(python -c "import json;print(json.load(open('/tmp/r.json')).get('ok'))")
+            echo "$agora $(head -c 300 /tmp/r.json)"
+            if [ "$ok" = "True" ]; then
+              falha_desde=""; avisou_falha=""
+              enviar_pushes /tmp/r.json
+              mudou=$(python -c "import json;print(json.load(open('/tmp/r.json')).get('mudou'))")
+              [ "$mudou" = "True" ] && salvar "estado $agora"
+            else
+              [ -z "$falha_desde" ] && falha_desde=$(date +%s)
+              if [ -z "$avisou_falha" ] && [ $(( $(date +%s) - falha_desde )) -gt 3600 ]; then
+                push "CVM 44: não consigo consultar a CVM" default warning "$LINK" \
+                  "Há mais de 1h sem resposta da consulta externa do ENET ($agora). Pode ser fora do ar, captcha ou mudança no site."
+                avisou_falha=1
+              fi
+            fi
+
+            [ "$(date +%s)" -ge "$fim" ] && break
+            if [ "$dia" -le "$DIA_CEDO_FIM" ]; then sleep "$INTERVALO_CEDO"; else sleep "$INTERVALO_TARDE"; fi
+          done
+          echo "Fim do turno."
+
+      - name: Disparar o próximo turno
+        if: inputs.teste != true && github.event_name != 'push' && !cancelled()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run alerta-cvm44.yml --repo "$GITHUB_REPOSITORY" --ref main
