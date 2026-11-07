@@ -1,0 +1,137 @@
+{
+ "empresa": "COGNA EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 49279273.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 49279273.0
+    }
+   ]
+  },
+  {
+   "pagina": 3,
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 12482867.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 8150.0,
+     "preco": 2.43,
+     "volume": 19804.5
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 12474717.0
+    }
+   ]
+  },
+  {
+   "pagina": 4,
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ]
+  },
+  {
+   "pagina": 5,
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 23069107.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "24",
+     "quantidade": 100000.0,
+     "preco": 2.25,
+     "volume": 225000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "24",
+     "quantidade": 100000.0,
+     "preco": 2.2,
+     "volume": 220000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "25",
+     "quantidade": 100000.0,
+     "preco": 2.15,
+     "volume": 215000.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 23369107.0
+    }
+   ]
+  }
+ ],
+ "ticker": "COGN3",
+ "nome": "Cogna",
+ "tipo": "Posição Consolidada",
+ "entrega": "08/10/2026 18:13",
+ "versao": "1",
+ "protocolo": "1575605",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575605",
+ "pdf": "COGN3_2026-09_consolidado_v1.pdf"
+}

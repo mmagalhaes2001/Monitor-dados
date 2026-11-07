@@ -1,0 +1,46 @@
+{
+ "empresa": "TIM S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 15350335.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "CANCELAMENTO DE AÇÕES EM TESOURARIA",
+     "dia": "17",
+     "quantidade": 13200000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2150335.0
+    }
+   ]
+  }
+ ],
+ "ticker": "TIMS3",
+ "nome": "TIM",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/10/2026 18:01",
+ "versao": "1",
+ "protocolo": "1576226",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576226",
+ "pdf": "TIMS3_2026-09_individual_v1.pdf"
+}

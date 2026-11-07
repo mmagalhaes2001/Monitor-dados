@@ -1,0 +1,115 @@
+{
+ "empresa": "DIAGNOSTICOS DA AMERICA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1066168341.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1066168341.0
+    }
+   ]
+  },
+  {
+   "pagina": 3,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5648881.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "POSSE DO CONSELHO ADMINISTRATIVO",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5648881.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "POSSE DO CONSELHO ADMINISTRATIVO",
+     "quantidade": 0.0
+    }
+   ]
+  },
+  {
+   "pagina": 4,
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 737711.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "LASTRO OPERACAO COMPROMISSADA",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 737711.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "LASTRO OPERACAO COMPROMISSADA",
+     "quantidade": 0.0
+    }
+   ]
+  },
+  {
+   "pagina": 5,
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ]
+  }
+ ],
+ "ticker": "DASA3",
+ "nome": "Dasa",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/10/2026 18:08",
+ "versao": "1",
+ "protocolo": "1576259",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576259",
+ "pdf": "DASA3_2026-09_consolidado_v1.pdf"
+}

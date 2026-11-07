@@ -1,0 +1,86 @@
+{
+ "empresa": "Blau Farmacêutica S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 192399998.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 192399998.0
+    }
+   ]
+  },
+  {
+   "pagina": 3,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 34511.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 34511.0
+    }
+   ]
+  },
+  {
+   "pagina": 4,
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 9666.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Compra à vista",
+     "dia": "22",
+     "quantidade": 500.0,
+     "preco": 10.5,
+     "volume": 5250.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 10166.0
+    }
+   ]
+  }
+ ],
+ "ticker": "BLAU3",
+ "nome": "Blau",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/10/2026 17:11",
+ "versao": "1",
+ "protocolo": "1576098",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576098",
+ "pdf": "BLAU3_2026-09_consolidado_v1.pdf"
+}

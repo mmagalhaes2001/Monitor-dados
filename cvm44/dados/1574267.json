@@ -1,0 +1,331 @@
+{
+ "empresa": "Raia Drogasil S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 431300515.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLX180",
+     "quantidade": -223000.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "FCA",
+     "quantidade": -3710140.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "FCA FLEX RADL3PF",
+     "quantidade": -453900.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "FPA",
+     "quantidade": 3710140.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLD257",
+     "quantidade": -2500000.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLF234",
+     "quantidade": 2500000.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLE275",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLK285",
+     "quantidade": 66620.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLE272",
+     "quantidade": 1732100.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLH275",
+     "quantidade": 1732100.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLP230",
+     "quantidade": 2500000.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLR227",
+     "quantidade": -2500000.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLQ240",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLW240",
+     "quantidade": 1665500.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLQ26",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLT261",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLD288",
+     "quantidade": -1000000.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLI265",
+     "quantidade": -1000000.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLP256",
+     "quantidade": 1000000.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLU245",
+     "quantidade": 1000000.0
+    },
+    {
+     "ativo": "Opção de Venda",
+     "caracteristica": "RADLQ272",
+     "quantidade": 500000.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "RADLL205",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 155100.0,
+     "preco": 20.3212,
+     "volume": 3151818.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "4",
+     "quantidade": 194900.0,
+     "preco": 20.31325,
+     "volume": 3959052.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 74100.0,
+     "preco": 20.34646,
+     "volume": 1507673.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 75900.0,
+     "preco": 20.3,
+     "volume": 1540770.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 3600.0,
+     "preco": 20.50528,
+     "volume": 73819.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 2000.0,
+     "preco": 20.51,
+     "volume": 41020.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "21",
+     "quantidade": 119400.0,
+     "preco": 20.53181,
+     "volume": 2451498.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "SAÍDA POR CISÃO DO FUNDO.",
+     "dia": "18",
+     "quantidade": 818463.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "ENTRADA PELA CISÃO DO FUNDO ORIGINAL",
+     "dia": "18",
+     "quantidade": 818463.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Contratação de empréstimo (locador)",
+     "dia": "1",
+     "quantidade": 149076.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Contratação de empréstimo (locador)",
+     "dia": "2",
+     "quantidade": 5704.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": []
+  },
+  {
+   "pagina": 5,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 616779.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 616779.0
+    }
+   ]
+  },
+  {
+   "pagina": 6,
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 877734.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 20000.0,
+     "preco": 20.18,
+     "volume": 403600.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "21",
+     "quantidade": 30000.0,
+     "preco": 20.42783,
+     "volume": 612835.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 827734.0
+    }
+   ]
+  },
+  {
+   "pagina": 7,
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6904.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6904.0
+    }
+   ]
+  }
+ ],
+ "ticker": "RADL3",
+ "nome": "Raia Drogasil",
+ "tipo": "Posição Consolidada",
+ "entrega": "05/10/2026 16:35",
+ "versao": "1",
+ "protocolo": "1574267",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574267",
+ "pdf": "RADL3_2026-09_consolidado_v1.pdf"
+}

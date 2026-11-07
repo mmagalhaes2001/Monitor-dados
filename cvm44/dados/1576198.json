@@ -1,0 +1,46 @@
+{
+ "empresa": "ANIMA HOLDING S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 26008600.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "PLANO DE REMUNERAÇÃO",
+     "dia": "17",
+     "quantidade": 21300.0,
+     "preco": 0.01,
+     "volume": 213.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 25987300.0
+    }
+   ]
+  }
+ ],
+ "ticker": "ANIM3",
+ "nome": "Anima",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/10/2026 17:46",
+ "versao": "1",
+ "protocolo": "1576198",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576198",
+ "pdf": "ANIM3_2026-09_individual_v1.pdf"
+}

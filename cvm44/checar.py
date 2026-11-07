@@ -59,7 +59,9 @@ def parsear(dados, por_codigo):
         if not emp:
             continue
         prot = re.search(r"NumeroProtocoloEntrega=(\d+)", html.unescape(c[10]))
+        dl = re.search(r"OpenDownloadDocumentos\('(\d+)','(\d+)','(\d+)'", html.unescape(c[10]))
         docs.append({
+            "download": (BASE + "frmDownloadDocumento.aspx?Tela=ext&numSequencia=%s&numVersao=%s&numProtocolo=%s&descTipo=IPE&CodigoInstituicao=1" % dl.groups()) if dl else "",
             "ticker": emp["ticker"], "nome": emp["nome"],
             "tipo": limpar(c[3]), "ref": limpar(c[5])[-7:], "entrega": limpar(c[6])[-16:],
             "versao": limpar(c[8]), "protocolo": prot.group(1) if prot else "",

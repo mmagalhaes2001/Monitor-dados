@@ -1,0 +1,35 @@
+{
+ "empresa": "SER EDUCACIONAL S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "pagina": 1,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 671877.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 671877.0
+    }
+   ]
+  }
+ ],
+ "ticker": "SEER3",
+ "nome": "Ser Educacional",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "06/11/2026 18:21",
+ "versao": "1",
+ "protocolo": "1585648",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585648",
+ "pdf": "SEER3_2026-10_individual_v1.pdf"
+}

@@ -1,0 +1,46 @@
+{
+ "empresa": "YDUQS PARTICIPACOES S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19633402.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGADA NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "30",
+     "quantidade": 1877.0,
+     "preco": 11.83,
+     "volume": 22204.91
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19631525.0
+    }
+   ]
+  }
+ ],
+ "ticker": "YDUQ3",
+ "nome": "Yduqs",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/10/2026 17:59",
+ "versao": "1",
+ "protocolo": "1576216",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576216",
+ "pdf": "YDUQ3_2026-09_individual_v1.pdf"
+}

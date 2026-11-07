@@ -1,0 +1,35 @@
+{
+ "empresa": "BEMOBI MOBILE TECH S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "pagina": 1,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2180735.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2180735.0
+    }
+   ]
+  }
+ ],
+ "ticker": "BMOB3",
+ "nome": "Bemobi",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "05/11/2026 18:27",
+ "versao": "1",
+ "protocolo": "1584889",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1584889",
+ "pdf": "BMOB3_2026-10_individual_v1.pdf"
+}

@@ -1,0 +1,166 @@
+{
+ "empresa": "BEMOBI MOBILE TECH S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "pagina": 1,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ]
+  },
+  {
+   "pagina": 2,
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5810249.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "5",
+     "quantidade": 9300.0,
+     "preco": 30.61366,
+     "volume": 284707.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "7",
+     "quantidade": 25700.0,
+     "preco": 30.94767,
+     "volume": 795355.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 12500.0,
+     "preco": 31.82744,
+     "volume": 397843.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 25500.0,
+     "preco": 34.5549,
+     "volume": 881150.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "5",
+     "quantidade": 50000.0,
+     "preco": 30.00468,
+     "volume": 1500234.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 50000.0,
+     "preco": 34.00006,
+     "volume": 1700003.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 161700.0,
+     "preco": 34.48645,
+     "volume": 5576459.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 493500.0,
+     "preco": 33.5219,
+     "volume": 16543056.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "14",
+     "quantidade": 194800.0,
+     "preco": 32.26696,
+     "volume": 6285603.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4787249.0
+    }
+   ]
+  },
+  {
+   "pagina": 3,
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 31400.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 31400.0
+    }
+   ]
+  }
+ ],
+ "ticker": "BMOB3",
+ "nome": "Bemobi",
+ "tipo": "Posição Consolidada",
+ "entrega": "05/11/2026 18:26",
+ "versao": "1",
+ "protocolo": "1584886",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1584886",
+ "pdf": "BMOB3_2026-10_consolidado_v1.pdf"
+}

@@ -1,0 +1,46 @@
+{
+ "empresa": "SER EDUCACIONAL S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 681090.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "PAGAMENTO DE REMUNERAÇÃO DE INCENTIVO DE LONGO PRAZO",
+     "dia": "28",
+     "quantidade": 9213.0,
+     "preco": 11.78541,
+     "volume": 108579.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 671877.0
+    }
+   ]
+  }
+ ],
+ "ticker": "SEER3",
+ "nome": "Ser Educacional",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/10/2026 18:15",
+ "versao": "1",
+ "protocolo": "1575608",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575608",
+ "pdf": "SEER3_2026-09_individual_v1.pdf"
+}

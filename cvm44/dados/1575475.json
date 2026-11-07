@@ -1,0 +1,35 @@
+{
+ "empresa": "BRADSAÚDE S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 732100.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 732100.0
+    }
+   ]
+  }
+ ],
+ "ticker": "SAUD3",
+ "nome": "Bradsaude",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/10/2026 17:08",
+ "versao": "1",
+ "protocolo": "1575475",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575475",
+ "pdf": "SAUD3_2026-09_individual_v1.pdf"
+}

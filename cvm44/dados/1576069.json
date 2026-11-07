@@ -1,0 +1,155 @@
+{
+ "empresa": "TELEFÔNICA BRASIL S.A",
+ "tipo_form": "Consolidado",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "PN",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "PN",
+     "quantidade": 0.0
+    }
+   ]
+  },
+  {
+   "pagina": 3,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 733292.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 733292.0
+    }
+   ]
+  },
+  {
+   "pagina": 4,
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ]
+  },
+  {
+   "pagina": 5,
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 362834.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 362834.0
+    }
+   ]
+  },
+  {
+   "pagina": 6,
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "PN",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 720.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "PN",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 720.0
+    }
+   ]
+  },
+  {
+   "pagina": 7,
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 189.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 189.0
+    }
+   ]
+  }
+ ],
+ "ticker": "VIVT3",
+ "nome": "Vivo",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/10/2026 16:48",
+ "versao": "1",
+ "protocolo": "1576069",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576069",
+ "pdf": "VIVT3_2026-09_consolidado_v1.pdf"
+}

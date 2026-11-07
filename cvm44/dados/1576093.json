@@ -1,0 +1,106 @@
+{
+ "empresa": "LWSA S/A",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3140744.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à vista",
+     "dia": "8",
+     "quantidade": 122700.0,
+     "preco": 4.07299,
+     "volume": 499756.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à vista",
+     "dia": "9",
+     "quantidade": 249300.0,
+     "preco": 4.01404,
+     "volume": 1000699.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à vista",
+     "dia": "16",
+     "quantidade": 255100.0,
+     "preco": 3.99751,
+     "volume": 1019764.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à vista",
+     "dia": "17",
+     "quantidade": 255700.0,
+     "preco": 3.96443,
+     "volume": 1013704.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à vista",
+     "dia": "23",
+     "quantidade": 125000.0,
+     "preco": 4.02286,
+     "volume": 502858.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à vista",
+     "dia": "25",
+     "quantidade": 251800.0,
+     "preco": 3.95715,
+     "volume": 996411.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à vista",
+     "dia": "28",
+     "quantidade": 129500.0,
+     "preco": 3.92201,
+     "volume": 507900.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4529844.0
+    }
+   ]
+  }
+ ],
+ "ticker": "LWSA3",
+ "nome": "LWSA",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/10/2026 17:10",
+ "versao": "1",
+ "protocolo": "1576093",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576093",
+ "pdf": "LWSA3_2026-09_individual_v1.pdf"
+}

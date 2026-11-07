@@ -3,7 +3,9 @@ name: Alerta - CVM 44 (negociação de administradores)
 # Avisa (push no app ntfy) quando uma das empresas de cvm44/empresas.csv entrega o
 # formulário "Valores Mobiliários Negociados e Detidos" (art. 11 da Res. CVM 44, antiga ICVM 358).
 # Fonte: consulta externa do ENET da CVM (mesma que o site da B3 usa). Um push por empresa,
-# com link para abrir o PDF. Corrige-versões (v2, v3...) também avisam.
+# com link para abrir o PDF e resumo do que o formulário mostra. Versões corrigidas (v2, v3...) também avisam.
+# Ao detectar, baixa o PDF (cvm44/pdf), lê (cvm44/dados/*.json) e regenera cvm44/negociacoes_cvm44.xlsx
+# (abas Movimentações, Resumo, Posições, Fontes). Link do Excel vai no push.
 #
 # Janela: o mês inteiro, a cada 10 min do dia 1 ao 12 (prazo é o dia 10) e a cada 30 min no resto.
 # Aviso de vida às 9h, com quem já entregou o mês de referência e quem falta.
@@ -53,6 +55,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Instalar leitor de PDF
+        run: pip install -q pdfplumber==0.11.4 openpyxl==3.1.5
+
       - name: Checar em loop
         id: loop
         env:
@@ -81,7 +86,7 @@ jobs:
             done
           }
           salvar() {
-            git add estado/cvm44.json
+            git add estado/cvm44.json cvm44/pdf cvm44/dados cvm44/negociacoes_cvm44.xlsx
             git commit -q -m "CVM 44: $1" || true
             git pull --rebase -q || true
             git push -q || echo "falha ao salvar"

@@ -1,0 +1,196 @@
+{
+ "empresa": "ANIMA HOLDING S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 200850254.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora Corretora",
+     "operacao": "Compra à vista",
+     "dia": "1",
+     "quantidade": 3725300.0,
+     "preco": 2.83106,
+     "volume": 10546549.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora Corretora",
+     "operacao": "Compra à vista",
+     "dia": "2",
+     "quantidade": 1840000.0,
+     "preco": 2.96445,
+     "volume": 5454580.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "4",
+     "quantidade": 3367.0,
+     "preco": 2.94017,
+     "volume": 9899.54
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "8",
+     "quantidade": 2000.0,
+     "preco": 2.96,
+     "volume": 5920.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "10",
+     "quantidade": 1670.0,
+     "preco": 2.97,
+     "volume": 4959.9
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "14",
+     "quantidade": 1700.0,
+     "preco": 2.9,
+     "volume": 4930.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "17",
+     "quantidade": 1700.0,
+     "preco": 2.94,
+     "volume": 4998.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "22",
+     "quantidade": 3000.0,
+     "preco": 2.91,
+     "volume": 8730.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "23",
+     "quantidade": 1000.0,
+     "preco": 2.99,
+     "volume": 2990.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à vista",
+     "dia": "28",
+     "quantidade": 1000.0,
+     "preco": 2.84,
+     "volume": 2840.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 206430991.0
+    }
+   ]
+  },
+  {
+   "pagina": 3,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 230903.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 230903.0
+    }
+   ]
+  },
+  {
+   "pagina": 4,
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 389500.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 389500.0
+    }
+   ]
+  },
+  {
+   "pagina": 5,
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ]
+  }
+ ],
+ "ticker": "ANIM3",
+ "nome": "Anima",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/10/2026 17:48",
+ "versao": "1",
+ "protocolo": "1576207",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576207",
+ "pdf": "ANIM3_2026-09_consolidado_v1.pdf"
+}

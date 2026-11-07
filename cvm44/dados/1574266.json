@@ -1,0 +1,35 @@
+{
+ "empresa": "Raia Drogasil S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3831107.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3831107.0
+    }
+   ]
+  }
+ ],
+ "ticker": "RADL3",
+ "nome": "Raia Drogasil",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "05/10/2026 16:34",
+ "versao": "1",
+ "protocolo": "1574266",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574266",
+ "pdf": "RADL3_2026-09_individual_v1.pdf"
+}

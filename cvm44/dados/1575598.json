@@ -1,0 +1,35 @@
+{
+ "empresa": "COGNA EDUCAÇÃO S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ]
+  }
+ ],
+ "ticker": "COGN3",
+ "nome": "Cogna",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/10/2026 18:08",
+ "versao": "1",
+ "protocolo": "1575598",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575598",
+ "pdf": "COGN3_2026-09_individual_v1.pdf"
+}

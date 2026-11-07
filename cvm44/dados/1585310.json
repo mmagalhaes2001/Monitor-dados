@@ -1,0 +1,35 @@
+{
+ "empresa": "Blau Farmacêutica S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "pagina": 1,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ]
+  }
+ ],
+ "ticker": "BLAU3",
+ "nome": "Blau",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "06/11/2026 10:15",
+ "versao": "1",
+ "protocolo": "1585310",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585310",
+ "pdf": "BLAU3_2026-10_individual_v1.pdf"
+}

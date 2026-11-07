@@ -1,0 +1,96 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 1,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 27542954.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV15",
+     "quantidade": 25886.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV19",
+     "quantidade": 16801.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPVA0",
+     "quantidade": 42049.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV17",
+     "quantidade": 39047.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV18",
+     "quantidade": 61572.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S.A",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "24",
+     "quantidade": -16250.0,
+     "preco": -6.6,
+     "volume": 107250.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 27526704.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV15",
+     "quantidade": 25886.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV19",
+     "quantidade": 16801.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPVA0",
+     "quantidade": 42049.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV17",
+     "quantidade": 39047.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV18",
+     "quantidade": 61572.0
+    }
+   ]
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "04/11/2026 10:16",
+ "versao": "1",
+ "protocolo": "1583720",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1583720",
+ "pdf": "HAPV3_2026-09_individual_v1.pdf"
+}

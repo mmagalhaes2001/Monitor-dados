@@ -14,6 +14,9 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 ESTADO = os.path.join(RAIZ, "estado", "cvm44.json")
 CONSULTA = "https://www.rad.cvm.gov.br/ENETWeb/frmConsultaExternaCVM.aspx"
+EXCEL = "https://github.com/mmagalhaes2001/Monitor-dados/raw/main/cvm44/negociacoes_cvm44.xlsx"
+sys.path.insert(0, AQUI)
+import planilha  # noqa: E402
 
 
 def mes_ref():
@@ -68,9 +71,18 @@ def main():
     if primeira:
         for d in r["docs"]:
             vistos[d["protocolo"]] = d
+        planilha.processar(r["docs"]); planilha.gerar()
         salvar(est)
         print(json.dumps({"ok": True, "mudou": True, "pushes": [], "info": "primeira leitura: %d guardados" % len(r["docs"])}, ensure_ascii=False))
         return
+
+    # Baixa e lê os novos; regenera o Excel
+    falhas = []
+    if novos:
+        try:
+            _, falhas = planilha.processar(novos); planilha.gerar()
+        except Exception as e:
+            falhas.append("planilha: " + str(e)[:100])
 
     # Agrupa novos por empresa: um push por empresa, clique abre a Consolidada (ou a que houver)
     por_t = {}
@@ -82,8 +94,14 @@ def main():
         alvo = cons[0] if cons else ds[0]
         partes = ["%s (ref %s%s) às %s" % ("Consolidada" if "Consolidada" in d["tipo"] else "Individual", d["ref"],
                                            ", versão " + d["versao"] if d["versao"] != "1" else "", d["entrega"][-5:]) for d in ds]
+        res = planilha.resumo(alvo["protocolo"]) if cons else ""
         pushes.append({"titulo": "CVM 44: %s entregou formulário" % t, "prio": "urgent", "tags": "rotating_light",
-                       "click": alvo["link"], "msg": "%s — %s. Entregue em %s. Toque para abrir." % (ds[0]["nome"], "; ".join(partes), alvo["entrega"][:10])})
+                       "click": alvo["link"],
+                       "msg": "%s — %s.%s Entregue em %s. Toque para abrir o PDF. Excel atualizado: %s"
+                              % (ds[0]["nome"], "; ".join(partes), (" " + res[0].upper() + res[1:] + ".") if res else "", alvo["entrega"][:10], EXCEL)})
+    if falhas:
+        pushes.append({"titulo": "CVM 44: falha ao ler formulário", "prio": "default", "tags": "warning", "click": CONSULTA,
+                       "msg": "; ".join(falhas)[:800]})
 
     if ping:
         feitos = [t for t in tickers if entregou(t)]

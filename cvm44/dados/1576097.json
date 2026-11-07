@@ -1,0 +1,106 @@
+{
+ "empresa": "LWSA S/A",
+ "tipo_form": "Consolidado",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160282752.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160282752.0
+    }
+   ]
+  },
+  {
+   "pagina": 3,
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 10470965.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 10470965.0
+    }
+   ]
+  },
+  {
+   "pagina": 4,
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5216836.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Safra",
+     "operacao": "Venda à vista",
+     "dia": "14",
+     "quantidade": 435000.0,
+     "preco": 4.0323,
+     "volume": 1754050.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 100200.0,
+     "preco": 3.92499,
+     "volume": 393284.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "Venda à vista",
+     "dia": "22",
+     "quantidade": 5000.0,
+     "preco": 4.14,
+     "volume": 20700.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4676636.0
+    }
+   ]
+  }
+ ],
+ "ticker": "LWSA3",
+ "nome": "LWSA",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/10/2026 17:11",
+ "versao": "1",
+ "protocolo": "1576097",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576097",
+ "pdf": "LWSA3_2026-09_consolidado_v1.pdf"
+}

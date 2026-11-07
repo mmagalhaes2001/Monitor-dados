@@ -1,0 +1,35 @@
+{
+ "empresa": "DIAGNOSTICOS DA AMERICA S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5168306.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5168306.0
+    }
+   ]
+  }
+ ],
+ "ticker": "DASA3",
+ "nome": "Dasa",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/10/2026 18:08",
+ "versao": "1",
+ "protocolo": "1576257",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576257",
+ "pdf": "DASA3_2026-09_individual_v1.pdf"
+}

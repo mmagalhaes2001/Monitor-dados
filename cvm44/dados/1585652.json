@@ -1,0 +1,126 @@
+{
+ "empresa": "SER EDUCACIONAL S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "pagina": 1,
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 75484985.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 75484985.0
+    }
+   ]
+  },
+  {
+   "pagina": 2,
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1200630.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "1",
+     "quantidade": 1000.0,
+     "preco": 14.18,
+     "volume": 14180.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "1",
+     "quantidade": 1000.0,
+     "preco": 14.17,
+     "volume": 14170.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "5",
+     "quantidade": 1000.0,
+     "preco": 16.5,
+     "volume": 16500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "5",
+     "quantidade": 1000.0,
+     "preco": 16.53,
+     "volume": 16530.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "6",
+     "quantidade": 1000.0,
+     "preco": 16.97,
+     "volume": 16970.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "16",
+     "quantidade": 1000.0,
+     "preco": 17.58,
+     "volume": 17580.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "16",
+     "quantidade": 500.0,
+     "preco": 17.57,
+     "volume": 8785.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1194130.0
+    }
+   ]
+  }
+ ],
+ "ticker": "SEER3",
+ "nome": "Ser Educacional",
+ "tipo": "Posição Consolidada",
+ "entrega": "06/11/2026 18:25",
+ "versao": "1",
+ "protocolo": "1585652",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585652",
+ "pdf": "SEER3_2026-10_consolidado_v1.pdf"
+}

@@ -40,6 +40,39 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
+  "1574846": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1099552&numVersao=1&numProtocolo=1574846&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "06/10/2026 18:44",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574846",
+   "nome": "Qualicorp",
+   "protocolo": "1574846",
+   "ref": "09/2026",
+   "ticker": "QUAL3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1574849": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1099555&numVersao=1&numProtocolo=1574849&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "06/10/2026 18:46",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574849",
+   "nome": "Qualicorp",
+   "protocolo": "1574849",
+   "ref": "09/2026",
+   "ticker": "QUAL3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1575229": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1099935&numVersao=1&numProtocolo=1575229&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "07/10/2026 19:07",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575229",
+   "nome": "Vitru",
+   "protocolo": "1575229",
+   "ref": "09/2026",
+   "ticker": "VTRU3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
   "1575475": {
    "entrega": "08/10/2026 17:08",
    "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575475",
@@ -58,6 +91,50 @@
    "ref": "09/2026",
    "ticker": "SAUD3",
    "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1575598": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100304&numVersao=1&numProtocolo=1575598&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "08/10/2026 18:08",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575598",
+   "nome": "Cogna",
+   "protocolo": "1575598",
+   "ref": "09/2026",
+   "ticker": "COGN3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1575604": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100310&numVersao=1&numProtocolo=1575604&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "08/10/2026 18:12",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575604",
+   "nome": "Ser Educacional",
+   "protocolo": "1575604",
+   "ref": "09/2026",
+   "ticker": "SEER3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1575605": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100311&numVersao=1&numProtocolo=1575605&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "08/10/2026 18:13",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575605",
+   "nome": "Cogna",
+   "protocolo": "1575605",
+   "ref": "09/2026",
+   "ticker": "COGN3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1575608": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100314&numVersao=1&numProtocolo=1575608&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "08/10/2026 18:15",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575608",
+   "nome": "Ser Educacional",
+   "protocolo": "1575608",
+   "ref": "09/2026",
+   "ticker": "SEER3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1576011": {
@@ -341,6 +418,7 @@
    "versao": "1"
   },
   "1584886": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1109592&numVersao=1&numProtocolo=1584886&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "05/11/2026 18:26",
    "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1584886",
    "nome": "Bemobi",
@@ -358,6 +436,28 @@
    "ref": "10/2026",
    "ticker": "BMOB3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1585093": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1109799&numVersao=1&numProtocolo=1585093&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "05/11/2026 19:09",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585093",
+   "nome": "Qualicorp",
+   "protocolo": "1585093",
+   "ref": "10/2026",
+   "ticker": "QUAL3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1585094": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1109800&numVersao=1&numProtocolo=1585094&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "05/11/2026 19:09",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585094",
+   "nome": "Qualicorp",
+   "protocolo": "1585094",
+   "ref": "10/2026",
+   "ticker": "QUAL3",
+   "tipo": "Posição Consolidada",
    "versao": "1"
   },
   "1585310": {
@@ -397,6 +497,28 @@
    "protocolo": "1585636",
    "ref": "10/2026",
    "ticker": "SAUD3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1585648": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1110354&numVersao=1&numProtocolo=1585648&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "06/11/2026 18:21",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585648",
+   "nome": "Ser Educacional",
+   "protocolo": "1585648",
+   "ref": "10/2026",
+   "ticker": "SEER3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1585652": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1110358&numVersao=1&numProtocolo=1585652&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "06/11/2026 18:25",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585652",
+   "nome": "Ser Educacional",
+   "protocolo": "1585652",
+   "ref": "10/2026",
+   "ticker": "SEER3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   }

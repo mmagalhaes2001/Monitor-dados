@@ -1,0 +1,45 @@
+{
+ "empresa": "HYPERA S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 13104.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 13104.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
+     "quantidade": 0.0
+    }
+   ]
+  }
+ ],
+ "ticker": "HYPE3",
+ "nome": "Hypera",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/10/2026 18:00",
+ "versao": "1",
+ "protocolo": "1576220",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576220",
+ "pdf": "HYPE3_2026-09_individual_v1.pdf"
+}

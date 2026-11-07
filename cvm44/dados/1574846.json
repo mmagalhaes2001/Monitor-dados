@@ -1,0 +1,35 @@
+{
+ "empresa": "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "pagina": 2,
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2014128.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2014128.0
+    }
+   ]
+  }
+ ],
+ "ticker": "QUAL3",
+ "nome": "Qualicorp",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "06/10/2026 18:44",
+ "versao": "1",
+ "protocolo": "1574846",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574846",
+ "pdf": "QUAL3_2026-09_individual_v1.pdf"
+}
