@@ -1,0 +1,250 @@
+{
+ "empresa": "FLEURY S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "06/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86865461.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "1",
+     "quantidade": 1252.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "1",
+     "quantidade": 12159.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "1",
+     "quantidade": 589.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "2",
+     "quantidade": 300.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "2",
+     "quantidade": 300.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "3",
+     "quantidade": 800.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "3",
+     "quantidade": 1252.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "3",
+     "quantidade": 12159.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 14211.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "10",
+     "quantidade": 589.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "11",
+     "quantidade": 14211.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "16",
+     "quantidade": 1834.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de empréstimo",
+     "dia": "16",
+     "quantidade": 12966.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "(locador) Devolução de empréstimo (locador)",
+     "dia": "17",
+     "quantidade": 1834.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 999.0,
+     "preco": 14.8213,
+     "volume": 14806.48
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 26.0,
+     "preco": 14.82115,
+     "volume": 385.35
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "19",
+     "quantidade": 12966.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86865236.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2464910.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2464910.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "FLRY3",
+ "nome": "Fleury",
+ "tipo": "Posição Consolidada",
+ "entrega": "23/08/2026 23:58",
+ "versao": "2",
+ "protocolo": "1560525",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1560525",
+ "pdf": "FLRY3_2026-06_consolidado_v2.pdf"
+}

@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Controlador",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -122,10 +121,12 @@
      "caracteristica": "ON",
      "quantidade": 206430991.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   },
   {
-   "pagina": 3,
    "orgao": "Conselho Administração",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -142,10 +143,12 @@
      "caracteristica": "ON",
      "quantidade": 230903.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
   },
   {
-   "pagina": 4,
    "orgao": "Diretoria",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -162,10 +165,12 @@
      "caracteristica": "ON",
      "quantidade": 389500.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
   },
   {
-   "pagina": 5,
    "orgao": "Conselho Fiscal",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -182,7 +187,10 @@
      "caracteristica": "ON",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
   }
  ],
  "ticker": "ANIM3",

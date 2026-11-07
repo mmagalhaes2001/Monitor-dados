@@ -1,0 +1,318 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1102716326.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Compra à  vista",
+     "dia": "14",
+     "quantidade": 573500.0,
+     "preco": 34.934,
+     "volume": 20034650.39
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "7",
+     "quantidade": 3386500.0,
+     "preco": 37.66936,
+     "volume": 127567282.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "11",
+     "quantidade": 2500000.0,
+     "preco": 36.33104,
+     "volume": 90827593.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "12",
+     "quantidade": 2032400.0,
+     "preco": 36.04088,
+     "volume": 73249481.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "13",
+     "quantidade": 2637300.0,
+     "preco": 35.32629,
+     "volume": 93166032.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "14",
+     "quantidade": 1415100.0,
+     "preco": 34.8849,
+     "volume": 49365622.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "15",
+     "quantidade": 2584400.0,
+     "preco": 34.69296,
+     "volume": 89660497.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "18",
+     "quantidade": 1763700.0,
+     "preco": 34.76176,
+     "volume": 61309322.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 599100.0,
+     "preco": 34.53246,
+     "volume": 20688399.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "26",
+     "quantidade": 433200.0,
+     "preco": 34.39401,
+     "volume": 14899483.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "27",
+     "quantidade": 251000.0,
+     "preco": 34.45561,
+     "volume": 8648359.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "28",
+     "quantidade": 103300.0,
+     "preco": 34.49579,
+     "volume": 3563415.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "29",
+     "quantidade": 1056500.0,
+     "preco": 33.91175,
+     "volume": 35827765.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "28",
+     "quantidade": 1017441.0,
+     "preco": 34.89289,
+     "volume": 35501457.15
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual  CTVM S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "14",
+     "quantidade": 139800.0,
+     "preco": 34.9302,
+     "volume": 4883241.81
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1123209567.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20555576.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20555576.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4725505.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23L1737623",
+     "intermediario": "BB - Banco de  Investimento S/A",
+     "operacao": "Compra à  vista",
+     "dia": "22",
+     "quantidade": 941.0,
+     "preco": 1063.28,
+     "volume": 1000546.48
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4725505.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23L1737623",
+     "quantidade": 941.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/06/2026 18:05",
+ "versao": "1",
+ "protocolo": "1533167",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1533167",
+ "pdf": "RDOR3_2026-05_consolidado_v1.pdf"
+}

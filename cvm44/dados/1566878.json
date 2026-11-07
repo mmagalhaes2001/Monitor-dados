@@ -1,0 +1,257 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "08/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 196263730.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "SWAP LIQUIDACAO FISICA",
+     "quantidade": 39387576.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 89048.0,
+     "preco": 6.49,
+     "volume": 577921.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander  Corretora",
+     "operacao": "Compra à vista",
+     "dia": "14",
+     "quantidade": 36700.0,
+     "preco": 6.48,
+     "volume": 237816.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander  Corretora",
+     "operacao": "Compra à vista",
+     "dia": "21",
+     "quantidade": 732600.0,
+     "preco": 6.46,
+     "volume": 4732596.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "Compra à vista",
+     "dia": "13",
+     "quantidade": 141200.0,
+     "preco": 7.05,
+     "volume": 995460.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 197530422.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "SWAP LIQUIDACAO FISICA",
+     "quantidade": 39031384.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 78328.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 78328.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 152392.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Inter",
+     "operacao": "Compra à vista",
+     "dia": "28",
+     "quantidade": 8000.0,
+     "preco": 6.38,
+     "volume": 51040.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160392.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1032.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1032.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1507.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1507.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 6
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/09/2026 17:11",
+ "versao": "1",
+ "protocolo": "1566878",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566878",
+ "pdf": "HAPV3_2026-08_consolidado_v1.pdf"
+}

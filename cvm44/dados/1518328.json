@@ -1,0 +1,165 @@
+{
+ "empresa": "COGNA EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 50359943.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itáu Corretora",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 300000.0,
+     "preco": 3.29,
+     "volume": 987000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora",
+     "operacao": "Venda à vista",
+     "dia": "6",
+     "quantidade": 300000.0,
+     "preco": 3.24,
+     "volume": 972000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter DTVM",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 100000.0,
+     "preco": 3.35,
+     "volume": 335000.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 49659943.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 7888733.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 100.0,
+     "preco": 3.34,
+     "volume": 334.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 5850.0,
+     "preco": 3.3,
+     "volume": 19305.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "16",
+     "quantidade": 1536365.0,
+     "preco": 0.01,
+     "volume": 15363.65
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 9419148.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 21969107.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 21969107.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "COGN3",
+ "nome": "Cogna",
+ "tipo": "Posição Consolidada",
+ "entrega": "07/05/2026 22:02",
+ "versao": "1",
+ "protocolo": "1518328",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1518328",
+ "pdf": "COGN3_2026-04_consolidado_v1.pdf"
+}

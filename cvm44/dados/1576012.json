@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Controlador",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -17,8 +16,8 @@
    "movimentacoes": [
     {
      "ativo": "Opção de Compra",
-     "caracteristica": "CALL BALCAO 260824432 STRIKE 15 52 VENC 17112026",
-     "intermediario": "XP Investimentos CCTVM S.A.",
+     "caracteristica": "260824432 STRIKE 15 52",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
      "operacao": "Venda",
      "dia": "15",
      "quantidade": 2500.0,
@@ -27,8 +26,8 @@
     },
     {
      "ativo": "Opção de Compra",
-     "caracteristica": "CALL BALCAO 260828780 STRIKE 15 74 VENC 16102026",
-     "intermediario": "XP Investimentos CCTVM S.A.",
+     "caracteristica": "260828780 STRIKE 15 74",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
      "operacao": "Venda",
      "dia": "16",
      "quantidade": 2000.0,
@@ -37,8 +36,8 @@
     },
     {
      "ativo": "Opção de Compra",
-     "caracteristica": "CALL BALCAO 260828930 STRIKE 15 44 VENC 17112026",
-     "intermediario": "XP Investimentos CCTVM S.A.",
+     "caracteristica": "260828930 STRIKE 15 44",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
      "operacao": "Venda",
      "dia": "16",
      "quantidade": 2500.0,
@@ -48,7 +47,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "XP Investimentos CCTVM S.A.",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
      "operacao": "Contratação de empréstimo (locador)",
      "dia": "29",
      "quantidade": 912.0,
@@ -63,24 +62,41 @@
      "quantidade": 210588441.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "CALL BALCAO 260824432 STRIKE 15 52 VENC 17112026",
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
      "quantidade": -2500.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "CALL BALCAO 260828780 STRIKE 15 74 VENC 16102026",
+     "ativo": "15",
+     "caracteristica": "52 VENC",
+     "quantidade": 17112026.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
      "quantidade": -2000.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "CALL BALCAO 260828930 STRIKE 15 44 VENC 17112026",
+     "ativo": "15",
+     "caracteristica": "74 VENC",
+     "quantidade": 16102026.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
      "quantidade": -2500.0
+    },
+    {
+     "ativo": "15",
+     "caracteristica": "44 VENC",
+     "quantidade": 17112026.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   },
   {
-   "pagina": 3,
    "orgao": "Conselho Administração",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -97,10 +113,12 @@
      "caracteristica": "ON",
      "quantidade": 2424853.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
   },
   {
-   "pagina": 4,
    "orgao": "Diretoria",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -117,7 +135,10 @@
      "caracteristica": "ON",
      "quantidade": 371054.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
   }
  ],
  "ticker": "INTB3",

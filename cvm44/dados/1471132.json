@@ -1,0 +1,346 @@
+{
+ "empresa": "COGNA EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "12/2025",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 46412504.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 2691631.0,
+     "preco": 3.34065,
+     "volume": 8991795.47
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "4",
+     "quantidade": 100000.0,
+     "preco": 3.98,
+     "volume": 398000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 97288.0,
+     "preco": 3.34065,
+     "volume": 325005.1
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 200202.0,
+     "preco": 3.536,
+     "volume": 707914.27
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 19349.0,
+     "preco": 3.605,
+     "volume": 69753.15
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 147546.0,
+     "preco": 3.64,
+     "volume": 537067.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 4321.0,
+     "preco": 3.34065,
+     "volume": 14434.95
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 400000.0,
+     "preco": 3.92173,
+     "volume": 1568693.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "4",
+     "quantidade": 400000.0,
+     "preco": 4.0,
+     "volume": 1600000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 244203.0,
+     "preco": 3.34065,
+     "volume": 815796.6
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 646448.0,
+     "preco": 3.34065,
+     "volume": 2159556.12
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 12345.0,
+     "preco": 3.34065,
+     "volume": 41240.32
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 500.0,
+     "preco": 3.34064,
+     "volume": 1670.32
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 817801.0,
+     "preco": 3.34065,
+     "volume": 2731986.42
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 49659944.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 7580534.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 468261.0,
+     "preco": 3.34065,
+     "volume": 1564295.83
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 178239.0,
+     "preco": 3.34065,
+     "volume": 595434.01
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora",
+     "operacao": "Venda à vista",
+     "dia": "4",
+     "quantidade": 55050.0,
+     "preco": 3.975,
+     "volume": 218823.75
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 10000.0,
+     "preco": 3.75,
+     "volume": 37500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora",
+     "operacao": "Venda à vista",
+     "dia": "19",
+     "quantidade": 10000.0,
+     "preco": 3.6,
+     "volume": 36000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 10000.0,
+     "preco": 3.65,
+     "volume": 36500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 63721.0,
+     "preco": 3.34065,
+     "volume": 212869.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora",
+     "operacao": "Venda à vista",
+     "dia": "30",
+     "quantidade": 200000.0,
+     "preco": 3.15,
+     "volume": 630000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 39325.0,
+     "preco": 3.34065,
+     "volume": 131371.04
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 8045030.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19941416.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desdobrament  o/bonificação",
+     "dia": "23",
+     "quantidade": 2027691.0,
+     "preco": 3.34065,
+     "volume": 6773804.71
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 21969107.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "COGN3",
+ "nome": "Cogna",
+ "tipo": "Posição Consolidada",
+ "entrega": "29/01/2026 16:33",
+ "versao": "2",
+ "protocolo": "1471132",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1471132",
+ "pdf": "COGN3_2025-12_consolidado_v2.pdf"
+}

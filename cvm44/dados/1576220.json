@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Companhia (cia, controladas e coligadas)",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -15,7 +14,7 @@
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
+     "caracteristica": "",
      "quantidade": 0.0
     }
    ],
@@ -28,10 +27,152 @@
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
+     "caracteristica": "",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2,
+   "entidade": "HYPERA S/A - Companhia - Tesouraria"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3,
+   "entidade": "Brainfarma Indústria Química e Farmacêutica S.A. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4,
+   "entidade": "Cosmed Indústria de Cosméticos e Medicamentos S.A. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5,
+   "entidade": "My Agência de Propaganda Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 6,
+   "entidade": "Bionovis S.A. - Companhia Brasileira de Biotecnologia Farmacêutica - Coligada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 7,
+   "entidade": "Neolatina Comércio e Indústria Farmacêutica S.A. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 8,
+   "entidade": "Mantecorp Participações S.A. - Controlada"
   }
  ],
  "ticker": "HYPE3",

@@ -1,0 +1,212 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "03/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1091480526.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Compra à  vista",
+     "dia": "3",
+     "quantidade": 25900.0,
+     "preco": 38.70263,
+     "volume": 1002398.01
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "3",
+     "quantidade": 4436800.0,
+     "preco": 38.68092,
+     "volume": 171619505.7
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "5",
+     "quantidade": 726500.0,
+     "preco": 39.34679,
+     "volume": 28585446.55
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "9",
+     "quantidade": 2170000.0,
+     "preco": 38.2266,
+     "volume": 82951729.65
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 657300.0,
+     "preco": 37.42251,
+     "volume": 24597819.09
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 523100.0,
+     "preco": 36.73512,
+     "volume": 19216143.55
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1100020126.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20555576.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20555576.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4725505.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4725505.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/04/2026 18:21",
+ "versao": "1",
+ "protocolo": "1503187",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1503187",
+ "pdf": "RDOR3_2026-03_consolidado_v1.pdf"
+}

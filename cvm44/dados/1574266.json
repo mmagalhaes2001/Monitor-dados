@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Companhia (cia, controladas e coligadas)",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -21,7 +20,57 @@
      "caracteristica": "ON",
      "quantidade": 3831107.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2,
+   "entidade": "DROGASIL SA - Companhia - Tesouraria"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3,
+   "entidade": "4BIO MEDICAMENTOS S.A. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4,
+   "entidade": "RAIA DROGASIL S/A - Saldo Inicial"
   }
  ],
  "ticker": "RADL3",

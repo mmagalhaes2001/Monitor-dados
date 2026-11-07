@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Companhia (cia, controladas e coligadas)",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -18,8 +17,8 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "",
-     "operacao": "CANCELAMENTO DE AÇÕES EM TESOURARIA",
+     "intermediario": "DE",
+     "operacao": "CANCELAMENTO AÇÕES EM TESOURARIA",
      "dia": "17",
      "quantidade": 13200000.0,
      "preco": 0.0,
@@ -32,7 +31,11 @@
      "caracteristica": "ON",
      "quantidade": 2150335.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2,
+   "entidade": "TIM S.A. - Saldo Inicial"
   }
  ],
  "ticker": "TIMS3",

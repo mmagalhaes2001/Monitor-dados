@@ -3,7 +3,7 @@
 categoria "Valores Mobiliários Negociados e Detidos") entregues pelas empresas de
 cvm44/empresas.csv, consultando o sistema ENET da CVM.
 
-Uso: python cvm44/checar.py [dias]   (padrão: últimos 45 dias)
+Uso: python cvm44/checar.py [dias] [terminando_ha_N_dias]   (padrão: últimos 45 dias até hoje)
 Saída: JSON {"ok": bool, "docs": [...], "erro": str}
 Cada doc: ticker, nome, tipo, ref (MM/AAAA), entrega (DD/MM/AAAA HH:MM), versao, protocolo, link
 """
@@ -21,8 +21,8 @@ def empresas():
         return [r for r in csv.DictReader(f, delimiter=";") if r.get("cod_cvm")]
 
 
-def consultar(codigos, dias):
-    hoje = date.today()
+def consultar(codigos, dias, ate_atras=0):
+    hoje = date.today() - timedelta(days=ate_atras)
     ini = hoje - timedelta(days=dias)
     corpo = ("{ dataDe: '%s', dataAte: '%s', empresa: '%s', setorAtividade: '-1', "
              "categoriaEmissor: '-1', situacaoEmissor: '-1', tipoParticipante: '-1', "
@@ -73,10 +73,11 @@ def parsear(dados, por_codigo):
 
 def main():
     dias = int(sys.argv[1]) if len(sys.argv) > 1 else 45
+    ate_atras = int(sys.argv[2]) if len(sys.argv) > 2 else 0
     try:
         emps = empresas()
         por_codigo = {e["cod_cvm"]: e for e in emps}
-        dados = consultar([e["cod_cvm"] for e in emps], dias)
+        dados = consultar([e["cod_cvm"] for e in emps], dias, ate_atras)
         print(json.dumps({"ok": True, "docs": parsear(dados, por_codigo)}, ensure_ascii=False))
     except Exception as e:
         print(json.dumps({"ok": False, "docs": [], "erro": str(e)[:200]}, ensure_ascii=False))

@@ -1,0 +1,38 @@
+{
+ "empresa": "ANIMA HOLDING S.A.",
+ "tipo_form": "Individual",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 26008600.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 26008600.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "ANIMA HOLDING S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "ANIM3",
+ "nome": "Anima",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/06/2026 19:13",
+ "versao": "1",
+ "protocolo": "1533352",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1533352",
+ "pdf": "ANIM3_2026-05_individual_v1.pdf"
+}

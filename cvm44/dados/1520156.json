@@ -1,0 +1,345 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 201907636.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "CONTRATO  DE SWAP",
+     "dia": "28",
+     "quantidade": 85908.0,
+     "preco": 12.39,
+     "volume": 1064400.12
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "CONTRATO  DE SWAP",
+     "dia": "28",
+     "quantidade": 85908.0,
+     "preco": 12.39,
+     "volume": 1064400.12
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "CONTRATO  DE SWAP",
+     "dia": "28",
+     "quantidade": 85908.0,
+     "preco": 12.39,
+     "volume": 1064400.12
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual Santander",
+     "operacao": "CONTRATO  DE SWAP",
+     "dia": "28",
+     "quantidade": 85908.0,
+     "preco": 12.39,
+     "volume": 1064400.12
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "1",
+     "quantidade": 1270006.0,
+     "preco": 11.69,
+     "volume": 14846370.14
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "2",
+     "quantidade": 413802.0,
+     "preco": 14.11,
+     "volume": 5838746.22
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "6",
+     "quantidade": 649739.0,
+     "preco": 10.68,
+     "volume": 6939212.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "7",
+     "quantidade": 472300.0,
+     "preco": 10.26,
+     "volume": 4845798.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "8",
+     "quantidade": 574150.0,
+     "preco": 17.62,
+     "volume": 10116523.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "9",
+     "quantidade": 96012.0,
+     "preco": 16.05,
+     "volume": 1540992.6
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e Valores",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "10",
+     "quantidade": 1223940.0,
+     "preco": 15.98,
+     "volume": 19558561.2
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Mobiliários S.A Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "13",
+     "quantidade": 96844.0,
+     "preco": 13.07,
+     "volume": 1265751.08
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "14",
+     "quantidade": 26508.0,
+     "preco": 18.91,
+     "volume": 501266.28
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "15",
+     "quantidade": 177425.0,
+     "preco": 12.65,
+     "volume": 2244426.25
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "16",
+     "quantidade": 5648200.0,
+     "preco": 12.35,
+     "volume": 69755270.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Contratação de  empréstimo (tomador)",
+     "dia": "17",
+     "quantidade": 315498.0,
+     "preco": 25.0,
+     "volume": 7887450.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "20",
+     "quantidade": 552535.0,
+     "preco": 12.38,
+     "volume": 6840383.3
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "22",
+     "quantidade": 12140834.0,
+     "preco": 12.65,
+     "volume": 153581550.1
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "23",
+     "quantidade": 2163257.0,
+     "preco": 13.3,
+     "volume": 28771318.1
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "27",
+     "quantidade": 2551.0,
+     "preco": 13.15,
+     "volume": 33545.65
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "29",
+     "quantidade": 886000.0,
+     "preco": 11.75,
+     "volume": 10410500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "30",
+     "quantidade": 600.0,
+     "preco": 12.39,
+     "volume": 7434.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 195987995.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 343632.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 85876.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desligamento/  saída",
+     "dia": "30",
+     "quantidade": 6041.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 79835.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 134331.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 134331.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": false,
+   "saldo_inicial": [],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ELEIÇÃO DE CONSELHO FISCAL",
+     "dia": "30",
+     "quantidade": 1032.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1032.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Consolidada",
+ "entrega": "11/05/2026 19:24",
+ "versao": "1",
+ "protocolo": "1520156",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1520156",
+ "pdf": "HAPV3_2026-04_consolidado_v1.pdf"
+}

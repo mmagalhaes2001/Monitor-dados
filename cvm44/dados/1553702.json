@@ -1,0 +1,212 @@
+{
+ "empresa": "LWSA S/A",
+ "tipo_form": "Consolidado",
+ "ref": "07/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160282752.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160282752.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 10470965.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 10470965.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5261832.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 10000.0,
+     "preco": 4.17,
+     "volume": 41700.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Venda à vista",
+     "dia": "3",
+     "quantidade": 5000.0,
+     "preco": 4.17,
+     "volume": 20850.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "6",
+     "quantidade": 43200.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 10000.0,
+     "preco": 4.05,
+     "volume": 40500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Venda à vista",
+     "dia": "14",
+     "quantidade": 4000.0,
+     "preco": 4.01,
+     "volume": 16040.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Venda à vista",
+     "dia": "16",
+     "quantidade": 4000.0,
+     "preco": 4.0,
+     "volume": 16000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "21",
+     "quantidade": 62124.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "6",
+     "quantidade": 62468.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Venda à vista",
+     "dia": "24",
+     "quantidade": 28800.0,
+     "preco": 3.67,
+     "volume": 105696.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Venda à vista",
+     "dia": "28",
+     "quantidade": 33000.0,
+     "preco": 3.75,
+     "volume": 123750.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "9",
+     "quantidade": 23976.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "6",
+     "quantidade": 56612.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "3",
+     "quantidade": 61969.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5477381.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "LWSA3",
+ "nome": "LWSA",
+ "tipo": "Posição Consolidada",
+ "entrega": "06/08/2026 18:35",
+ "versao": "1",
+ "protocolo": "1553702",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1553702",
+ "pdf": "LWSA3_2026-07_consolidado_v1.pdf"
+}

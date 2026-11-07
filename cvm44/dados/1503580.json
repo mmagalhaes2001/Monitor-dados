@@ -1,0 +1,89 @@
+{
+ "empresa": "VITRU EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "03/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5305256.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5305256.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 972980.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 972980.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  }
+ ],
+ "ticker": "VTRU3",
+ "nome": "Vitru",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/04/2026 16:18",
+ "versao": "1",
+ "protocolo": "1503580",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1503580",
+ "pdf": "VTRU3_2026-03_consolidado_v1.pdf"
+}

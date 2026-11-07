@@ -1,0 +1,133 @@
+{
+ "empresa": "Intelbras S.A. Ind. de Telecomunicação Eletrônica Brasileira",
+ "tipo_form": "Consolidado",
+ "ref": "08/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 210589053.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos e Corretora de  Valores Mobiliários S.A",
+     "operacao": "Compra à  vista",
+     "dia": "3",
+     "quantidade": 856.0,
+     "preco": 14.68186,
+     "volume": 12567.67
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos e Corretora de  Valores Mobiliários S.A",
+     "operacao": "Venda à vista",
+     "dia": "6",
+     "quantidade": 856.0,
+     "preco": 15.12687,
+     "volume": 12948.6
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos e Corretora de  Valores Mobiliários S.A",
+     "operacao": "Compra à  vista",
+     "dia": "21",
+     "quantidade": 1500.0,
+     "preco": 14.56,
+     "volume": 21840.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos e Corretora de  Valores Mobiliários S.A",
+     "operacao": "Venda à vista",
+     "dia": "21",
+     "quantidade": 1200.0,
+     "preco": 13.81,
+     "volume": 16572.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 210589353.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2420353.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "20",
+     "quantidade": 4500.0,
+     "preco": 13.36889,
+     "volume": 60160.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2424853.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 371054.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 371054.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "INTB3",
+ "nome": "Intelbras",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/09/2026 20:12",
+ "versao": "1",
+ "protocolo": "1567147",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1567147",
+ "pdf": "INTB3_2026-08_consolidado_v1.pdf"
+}

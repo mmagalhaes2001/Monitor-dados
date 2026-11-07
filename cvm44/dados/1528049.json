@@ -1,0 +1,49 @@
+{
+ "empresa": "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A.",
+ "tipo_form": "Individual",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3386123.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "PEDIDO  JUDICIAL",
+     "dia": "24",
+     "quantidade": 717.0,
+     "preco": 1.82943,
+     "volume": 1311.7
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3385406.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "QUALICORP S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "QUAL3",
+ "nome": "Qualicorp",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "28/05/2026 17:37",
+ "versao": "2",
+ "protocolo": "1528049",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1528049",
+ "pdf": "QUAL3_2026-04_individual_v2.pdf"
+}

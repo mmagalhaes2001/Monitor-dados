@@ -1,0 +1,130 @@
+{
+ "empresa": "FLEURY S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86851461.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 15100.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 14800.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 300.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "13",
+     "quantidade": 14800.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "15",
+     "quantidade": 14800.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86851461.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2464910.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2464910.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  }
+ ],
+ "ticker": "FLRY3",
+ "nome": "Fleury",
+ "tipo": "Posição Consolidada",
+ "entrega": "23/08/2026 23:48",
+ "versao": "2",
+ "protocolo": "1560523",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1560523",
+ "pdf": "FLRY3_2026-04_consolidado_v2.pdf"
+}

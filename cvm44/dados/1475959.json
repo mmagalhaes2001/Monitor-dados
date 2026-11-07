@@ -1,0 +1,162 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "01/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1088604826.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1088604826.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20555576.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20555576.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4958744.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "DEVOLUÇÃ O DE AÇÕES DO PLANO  DE REMUNERA ÇÃO",
+     "dia": "9",
+     "quantidade": 76239.0,
+     "preco": 41.19,
+     "volume": 3140284.41
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4882505.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/02/2026 19:02",
+ "versao": "1",
+ "protocolo": "1475959",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475959",
+ "pdf": "RDOR3_2026-01_consolidado_v1.pdf"
+}

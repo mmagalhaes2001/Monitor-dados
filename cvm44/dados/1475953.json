@@ -1,0 +1,49 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Individual",
+ "ref": "01/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 82882567.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "DEVOLUÇÃ O DE AÇÕES DO PLANO  DE REMUNERA ÇÃO",
+     "dia": "9",
+     "quantidade": 89288.0,
+     "preco": 41.19,
+     "volume": 3677772.72
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 82971855.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Rede Dor São Luiz S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/02/2026 19:01",
+ "versao": "1",
+ "protocolo": "1475953",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475953",
+ "pdf": "RDOR3_2026-01_individual_v1.pdf"
+}

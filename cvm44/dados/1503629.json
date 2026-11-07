@@ -1,0 +1,59 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Individual",
+ "ref": "03/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 27800813.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S.A",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "6",
+     "quantidade": -217984.0,
+     "preco": -12.72055,
+     "volume": 2772875.98
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S.A",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "12",
+     "quantidade": -12084.0,
+     "preco": -14.73,
+     "volume": 177997.32
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 27570745.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Hapvida Participações e Investimentos S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/04/2026 17:17",
+ "versao": "1",
+ "protocolo": "1503629",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1503629",
+ "pdf": "HAPV3_2026-03_individual_v1.pdf"
+}

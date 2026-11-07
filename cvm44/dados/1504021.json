@@ -1,0 +1,239 @@
+{
+ "empresa": "TOTVS S.A.",
+ "tipo_form": "Individual",
+ "ref": "03/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 14527123.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "2",
+     "quantidade": 500000.0,
+     "preco": 37.29236,
+     "volume": 18646181.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "3",
+     "quantidade": 600000.0,
+     "preco": 36.27845,
+     "volume": 21767068.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "4",
+     "quantidade": 500000.0,
+     "preco": 37.1788,
+     "volume": 18589399.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "5",
+     "quantidade": 250000.0,
+     "preco": 36.7096,
+     "volume": 9177400.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "6",
+     "quantidade": 250000.0,
+     "preco": 36.48145,
+     "volume": 9120363.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "9",
+     "quantidade": 250000.0,
+     "preco": 36.0513,
+     "volume": 9012825.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "10",
+     "quantidade": 82200.0,
+     "preco": 36.78955,
+     "volume": 3024101.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "11",
+     "quantidade": 200.0,
+     "preco": 37.0,
+     "volume": 7400.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "12",
+     "quantidade": 400000.0,
+     "preco": 36.132,
+     "volume": 14452800.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "13",
+     "quantidade": 400000.0,
+     "preco": 34.94192,
+     "volume": 13976768.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "16",
+     "quantidade": 250000.0,
+     "preco": 35.1483,
+     "volume": 8787075.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 250000.0,
+     "preco": 34.9766,
+     "volume": 8744150.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "23",
+     "quantidade": 19300.0,
+     "preco": 34.84658,
+     "volume": 672539.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "24",
+     "quantidade": 250000.0,
+     "preco": 34.88051,
+     "volume": 8720127.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 250000.0,
+     "preco": 35.3526,
+     "volume": 8838150.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "26",
+     "quantidade": 250000.0,
+     "preco": 34.74082,
+     "volume": 8685205.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "27",
+     "quantidade": 250000.0,
+     "preco": 34.26165,
+     "volume": 8565412.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "30",
+     "quantidade": 250000.0,
+     "preco": 34.10057,
+     "volume": 8525142.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista ACOES RESTRITAS",
+     "dia": "31",
+     "quantidade": 25100.0,
+     "preco": 34.2477,
+     "volume": 859617.27
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "16",
+     "quantidade": 585.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19553338.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TOTVS S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "TOTS3",
+ "nome": "Totvs",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/04/2026 18:45",
+ "versao": "1",
+ "protocolo": "1504021",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1504021",
+ "pdf": "TOTS3_2026-03_individual_v1.pdf"
+}

@@ -1,0 +1,566 @@
+{
+ "empresa": "Raia Drogasil S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "02/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 432276131.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLX180",
+     "quantidade": -223000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra FCA",
+     "quantidade": -3710140.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda FPA",
+     "quantidade": 3710140.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLD257",
+     "quantidade": -2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLF234",
+     "quantidade": 2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLE275",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLK285",
+     "quantidade": 66620.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLE272",
+     "quantidade": 1732100.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLH275",
+     "quantidade": 1732100.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLP230",
+     "quantidade": 2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLR227",
+     "quantidade": -2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLQ240",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLW240",
+     "quantidade": 1665500.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLQ26",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLT261",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLD288",
+     "quantidade": -1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLI265",
+     "quantidade": -1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLP256",
+     "quantidade": 1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLU245",
+     "quantidade": 1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLQ272",
+     "quantidade": 500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLL205",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 35636.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 50661.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 51385.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "4",
+     "quantidade": 313060.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "25",
+     "quantidade": 18373.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "4",
+     "quantidade": 49577.0,
+     "preco": 0.01611,
+     "volume": 798.66
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "5",
+     "quantidade": 313060.0,
+     "preco": 0.01706,
+     "volume": 5341.71
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "6",
+     "quantidade": 38.0,
+     "preco": 0.00447,
+     "volume": 0.17
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "9",
+     "quantidade": 5.0,
+     "preco": 0.004,
+     "volume": 0.02
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "10",
+     "quantidade": 311057.0,
+     "preco": 0.00141,
+     "volume": 438.27
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "11",
+     "quantidade": 6.0,
+     "preco": 0.005,
+     "volume": 0.03
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "18",
+     "quantidade": 40651.0,
+     "preco": 0.01364,
+     "volume": 554.65
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "20",
+     "quantidade": 81.0,
+     "preco": 0.01049,
+     "volume": 0.85
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "26",
+     "quantidade": 18462.0,
+     "preco": 0.01358,
+     "volume": 250.71
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 432815317.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLX180",
+     "quantidade": -223000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra FCA",
+     "quantidade": -3710140.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda FPA",
+     "quantidade": 3710140.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLD257",
+     "quantidade": -2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLF234",
+     "quantidade": 2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLE275",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLK285",
+     "quantidade": 66620.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLE272",
+     "quantidade": 1732100.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLH275",
+     "quantidade": 1732100.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLP230",
+     "quantidade": 2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLR227",
+     "quantidade": -2500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLQ240",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLW240",
+     "quantidade": 1665500.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLQ26",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLT261",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLD288",
+     "quantidade": -1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLI265",
+     "quantidade": -1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLP256",
+     "quantidade": 1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLU245",
+     "quantidade": 1000000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda RADLQ272",
+     "quantidade": 500000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra RADLL205",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 464248.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 152213.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 616461.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 522777.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 48196.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 48752.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 18562.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 18421.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 53632.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PLANO DE REMUNERA  ÇÃO POR AÇÕES (ILP)",
+     "dia": "27",
+     "quantidade": 22516.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "3",
+     "quantidade": 20100.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Contratação de  empréstimo (locador)",
+     "dia": "6",
+     "quantidade": 300.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "5",
+     "quantidade": 19764.0,
+     "preco": 0.00046,
+     "volume": 9.14
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "9",
+     "quantidade": 300.0,
+     "preco": 0.00243,
+     "volume": 0.73
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 732520.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6904.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6904.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  }
+ ],
+ "ticker": "RADL3",
+ "nome": "Raia Drogasil",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/03/2026 18:17",
+ "versao": "1",
+ "protocolo": "1488303",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488303",
+ "pdf": "RADL3_2026-02_consolidado_v1.pdf"
+}

@@ -1,0 +1,169 @@
+{
+ "empresa": "BEMOBI MOBILE TECH S.A.",
+ "tipo_form": "Individual",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 731942.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "5",
+     "quantidade": -17922.0,
+     "preco": 26.75,
+     "volume": -479413.5
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "6",
+     "quantidade": -3284.0,
+     "preco": 26.87,
+     "volume": -88241.08
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "7",
+     "quantidade": -5417.0,
+     "preco": 25.83,
+     "volume": -139921.11
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "8",
+     "quantidade": -1070.0,
+     "preco": 25.9,
+     "volume": -27713.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "11",
+     "quantidade": -2226.0,
+     "preco": 24.8,
+     "volume": -55204.8
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "12",
+     "quantidade": -84965.0,
+     "preco": -24.9,
+     "volume": 2115628.5
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "13",
+     "quantidade": -30357.0,
+     "preco": 24.85,
+     "volume": -754371.45
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 150000.0,
+     "preco": 24.04,
+     "volume": 3606000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Compra à  vista",
+     "dia": "20",
+     "quantidade": 360000.0,
+     "preco": 25.02,
+     "volume": 9007200.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Compra à  vista",
+     "dia": "21",
+     "quantidade": 258800.0,
+     "preco": 24.98,
+     "volume": 6464824.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Compra à  vista",
+     "dia": "22",
+     "quantidade": 397000.0,
+     "preco": 24.77,
+     "volume": 9833690.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 397000.0,
+     "preco": 25.69,
+     "volume": 10198930.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Compra à  vista",
+     "dia": "26",
+     "quantidade": 200000.0,
+     "preco": 25.6,
+     "volume": 5120000.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2349501.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "BEMOBI MOBILE TECH S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "BMOB3",
+ "nome": "Bemobi",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "03/07/2026 19:12",
+ "versao": "2",
+ "protocolo": "1541858",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1541858",
+ "pdf": "BMOB3_2026-05_individual_v2.pdf"
+}

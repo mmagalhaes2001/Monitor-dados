@@ -1,0 +1,137 @@
+{
+ "empresa": "VITRU EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6278236.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 2.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desligamento/  saída",
+     "dia": "6",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Posse",
+     "dia": "6",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desligamento/  saída",
+     "dia": "6",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6278236.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 2.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": false,
+   "saldo_inicial": [],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Posse",
+     "dia": "6",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "VTRU3",
+ "nome": "Vitru",
+ "tipo": "Posição Consolidada",
+ "entrega": "08/06/2026 16:32",
+ "versao": "1",
+ "protocolo": "1531734",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1531734",
+ "pdf": "VTRU3_2026-05_consolidado_v1.pdf"
+}

@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Conselho Administração",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -21,10 +20,12 @@
      "caracteristica": "ON",
      "quantidade": 2463371.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   },
   {
-   "pagina": 3,
    "orgao": "Diretoria",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -41,10 +42,12 @@
      "caracteristica": "ON",
      "quantidade": 1752049.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
   },
   {
-   "pagina": 4,
    "orgao": "Conselho Fiscal",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -61,7 +64,10 @@
      "caracteristica": "ON",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
   }
  ],
  "ticker": "QUAL3",

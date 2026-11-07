@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Companhia (cia, controladas e coligadas)",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -19,7 +18,7 @@
      "ativo": "Ações",
      "caracteristica": "ON",
      "intermediario": "",
-     "operacao": "PLANO DE REMUNERAÇÃO",
+     "operacao": "PLANO DE  REMUNERAÇÃO",
      "dia": "17",
      "quantidade": 21300.0,
      "preco": 0.01,
@@ -32,7 +31,11 @@
      "caracteristica": "ON",
      "quantidade": 25987300.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2,
+   "entidade": "ANIMA HOLDING S.A. - Companhia - Tesouraria"
   }
  ],
  "ticker": "ANIM3",

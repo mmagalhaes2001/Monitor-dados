@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Controlador",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -21,10 +20,12 @@
      "caracteristica": "ON",
      "quantidade": 1066168341.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   },
   {
-   "pagina": 3,
    "orgao": "Conselho Administração",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -35,7 +36,7 @@
     },
     {
      "ativo": "Outros",
-     "caracteristica": "POSSE DO CONSELHO ADMINISTRATIVO",
+     "caracteristica": "",
      "quantidade": 0.0
     }
    ],
@@ -48,13 +49,15 @@
     },
     {
      "ativo": "Outros",
-     "caracteristica": "POSSE DO CONSELHO ADMINISTRATIVO",
+     "caracteristica": "",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
   },
   {
-   "pagina": 4,
    "orgao": "Diretoria",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -65,7 +68,7 @@
     },
     {
      "ativo": "Debêntures",
-     "caracteristica": "LASTRO OPERACAO COMPROMISSADA",
+     "caracteristica": "",
      "quantidade": 0.0
     }
    ],
@@ -78,13 +81,15 @@
     },
     {
      "ativo": "Debêntures",
-     "caracteristica": "LASTRO OPERACAO COMPROMISSADA",
+     "caracteristica": "",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
   },
   {
-   "pagina": 5,
    "orgao": "Órgãos Técnicos ou Consultivos",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -101,7 +106,10 @@
      "caracteristica": "ON",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
   }
  ],
  "ticker": "DASA3",

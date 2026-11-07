@@ -1,0 +1,48 @@
+{
+ "empresa": "TELEFÔNICA BRASIL S.A",
+ "tipo_form": "Individual",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 30940270.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "PN",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 30940270.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "PN",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TELEFÔNICA BRASIL S.A - Saldo Inicial"
+  }
+ ],
+ "ticker": "VIVT3",
+ "nome": "Vivo",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/06/2026 18:00",
+ "versao": "1",
+ "protocolo": "1532503",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1532503",
+ "pdf": "VIVT3_2026-05_individual_v1.pdf"
+}

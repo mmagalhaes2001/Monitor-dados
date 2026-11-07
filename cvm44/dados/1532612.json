@@ -1,0 +1,183 @@
+{
+ "empresa": "TOTVS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 51466504.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 95944.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 2927.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 2927.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 2927.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 51571229.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2217861.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 64843.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 56386.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 56386.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "7",
+     "quantidade": 56386.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI",
+     "dia": "7",
+     "quantidade": 293195.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "A Contratação de  empréstimo (locador)",
+     "dia": "18",
+     "quantidade": 1150418.0,
+     "preco": 31.29,
+     "volume": 35996579.22
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1594639.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "TOTS3",
+ "nome": "Totvs",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/06/2026 18:19",
+ "versao": "1",
+ "protocolo": "1532612",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1532612",
+ "pdf": "TOTS3_2026-05_consolidado_v1.pdf"
+}

@@ -1,0 +1,49 @@
+{
+ "empresa": "FLEURY S.A.",
+ "tipo_form": "Individual",
+ "ref": "02/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2175555.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "S",
+     "operacao": "PROGRAMA DE REMUNERA ÇÃO DE  LONGO PRAZO DOS EXECUTIVO",
+     "dia": "13",
+     "quantidade": 909509.0,
+     "preco": 16.87,
+     "volume": 15343416.83
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1266046.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "FLEURY S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "FLRY3",
+ "nome": "Fleury",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/03/2026 18:39",
+ "versao": "1",
+ "protocolo": "1488362",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488362",
+ "pdf": "FLRY3_2026-02_individual_v1.pdf"
+}

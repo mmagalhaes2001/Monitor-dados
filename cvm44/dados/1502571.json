@@ -1,0 +1,59 @@
+{
+ "empresa": "SER EDUCACIONAL S.A.",
+ "tipo_form": "Individual",
+ "ref": "03/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1106923.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "PAGAMENT O DE REMUNERA ÇÃO DE INCENTIVO DE LONGO PRAZO",
+     "dia": "23",
+     "quantidade": 330925.0,
+     "preco": 11.78494,
+     "volume": 3899931.68
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "PAGAMENT O DE REMUNERA ÇÃO DE INCENTIVO DE LONGO PRAZO",
+     "dia": "24",
+     "quantidade": 17175.0,
+     "preco": 11.78467,
+     "volume": 202401.78
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 758823.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "SER EDUCACIONAL S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "SEER3",
+ "nome": "Ser Educacional",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/04/2026 18:12",
+ "versao": "1",
+ "protocolo": "1502571",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1502571",
+ "pdf": "SEER3_2026-03_individual_v1.pdf"
+}

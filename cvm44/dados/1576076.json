@@ -4,7 +4,6 @@
  "ref": "07/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Controlador",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -23,8 +22,8 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "Banco BTG Pactual",
-     "operacao": "RECEBIMENTO DE AÇÕES POR LIQUIDAÇÃO DO SWAP",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
      "preco": 10.6,
@@ -32,8 +31,8 @@
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "SWAP LIQUIDACAO FISICA",
-     "intermediario": "Banco BTG Pactual",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
      "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
@@ -43,8 +42,8 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "Banco BTG Pactual",
-     "operacao": "RECEBIMENTO DE AÇÕES POR LIQUIDAÇÃO DO SWAP",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
      "preco": 10.6,
@@ -52,8 +51,8 @@
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "SWAP LIQUIDACAO FISICA",
-     "intermediario": "Banco BTG Pactual",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
      "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
@@ -63,8 +62,8 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "Banco BTG Pactual",
-     "operacao": "RECEBIMENTO DE AÇÕES POR LIQUIDAÇÃO DO SWAP",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
      "preco": 10.6,
@@ -72,8 +71,8 @@
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "SWAP LIQUIDACAO FISICA",
-     "intermediario": "Banco BTG Pactual",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
      "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
@@ -83,8 +82,8 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "Banco BTG Pactual",
-     "operacao": "RECEBIMENTO DE AÇÕES POR LIQUIDAÇÃO DO SWAP",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
      "preco": 10.6,
@@ -92,8 +91,8 @@
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "SWAP LIQUIDACAO FISICA",
-     "intermediario": "Banco BTG Pactual",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
      "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
      "dia": "28",
      "quantidade": 87705.0,
@@ -112,10 +111,12 @@
      "caracteristica": "SWAP LIQUIDACAO FISICA",
      "quantidade": 39387576.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   },
   {
-   "pagina": 3,
    "orgao": "Conselho Administração",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -132,10 +133,12 @@
      "caracteristica": "ON",
      "quantidade": 78328.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
   },
   {
-   "pagina": 4,
    "orgao": "Diretoria",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -253,10 +256,12 @@
      "caracteristica": "ON",
      "quantidade": 152392.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
   },
   {
-   "pagina": 5,
    "orgao": "Conselho Fiscal",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -273,10 +278,12 @@
      "caracteristica": "ON",
      "quantidade": 1032.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
   },
   {
-   "pagina": 6,
    "orgao": "Órgãos Técnicos ou Consultivos",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -293,7 +300,10 @@
      "caracteristica": "ON",
      "quantidade": 1507.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 6
   }
  ],
  "ticker": "HAPV3",

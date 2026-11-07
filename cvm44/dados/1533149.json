@@ -1,0 +1,245 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 196331627.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "SWAP LIQUIDACAO FISICA",
+     "quantidade": 40431368.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "4",
+     "quantidade": 4002.0,
+     "preco": 11.5,
+     "volume": 46023.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "6",
+     "quantidade": 24280.0,
+     "preco": 11.91,
+     "volume": 289174.8
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "7",
+     "quantidade": 1081246.0,
+     "preco": 11.85,
+     "volume": 12812765.1
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Devolução de empréstimo (tomador)",
+     "dia": "11",
+     "quantidade": 2161.0,
+     "preco": 11.44,
+     "volume": 24721.84
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "LIQUIDACAO",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃ O PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "RECEBIMEN TO DE AÇÕES POR LIQUIDAÇÃ O DO SWAP",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "LIQUIDACAO",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃ O PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "RECEBIMEN TO DE AÇÕES POR LIQUIDAÇÃ O DO SWAP",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "LIQUIDACAO",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃ O PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "RECEBIMEN TO DE AÇÕES POR LIQUIDAÇÃ",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "LIQUIDACAO",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "O DO SWAP LIQUIDAÇÃ O PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "RECEBIMEN TO DE AÇÕES POR LIQUIDAÇÃ O DO SWAP",
+     "dia": "28",
+     "quantidade": 84203.0,
+     "preco": 12.48,
+     "volume": 1050853.44
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 195556750.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "SWAP LIQUIDACAO FISICA",
+     "quantidade": 40094556.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 79835.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desligamento/  saída",
+     "dia": "26",
+     "quantidade": 1507.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 78328.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 134331.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 134331.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1032.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1032.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/06/2026 18:02",
+ "versao": "1",
+ "protocolo": "1533149",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1533149",
+ "pdf": "HAPV3_2026-05_consolidado_v1.pdf"
+}

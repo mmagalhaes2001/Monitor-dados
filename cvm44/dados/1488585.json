@@ -1,0 +1,49 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Individual",
+ "ref": "02/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 82971855.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à  vista",
+     "dia": "26",
+     "quantidade": 3805000.0,
+     "preco": 41.59537,
+     "volume": 158270386.37
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86776855.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Rede Dor São Luiz S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/03/2026 22:00",
+ "versao": "1",
+ "protocolo": "1488585",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488585",
+ "pdf": "RDOR3_2026-02_individual_v1.pdf"
+}

@@ -1,0 +1,69 @@
+{
+ "empresa": "TOTVS S.A.",
+ "tipo_form": "Individual",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19553338.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "10",
+     "quantidade": 250000.0,
+     "preco": 33.7981,
+     "volume": 8449525.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista ACOES",
+     "dia": "13",
+     "quantidade": 10700.0,
+     "preco": 33.48748,
+     "volume": 358316.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "14",
+     "quantidade": 25579.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19788459.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TOTVS S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "TOTS3",
+ "nome": "Totvs",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/05/2026 18:04",
+ "versao": "1",
+ "protocolo": "1519040",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519040",
+ "pdf": "TOTS3_2026-04_individual_v1.pdf"
+}

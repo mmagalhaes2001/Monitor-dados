@@ -1,0 +1,129 @@
+{
+ "empresa": "FLEURY S.A.",
+ "tipo_form": "Individual",
+ "ref": "03/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1266046.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "11",
+     "quantidade": 150900.0,
+     "preco": 16.19134,
+     "volume": 2443273.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "12",
+     "quantidade": 285000.0,
+     "preco": 15.79037,
+     "volume": 4500255.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "13",
+     "quantidade": 200500.0,
+     "preco": 15.53097,
+     "volume": 3113959.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "16",
+     "quantidade": 275000.0,
+     "preco": 15.60719,
+     "volume": 4291976.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 195100.0,
+     "preco": 15.58032,
+     "volume": 3039720.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 214000.0,
+     "preco": 15.18348,
+     "volume": 3249264.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "20",
+     "quantidade": 509500.0,
+     "preco": 15.01311,
+     "volume": 7649181.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "23",
+     "quantidade": 279000.0,
+     "preco": 15.47822,
+     "volume": 4318422.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "UBS",
+     "operacao": "Compra à  vista",
+     "dia": "18",
+     "quantidade": 191000.0,
+     "preco": 15.43497,
+     "volume": 2948079.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3566046.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "FLEURY S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "FLRY3",
+ "nome": "Fleury",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/04/2026 19:58",
+ "versao": "1",
+ "protocolo": "1504104",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1504104",
+ "pdf": "FLRY3_2026-03_individual_v1.pdf"
+}

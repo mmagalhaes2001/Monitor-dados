@@ -1,0 +1,49 @@
+{
+ "empresa": "TOTVS S.A.",
+ "tipo_form": "Individual",
+ "ref": "01/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 11758500.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "ACOES RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI A",
+     "dia": "9",
+     "quantidade": 5696.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 11752804.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TOTVS S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "TOTS3",
+ "nome": "Totvs",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/02/2026 18:15",
+ "versao": "1",
+ "protocolo": "1475054",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475054",
+ "pdf": "TOTS3_2026-01_individual_v1.pdf"
+}

@@ -1,0 +1,100 @@
+{
+ "empresa": "VITRU EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "01/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5305256.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5305256.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 972980.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desligamento/  saída",
+     "dia": "5",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 972980.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  }
+ ],
+ "ticker": "VTRU3",
+ "nome": "Vitru",
+ "tipo": "Posição Consolidada",
+ "entrega": "06/02/2026 10:14",
+ "versao": "1",
+ "protocolo": "1474129",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1474129",
+ "pdf": "VTRU3_2026-01_consolidado_v1.pdf"
+}

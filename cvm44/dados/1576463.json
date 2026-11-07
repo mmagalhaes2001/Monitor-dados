@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Conselho Administração",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -14,8 +13,8 @@
      "quantidade": 86865536.0
     },
     {
-     "ativo": "Recibo de Subscrição",
-     "caracteristica": "FLRY9",
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
      "quantidade": 0.0
     }
    ],
@@ -27,14 +26,16 @@
      "quantidade": 86865536.0
     },
     {
-     "ativo": "Recibo de Subscrição",
-     "caracteristica": "FLRY9",
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   },
   {
-   "pagina": 3,
    "orgao": "Diretoria",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -44,8 +45,8 @@
      "quantidade": 2345177.0
     },
     {
-     "ativo": "Recibo de Subscrição",
-     "caracteristica": "FLRY9",
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
      "quantidade": 0.0
     }
    ],
@@ -98,11 +99,14 @@
      "quantidade": 2220177.0
     },
     {
-     "ativo": "Recibo de Subscrição",
-     "caracteristica": "FLRY9",
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
   }
  ],
  "ticker": "FLRY3",

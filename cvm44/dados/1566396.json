@@ -1,0 +1,169 @@
+{
+ "empresa": "TOTVS S.A.",
+ "tipo_form": "Individual",
+ "ref": "08/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 29196078.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "CANCELAM ENTO DE  ACOES EM RCA ACOES",
+     "dia": "4",
+     "quantidade": 20000000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "RESTRITAS DECORREN TES DO PLANO DE REMUNERA CAO DA COMPANHI",
+     "dia": "13",
+     "quantidade": 4881.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "A Compra à  vista",
+     "dia": "14",
+     "quantidade": 461500.0,
+     "preco": 29.54051,
+     "volume": 13632946.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 405500.0,
+     "preco": 30.39077,
+     "volume": 12323456.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e Valores Mobiliários",
+     "operacao": "Compra à  vista",
+     "dia": "18",
+     "quantidade": 86100.0,
+     "preco": 30.69799,
+     "volume": 2643097.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e Valores Mobiliários",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 122700.0,
+     "preco": 31.99283,
+     "volume": 3925520.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e Valores Mobiliários",
+     "operacao": "Compra à  vista",
+     "dia": "20",
+     "quantidade": 500000.0,
+     "preco": 31.43738,
+     "volume": 15718688.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "21",
+     "quantidade": 400000.0,
+     "preco": 32.15462,
+     "volume": 12861849.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "24",
+     "quantidade": 500000.0,
+     "preco": 31.96012,
+     "volume": 15980061.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e Valores Mobiliários",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 400000.0,
+     "preco": 32.5839,
+     "volume": 13033558.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "26",
+     "quantidade": 415000.0,
+     "preco": 32.82503,
+     "volume": 13622388.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "27",
+     "quantidade": 800.0,
+     "preco": 32.47,
+     "volume": 25976.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "31",
+     "quantidade": 54100.0,
+     "preco": 34.76261,
+     "volume": 1880657.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 12536897.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TOTVS S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "TOTS3",
+ "nome": "Totvs",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/09/2026 19:07",
+ "versao": "1",
+ "protocolo": "1566396",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566396",
+ "pdf": "TOTS3_2026-08_individual_v1.pdf"
+}

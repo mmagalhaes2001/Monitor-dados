@@ -1,0 +1,382 @@
+{
+ "empresa": "HYPERA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 380083623.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra ACOES ORDINARIAS",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda ACOES ORDINARIAS",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "ACOES DA CIA COM LIQ",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú BBA",
+     "operacao": "Compra à  vista",
+     "dia": "2",
+     "quantidade": 64800.0,
+     "preco": 22.8516,
+     "volume": 1480783.68
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú BBA",
+     "operacao": "Compra à  vista",
+     "dia": "6",
+     "quantidade": 144500.0,
+     "preco": 22.8692,
+     "volume": 3304599.4
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú BBA",
+     "operacao": "Compra à  vista",
+     "dia": "7",
+     "quantidade": 5895900.0,
+     "preco": 22.7073,
+     "volume": 133879970.07
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "7",
+     "quantidade": 1500000.0,
+     "preco": 22.85,
+     "volume": 34275000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à  vista",
+     "dia": "7",
+     "quantidade": 500000.0,
+     "preco": 22.9,
+     "volume": 11450000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú BBA",
+     "operacao": "Compra à  vista",
+     "dia": "29",
+     "quantidade": 764000.0,
+     "preco": 22.7801,
+     "volume": 17403996.4
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "29",
+     "quantidade": 700000.0,
+     "preco": 22.8,
+     "volume": 15960000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú BBA",
+     "operacao": "Compra à  vista",
+     "dia": "30",
+     "quantidade": 698200.0,
+     "preco": 22.8881,
+     "volume": 15980471.42
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 390351023.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra ACOES ORDINARIAS",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda ACOES ORDINARIAS",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "ACOES DA CIA COM LIQ",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2506.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2506.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2343455.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "ACOES DA CIA COM LIQ",
+     "quantidade": 160000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "HYPE1 AUMENTO DE",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "1",
+     "quantidade": 21568.0,
+     "preco": 19.55,
+     "volume": 421654.4
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "1",
+     "quantidade": 4310.0,
+     "preco": 19.55,
+     "volume": 84260.5
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "1",
+     "quantidade": 4538.0,
+     "preco": 19.55,
+     "volume": 88717.9
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "10",
+     "quantidade": 37000.0,
+     "preco": 32.51,
+     "volume": 1202870.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "1",
+     "quantidade": 3975.0,
+     "preco": 19.55,
+     "volume": 77711.25
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "10",
+     "quantidade": 18500.0,
+     "preco": 32.51,
+     "volume": 601435.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "1",
+     "quantidade": 4675.0,
+     "preco": 19.55,
+     "volume": 91396.25
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora",
+     "operacao": "Ações de plano de remuneração",
+     "dia": "10",
+     "quantidade": 18500.0,
+     "preco": 32.51,
+     "volume": 601435.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEA227",
+     "intermediario": "XP  Investimentos",
+     "operacao": "Compra",
+     "dia": "7",
+     "quantidade": 50000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEA272",
+     "intermediario": "XP  Investimentos",
+     "operacao": "Venda",
+     "dia": "7",
+     "quantidade": 100000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEA232",
+     "intermediario": "XP  Investimentos",
+     "operacao": "Compra",
+     "dia": "30",
+     "quantidade": 50000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEA272",
+     "intermediario": "XP  Investimentos",
+     "operacao": "Venda",
+     "dia": "30",
+     "quantidade": 100000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Outros",
+     "caracteristica": "HYPE1 AUMENTO DE",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA227",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA232",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA272",
+     "quantidade": -200000.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 113439.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 113439.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 6
+  }
+ ],
+ "ticker": "HYPE3",
+ "nome": "Hypera",
+ "tipo": "Posição Consolidada",
+ "entrega": "11/05/2026 17:19",
+ "versao": "2",
+ "protocolo": "1519771",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519771",
+ "pdf": "HYPE3_2026-04_consolidado_v2.pdf"
+}

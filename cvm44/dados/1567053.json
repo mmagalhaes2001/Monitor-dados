@@ -1,0 +1,224 @@
+{
+ "empresa": "ANIMA HOLDING S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "08/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 175960954.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "14",
+     "quantidade": 3203600.0,
+     "preco": 2.0577,
+     "volume": 6592041.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 1450000.0,
+     "preco": 2.26138,
+     "volume": 3279000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 2370400.0,
+     "preco": 2.18442,
+     "volume": 5177942.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "20",
+     "quantidade": 580000.0,
+     "preco": 2.21793,
+     "volume": 1286400.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "21",
+     "quantidade": 1083000.0,
+     "preco": 2.3588,
+     "volume": 2554580.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "24",
+     "quantidade": 1932000.0,
+     "preco": 2.45798,
+     "volume": 4748824.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 3350000.0,
+     "preco": 2.6161,
+     "volume": 8763943.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "26",
+     "quantidade": 3496500.0,
+     "preco": 2.7474,
+     "volume": 9606272.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "27",
+     "quantidade": 2800700.0,
+     "preco": 2.80796,
+     "volume": 7864252.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "28",
+     "quantidade": 2866600.0,
+     "preco": 2.74168,
+     "volume": 7859306.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Corretora",
+     "operacao": "Compra à  vista",
+     "dia": "31",
+     "quantidade": 1749000.0,
+     "preco": 2.81506,
+     "volume": 4923545.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Inter",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 7500.0,
+     "preco": 2.65,
+     "volume": 19875.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 200850254.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 230903.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 230903.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 389500.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 389500.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "ANIM3",
+ "nome": "Anima",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/09/2026 18:16",
+ "versao": "1",
+ "protocolo": "1567053",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1567053",
+ "pdf": "ANIM3_2026-08_consolidado_v1.pdf"
+}

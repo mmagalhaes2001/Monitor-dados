@@ -1,0 +1,123 @@
+{
+ "empresa": "YDUQS PARTICIPACOES S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6032441.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Compra à  vista",
+     "dia": "21",
+     "quantidade": 20000.0,
+     "preco": 9.5,
+     "volume": 190000.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6052441.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 564323.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "AQUISIÇÃO MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "13",
+     "quantidade": 94768.0,
+     "preco": 11.83,
+     "volume": 1121105.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "AQUISIÇÃO MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "12",
+     "quantidade": 42679.0,
+     "preco": 11.83,
+     "volume": 504892.57
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "AQUISIÇÃO MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "13",
+     "quantidade": 10256.0,
+     "preco": 11.83,
+     "volume": 121328.48
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 712026.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "YDUQ3",
+ "nome": "Yduqs",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/06/2026 06:19",
+ "versao": "1",
+ "protocolo": "1532095",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1532095",
+ "pdf": "YDUQ3_2026-05_consolidado_v1.pdf"
+}

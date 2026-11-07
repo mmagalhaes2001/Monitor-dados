@@ -4,7 +4,6 @@
  "ref": "10/2026",
  "paginas": [
   {
-   "pagina": 1,
    "orgao": "Controlador",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -21,10 +20,12 @@
      "caracteristica": "ON",
      "quantidade": 75484985.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
   },
   {
-   "pagina": 2,
    "orgao": "Diretoria",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -38,7 +39,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "BTG Pactual CTVM S.A.",
+     "intermediario": "BTG Pactual  CTVM S.A.",
      "operacao": "Venda à vista",
      "dia": "1",
      "quantidade": 1000.0,
@@ -48,7 +49,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "BTG Pactual CTVM S.A.",
+     "intermediario": "BTG Pactual  CTVM S.A.",
      "operacao": "Venda à vista",
      "dia": "1",
      "quantidade": 1000.0,
@@ -58,7 +59,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "BTG Pactual CTVM S.A.",
+     "intermediario": "BTG Pactual  CTVM S.A.",
      "operacao": "Venda à vista",
      "dia": "5",
      "quantidade": 1000.0,
@@ -68,7 +69,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "BTG Pactual CTVM S.A.",
+     "intermediario": "BTG Pactual  CTVM S.A.",
      "operacao": "Venda à vista",
      "dia": "5",
      "quantidade": 1000.0,
@@ -78,7 +79,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "BTG Pactual CTVM S.A.",
+     "intermediario": "BTG Pactual  CTVM S.A.",
      "operacao": "Venda à vista",
      "dia": "6",
      "quantidade": 1000.0,
@@ -88,7 +89,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "BTG Pactual CTVM S.A.",
+     "intermediario": "BTG Pactual  CTVM S.A.",
      "operacao": "Venda à vista",
      "dia": "16",
      "quantidade": 1000.0,
@@ -98,7 +99,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "BTG Pactual CTVM S.A.",
+     "intermediario": "BTG Pactual  CTVM S.A.",
      "operacao": "Venda à vista",
      "dia": "16",
      "quantidade": 500.0,
@@ -112,7 +113,10 @@
      "caracteristica": "ON",
      "quantidade": 1194130.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   }
  ],
  "ticker": "SEER3",

@@ -1,0 +1,169 @@
+{
+ "empresa": "TOTVS S.A.",
+ "tipo_form": "Individual",
+ "ref": "06/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19203278.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "10",
+     "quantidade": 700000.0,
+     "preco": 30.18261,
+     "volume": 21127827.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "11",
+     "quantidade": 650000.0,
+     "preco": 28.98517,
+     "volume": 18840358.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "12",
+     "quantidade": 750000.0,
+     "preco": 29.79028,
+     "volume": 22342707.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "15",
+     "quantidade": 700000.0,
+     "preco": 29.88677,
+     "volume": 20920740.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "16",
+     "quantidade": 700000.0,
+     "preco": 28.62632,
+     "volume": 20038427.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 650000.0,
+     "preco": 28.27624,
+     "volume": 18379553.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "18",
+     "quantidade": 650000.0,
+     "preco": 27.56543,
+     "volume": 17917532.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 500000.0,
+     "preco": 27.05602,
+     "volume": 13528012.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "22",
+     "quantidade": 221800.0,
+     "preco": 27.25,
+     "volume": 6044050.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "23",
+     "quantidade": 471000.0,
+     "preco": 27.62057,
+     "volume": 13009287.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "24",
+     "quantidade": 450000.0,
+     "preco": 27.50155,
+     "volume": 12375699.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 275000.0,
+     "preco": 27.33581,
+     "volume": 7517347.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual Corretora de Valores",
+     "operacao": "Compra à  vista",
+     "dia": "30",
+     "quantidade": 285500.0,
+     "preco": 28.76032,
+     "volume": 8211072.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 26206578.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TOTVS S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "TOTS3",
+ "nome": "Totvs",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/07/2026 18:14",
+ "versao": "1",
+ "protocolo": "1543154",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1543154",
+ "pdf": "TOTS3_2026-06_individual_v1.pdf"
+}

@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Controlador",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -14,18 +13,18 @@
      "quantidade": 402359523.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "OPCOES DE COMPRA DE ACOES ORDINARIAS HYPE3",
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
      "quantidade": 0.0
     },
     {
-     "ativo": "Opção de Venda",
-     "caracteristica": "OPCOES DE VENDA DE ACOES ORDINARIAS HYPE3",
+     "ativo": "Opção",
+     "caracteristica": "de Venda",
      "quantidade": 0.0
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
+     "caracteristica": "",
      "quantidade": 0.0
     }
    ],
@@ -37,24 +36,26 @@
      "quantidade": 402359523.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "OPCOES DE COMPRA DE ACOES ORDINARIAS HYPE3",
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
      "quantidade": 0.0
     },
     {
-     "ativo": "Opção de Venda",
-     "caracteristica": "OPCOES DE VENDA DE ACOES ORDINARIAS HYPE3",
+     "ativo": "Opção",
+     "caracteristica": "de Venda",
      "quantidade": 0.0
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
+     "caracteristica": "",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
   },
   {
-   "pagina": 3,
    "orgao": "Conselho Administração",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -71,10 +72,12 @@
      "caracteristica": "ON",
      "quantidade": 6.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
   },
   {
-   "pagina": 4,
    "orgao": "Diretoria",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -85,47 +88,47 @@
     },
     {
      "ativo": "Derivativos",
-     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
+     "caracteristica": "",
      "quantidade": 160000.0
     },
     {
      "ativo": "Outros",
-     "caracteristica": "DIREITO DE SUBSCRICAO – HYPE1 AUMENTO DE CAPITAL",
+     "caracteristica": "",
      "quantidade": 0.0
     },
     {
      "ativo": "Outros",
-     "caracteristica": "ADR AMERICAN DEPOSITARY RECEIPTS",
+     "caracteristica": "",
      "quantidade": 10000.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEA227",
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA227",
      "quantidade": 50000.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEA272",
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA272",
      "quantidade": -200000.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEA232",
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA232",
      "quantidade": 50000.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEI201",
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEI201",
      "quantidade": 0.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEG222",
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEG222",
      "quantidade": 0.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEH215",
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEH215",
      "quantidade": 0.0
     }
    ],
@@ -133,7 +136,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "Ágora Investimentos",
+     "intermediario": "Ágora  Investimentos",
      "operacao": "Venda à vista",
      "dia": "2",
      "quantidade": 17000.0,
@@ -143,7 +146,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "Ágora Investimentos",
+     "intermediario": "Ágora  Investimentos",
      "operacao": "Venda à vista",
      "dia": "22",
      "quantidade": 17000.0,
@@ -153,7 +156,7 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "Ágora Investimentos",
+     "intermediario": "Ágora  Investimentos",
      "operacao": "Venda à vista",
      "dia": "16",
      "quantidade": 29940.0,
@@ -182,7 +185,7 @@
     },
     {
      "ativo": "Outros",
-     "caracteristica": "ADR AMERICAN DEPOSITARY RECEIPTS",
+     "caracteristica": "",
      "intermediario": "Morgan Stanley",
      "operacao": "Venda à vista",
      "dia": "22",
@@ -192,7 +195,7 @@
     },
     {
      "ativo": "Outros",
-     "caracteristica": "ADR AMERICAN DEPOSITARY RECEIPTS",
+     "caracteristica": "",
      "intermediario": "Morgan Stanley",
      "operacao": "Venda à vista",
      "dia": "23",
@@ -202,7 +205,7 @@
     },
     {
      "ativo": "Outros",
-     "caracteristica": "ADR AMERICAN DEPOSITARY RECEIPTS",
+     "caracteristica": "",
      "intermediario": "Morgan Stanley",
      "operacao": "Venda à vista",
      "dia": "24",
@@ -213,7 +216,7 @@
     {
      "ativo": "Opção de Compra",
      "caracteristica": "HYPEK235",
-     "intermediario": "Ágora Investimentos",
+     "intermediario": "Ágora  Investimentos",
      "operacao": "Compra",
      "dia": "9",
      "quantidade": 50000.0,
@@ -223,7 +226,7 @@
     {
      "ativo": "Opção de Compra",
      "caracteristica": "HYPEK248",
-     "intermediario": "Ágora Investimentos",
+     "intermediario": "Ágora  Investimentos",
      "operacao": "Venda",
      "dia": "9",
      "quantidade": 50000.0,
@@ -233,59 +236,21 @@
    ],
    "saldo_final": [
     {
-     "ativo": "Ações",
-     "caracteristica": "ON",
-     "quantidade": 2299581.0
-    },
-    {
-     "ativo": "Derivativos",
-     "caracteristica": "REFERENCIADOS EM ACOES DA CIA COM LIQ FINANCEIRA",
-     "quantidade": 160000.0
-    },
-    {
-     "ativo": "Outros",
-     "caracteristica": "DIREITO DE SUBSCRICAO – HYPE1 AUMENTO DE CAPITAL",
-     "quantidade": 0.0
-    },
-    {
-     "ativo": "Outros",
-     "caracteristica": "ADR AMERICAN DEPOSITARY RECEIPTS",
-     "quantidade": 0.0
-    },
-    {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEA227",
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEK235",
      "quantidade": 50000.0
     },
     {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEA272",
-     "quantidade": -200000.0
-    },
-    {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEA232",
-     "quantidade": 50000.0
-    },
-    {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEI201",
-     "quantidade": 0.0
-    },
-    {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEG222",
-     "quantidade": 0.0
-    },
-    {
-     "ativo": "Opção de Compra",
-     "caracteristica": "HYPEH215",
-     "quantidade": 0.0
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEK248",
+     "quantidade": -50000.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
   },
   {
-   "pagina": 6,
    "orgao": "Conselho Fiscal",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -302,10 +267,12 @@
      "caracteristica": "ON",
      "quantidade": 0.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 6
   },
   {
-   "pagina": 7,
    "orgao": "Órgãos Técnicos ou Consultivos",
    "sem_movimentacao": true,
    "saldo_inicial": [
@@ -322,7 +289,10 @@
      "caracteristica": "ON",
      "quantidade": 113439.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 7
   }
  ],
  "ticker": "HYPE3",

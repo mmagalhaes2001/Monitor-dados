@@ -4,7 +4,6 @@
  "ref": "09/2026",
  "paginas": [
   {
-   "pagina": 2,
    "orgao": "Companhia (cia, controladas e coligadas)",
    "sem_movimentacao": false,
    "saldo_inicial": [
@@ -18,8 +17,8 @@
     {
      "ativo": "Ações",
      "caracteristica": "ON",
-     "intermediario": "",
-     "operacao": "PAGAMENTO DE REMUNERAÇÃO DE INCENTIVO DE LONGO PRAZO",
+     "intermediario": "DE  DE DE",
+     "operacao": "PAGAMENTO REMUNERAÇÃO  INCENTIVO LONGO PRAZO",
      "dia": "28",
      "quantidade": 9213.0,
      "preco": 11.78541,
@@ -32,7 +31,11 @@
      "caracteristica": "ON",
      "quantidade": 671877.0
     }
-   ]
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2,
+   "entidade": "SER EDUCACIONAL S.A. - Saldo Inicial"
   }
  ],
  "ticker": "SEER3",

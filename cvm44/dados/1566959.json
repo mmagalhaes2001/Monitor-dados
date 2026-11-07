@@ -1,0 +1,49 @@
+{
+ "empresa": "DIAGNOSTICOS DA AMERICA S.A.",
+ "tipo_form": "Individual",
+ "ref": "08/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5180375.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "TRANSFERÊ NCIA DE ACOES PARA COLABORA DOR  DESLIGADO NO ÂMBITO DE PLANO DE MATCHING SHARES",
+     "dia": "10",
+     "quantidade": 12069.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5168306.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "DIAGNOSTICOS DA AMERICA SA - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "DASA3",
+ "nome": "Dasa",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/09/2026 18:03",
+ "versao": "1",
+ "protocolo": "1566959",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566959",
+ "pdf": "DASA3_2026-08_individual_v1.pdf"
+}

@@ -33,7 +33,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: alerta-cvm44
+  group: alerta-cvm44-${{ (inputs.teste || github.event_name == 'push') && 'teste' || 'loop' }}
   cancel-in-progress: false
 
 env:

@@ -1,0 +1,112 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "01/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 194589606.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "Compra à  vista CONTRIBUI",
+     "dia": "13",
+     "quantidade": 141700.0,
+     "preco": 14.06,
+     "volume": 1992302.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "ÇÃO EM AUMENTO DE CAPITAL DA PEDRO E EUGÊNIA, ENTIDADE VINCULAD A AO PARTICIPA",
+     "dia": "16",
+     "quantidade": 5820388.0,
+     "preco": 24.34238,
+     "volume": 141682073.6
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander Corretora de Câmbio e  Valores Mobiliários S.A",
+     "operacao": "NTE CONTRIBUI ÇÃO RECEBIDA PARA AUMENTO DE CAPITAL.",
+     "dia": "16",
+     "quantidade": 5820388.0,
+     "preco": 24.34238,
+     "volume": 141682073.6
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 194731306.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 60205.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 60205.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 25097.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 25097.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/02/2026 18:02",
+ "versao": "1",
+ "protocolo": "1475784",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475784",
+ "pdf": "HAPV3_2026-01_consolidado_v1.pdf"
+}

@@ -1,0 +1,249 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Individual",
+ "ref": "06/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 90080855.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "DEVOLUÇÃ O DE AÇÕES DO PLANO  DE REMUNERA",
+     "dia": "1",
+     "quantidade": 1586.0,
+     "preco": 33.87,
+     "volume": 53717.82
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "ÇÃO Compra à  vista",
+     "dia": "2",
+     "quantidade": 924000.0,
+     "preco": 34.29499,
+     "volume": 31688570.9
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "5",
+     "quantidade": 1040000.0,
+     "preco": 32.99508,
+     "volume": 34314880.66
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "8",
+     "quantidade": 1127400.0,
+     "preco": 32.69258,
+     "volume": 36857610.41
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "9",
+     "quantidade": 2025000.0,
+     "preco": 33.44414,
+     "volume": 67724392.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "10",
+     "quantidade": 2500000.0,
+     "preco": 32.77897,
+     "volume": 81947421.13
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "11",
+     "quantidade": 1453000.0,
+     "preco": 33.28659,
+     "volume": 48365411.37
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "12",
+     "quantidade": 520000.0,
+     "preco": 34.25925,
+     "volume": 17814809.47
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "15",
+     "quantidade": 594000.0,
+     "preco": 34.17946,
+     "volume": 20302602.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "16",
+     "quantidade": 1848900.0,
+     "preco": 34.25009,
+     "volume": 63324982.31
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 550900.0,
+     "preco": 33.79559,
+     "volume": 18617990.46
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "18",
+     "quantidade": 1800000.0,
+     "preco": 33.22934,
+     "volume": 59812820.62
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 1437700.0,
+     "preco": 33.36454,
+     "volume": 47968201.79
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "22",
+     "quantidade": 225900.0,
+     "preco": 33.92604,
+     "volume": 7663893.14
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "23",
+     "quantidade": 451500.0,
+     "preco": 34.26055,
+     "volume": 15468640.12
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "24",
+     "quantidade": 687700.0,
+     "preco": 34.0418,
+     "volume": 23410546.85
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "25",
+     "quantidade": 440900.0,
+     "preco": 34.64944,
+     "volume": 15276938.59
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "26",
+     "quantidade": 852300.0,
+     "preco": 34.45699,
+     "volume": 29367693.13
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "29",
+     "quantidade": 210300.0,
+     "preco": 34.74816,
+     "volume": 7307538.9
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à  vista",
+     "dia": "30",
+     "quantidade": 313000.0,
+     "preco": 34.61043,
+     "volume": 10833063.96
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "CANCELAM ENTO DE AÇÕES",
+     "dia": "9",
+     "quantidade": 49000000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 60084941.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Rede Dor São Luiz S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/07/2026 18:26",
+ "versao": "1",
+ "protocolo": "1543557",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1543557",
+ "pdf": "RDOR3_2026-06_individual_v1.pdf"
+}

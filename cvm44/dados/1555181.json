@@ -1,0 +1,49 @@
+{
+ "empresa": "TIM S.A.",
+ "tipo_form": "Individual",
+ "ref": "07/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3457567.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "MOVIMENT AÇÃO DECORREN  TE DE PENHORA JUDICIAL",
+     "dia": "20",
+     "quantidade": 875.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3456692.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TIM S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "TIMS3",
+ "nome": "TIM",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/08/2026 18:02",
+ "versao": "1",
+ "protocolo": "1555181",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1555181",
+ "pdf": "TIMS3_2026-07_individual_v1.pdf"
+}

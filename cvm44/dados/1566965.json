@@ -1,0 +1,159 @@
+{
+ "empresa": "TIM S.A.",
+ "tipo_form": "Individual",
+ "ref": "08/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3456692.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "3",
+     "quantidade": 581100.0,
+     "preco": 19.2107,
+     "volume": 11163337.77
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "4",
+     "quantidade": 1795900.0,
+     "preco": 18.8278,
+     "volume": 33812846.02
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "5",
+     "quantidade": 1849400.0,
+     "preco": 18.8452,
+     "volume": 34852312.88
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "6",
+     "quantidade": 1925500.0,
+     "preco": 18.9089,
+     "volume": 36409086.95
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "7",
+     "quantidade": 2006300.0,
+     "preco": 18.7274,
+     "volume": 37572782.62
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "10",
+     "quantidade": 2089600.0,
+     "preco": 18.7925,
+     "volume": 39268808.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "11",
+     "quantidade": 2159006.0,
+     "preco": 18.631,
+     "volume": 40224440.79
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "JP Morgan",
+     "operacao": "Compra à  vista",
+     "dia": "12",
+     "quantidade": 997100.0,
+     "preco": 18.7504,
+     "volume": 18696023.84
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Doação  (doador)",
+     "dia": "25",
+     "quantidade": 1275793.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Doação  (doador)",
+     "dia": "26",
+     "quantidade": 89389.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Doação  (doador)",
+     "dia": "31",
+     "quantidade": 118283.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Doação  (doador)",
+     "dia": "27",
+     "quantidade": 26798.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 15350335.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TIM S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "TIMS3",
+ "nome": "TIM",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/09/2026 18:04",
+ "versao": "1",
+ "protocolo": "1566965",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566965",
+ "pdf": "TIMS3_2026-08_individual_v1.pdf"
+}

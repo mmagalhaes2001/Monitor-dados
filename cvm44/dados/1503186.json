@@ -1,0 +1,79 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Individual",
+ "ref": "03/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86776855.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "2",
+     "quantidade": 500000.0,
+     "preco": 40.00456,
+     "volume": 20002281.11
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "4",
+     "quantidade": 800000.0,
+     "preco": 39.36712,
+     "volume": 31493699.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "6",
+     "quantidade": 1400000.0,
+     "preco": 38.30959,
+     "volume": 53633429.45
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BANCO BTG PACTUAL S.A.",
+     "operacao": "Compra à  vista",
+     "dia": "10",
+     "quantidade": 604000.0,
+     "preco": 39.16045,
+     "volume": 23652914.17
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 90080855.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Rede Dor São Luiz S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/04/2026 18:21",
+ "versao": "1",
+ "protocolo": "1503186",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1503186",
+ "pdf": "RDOR3_2026-03_individual_v1.pdf"
+}

@@ -124,9 +124,9 @@ def gerar():
             res[k]  # garante linha mesmo sem movimentação
             for m in p["movimentacoes"]:
                 op = m["operacao"].lower()
-                if op.startswith("compra") or "subscri" in op or "exerc" in op:
+                if _classe(op) == "compra":
                     res[k]["compra_q"] += m["quantidade"] or 0; res[k]["compra_v"] += m["volume"] or 0
-                elif op.startswith("venda"):
+                elif _classe(op) == "venda":
                     res[k]["venda_q"] += m["quantidade"] or 0; res[k]["venda_v"] += m["volume"] or 0
                 else:
                     res[k]["outros"] += 1
@@ -160,6 +160,7 @@ def gerar():
     aba("Fontes", ["Ticker", "Mês ref", "Formulário", "Versão", "Entregue em", "Protocolo CVM", "Link", "PDF no repositório"],
         fontes, [8, 9, 12, 7, 16, 13, 60, 36])
 
+    abas_monitor(wb, docs, aba)
     del wb["Sheet"]
     wb.save(XLSX)
     return len(mov), len(docs)
@@ -172,14 +173,14 @@ def resumo(protocolo):
     d = json.load(open(p, encoding="utf-8"))
     partes = []
     for pg in d["paginas"]:
-        c = sum(m["quantidade"] or 0 for m in pg["movimentacoes"] if m["operacao"].lower().startswith("compra"))
-        v = sum(m["quantidade"] or 0 for m in pg["movimentacoes"] if m["operacao"].lower().startswith("venda"))
-        cv = sum(m["volume"] or 0 for m in pg["movimentacoes"] if m["operacao"].lower().startswith("compra"))
-        vv = sum(m["volume"] or 0 for m in pg["movimentacoes"] if m["operacao"].lower().startswith("venda"))
+        c = sum(m["quantidade"] or 0 for m in pg["movimentacoes"] if _classe(m["operacao"]) == "compra")
+        v = sum(m["quantidade"] or 0 for m in pg["movimentacoes"] if _classe(m["operacao"]) == "venda")
+        cv = sum(m["volume"] or 0 for m in pg["movimentacoes"] if _classe(m["operacao"]) == "compra")
+        vv = sum(m["volume"] or 0 for m in pg["movimentacoes"] if _classe(m["operacao"]) == "venda")
         o = pg["orgao"].replace("Conselho Administração", "Conselho").replace("Órgãos Técnicos ou Consultivos", "Órgãos técnicos")
         if c: partes.append("%s comprou %s (R$ %s)" % (o, fmt(c), fmt(cv)))
         if v: partes.append("%s vendeu %s (R$ %s)" % (o, fmt(v), fmt(vv)))
-        outros = [m for m in pg["movimentacoes"] if not re.match(r"(compra|venda)", m["operacao"].lower())]
+        outros = [m for m in pg["movimentacoes"] if _classe(m["operacao"]) == "outro"]
         if outros: partes.append("%s: %d outra(s) operação(ões)" % (o, len(outros)))
     return "; ".join(partes) if partes else "sem movimentação no mês"
 
@@ -189,6 +190,83 @@ def fmt(x):
     if x >= 1e6: return "%.1f mi" % (x / 1e6)
     if x >= 1e3: return "%.0f mil" % (x / 1e3)
     return "%d" % x
+
+
+# ---------------------------------------------------------------------------
+# Abas "Monitor mensal" e "12 meses" no formato do relatório (buybacks + insiders por grupo)
+# ---------------------------------------------------------------------------
+GRUPOS = {"Controlador": "Controlador", "Diretoria": "Diretoria", "Conselho Administração": "Conselho",
+          "Conselho Fiscal": "Outros", "Órgãos Técnicos ou Consultivos": "Outros"}
+
+
+def _classe(op):
+    op = op.lower()
+    if "venda" in op: return "venda"          # antes de "compra": "venda ... exercício de opção de compra"
+    if "compra" in op or "subscri" in op: return "compra"
+    return "outro"
+
+
+def tabela_monitor(docs):
+    """Por (ticker, ref): buyback (Individual) e insiders por grupo (Consolidado), em R$ e ações."""
+    from collections import defaultdict
+    t = defaultdict(lambda: defaultdict(float))
+    for d in docs:
+        k = (d["ticker"], d["ref"])
+        if "Consolidada" in d["tipo"]:
+            for p in d["paginas"]:
+                g = GRUPOS.get(p["orgao"], "Outros")
+                for m in p["movimentacoes"]:
+                    c = _classe(m["operacao"])
+                    if c == "outro": continue
+                    t[k][g + "_" + c + "_q"] += m["quantidade"] or 0
+                    t[k][g + "_" + c + "_v"] += m["volume"] or 0
+        else:  # Individual: a própria companhia (recompra = compra; venda de tesouraria = venda); só ações
+            for p in d["paginas"]:
+                for m in p["movimentacoes"]:
+                    c = _classe(m["operacao"])
+                    if c == "outro" or not m["ativo"].lower().startswith("aç") or (m["quantidade"] or 0) <= 0: continue
+                    t[k]["buyback_" + c + "_q"] += m["quantidade"] or 0
+                    t[k]["buyback_" + c + "_v"] += m["volume"] or 0
+    return t
+
+
+def abas_monitor(wb, docs, aba):
+    t = tabela_monitor(docs)
+    mi = 1e6
+    cab = ["Ticker", "Mês ref", "Buyback ações ('000)", "Buyback R$ mn", "Buyback preço médio", "Venda tesouraria R$ mn",
+           "Controlador compra R$ mn", "Controlador venda R$ mn", "Controlador saldo R$ mn",
+           "Diretoria compra R$ mn", "Diretoria venda R$ mn", "Diretoria saldo R$ mn",
+           "Conselho compra R$ mn", "Conselho venda R$ mn", "Conselho saldo R$ mn",
+           "Outros compra R$ mn", "Outros venda R$ mn", "Outros saldo R$ mn", "Insiders saldo total R$ mn"]
+
+    def linha(ticker, ref, v):
+        bq, bv = v.get("buyback_compra_q", 0), v.get("buyback_compra_v", 0)
+        r = [ticker, ref, bq / 1e3, bv / mi, (bv / bq) if bq else None, v.get("buyback_venda_v", 0) / mi]
+        tot = 0
+        for g in ("Controlador", "Diretoria", "Conselho", "Outros"):
+            c, s = v.get(g + "_compra_v", 0) / mi, v.get(g + "_venda_v", 0) / mi
+            r += [c, s, c - s]; tot += c - s
+        return r + [tot]
+
+    mensal = [linha(tk, ref, v) for (tk, ref), v in t.items()]
+    mensal.sort(key=lambda r: (chave_ordem(r[1]), r[0]), reverse=True)
+    ws = aba("Monitor mensal", cab, mensal, [8, 9] + [14] * 17)
+    for r in ws.iter_rows(min_row=2):
+        for c in r[2:]: c.number_format = "#,##0.0"
+
+    # 12 meses: soma dos últimos 12 meses de referência disponíveis, por ticker
+    refs = sorted({ref for _, ref in t}, key=chave_ordem)[-12:]
+    from collections import defaultdict
+    soma = defaultdict(lambda: defaultdict(float))
+    for (tk, ref), v in t.items():
+        if ref in refs:
+            for kk, vv in v.items(): soma[tk][kk] += vv
+    janela = "%s a %s" % (refs[0], refs[-1]) if refs else ""
+    linhas = [linha(tk, janela, v) for tk, v in soma.items()]
+    linhas.sort(key=lambda r: r[-1])
+    ws = aba("12 meses", cab[:1] + ["Janela"] + cab[2:], linhas, [8, 18] + [14] * 17)
+    for r in ws.iter_rows(min_row=2):
+        for c in r[2:]: c.number_format = "#,##0.0"
 
 
 if __name__ == "__main__":

@@ -1,0 +1,762 @@
+{
+ "empresa": "YDUQS PARTICIPACOES S.A.",
+ "tipo_form": "Individual",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 13903445.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "8",
+     "quantidade": 1110500.0,
+     "preco": 10.86999,
+     "volume": 12071128.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BRADESCO",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "11",
+     "quantidade": 404100.0,
+     "preco": 10.73047,
+     "volume": 4336182.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "12",
+     "quantidade": 450000.0,
+     "preco": 10.33607,
+     "volume": 4651231.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "ITAU",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "13",
+     "quantidade": 574700.0,
+     "preco": 9.99514,
+     "volume": 5744208.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO",
+     "dia": "14",
+     "quantidade": 360000.0,
+     "preco": 9.8856,
+     "volume": 3558816.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BRADESCO",
+     "operacao": "EM MARÇO 2026 COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "15",
+     "quantidade": 322100.0,
+     "preco": 9.57119,
+     "volume": 3082879.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "18",
+     "quantidade": 280000.0,
+     "preco": 9.51793,
+     "volume": 2665020.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "19",
+     "quantidade": 415000.0,
+     "preco": 9.42836,
+     "volume": 3912769.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "ITAU",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "20",
+     "quantidade": 381200.0,
+     "preco": 9.73694,
+     "volume": 3711723.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BRADESCO",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "21",
+     "quantidade": 226900.0,
+     "preco": 9.71154,
+     "volume": 2203549.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "22",
+     "quantidade": 290000.0,
+     "preco": 9.54573,
+     "volume": 2768262.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BRADESCO",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "25",
+     "quantidade": 203400.0,
+     "preco": 9.75297,
+     "volume": 1983754.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "26",
+     "quantidade": 170000.0,
+     "preco": 9.56958,
+     "volume": 1626828.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "ITAU",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "27",
+     "quantidade": 166100.0,
+     "preco": 9.63759,
+     "volume": 1600804.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Santander",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "28",
+     "quantidade": 210000.0,
+     "preco": 9.70196,
+     "volume": 2037411.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "COMPRA MOTIVADA PELO PROGRAMA DE RECOMPRA DE ACOES VIGENTE APROVADO EM MARÇO 2026",
+     "dia": "29",
+     "quantidade": 273600.0,
+     "preco": 9.5071,
+     "volume": 2601142.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "12",
+     "quantidade": 202670.0,
+     "preco": 11.83,
+     "volume": 2397586.1
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "13",
+     "quantidade": 112187.0,
+     "preco": 11.83,
+     "volume": 1327172.21
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "14",
+     "quantidade": 60911.0,
+     "preco": 11.83,
+     "volume": 720577.13
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "15",
+     "quantidade": 14350.0,
+     "preco": 11.83,
+     "volume": 169760.5
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "18",
+     "quantidade": 1211.0,
+     "preco": 11.83,
+     "volume": 14326.13
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "20",
+     "quantidade": 1500.0,
+     "preco": 11.83,
+     "volume": 17745.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "21",
+     "quantidade": 424.0,
+     "preco": 11.83,
+     "volume": 5015.92
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "VENDA MOTIVADA PELO EXERCÍCIO DE OPÇÃO OUTORGAD  A NO ÂMBITO DO PLANO DE OPÇÃO DE COMPRA DE AÇÕES.",
+     "dia": "27",
+     "quantidade": 7898.0,
+     "preco": 11.83,
+     "volume": 93433.34
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 19339894.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "ESTACIO PARTICIPAÇÕES SA - Companhia - Tesouraria"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5,
+   "entidade": "Sociedade de Ensino Superior Estácio de Sá Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 6,
+   "entidade": "Sociedade Educacional Atual da Amazônia Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 7,
+   "entidade": "ANEC -Sociedade Natalense de Educação e Cultura Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 8,
+   "entidade": "SUDERN -Sociedade Universitária de Excelência Educacional do Rio Grande do - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 9,
+   "entidade": "Nova Academia do Concurso - Cursos Preparatórios Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 10,
+   "entidade": "Estácio Editora e Distribuidora Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 11,
+   "entidade": "IREP - Sociedade de Ensino Superior, Médio e Fundamental Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 12,
+   "entidade": "Sociedade Educacional da Amazônia Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 13,
+   "entidade": "Idez Empreendimentos Educacionais Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 14,
+   "entidade": "Sociedade Educacional do Rio Grande do Sul Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 15,
+   "entidade": "Uniuol Gestão de Empreendimentos Educacionais e Participações Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 16,
+   "entidade": "Unisãoluis Educacional Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 17,
+   "entidade": "IESST – Instituto de Ensino Superior Social e Tecnológico Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 18,
+   "entidade": "ASSESC – Sociedade Educacional de Santa Catarina Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 19,
+   "entidade": "ORPES - Organização Paraense Educacional e de Empreendimentos Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 20,
+   "entidade": "Sociedade de Ensino Superior Estácio Ribeirão Preto Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 21,
+   "entidade": "Sociedade de Ensino Superior Estácio Amazonas Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 22,
+   "entidade": "CEUT – Centro de Ensino Unificado de Teresina Ltda. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 23,
+   "entidade": "FCAT – Faculdade de Castanhal LTDA. - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 24,
+   "entidade": "FUFS – Soc. Emp. De Estudos Sup. E Tec. Santana - Controlada"
+  },
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 25,
+   "entidade": "Centro Educacional Nossa Cidade Ltda. - Controlada"
+  }
+ ],
+ "ticker": "YDUQ3",
+ "nome": "Yduqs",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/06/2026 06:18",
+ "versao": "1",
+ "protocolo": "1532094",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1532094",
+ "pdf": "YDUQ3_2026-05_individual_v1.pdf"
+}
