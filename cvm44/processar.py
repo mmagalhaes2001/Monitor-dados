@@ -58,8 +58,16 @@ def main():
     tickers = [e["ticker"] for e in __import__("csv").DictReader(open(os.path.join(AQUI, "empresas.csv"), encoding="utf-8"), delimiter=";")]
     ref = mes_ref()
 
-    def entregou(t):
-        return any(v["ticker"] == t and v["ref"] == ref and "Consolidada" in v["tipo"] for v in vistos.values())
+    def entregou(t, qual):
+        return any(v["ticker"] == t and v["ref"] == ref and (("Consolidada" in v["tipo"]) == (qual == "C")) for v in vistos.values())
+
+    def mapa():
+        """Quem já entregou o mês de referência: ambos / só um / nenhum."""
+        ambos = [t for t in tickers if entregou(t, "C") and entregou(t, "I")]
+        parcial = ["%s (%s)" % (t, "só consolidado" if entregou(t, "C") else "só individual")
+                   for t in tickers if entregou(t, "C") != entregou(t, "I")]
+        nenhum = [t for t in tickers if not entregou(t, "C") and not entregou(t, "I")]
+        return ambos, parcial, nenhum
 
     if teste:
         pushes.append({"titulo": "Teste CVM 44", "prio": "high", "tags": "test_tube", "click": CONSULTA,
@@ -92,9 +100,10 @@ def main():
     for t, ds in por_t.items():
         cons = [d for d in ds if "Consolidada" in d["tipo"]]
         alvo = cons[0] if cons else ds[0]
-        partes = ["%s (ref %s%s) às %s" % ("Consolidada" if "Consolidada" in d["tipo"] else "Individual", d["ref"],
+        partes = ["%s (ref %s%s) às %s" % ("Consolidado/insiders" if "Consolidada" in d["tipo"] else "Individual/recompra", d["ref"],
                                            ", versão " + d["versao"] if d["versao"] != "1" else "", d["entrega"][-5:]) for d in ds]
-        res = planilha.resumo(alvo["protocolo"]) if cons else ""
+        res = "; ".join(x for x in (planilha.resumo(d["protocolo"]) for d in ds) if x and x != "sem movimentação no mês")
+        if not res: res = "sem movimentação no mês"
         pushes.append({"titulo": "CVM 44: %s entregou formulário" % t, "prio": "urgent", "tags": "rotating_light",
                        "click": alvo["link"],
                        "msg": "%s — %s.%s Entregue em %s. Toque para abrir o PDF. Excel atualizado: %s"
@@ -104,10 +113,11 @@ def main():
                        "msg": "; ".join(falhas)[:800]})
 
     if ping:
-        feitos = [t for t in tickers if entregou(t)]
-        faltam = [t for t in tickers if not entregou(t)]
-        pushes.append({"titulo": "Robô CVM 44 ok (%s)" % date.today().strftime("%d/%m"), "prio": "low", "tags": "robot", "click": CONSULTA,
-                       "msg": "Ref %s — entregaram (%d): %s. Faltam (%d): %s. Sigo checando." % (ref, len(feitos), ", ".join(feitos) or "ninguém", len(faltam), ", ".join(faltam) or "ninguém")})
+        ambos, parcial, nenhum = mapa()
+        msg = "Ref %s — entregaram os 2 formulários (%d): %s." % (ref, len(ambos), ", ".join(ambos) or "ninguém")
+        if parcial: msg += " Parcial (%d): %s." % (len(parcial), ", ".join(parcial))
+        msg += " Faltam (%d): %s. Sigo checando." % (len(nenhum), ", ".join(nenhum) or "ninguém")
+        pushes.append({"titulo": "Robô CVM 44 ok (%s)" % date.today().strftime("%d/%m"), "prio": "low", "tags": "robot", "click": CONSULTA, "msg": msg})
 
     if novos:
         salvar(est)

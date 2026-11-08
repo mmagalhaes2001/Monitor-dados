@@ -161,6 +161,7 @@ def gerar():
         fontes, [8, 9, 12, 7, 16, 13, 60, 36])
 
     abas_monitor(wb, docs, aba)
+    aba_entregas(wb, docs, aba)
     del wb["Sheet"]
     wb.save(XLSX)
     return len(mov), len(docs)
@@ -178,8 +179,14 @@ def resumo(protocolo):
         cv = sum(m["volume"] or 0 for m in pg["movimentacoes"] if _classe(m["operacao"]) == "compra")
         vv = sum(m["volume"] or 0 for m in pg["movimentacoes"] if _classe(m["operacao"]) == "venda")
         o = pg["orgao"].replace("Conselho Administração", "Conselho").replace("Órgãos Técnicos ou Consultivos", "Órgãos técnicos")
-        if c: partes.append("%s comprou %s (R$ %s)" % (o, fmt(c), fmt(cv)))
-        if v: partes.append("%s vendeu %s (R$ %s)" % (o, fmt(v), fmt(vv)))
+        if o.startswith("Companhia"):
+            o = "Recompra" if "Tesouraria" in (pg.get("entidade") or "") or len(d["paginas"]) == 1 else (pg.get("entidade") or "Controlada").split(" - ")[0][:25]
+        if o == "Recompra":
+            if c: partes.append("Recompra: %s ações (R$ %s, média %.2f)" % (fmt(c), fmt(cv), cv / c))
+            if v: partes.append("Tesouraria vendeu/usou %s ações (R$ %s)" % (fmt(v), fmt(vv)))
+        else:
+            if c: partes.append("%s comprou %s (R$ %s)" % (o, fmt(c), fmt(cv)))
+            if v: partes.append("%s vendeu %s (R$ %s)" % (o, fmt(v), fmt(vv)))
         outros = [m for m in pg["movimentacoes"] if _classe(m["operacao"]) == "outro"]
         if outros: partes.append("%s: %d outra(s) operação(ões)" % (o, len(outros)))
     return "; ".join(partes) if partes else "sem movimentação no mês"
@@ -267,6 +274,26 @@ def abas_monitor(wb, docs, aba):
     ws = aba("12 meses", cab[:1] + ["Janela"] + cab[2:], linhas, [8, 18] + [14] * 17)
     for r in ws.iter_rows(min_row=2):
         for c in r[2:]: c.number_format = "#,##0.0"
+
+
+def aba_entregas(wb, docs, aba):
+    """Mapa mês a mês: data de entrega do consolidado e do individual por empresa (vazio = não entregou)."""
+    import csv
+    tickers = [e["ticker"] for e in csv.DictReader(open(os.path.join(AQUI, "empresas.csv"), encoding="utf-8"), delimiter=";")]
+    refs = sorted({d["ref"] for d in docs}, key=chave_ordem, reverse=True)
+    ent = {(d["ticker"], d["ref"], "C" if "Consolidada" in d["tipo"] else "I"): d["entrega"] for d in docs}
+    cab = ["Mês ref", "Ticker", "Consolidado (insiders)", "Individual (recompra)", "Status"]
+    linhas = []
+    for ref in refs:
+        for t in tickers:
+            c, i = ent.get((t, ref, "C"), ""), ent.get((t, ref, "I"), "")
+            st = "ok" if c and i else ("só consolidado" if c else ("só individual" if i else "FALTA"))
+            linhas.append([ref, t, c, i, st])
+    ws = aba("Entregas", cab, linhas, [9, 8, 22, 22, 16])
+    from openpyxl.styles import PatternFill
+    for r in ws.iter_rows(min_row=2):
+        if r[4].value == "FALTA": r[4].fill = PatternFill("solid", fgColor="F8CBAD")
+        elif r[4].value != "ok": r[4].fill = PatternFill("solid", fgColor="FFE699")
 
 
 if __name__ == "__main__":
