@@ -16,7 +16,21 @@ ESTADO = os.path.join(RAIZ, "estado", "cvm44.json")
 CONSULTA = "https://www.rad.cvm.gov.br/ENETWeb/frmConsultaExternaCVM.aspx"
 EXCEL = "https://github.com/mmagalhaes2001/Monitor-dados/raw/main/cvm44/negociacoes_cvm44.xlsx"
 sys.path.insert(0, AQUI)
-import planilha  # noqa: E402
+import planilha, analise  # noqa: E402
+
+
+def juntar_pngs(pngs, saida):
+    """Empilha os gráficos (insiders + recompra) num PNG só."""
+    if len(pngs) == 1: return pngs[0]
+    try:
+        from PIL import Image
+        ims = [Image.open(p) for p in pngs]
+        w = max(i.width for i in ims); h = sum(i.height for i in ims)
+        out = Image.new("RGB", (w, h), "white"); y = 0
+        for i in ims: out.paste(i, (0, y)); y += i.height
+        out.save(saida); return saida
+    except Exception:
+        return pngs[0]
 
 
 def mes_ref():
@@ -100,14 +114,27 @@ def main():
     for t, ds in por_t.items():
         cons = [d for d in ds if "Consolidada" in d["tipo"]]
         alvo = cons[0] if cons else ds[0]
-        partes = ["%s (ref %s%s) às %s" % ("Consolidado/insiders" if "Consolidada" in d["tipo"] else "Individual/recompra", d["ref"],
-                                           ", versão " + d["versao"] if d["versao"] != "1" else "", d["entrega"][-5:]) for d in ds]
-        res = "; ".join(x for x in (planilha.resumo(d["protocolo"]) for d in ds) if x and x != "sem movimentação no mês")
-        if not res: res = "sem movimentação no mês"
-        pushes.append({"titulo": "CVM 44: %s entregou formulário" % t, "prio": "urgent", "tags": "rotating_light",
+        partes, analises, nivel, pngs = [], [], "baixa", []
+        ordem = {"baixa": 0, "media": 1, "alta": 2}
+        for d in ds:
+            tipo = "Consolidado/insiders" if "Consolidada" in d["tipo"] else "Individual/recompra"
+            partes.append("%s (ref %s%s) às %s" % (tipo, d["ref"], ", versão " + d["versao"] if d["versao"] != "1" else "", d["entrega"][-5:]))
+            try:
+                png = os.path.join(RAIZ, "estado", "grafico_%s.png" % d["protocolo"])
+                a = analise.analisar(d["protocolo"], png)
+                if a["texto"]: analises.append(a["texto"])
+                if ordem[a["nivel"]] > ordem[nivel]: nivel = a["nivel"]
+                if a["png"]: pngs.append(a["png"])
+            except Exception as e:
+                falhas.append("análise %s: %s" % (d["protocolo"], str(e)[:80]))
+        tag = {"alta": "RELEVANTE", "media": "atenção", "baixa": "rotina"}[nivel]
+        pushes.append({"titulo": "CVM 44 · %s · %s" % (t, tag),
+                       "prio": {"alta": "urgent", "media": "high", "baixa": "default"}[nivel],
+                       "tags": {"alta": "rotating_light", "media": "eyes", "baixa": "page_facing_up"}[nivel],
                        "click": alvo["link"],
-                       "msg": "%s — %s.%s Entregue em %s. Toque para abrir o PDF. Excel atualizado: %s"
-                              % (ds[0]["nome"], "; ".join(partes), (" " + res[0].upper() + res[1:] + ".") if res else "", alvo["entrega"][:10], EXCEL)})
+                       "msg": "%s — %s. %s. Entregue %s. Toque para abrir o PDF. Excel: %s"
+                              % (ds[0]["nome"], "; ".join(partes), " | ".join(analises) or "sem movimentação", alvo["entrega"][:10], EXCEL),
+                       "anexo": juntar_pngs(pngs, os.path.join(RAIZ, "estado", "grafico_%s.png" % t)) if pngs else ""})
     if falhas:
         pushes.append({"titulo": "CVM 44: falha ao ler formulário", "prio": "default", "tags": "warning", "click": CONSULTA,
                        "msg": "; ".join(falhas)[:800]})

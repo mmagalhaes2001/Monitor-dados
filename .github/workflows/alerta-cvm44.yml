@@ -5,7 +5,9 @@ name: Alerta - CVM 44 (negociação de administradores)
 # Fonte: consulta externa do ENET da CVM (mesma que o site da B3 usa). Um push por empresa,
 # com link para abrir o PDF e resumo do que o formulário mostra. Versões corrigidas (v2, v3...) também avisam.
 # Ao detectar, baixa o PDF (cvm44/pdf), lê (cvm44/dados/*.json) e regenera cvm44/negociacoes_cvm44.xlsx
-# (abas Movimentações, Resumo, Posições, Fontes). Link do Excel vai no push.
+# (abas Movimentações, Resumo, Posições, Fontes, Monitor mensal, 12 meses, Entregas). Link do Excel vai no push.
+# Cada formulário é comparado com os 12 meses anteriores da empresa (cvm44/analise.py): o título do push
+# diz RELEVANTE / atenção / rotina e, quando há movimentação, vai um gráfico (PNG) anexo.
 #
 # Janela: o mês inteiro, a cada 10 min do dia 1 ao 12 (prazo é o dia 10) e a cada 30 min no resto.
 # Aviso de vida às 9h, com quem já entregou o mês de referência e quem falta.
@@ -56,7 +58,7 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar leitor de PDF
-        run: pip install -q pdfplumber==0.11.4 openpyxl==3.1.5
+        run: pip install -q pdfplumber==0.11.4 openpyxl==3.1.5 matplotlib==3.9.2
 
       - name: Checar em loop
         id: loop
@@ -68,11 +70,19 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
 
-          push() { # titulo, prioridade, tags, click, mensagem
+          push() { # titulo, prioridade, tags, click, mensagem, [anexo png]
             for i in 1 2 3; do
-              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $4" \
-                   ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
-                   --data-binary "$5" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              if [ -n "$6" ] && [ -f "$6" ]; then
+                # com anexo: o arquivo vai no corpo e a mensagem no cabeçalho
+                if curl -sSf -m 60 -T "$6" -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $4" \
+                     -H "Filename: $(basename "$6")" -H "Message: $5" \
+                     ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                     "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              else
+                if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $4" \
+                     ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                     --data-binary "$5" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              fi
               sleep 20
             done
             echo "falha no ntfy: $1"
@@ -81,8 +91,8 @@ jobs:
             fi
           }
           enviar_pushes() { # lê o JSON do processar.py em $1 e manda cada push
-            python cvm44/listar_pushes.py "$1" | while IFS=$'\x1f' read -r t p g c m; do
-              push "$t" "$p" "$g" "$c" "$m"
+            python cvm44/listar_pushes.py "$1" | while IFS=$'\x1f' read -r t p g c m a; do
+              push "$t" "$p" "$g" "$c" "$m" "$a"
             done
           }
           salvar() {
