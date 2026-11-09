@@ -1,0 +1,100 @@
+{
+ "empresa": "FLEURY S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86865536.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 86865536.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2220177.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 10000.0,
+     "preco": 0.00275,
+     "volume": 27.5
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "6",
+     "quantidade": 43000.0,
+     "preco": 0.00059,
+     "volume": 25.5
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2167177.0
+    },
+    {
+     "ativo": "Recibo",
+     "caracteristica": "de Subscrição FLRY9",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  }
+ ],
+ "ticker": "FLRY3",
+ "nome": "Fleury",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/11/2026 18:29",
+ "versao": "1",
+ "protocolo": "1586398",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586398",
+ "pdf": "FLRY3_2026-10_consolidado_v1.pdf"
+}

@@ -1,0 +1,133 @@
+{
+ "empresa": "LWSA S/A",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160282752.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160282752.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 10470965.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 250000.0,
+     "preco": 5.718,
+     "volume": 1429500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 50000.0,
+     "preco": 5.61,
+     "volume": 280500.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 10170965.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4676636.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itau",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 3000.0,
+     "preco": 5.0,
+     "volume": 15000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Necton",
+     "operacao": "Compra à vista",
+     "dia": "26",
+     "quantidade": 21600.0,
+     "preco": 3.73625,
+     "volume": 80703.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itau",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 230000.0,
+     "preco": 5.72,
+     "volume": 1315600.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4465236.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "LWSA3",
+ "nome": "LWSA",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/11/2026 18:29",
+ "versao": "1",
+ "protocolo": "1586397",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586397",
+ "pdf": "LWSA3_2026-10_consolidado_v1.pdf"
+}

@@ -4273,6 +4273,50 @@
    "ticker": "TOTS3",
    "tipo": "Posição Consolidada",
    "versao": "1"
+  },
+  "1586396": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111102&numVersao=1&numProtocolo=1586396&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:28",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586396",
+   "nome": "LWSA",
+   "protocolo": "1586396",
+   "ref": "10/2026",
+   "ticker": "LWSA3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1586397": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111103&numVersao=1&numProtocolo=1586397&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:29",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586397",
+   "nome": "LWSA",
+   "protocolo": "1586397",
+   "ref": "10/2026",
+   "ticker": "LWSA3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1586398": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111104&numVersao=1&numProtocolo=1586398&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:29",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586398",
+   "nome": "Fleury",
+   "protocolo": "1586398",
+   "ref": "10/2026",
+   "ticker": "FLRY3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1586401": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111107&numVersao=1&numProtocolo=1586401&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:30",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586401",
+   "nome": "Fleury",
+   "protocolo": "1586401",
+   "ref": "10/2026",
+   "ticker": "FLRY3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
   }
  }
 }
