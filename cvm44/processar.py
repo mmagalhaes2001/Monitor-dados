@@ -127,7 +127,8 @@ def main():
                 if a["png"]: pngs.append(a["png"])
             except Exception as e:
                 falhas.append("análise %s: %s" % (d["protocolo"], str(e)[:80]))
-        tag = {"alta": "RELEVANTE", "media": "atenção", "baixa": "rotina"}[nivel]
+        teve = any(a and not a.lower().startswith(("sem movimenta", "sem recompra")) and "(pequeno)" not in a for a in analises)
+        tag = {"alta": "RELEVANTE", "media": "atenção", "baixa": ("teve movimento, rotina" if teve else "sem movimento")}[nivel]
         pushes.append({"titulo": "CVM 44 · %s · %s" % (t, tag),
                        "prio": {"alta": "urgent", "media": "high", "baixa": "default"}[nivel],
                        "tags": {"alta": "rotating_light", "media": "eyes", "baixa": "page_facing_up"}[nivel],
