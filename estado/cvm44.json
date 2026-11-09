@@ -4229,6 +4229,28 @@
    "ticker": "SEER3",
    "tipo": "Posição Consolidada",
    "versao": "1"
+  },
+  "1586080": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1110786&numVersao=1&numProtocolo=1586080&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 13:53",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586080",
+   "nome": "Vivo",
+   "protocolo": "1586080",
+   "ref": "10/2026",
+   "ticker": "VIVT3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1586085": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1110791&numVersao=1&numProtocolo=1586085&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 13:58",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586085",
+   "nome": "Vivo",
+   "protocolo": "1586085",
+   "ref": "10/2026",
+   "ticker": "VIVT3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
   }
  }
 }
