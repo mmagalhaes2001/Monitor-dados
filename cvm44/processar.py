@@ -126,15 +126,22 @@ def main():
                 if ordem[a["nivel"]] > ordem[nivel]: nivel = a["nivel"]
                 if a["png"]: pngs.append(a["png"])
             except Exception as e:
-                falhas.append("análise %s: %s" % (d["protocolo"], str(e)[:80]))
+                # análise falhou: usa o resumo simples, nunca "sem movimentação" por engano
+                try:
+                    r_ = planilha.resumo(d["protocolo"])
+                except Exception:
+                    r_ = ""
+                analises.append((r_ or "leitura indisponível, abrir o PDF") + " [análise falhou: %s]" % str(e)[:60])
+                if r_ and not r_.startswith("sem"): nivel = "media" if ordem[nivel] < 1 else nivel
         teve = any(a and not a.lower().startswith(("sem movimenta", "sem recompra")) and "(pequeno)" not in a for a in analises)
         tag = {"alta": "RELEVANTE", "media": "atenção", "baixa": ("teve movimento, rotina" if teve else "sem movimento")}[nivel]
+        if not analises: tag = "ver PDF"
         pushes.append({"titulo": "CVM 44 · %s · %s" % (t, tag),
                        "prio": {"alta": "urgent", "media": "high", "baixa": "default"}[nivel],
                        "tags": {"alta": "rotating_light", "media": "eyes", "baixa": "page_facing_up"}[nivel],
                        "click": alvo["link"],
                        "msg": "%s — %s. %s. Entregue %s. Toque para abrir o PDF. Excel: %s"
-                              % (ds[0]["nome"], "; ".join(partes), " | ".join(analises) or "sem movimentação", alvo["entrega"][:10], EXCEL),
+                              % (ds[0]["nome"], "; ".join(partes), " | ".join(analises) or "leitura indisponível, abrir o PDF", alvo["entrega"][:10], EXCEL),
                        "anexo": juntar_pngs(pngs, os.path.join(RAIZ, "estado", "grafico_%s.png" % t)) if pngs else ""})
     if falhas:
         pushes.append({"titulo": "CVM 44: falha ao ler formulário", "prio": "default", "tags": "warning", "click": CONSULTA,

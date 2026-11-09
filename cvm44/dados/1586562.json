@@ -1,0 +1,162 @@
+{
+ "empresa": "VITRU EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5373800.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5373800.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    },
+    {
+     "ativo": "Bônus",
+     "caracteristica": "de Subscrição",
+     "quantidade": 1.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 62700.0,
+     "preco": 18.3278,
+     "volume": 1149153.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "15",
+     "quantidade": 95000.0,
+     "preco": 19.61,
+     "volume": 1862950.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual de",
+     "operacao": "Ações decorrentes exercício de opção de compra",
+     "dia": "6",
+     "quantidade": 62793.0,
+     "preco": 13.0,
+     "volume": 816309.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual de",
+     "operacao": "Ações decorrentes exercício de opção de compra",
+     "dia": "13",
+     "quantidade": 94971.0,
+     "preco": 13.0,
+     "volume": 1234623.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Desligamento/saída",
+     "dia": "5",
+     "quantidade": 64.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Posse",
+     "dia": "5",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "VTRU3",
+ "nome": "Vitru",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/11/2026 19:32",
+ "versao": "1",
+ "protocolo": "1586562",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586562",
+ "pdf": "VTRU3_2026-10_consolidado_v1.pdf"
+}

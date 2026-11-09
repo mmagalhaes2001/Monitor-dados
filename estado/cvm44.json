@@ -4317,6 +4317,39 @@
    "ticker": "FLRY3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
+  },
+  "1586408": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111114&numVersao=1&numProtocolo=1586408&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:34",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586408",
+   "nome": "Yduqs",
+   "protocolo": "1586408",
+   "ref": "10/2026",
+   "ticker": "YDUQ3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1586494": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111200&numVersao=1&numProtocolo=1586494&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:40",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586494",
+   "nome": "Yduqs",
+   "protocolo": "1586494",
+   "ref": "10/2026",
+   "ticker": "YDUQ3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1586562": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111268&numVersao=1&numProtocolo=1586562&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 19:32",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586562",
+   "nome": "Vitru",
+   "protocolo": "1586562",
+   "ref": "10/2026",
+   "ticker": "VTRU3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
   }
  }
 }
