@@ -139,7 +139,15 @@ def analisar(protocolo, png=None):
 
 
 def grafico(ticker, ref, series_png, caminho):
-    import matplotlib
+    try:
+        import matplotlib
+    except ImportError:
+        import subprocess
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "matplotlib==3.9.2", "pillow"], capture_output=True, timeout=300)
+        try:
+            import matplotlib
+        except ImportError:
+            return None   # sem gráfico, mas o aviso sai normalmente
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     grupos = [g for g, sr in series_png.items() if any(v for _, v in sr)]
