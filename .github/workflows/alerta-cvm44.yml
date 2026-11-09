@@ -99,12 +99,7 @@ jobs:
             # guarda o que este turno produziu, traz o remoto (código novo inclusive) e reaplica por cima
             cp estado/cvm44.json /tmp/cvm44_local.json
             git fetch -q origin main && git reset -q --hard origin/main
-            python - <<'PY'
-          import json
-          a = json.load(open("/tmp/cvm44_local.json")); b = json.load(open("estado/cvm44.json"))
-          b.setdefault("vistos", {}).update(a.get("vistos", {}))
-          json.dump(b, open("estado/cvm44.json", "w"), ensure_ascii=False, indent=1, sort_keys=True)
-PY
+            python cvm44/mesclar_estado.py /tmp/cvm44_local.json estado/cvm44.json
             python cvm44/planilha.py gerar > /dev/null 2>&1 || true
             git add estado/cvm44.json cvm44/pdf cvm44/dados cvm44/negociacoes_cvm44.xlsx
             git commit -q -m "CVM 44: $1" || true
