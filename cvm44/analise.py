@@ -113,7 +113,14 @@ def analisar(protocolo, png=None):
         if bruto == 0:
             continue
         dirc = "comprou" if liq > 0 else "vendeu"
-        base = "%s %s R$ %s líquido" % (g, dirc, fmt(abs(liq)))
+        if atual["compra"] > 0 and atual["venda"] > 0:
+            ops = [m["operacao"].lower() for d_ in docs if d_["ref"] == ref and "Consolidada" in d_["tipo"] for p_ in d_["paginas"]
+                   if GRUPOS.get(p_["orgao"], "Outros") == g for m in p_["movimentacoes"]]
+            exerc = any(("opç" in o or "exerc" in o) and _classe(o) == "compra" for o in ops)
+            base = "%s comprou R$ %s%s e vendeu R$ %s (líquido: %s R$ %s)" % (
+                g, fmt(atual["compra"]), " via exercício de opções" if exerc else "", fmt(atual["venda"]), dirc, fmt(abs(liq)))
+        else:
+            base = "%s %s R$ %s líquido" % (g, dirc, fmt(abs(liq)))
         if abs(liq) < 1 * MI and bruto < 1 * MI:
             frases.append(base + " (pequeno)")
             continue
