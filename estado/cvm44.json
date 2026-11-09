@@ -4251,6 +4251,28 @@
    "ticker": "VIVT3",
    "tipo": "Posição Consolidada",
    "versao": "1"
+  },
+  "1586370": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111076&numVersao=1&numProtocolo=1586370&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:18",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586370",
+   "nome": "Totvs",
+   "protocolo": "1586370",
+   "ref": "10/2026",
+   "ticker": "TOTS3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1586374": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111080&numVersao=1&numProtocolo=1586374&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "09/11/2026 18:20",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586374",
+   "nome": "Totvs",
+   "protocolo": "1586374",
+   "ref": "10/2026",
+   "ticker": "TOTS3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
   }
  }
 }
