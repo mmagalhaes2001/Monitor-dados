@@ -72,6 +72,7 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
 
           push() { # titulo, prioridade, tags, click, mensagem, [anexo png]
+            bash cvm44/issue.sh "$1" "$4" "$5"   # segundo canal: issue no GitHub → e-mail (independe do ntfy/Apple)
             for i in 1 2 3; do
               if [ -n "$6" ] && [ -f "$6" ]; then
                 # com anexo: o arquivo vai no corpo e a mensagem no cabeçalho
@@ -87,9 +88,6 @@ jobs:
               sleep 20
             done
             echo "falha no ntfy: $1"
-            if [ "$2" != "low" ]; then
-              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$5 ($4)" || echo "falha na issue"
-            fi
           }
           enviar_pushes() { # lê o JSON do processar.py em $1 e manda cada push
             python cvm44/listar_pushes.py "$1" | while IFS=$'\x1f' read -r t p g c m a; do

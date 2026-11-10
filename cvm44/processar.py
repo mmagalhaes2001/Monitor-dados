@@ -175,6 +175,26 @@ def main():
 
     if ping:
         ambos, parcial, nenhum = mapa()
+        # recap: tudo que saiu nas últimas ~30h, com a análise — rede de segurança se um push individual se perder
+        from datetime import datetime, timedelta
+        lim = datetime.now() - timedelta(hours=30)
+        rec = []
+        for v in sorted(vistos.values(), key=lambda v: v["entrega"][6:10] + v["entrega"][3:5] + v["entrega"][0:2] + v["entrega"][11:]):
+            try:
+                dt = datetime.strptime(v["entrega"], "%d/%m/%Y %H:%M")
+            except Exception:
+                continue
+            if dt < lim: continue
+            try:
+                a = analise.analisar(v["protocolo"])
+                txt = a["texto"] or "sem leitura"; nv = a["nivel"]
+            except Exception:
+                txt, nv = "sem leitura", "baixa"
+            rec.append("%s %s %s [%s]: %s" % (v["entrega"][11:], v["ticker"], "C" if "Consolidada" in v["tipo"] else "I",
+                                             {"alta": "RELEVANTE", "media": "atenção", "baixa": "rotina"}[nv], txt[:220]))
+        if rec:
+            pushes.append({"titulo": "Recap CVM 44 (%s): %d formulários nas últimas 30h" % (date.today().strftime("%d/%m"), len(rec)),
+                           "prio": "default", "tags": "newspaper", "click": EXCEL, "msg": "\n".join(rec)[:3900]})
         msg = "Ref %s — entregaram os 2 formulários (%d): %s." % (ref, len(ambos), ", ".join(ambos) or "ninguém")
         if parcial: msg += " Parcial (%d): %s." % (len(parcial), ", ".join(parcial))
         msg += " Faltam (%d): %s. Sigo checando." % (len(nenhum), ", ".join(nenhum) or "ninguém")
