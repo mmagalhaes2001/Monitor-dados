@@ -130,12 +130,28 @@ def analisar(protocolo, png=None):
         ult_dir = next((x for x in reversed(ativos) if x), None)
         if ult_dir is not None and (ult_dir > 0) != (liq > 0) and abs(liq) >= 1 * MI: motivos.append("inverteu direção (vinha %s)" % ("comprando" if ult_dir > 0 else "vendendo"))
         if media and abs(liq) >= 2 * media and abs(liq) >= 5 * MI: motivos.append("%.1fx a média (R$ %s)" % (abs(liq) / media, fmt(media)))
+        # sequência: quantos meses seguidos (antes deste) o grupo veio na mesma direção
+        seq = 0
+        for r in reversed(hist):
+            x = s[g][r]["compra"] - s[g][r]["venda"] if r in s[g] else 0
+            if x and (x > 0) == (liq > 0): seq += 1
+            elif x: break
+            else: break
+        # preço desta operação vs média das operações anteriores na mesma direção
+        lado = "venda" if liq < 0 else "compra"
+        q_at = atual["q_" + lado]; p_at = atual[lado] / q_at if q_at else 0
+        qh = sum(s[g][r]["q_" + lado] for r in hist if r in s[g]); vh = sum(s[g][r][lado] for r in hist if r in s[g])
+        p_h = vh / qh if qh else 0
+        extra = []
+        if seq >= 2: extra.append("%dº mês seguido %s" % (seq + 1, "vendendo" if liq < 0 else "comprando"))
+        if p_h and p_at and abs(p_at / p_h - 1) >= 0.15:
+            extra.append("a R$ %.2f, %s%.0f%% vs média anterior de R$ %.2f" % (p_at, "+" if p_at > p_h else "−", abs(p_at / p_h - 1) * 100, p_h))
         if motivos:
-            sobe("alta"); frases.append(base + " — " + "; ".join(motivos))
+            sobe("alta"); frases.append(base + " — " + "; ".join(motivos + extra))
         elif abs(liq) >= 1 * MI or (media and abs(liq) >= 1.5 * media):
-            sobe("media"); frases.append(base + (" — %.1fx a média" % (abs(liq) / media) if media else ""))
+            sobe("media"); frases.append(base + " — " + "; ".join(((["%.1fx a média" % (abs(liq) / media)] if media else []) + extra) or ["acima de R$ 1 mi"]))
         else:
-            frases.append(base)
+            frases.append(base + (" — " + "; ".join(extra) if extra else ""))
     if not frases:
         frases.append("Sem movimentação de insiders no mês" if cons else "Sem recompra no mês")
 
