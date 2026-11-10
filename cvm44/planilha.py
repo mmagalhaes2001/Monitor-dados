@@ -27,15 +27,21 @@ def nome_pdf(d):
 
 def baixar(d):
     os.makedirs(PDF_DIR, exist_ok=True)
+    import time
     alvo = os.path.join(PDF_DIR, nome_pdf(d))
-    if not os.path.exists(alvo):
-        req = urllib.request.Request(d["download"], headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=120) as r, open(alvo, "wb") as f:
-            f.write(r.read())
-    with open(alvo, "rb") as f:
-        if f.read(4) != b"%PDF":
-            os.remove(alvo); raise RuntimeError("download não é PDF")
-    return alvo
+    for tentativa in range(3):
+        if not os.path.exists(alvo):
+            req = urllib.request.Request(d["download"], headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=120) as r:
+                conteudo = r.read()
+            if conteudo[:4] != b"%PDF":
+                time.sleep(20); continue          # recém-protocolado: a CVM às vezes devolve HTML por alguns minutos
+            with open(alvo, "wb") as f:
+                f.write(conteudo)
+        with open(alvo, "rb") as f:
+            if f.read(4) == b"%PDF": return alvo
+        os.remove(alvo)
+    raise RuntimeError("download não é PDF (CVM ainda processando?)")
 
 
 def processar(docs):

@@ -99,12 +99,38 @@ def main():
         return
 
     # Baixa e lê os novos; regenera o Excel
-    falhas = []
+    falhas = []; novos_salvar = False
     if novos:
         try:
             _, falhas = planilha.processar(novos); planilha.gerar()
+            falhas = [f for f in falhas if "ainda processando" not in f]
         except Exception as e:
             falhas.append("planilha: " + str(e)[:100])
+
+    # Pendentes: já vistos mas sem leitura (download falhou na hora) → tenta de novo e avisa a análise quando sair
+    pend = [v for k, v in vistos.items() if v.get("download") and k not in {d["protocolo"] for d in novos}
+            and not os.path.exists(os.path.join(AQUI, "dados", k + ".json"))
+            and v["entrega"][6:10] + v["entrega"][3:5] >= (date.today().replace(day=1)).strftime("%Y%m")]
+    if pend:
+        lidos, f2 = planilha.processar(pend)
+        if lidos:
+            planilha.gerar()
+            for d in pend:
+                if d["protocolo"] in lidos:
+                    try:
+                        png = os.path.join(RAIZ, "estado", "grafico_%s.png" % d["protocolo"])
+                        a = analise.analisar(d["protocolo"], png)
+                        tag = {"alta": "RELEVANTE", "media": "atenção", "baixa": "leitura concluída"}[a["nivel"]]
+                        pushes.append({"titulo": "CVM 44 · %s · %s" % (d["ticker"], tag),
+                                       "prio": {"alta": "urgent", "media": "high", "baixa": "default"}[a["nivel"]],
+                                       "tags": "repeat", "click": d["link"],
+                                       "msg": "%s — %s (ref %s), leitura feita agora: %s. Excel: %s" % (
+                                           d["nome"], "Consolidado/insiders" if "Consolidada" in d["tipo"] else "Individual/recompra", d["ref"], a["texto"], EXCEL),
+                                       "anexo": a["png"] or ""})
+                    except Exception as e:
+                        falhas.append("análise %s: %s" % (d["protocolo"], str(e)[:80]))
+            novos_salvar = True
+        falhas += [f for f in f2 if "ainda processando" not in f]   # só reclama se for outro erro
 
     # Agrupa novos por empresa: um push por empresa, clique abre a Consolidada (ou a que houver)
     por_t = {}
@@ -154,11 +180,11 @@ def main():
         msg += " Faltam (%d): %s. Sigo checando." % (len(nenhum), ", ".join(nenhum) or "ninguém")
         pushes.append({"titulo": "Robô CVM 44 ok (%s)" % date.today().strftime("%d/%m"), "prio": "low", "tags": "robot", "click": CONSULTA, "msg": msg})
 
-    if novos:
+    if novos or novos_salvar:
         salvar(est)
     _, _, nenhum = mapa()
     parciais = [t for t in tickers if entregou(t, "C") != entregou(t, "I")]
-    print(json.dumps({"ok": True, "mudou": bool(novos), "pushes": pushes, "faltam": len(nenhum) + len(parciais)}, ensure_ascii=False))
+    print(json.dumps({"ok": True, "mudou": bool(novos) or novos_salvar, "pushes": pushes, "faltam": len(nenhum) + len(parciais)}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
