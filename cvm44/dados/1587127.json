@@ -1,0 +1,49 @@
+{
+ "empresa": "TIM S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2150335.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Doação (doador)",
+     "dia": "1",
+     "quantidade": 23458.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2126877.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "TIM S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "TIMS3",
+ "nome": "TIM",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/11/2026 18:00",
+ "versao": "1",
+ "protocolo": "1587127",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587127",
+ "pdf": "TIMS3_2026-10_individual_v1.pdf"
+}

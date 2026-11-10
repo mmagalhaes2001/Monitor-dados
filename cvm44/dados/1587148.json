@@ -1,0 +1,123 @@
+{
+ "empresa": "DIAGNOSTICOS DA AMERICA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1066168341.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1066168341.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5648881.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5648881.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 737711.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 737711.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "DASA3",
+ "nome": "Dasa",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/11/2026 18:02",
+ "versao": "1",
+ "protocolo": "1587148",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587148",
+ "pdf": "DASA3_2026-10_consolidado_v1.pdf"
+}

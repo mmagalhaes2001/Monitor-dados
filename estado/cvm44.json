@@ -4394,6 +4394,94 @@
    "ticker": "INTB3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
+  },
+  "1587127": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111833&numVersao=1&numProtocolo=1587127&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:00",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587127",
+   "nome": "TIM",
+   "protocolo": "1587127",
+   "ref": "10/2026",
+   "ticker": "TIMS3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1587133": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111839&numVersao=1&numProtocolo=1587133&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:01",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587133",
+   "nome": "TIM",
+   "protocolo": "1587133",
+   "ref": "10/2026",
+   "ticker": "TIMS3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1587140": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111846&numVersao=1&numProtocolo=1587140&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:01",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587140",
+   "nome": "Dasa",
+   "protocolo": "1587140",
+   "ref": "10/2026",
+   "ticker": "DASA3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1587148": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111854&numVersao=1&numProtocolo=1587148&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:02",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587148",
+   "nome": "Dasa",
+   "protocolo": "1587148",
+   "ref": "10/2026",
+   "ticker": "DASA3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1587166": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111872&numVersao=1&numProtocolo=1587166&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:06",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587166",
+   "nome": "Hypera",
+   "protocolo": "1587166",
+   "ref": "10/2026",
+   "ticker": "HYPE3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1587167": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111873&numVersao=1&numProtocolo=1587167&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:06",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587167",
+   "nome": "Hypera",
+   "protocolo": "1587167",
+   "ref": "10/2026",
+   "ticker": "HYPE3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1587173": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111879&numVersao=1&numProtocolo=1587173&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:08",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587173",
+   "nome": "Raia Drogasil",
+   "protocolo": "1587173",
+   "ref": "10/2026",
+   "ticker": "RADL3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1587179": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111885&numVersao=1&numProtocolo=1587179&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:08",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587179",
+   "nome": "Raia Drogasil",
+   "protocolo": "1587179",
+   "ref": "10/2026",
+   "ticker": "RADL3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
   }
  }
 }

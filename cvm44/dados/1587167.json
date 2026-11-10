@@ -1,0 +1,376 @@
+{
+ "empresa": "HYPERA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 402359523.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 402359523.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Venda",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 6.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2299581.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 160000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA227",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA272",
+     "quantidade": -200000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA232",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEI201",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEK235",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEK248",
+     "quantidade": -50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEG222",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEH215",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEK220",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Compra",
+     "dia": "28",
+     "quantidade": 50000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEK235",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda",
+     "dia": "28",
+     "quantidade": 50000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEL222",
+     "intermediario": "XP Investimentos",
+     "operacao": "Compra",
+     "dia": "29",
+     "quantidade": 50000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "HYPEL237",
+     "intermediario": "XP Investimentos",
+     "operacao": "Venda",
+     "dia": "29",
+     "quantidade": 50000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "5",
+     "quantidade": 2400.0,
+     "preco": 27.62,
+     "volume": 66288.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 5000.0,
+     "preco": 25.02,
+     "volume": 125100.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 800.0,
+     "preco": 26.83,
+     "volume": 21464.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 2200.0,
+     "preco": 26.82,
+     "volume": 59004.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 3600.0,
+     "preco": 26.81,
+     "volume": 96516.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 5400.0,
+     "preco": 26.8,
+     "volume": 144720.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "7",
+     "quantidade": 9800.0,
+     "preco": 27.3,
+     "volume": 267540.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "7",
+     "quantidade": 200.0,
+     "preco": 27.3,
+     "volume": 5460.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA272",
+     "quantidade": -200000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEA232",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEI201",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEK235",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEK248",
+     "quantidade": -50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEG222",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEH215",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEK220",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEL222",
+     "quantidade": 50000.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra HYPEL237",
+     "quantidade": -50000.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 113439.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 113439.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 6
+  }
+ ],
+ "ticker": "HYPE3",
+ "nome": "Hypera",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/11/2026 18:06",
+ "versao": "1",
+ "protocolo": "1587167",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587167",
+ "pdf": "HYPE3_2026-10_consolidado_v1.pdf"
+}
