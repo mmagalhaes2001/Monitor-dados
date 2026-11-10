@@ -4372,6 +4372,28 @@
    "ticker": "ANIM3",
    "tipo": "Posição Consolidada",
    "versao": "1"
+  },
+  "1587031": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111737&numVersao=1&numProtocolo=1587031&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 16:27",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587031",
+   "nome": "Intelbras",
+   "protocolo": "1587031",
+   "ref": "10/2026",
+   "ticker": "INTB3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
+  },
+  "1587032": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111738&numVersao=1&numProtocolo=1587032&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 16:28",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587032",
+   "nome": "Intelbras",
+   "protocolo": "1587032",
+   "ref": "10/2026",
+   "ticker": "INTB3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
   }
  }
 }

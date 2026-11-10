@@ -1,0 +1,267 @@
+{
+ "empresa": "Intelbras S.A. Ind. de Telecomunicação Eletrônica Brasileira",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 210588441.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": -2500.0
+    },
+    {
+     "ativo": "15",
+     "caracteristica": "52 VENC",
+     "quantidade": 17112026.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": -2000.0
+    },
+    {
+     "ativo": "15",
+     "caracteristica": "74 VENC",
+     "quantidade": 16102026.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": -2500.0
+    },
+    {
+     "ativo": "15",
+     "caracteristica": "44 VENC",
+     "quantidade": 17112026.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "260923172 STRIKE 15 65",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Venda EXERCÍCIO DE",
+     "dia": "13",
+     "quantidade": 2000.0,
+     "preco": 3.33,
+     "volume": 6660.0
+    },
+    {
+     "ativo": "Opção de Compra",
+     "caracteristica": "260828780 STRIKE 15 74",
+     "intermediario": "XP Investimentos  CCTVM S.A. DE",
+     "operacao": "CALL LANÇADA (POSIÇÃO VENDIDA), LIQ.  FINANCEIRA R$ 2,06/AÇÃO, SEM ENTREGA",
+     "dia": "16",
+     "quantidade": 2000.0,
+     "preco": 2.06,
+     "volume": 4120.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "DE XP Investimentos  CCTVM S.A.",
+     "operacao": "AÇÕES Contratação de empréstimo (locador)",
+     "dia": "28",
+     "quantidade": 7000.0,
+     "preco": 14.21,
+     "volume": 99470.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "29",
+     "quantidade": 2070.0,
+     "preco": 14.5087,
+     "volume": 30033.01
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Contratação de empréstimo (locador)",
+     "dia": "5",
+     "quantidade": 6088.0,
+     "preco": 15.66,
+     "volume": 95338.08
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Contratação de empréstimo (locador)",
+     "dia": "5",
+     "quantidade": 6088.0,
+     "preco": 15.66,
+     "volume": 95338.08
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Contratação de empréstimo (locador)",
+     "dia": "7",
+     "quantidade": 5000.0,
+     "preco": 17.31,
+     "volume": 86550.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Contratação de empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 5000.0,
+     "preco": 17.83,
+     "volume": 89150.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 912.0,
+     "preco": 14.39,
+     "volume": 13123.68
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos CCTVM S.A.",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 6088.0,
+     "preco": 15.66,
+     "volume": 95338.08
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "8",
+     "quantidade": 6088.0,
+     "preco": 15.66,
+     "volume": 95338.08
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "9",
+     "quantidade": 5000.0,
+     "preco": 17.31,
+     "volume": 86550.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos  CCTVM S.A.",
+     "operacao": "Devolução de empréstimo (locador)",
+     "dia": "13",
+     "quantidade": 5000.0,
+     "preco": 17.83,
+     "volume": 89150.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "15",
+     "caracteristica": "74 VENC",
+     "quantidade": 16102026.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": -2500.0
+    },
+    {
+     "ativo": "15",
+     "caracteristica": "44 VENC",
+     "quantidade": 17112026.0
+    },
+    {
+     "ativo": "Opção",
+     "caracteristica": "de Compra",
+     "quantidade": -2000.0
+    },
+    {
+     "ativo": "15",
+     "caracteristica": "65 VENC",
+     "quantidade": 28122026.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2424853.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2424853.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 371054.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 371054.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "INTB3",
+ "nome": "Intelbras",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/11/2026 16:27",
+ "versao": "1",
+ "protocolo": "1587031",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587031",
+ "pdf": "INTB3_2026-10_consolidado_v1.pdf"
+}
