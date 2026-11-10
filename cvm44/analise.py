@@ -159,6 +159,8 @@ def analisar(protocolo, png=None):
     if flags:
         frases.append("⚑ " + " ⚑ ".join(flags))
         sobe("media")
+    if getattr(casos_especiais, "notas", None):
+        frases.append("nota: " + "; ".join(casos_especiais.notas))
     out = {"relevante": nivel != "baixa", "nivel": nivel, "texto": "; ".join(frases), "png": None, "flags": flags}
     if png and any(any(v for _, v in serie_) for serie_ in series_png.values()):
         out["png"] = grafico(ticker, ref, series_png, png)
@@ -168,7 +170,7 @@ def analisar(protocolo, png=None):
 def casos_especiais(d):
     """Sinais que mudam a leitura ou indicam erro de preenchimento. Devolve lista de frases curtas."""
     import statistics
-    flags = []
+    flags = []; notas = []
     cons = "Consolidada" in d["tipo"]
     import re as _re
     for p_ in d["paginas"]:
@@ -209,8 +211,14 @@ def casos_especiais(d):
                 flags.append("%s: saldos não fecham (%s + %s − %s ≠ %s; diferença %s ações)" % (g, fmt(si[k]), fmt(c), fmt(v), fmt(sf[k]), fmt(abs(dif))))
         # 4) operações realmente atípicas (termo, doação, herança, empréstimo, permuta, leilão de frações...)
         chaves = ("termo", "doaç", "heran", "emprést", "alugu", "permuta", "leilão", "integraliz", "dação", "conferência", "cisão", "incorpora")
-        raros = sorted({m["operacao"] for m in movs if any(k in m["operacao"].lower() for k in chaves)})
-        if raros:
+        atip = [m for m in movs if any(k in m["operacao"].lower() for k in chaves)]
+        raros = sorted({m["operacao"] for m in atip})
+        pos_ref = max([v for k_, v in si.items() if k_[0].lower().startswith("aç") and v] or [0])
+        q_atip = sum(abs(m["quantidade"] or 0) for m in atip if m["ativo"].lower().startswith("aç"))
+        # aluguel/termo/opção em volume desprezível (<0,1% da posição) só vira nota, não sobe o nível
+        if raros and pos_ref and q_atip / pos_ref < 0.001:
+            notas.append("%s: %s em lote desprezível (%s ações, %.3f%% da posição)" % (g, "; ".join(r[:30] for r in raros), fmt(q_atip), 100 * q_atip / pos_ref))
+        elif raros:
             flags.append("%s: operação atípica — %s" % (g, "; ".join(r[:45] for r in raros)))
         # 5) zerou ou montou posição do zero
         for k in set(si) & set(sf):
@@ -232,6 +240,7 @@ def casos_especiais(d):
             vt = [m for m in vendas if "à vista" in m["operacao"].lower()]
             if vt:
                 flags.append("Tesouraria vendeu em mercado %s ações (R$ %s)" % (fmt(sum(m["quantidade"] for m in vt)), fmt(sum(m["volume"] or 0 for m in vt))))
+    casos_especiais.notas = notas
     return flags
 
 
