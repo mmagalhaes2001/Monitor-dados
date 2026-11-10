@@ -1,0 +1,226 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 199284626.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "SWAP LIQUIDACAO FISICA",
+     "quantidade": 37277180.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco BTG DE  Pactual",
+     "operacao": "RECEBIMENTO AÇÕES POR  LIQUIDAÇÃO DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "intermediario": "Banco BTG  Pactual",
+     "operacao": "LIQUIDAÇÃO PARCIAL DO SWAP",
+     "dia": "28",
+     "quantidade": 87204.0,
+     "preco": 4.25,
+     "volume": 370617.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S.A",
+     "operacao": "Ações de plano de  remuneração",
+     "dia": "14",
+     "quantidade": 72500.0,
+     "preco": 14.73,
+     "volume": 1067925.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 199705942.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "SWAP LIQUIDACAO FISICA",
+     "quantidade": 36928364.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 78328.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 78328.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160392.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 160392.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1032.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1032.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1507.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1507.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/11/2026 18:11",
+ "versao": "1",
+ "protocolo": "1587196",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587196",
+ "pdf": "HAPV3_2026-10_consolidado_v1.pdf"
+}

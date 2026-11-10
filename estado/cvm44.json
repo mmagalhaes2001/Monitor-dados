@@ -4482,6 +4482,28 @@
    "ticker": "RADL3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
+  },
+  "1587187": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111893&numVersao=1&numProtocolo=1587187&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:10",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587187",
+   "nome": "Hapvida",
+   "protocolo": "1587187",
+   "ref": "10/2026",
+   "ticker": "HAPV3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1587196": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111902&numVersao=1&numProtocolo=1587196&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:11",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587196",
+   "nome": "Hapvida",
+   "protocolo": "1587196",
+   "ref": "10/2026",
+   "ticker": "HAPV3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
   }
  }
 }

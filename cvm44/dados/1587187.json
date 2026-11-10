@@ -1,0 +1,159 @@
+{
+ "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 27526704.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV15",
+     "quantidade": 25886.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV19",
+     "quantidade": 16801.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPVA0",
+     "quantidade": 42049.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV17",
+     "quantidade": 39047.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV18",
+     "quantidade": 61572.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S.A",
+     "operacao": "Ações de plano de  remuneração",
+     "dia": "14",
+     "quantidade": -72500.0,
+     "preco": -14.73,
+     "volume": 1067925.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV15",
+     "intermediario": "Banco Santander",
+     "operacao": "CANCELAMENTO",
+     "dia": "9",
+     "quantidade": 24927.0,
+     "preco": 825.63185,
+     "volume": 20580525.1
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV17",
+     "intermediario": "Banco Santander",
+     "operacao": "CANCELAMENTO",
+     "dia": "9",
+     "quantidade": 39047.0,
+     "preco": 841.12984,
+     "volume": 32843597.02
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV18",
+     "intermediario": "Banco Santander",
+     "operacao": "CANCELAMENTO",
+     "dia": "9",
+     "quantidade": 61572.0,
+     "preco": 815.02567,
+     "volume": 50182760.37
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV19",
+     "intermediario": "Banco Santander",
+     "operacao": "CANCELAMENTO",
+     "dia": "9",
+     "quantidade": 16801.0,
+     "preco": 779.57258,
+     "volume": 13097598.85
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPVA0",
+     "intermediario": "Banco Santander",
+     "operacao": "CANCELAMENTO",
+     "dia": "9",
+     "quantidade": 42049.0,
+     "preco": 770.75745,
+     "volume": 32409580.02
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV15",
+     "intermediario": "Banco Santander",
+     "operacao": "CANCELAMENTO",
+     "dia": "21",
+     "quantidade": 959.0,
+     "preco": 855.52486,
+     "volume": 820448.34
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 27454204.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV15",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV19",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPVA0",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV17",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "HAPV18",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Hapvida Participações e Investimentos S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "HAPV3",
+ "nome": "Hapvida",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/11/2026 18:10",
+ "versao": "1",
+ "protocolo": "1587187",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587187",
+ "pdf": "HAPV3_2026-10_individual_v1.pdf"
+}
