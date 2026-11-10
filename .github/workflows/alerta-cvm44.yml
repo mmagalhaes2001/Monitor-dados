@@ -9,7 +9,8 @@ name: Alerta - CVM 44 (negociação de administradores)
 # Cada formulário é comparado com os 12 meses anteriores da empresa (cvm44/analise.py): o título do push
 # diz RELEVANTE / atenção / rotina e, quando há movimentação, vai um gráfico (PNG) anexo.
 #
-# Janela: o mês inteiro, a cada 10 min do dia 1 ao 12 (prazo é o dia 10) e a cada 30 min no resto.
+# Janela: o mês inteiro. A cada 10 min do dia 1 até o 15 enquanto houver empresa sem entregar (prazo legal é o dia 10);
+# a cada 30 min quando todas entregaram ou depois do dia 15 (atrasos continuam sendo pegos).
 # Aviso de vida às 9h, com quem já entregou o mês de referência e quem falta.
 # Roda em "corrente" (~5h50 por execução, depois dispara a próxima); o cron é rede de segurança.
 # Estado em estado/cvm44.json. Para adicionar empresa: uma linha em cvm44/empresas.csv (código CVM
@@ -43,7 +44,7 @@ env:
   LINK: https://www.rad.cvm.gov.br/ENETWeb/frmConsultaExternaCVM.aspx
   INTERVALO_CEDO: "600"
   INTERVALO_TARDE: "1800"
-  DIA_CEDO_FIM: "12"
+  DIA_CEDO_FIM: "15"
   DURACAO: "21000"
 
 jobs:
@@ -142,7 +143,8 @@ jobs:
             fi
 
             [ "$(date +%s)" -ge "$fim" ] && break
-            if [ "$dia" -le "$DIA_CEDO_FIM" ]; then sleep "$INTERVALO_CEDO"; else sleep "$INTERVALO_TARDE"; fi
+            faltam=$(python -c "import json;print(json.load(open('/tmp/r.json')).get('faltam', 1))" 2>/dev/null || echo 1)
+            if [ "$dia" -le "$DIA_CEDO_FIM" ] && [ "$faltam" != "0" ]; then sleep "$INTERVALO_CEDO"; else sleep "$INTERVALO_TARDE"; fi
           done
           echo "Fim do turno."
 

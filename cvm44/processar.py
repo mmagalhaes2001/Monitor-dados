@@ -156,7 +156,9 @@ def main():
 
     if novos:
         salvar(est)
-    print(json.dumps({"ok": True, "mudou": bool(novos), "pushes": pushes}, ensure_ascii=False))
+    _, _, nenhum = mapa()
+    parciais = [t for t in tickers if entregou(t, "C") != entregou(t, "I")]
+    print(json.dumps({"ok": True, "mudou": bool(novos), "pushes": pushes, "faltam": len(nenhum) + len(parciais)}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
