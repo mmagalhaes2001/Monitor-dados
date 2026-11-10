@@ -4515,6 +4515,17 @@
    "ticker": "COGN3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
+  },
+  "1587384": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1112090&numVersao=1&numProtocolo=1587384&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 18:40",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587384",
+   "nome": "Cogna",
+   "protocolo": "1587384",
+   "ref": "10/2026",
+   "ticker": "COGN3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
   }
  }
 }

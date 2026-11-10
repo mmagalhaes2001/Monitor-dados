@@ -1,0 +1,186 @@
+{
+ "empresa": "COGNA EDUCAÇÃO S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 49279273.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 49279273.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 12474717.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Ações de plano de  remuneração",
+     "dia": "14",
+     "quantidade": 443557.0,
+     "preco": 0.01,
+     "volume": 4435.57
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Ágora  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "1",
+     "quantidade": 8578.0,
+     "preco": 2.32,
+     "volume": 19900.96
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 12909696.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos",
+     "operacao": "Compra à vista",
+     "dia": "26",
+     "quantidade": 3000.0,
+     "preco": 1.91,
+     "volume": 5730.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3000.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 23369107.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "26",
+     "quantidade": 50000.0,
+     "preco": 2.0,
+     "volume": 100000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "26",
+     "quantidade": 100000.0,
+     "preco": 1.95,
+     "volume": 195000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "27",
+     "quantidade": 100000.0,
+     "preco": 1.85,
+     "volume": 185000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "28",
+     "quantidade": 50000.0,
+     "preco": 1.75,
+     "volume": 87500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "28",
+     "quantidade": 50000.0,
+     "preco": 1.8,
+     "volume": 90000.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 23719107.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "COGN3",
+ "nome": "Cogna",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/11/2026 18:40",
+ "versao": "1",
+ "protocolo": "1587384",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587384",
+ "pdf": "COGN3_2026-10_consolidado_v1.pdf"
+}
