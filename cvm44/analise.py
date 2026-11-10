@@ -139,10 +139,84 @@ def analisar(protocolo, png=None):
     if not frases:
         frases.append("Sem movimentação de insiders no mês" if cons else "Sem recompra no mês")
 
-    out = {"relevante": nivel != "baixa", "nivel": nivel, "texto": "; ".join(frases), "png": None}
+    flags = casos_especiais(d)
+    if flags:
+        frases.append("⚑ " + " ⚑ ".join(flags))
+        sobe("media")
+    out = {"relevante": nivel != "baixa", "nivel": nivel, "texto": "; ".join(frases), "png": None, "flags": flags}
     if png and any(any(v for _, v in serie_) for serie_ in series_png.values()):
         out["png"] = grafico(ticker, ref, series_png, png)
     return out
+
+
+def casos_especiais(d):
+    """Sinais que mudam a leitura ou indicam erro de preenchimento. Devolve lista de frases curtas."""
+    import statistics
+    flags = []
+    cons = "Consolidada" in d["tipo"]
+    import re as _re
+    for p_ in d["paginas"]:
+        for m in p_["movimentacoes"]:
+            m["operacao"] = _re.sub(r"\s+", " ", m["operacao"]).strip()
+    if d.get("versao", "1") != "1":
+        flags.append("reapresentação (versão %s) — compare com a anterior" % d["versao"])
+    for p in d["paginas"]:
+        g = GRUPOS.get(p["orgao"], "Outros") if cons else "Companhia"
+        movs = [m for m in p["movimentacoes"] if (m["quantidade"] or 0) != 0]
+        vista = [m for m in movs if "à vista" in m["operacao"].lower() and (m["preco"] or 0) > 0]
+        exerc = [m for m in movs if ("opç" in m["operacao"].lower() or "exerc" in m["operacao"].lower()) and _classe(m["operacao"]) == "compra"]
+        vendas = [m for m in movs if _classe(m["operacao"]) == "venda"]
+        compras_vista = [m for m in vista if _classe(m["operacao"]) == "compra"]
+        # 1) exercício de opção + venda no mesmo mês: venda é cash-out de remuneração, não redução de posição antiga
+        if cons and exerc and vendas:
+            qe = sum(m["quantidade"] for m in exerc); qv = sum(m["quantidade"] for m in vendas)
+            pe = sum(m["volume"] or 0 for m in exerc) / qe if qe else 0; pv = sum(m["volume"] or 0 for m in vendas) / qv if qv else 0
+            flags.append("%s: venda vinculada a exercício de opções (exerceu %s a R$ %.2f, vendeu %s a R$ %.2f) — não é redução de posição antiga" % (g, fmt(qe), pe, fmt(qv), pv))
+        # 2) preço implícito absurdo → provável erro de preenchimento da companhia
+        precos = [m["preco"] for m in vista]
+        if len(precos) >= 1:
+            med = statistics.median(precos)
+            for m in vista:
+                if m["preco"] < 0.05 or (med > 0 and (m["preco"] < med / 20 or m["preco"] > med * 20)):
+                    flags.append("%s: %s de %s ações a R$ %.3f (R$ %s) — provável erro de preenchimento da companhia, confirmar antes de somar" % (
+                        g, m["operacao"], fmt(m["quantidade"]), m["preco"], fmt(m["volume"] or 0)))
+        # 3) saldos não fecham sem derivativo que explique
+        si = {(x["ativo"], x["caracteristica"]): x["quantidade"] for x in p["saldo_inicial"]}
+        sf = {(x["ativo"], x["caracteristica"]): x["quantidade"] for x in p["saldo_final"]}
+        for k in set(si) & set(sf):
+            if not k[0].lower().startswith("aç"): continue
+            c = sum(m["quantidade"] or 0 for m in movs if (m["ativo"], m["caracteristica"]) == k and _classe(m["operacao"]) == "compra")
+            v = sum(m["quantidade"] or 0 for m in movs if (m["ativo"], m["caracteristica"]) == k and _classe(m["operacao"]) == "venda")
+            outros = [m for m in movs if (m["ativo"], m["caracteristica"]) == k and _classe(m["operacao"]) == "outro"]
+            dif = (si[k] or 0) + c - v - (sf[k] or 0)
+            if abs(dif) > 0.5 and not outros and si[k] is not None:
+                flags.append("%s: saldos não fecham (%s + %s − %s ≠ %s; diferença %s ações)" % (g, fmt(si[k]), fmt(c), fmt(v), fmt(sf[k]), fmt(abs(dif))))
+        # 4) operações realmente atípicas (termo, doação, herança, empréstimo, permuta, leilão de frações...)
+        chaves = ("termo", "doaç", "heran", "emprést", "alugu", "permuta", "leilão", "integraliz", "dação", "conferência", "cisão", "incorpora")
+        raros = sorted({m["operacao"] for m in movs if any(k in m["operacao"].lower() for k in chaves)})
+        if raros:
+            flags.append("%s: operação atípica — %s" % (g, "; ".join(r[:45] for r in raros)))
+        # 5) zerou ou montou posição do zero
+        for k in set(si) & set(sf):
+            if not k[0].lower().startswith("aç"): continue
+            if (si[k] or 0) > 0 and (sf[k] or 0) == 0 and vendas and cons:
+                flags.append("%s zerou a posição em %s %s" % (g, k[0], k[1]))
+            if (si[k] or 0) == 0 and (sf[k] or 0) > 0 and compras_vista and cons and g in ("Controlador", "Conselho", "Diretoria"):
+                flags.append("%s montou posição do zero em %s %s (%s ações)" % (g, k[0], k[1], fmt(sf[k])))
+        # 5b) vendeu/comprou fatia grande da posição (insiders, só à vista)
+        if cons and g in ("Controlador", "Conselho", "Diretoria"):
+            for k in set(si):
+                if not k[0].lower().startswith("aç") or not si[k]: continue
+                qv = sum(m["quantidade"] or 0 for m in vista if (m["ativo"], m["caracteristica"]) == k and _classe(m["operacao"]) == "venda")
+                qc = sum(m["quantidade"] or 0 for m in vista if (m["ativo"], m["caracteristica"]) == k and _classe(m["operacao"]) == "compra")
+                if qv / si[k] >= 0.2 and not exerc: flags.append("%s vendeu %.0f%% da posição que tinha em %s %s" % (g, 100 * qv / si[k], k[0], k[1]))
+                if qc / si[k] >= 0.2: flags.append("%s aumentou a posição em %.0f%% (%s %s)" % (g, 100 * qc / si[k], k[0], k[1]))
+        # 6) individual: venda de tesouraria sem ser plano de remuneração
+        if not cons:
+            vt = [m for m in vendas if "à vista" in m["operacao"].lower()]
+            if vt:
+                flags.append("Tesouraria vendeu em mercado %s ações (R$ %s)" % (fmt(sum(m["quantidade"] for m in vt)), fmt(sum(m["volume"] or 0 for m in vt))))
+    return flags
 
 
 def grafico(ticker, ref, series_png, caminho):
