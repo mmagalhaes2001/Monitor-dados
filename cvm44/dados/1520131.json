@@ -1,0 +1,133 @@
+{
+ "empresa": "ONCOCLÍNICAS DO BRASIL SERVIÇOS MÉDICOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 54276723.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "RENÚNCIA  CA",
+     "dia": "7",
+     "quantidade": 30000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 54246723.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2169034.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DA  DIRETORIA",
+     "dia": "1",
+     "quantidade": 261916.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DA  DIRETORIA",
+     "dia": "1",
+     "quantidade": 999293.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DA  DIRETORIA",
+     "dia": "1",
+     "quantidade": 140167.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DA  DIRETORIA",
+     "dia": "13",
+     "quantidade": 72500.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 695158.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "ONCO3",
+ "nome": "Oncoclínicas",
+ "tipo": "Posição Consolidada",
+ "entrega": "11/05/2026 19:08",
+ "versao": "1",
+ "protocolo": "1520131",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1520131",
+ "pdf": "ONCO3_2026-04_consolidado_v1.pdf"
+}

@@ -1,0 +1,186 @@
+{
+ "empresa": "CM Hospitalar S.A",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 121164431.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "VVEO15",
+     "quantidade": 410402.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "CMPH14",
+     "quantidade": 22131.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Posse INTEGRALIZAÇÃO",
+     "dia": "30",
+     "quantidade": 106101.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "VVEO15",
+     "intermediario": "DE  DE",
+     "operacao": "DEBENTURES  PARA AUMENTO CAPITAL",
+     "dia": "30",
+     "quantidade": 410402.0,
+     "preco": 1110.5537,
+     "volume": 455773459.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "CMPH14",
+     "intermediario": "DE  DE",
+     "operacao": "INTEGRALIZAÇÃO DEBENTURES  PARA AUMENTO CAPITAL",
+     "dia": "30",
+     "quantidade": 22131.0,
+     "preco": 843.64164,
+     "volume": 18670633.13
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Escriturador",
+     "operacao": "Ações resultantes de conversão de debêntures",
+     "dia": "30",
+     "quantidade": 480437586.0,
+     "preco": 0.9,
+     "volume": 432393827.4
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 601708118.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "VVEO15",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Debêntures",
+     "caracteristica": "CMPH14",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 102200.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 102200.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 5
+  }
+ ],
+ "ticker": "VVEO3",
+ "nome": "Viveo",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/11/2026 19:34",
+ "versao": "1",
+ "protocolo": "1586566",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586566",
+ "pdf": "VVEO3_2026-10_consolidado_v1.pdf"
+}

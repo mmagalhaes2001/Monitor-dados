@@ -11,7 +11,7 @@ from collections import defaultdict
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DADOS = os.path.join(AQUI, "dados"); VLMO = os.path.join(AQUI, "vlmo")
-SETORES = {"TMT": ("matriz_cvm44_TMT.xlsx", ["TMT"]), "HC_Edu": ("matriz_cvm44_HC_Edu.xlsx", ["HC", "Edu"])}
+SETORES = {"TMT": ("matriz_cvm44_TMT.xlsx", ["TMT"]), "HC_Edu": ("matriz_cvm44_HC_Edu.xlsx", ["HC"])}
 sys.path.insert(0, AQUI)
 
 GRUPOS = [("Controlador", "Controlador"), ("Conselho Administração", "Conselho"), ("Diretoria", "Diretoria"),

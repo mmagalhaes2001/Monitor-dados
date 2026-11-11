@@ -1,0 +1,213 @@
+{
+ "empresa": "ONCOCLÍNICAS DO BRASIL SERVIÇOS MÉDICOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "01/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 57501542.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DO  CONSELHO",
+     "dia": "7",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DO  CONSELHO",
+     "dia": "7",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DO  CONSELHO",
+     "dia": "7",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DO  CONSELHO ENTRADA",
+     "dia": "7",
+     "quantidade": 827022.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "NO CONSELHO  DE ADMINISTR AÇÃO",
+     "dia": "30",
+     "quantidade": 30000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "SAÍDA DO  CONSELHO",
+     "dia": "7",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ENTRADA NO CONSELHO",
+     "dia": "30",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ENTRADA NO CONSELHO",
+     "dia": "30",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ENTRADA NO CONSELHO",
+     "dia": "30",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ENTRADA DO CONSELHO",
+     "dia": "30",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "ENTRADA NO CONSELHO",
+     "dia": "30",
+     "quantidade": 0.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 2427797.0,
+     "preco": 2.92,
+     "volume": 7089167.24
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 54276723.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5838857.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 150000.0,
+     "preco": 2.6794,
+     "volume": 401909.96
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 5688857.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "ONCO3",
+ "nome": "Oncoclínicas",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/02/2026 21:50",
+ "versao": "1",
+ "protocolo": "1476182",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1476182",
+ "pdf": "ONCO3_2026-01_consolidado_v1.pdf"
+}

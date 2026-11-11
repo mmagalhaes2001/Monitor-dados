@@ -1,0 +1,49 @@
+{
+ "empresa": "ONCOCLÍNICAS DO BRASIL SERVIÇOS MÉDICOS S.A.",
+ "tipo_form": "Individual",
+ "ref": "06/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 12552103.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "PILP",
+     "dia": "18",
+     "quantidade": 72500.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 12479603.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "ONCOCLÍNICAS DO BRASIL SERVIÇOS MÉDICOS S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "ONCO3",
+ "nome": "Oncoclínicas",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/07/2026 22:47",
+ "versao": "2",
+ "protocolo": "1544191",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1544191",
+ "pdf": "ONCO3_2026-06_individual_v2.pdf"
+}
