@@ -4977,6 +4977,17 @@
    "ticker": "RDOR3",
    "tipo": "Posição Consolidada",
    "versao": "1"
+  },
+  "1587817": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1112523&numVersao=2&numProtocolo=1587817&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "11/11/2026 18:13",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587817",
+   "nome": "Fleury",
+   "protocolo": "1587817",
+   "ref": "10/2026",
+   "ticker": "FLRY3",
+   "tipo": "Posição Consolidada",
+   "versao": "2"
   }
  }
 }
