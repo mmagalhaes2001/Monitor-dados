@@ -204,7 +204,8 @@ def coletar(operadora, pracas):
                                       segmento=taxonomia.SEG.get(tipo, pl["segmento"]))
                         reg["n"] = len(planos)
                         res["planos"].extend(planos)
-                        if uf in ("SP", "RJ"):  # guarda amostra do HTML para conferência
+                        if uf in ("SP", "RJ") or (not reg["ok"] and not any(  # amostra p/ conferência + 1ª falha de cada página
+                                x["pagina"] == seg and not x["ok"] for x in res["paginas"])):
                             (SAIDA / "html" / ("%s_%s_%s.html" % (operadora, uf, seg))).write_text(html, encoding="utf-8")
                         break
                     except Exception:

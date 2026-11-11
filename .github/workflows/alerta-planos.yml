@@ -60,7 +60,7 @@ jobs:
           wait || true
           for op in vivo claro tim; do echo "===== $op"; cat /tmp/log_$op.txt; done
       - name: Histórico, planilha e aviso
-        if: always()
+        if: success() || failure()   # não consolida rodada cancelada
         env:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

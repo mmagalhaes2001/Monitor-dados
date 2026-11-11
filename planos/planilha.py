@@ -157,6 +157,17 @@ def gerar():
     aba(wb, "Coletas", ["Data", "Hora", "Operadora", "UF", "Cidade", "Página", "OK", "Nº planos", "Praça na tela", "Erro"],
         [[r[c] for c in COLS_LOG] for r in sorted(log, key=lambda r: (r["data"], r["hora"], r["operadora"], r["uf"]), reverse=True)],
         {9: 24, 10: 60})
+    nota = wb.create_sheet("Notas")
+    for l in [
+        "Fonte: sites de Vivo, Claro e TIM, lidos todo dia pelo robô nas 27 capitais (o mesmo que um cliente vê na vitrine).",
+        "Fibra: é o preço de vitrine da cidade; a disponibilidade de fato depende do CEP. A TIM mostra as ofertas 'gerais' de Ultrafibra em todas as UFs.",
+        "TIM: a grade vem do cadastro de ofertas do site, com a lista de UFs onde cada uma aparece.",
+        "Mudança = qualquer alteração em preço, preço De, preço após promoção, condição, GB, composição dos GB, velocidade, nº de linhas, benefícios ou selo.",
+        "Um plano só é dado como 'saiu' se a página daquela praça foi lida com sucesso naquele dia.",
+        "Tipo e linha comercial: regras em planos/taxonomia.py.",
+    ]:
+        nota.append([l])
+    nota.column_dimensions["A"].width = 140
     wb.save(ARQ)
     return ARQ
 
