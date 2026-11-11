@@ -1,0 +1,69 @@
+{
+ "empresa": "POSITIVO TECNOLOGIA S.A.",
+ "tipo_form": "Individual",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 2589258.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "14",
+     "quantidade": 400000.0,
+     "preco": 3.95456,
+     "volume": 1581825.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 100000.0,
+     "preco": 3.98431,
+     "volume": 398431.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3089258.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "POSITIVO TECNOLOGIA S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "POSI3",
+ "nome": "Positivo",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/06/2026 10:31",
+ "versao": "1",
+ "protocolo": "1531573",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1531573",
+ "pdf": "POSI3_2026-05_individual_v1.pdf"
+}

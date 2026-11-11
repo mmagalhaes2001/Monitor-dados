@@ -1,0 +1,143 @@
+{
+ "empresa": "Tim Brasil Serviços e Participações S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "02/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 15865086849.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 15865086849.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 441517.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 220700.0,
+     "preco": 27.41,
+     "volume": 6049388.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 58.0,
+     "preco": 27.75724,
+     "volume": 1609.92
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "",
+     "operacao": "Posse",
+     "dia": "26",
+     "quantidade": 75600.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 296359.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 175679.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "12",
+     "quantidade": 20000.0,
+     "preco": 27.76,
+     "volume": 555200.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "27",
+     "quantidade": 14500.0,
+     "preco": 28.11,
+     "volume": 407595.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Genial  Investimentos",
+     "operacao": "Venda à vista",
+     "dia": "19",
+     "quantidade": 95000.0,
+     "preco": 27.08016,
+     "volume": 2572615.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 46179.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "TIMB",
+ "nome": "TIM Brasil",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/03/2026 18:03",
+ "versao": "1",
+ "protocolo": "1488190",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488190",
+ "pdf": "TIMB_2026-02_consolidado_v1.pdf"
+}

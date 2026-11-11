@@ -1,0 +1,48 @@
+{
+ "empresa": "POSITIVO TECNOLOGIA S.A.",
+ "tipo_form": "Individual",
+ "ref": "09/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3329258.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3329258.0
+    },
+    {
+     "ativo": "Derivativos",
+     "caracteristica": "",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2,
+   "entidade": "POSITIVO TECNOLOGIA S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "POSI3",
+ "nome": "Positivo",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "08/10/2026 09:25",
+ "versao": "1",
+ "protocolo": "1575309",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575309",
+ "pdf": "POSI3_2026-09_individual_v1.pdf"
+}

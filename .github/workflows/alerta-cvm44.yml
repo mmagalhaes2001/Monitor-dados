@@ -6,7 +6,7 @@ name: Alerta - CVM 44 (negociação de administradores)
 # com link para abrir o PDF e resumo do que o formulário mostra. Versões corrigidas (v2, v3...) também avisam.
 # Ao detectar, baixa o PDF (cvm44/pdf), lê (cvm44/dados/*.json) e regenera cvm44/negociacoes_cvm44.xlsx
 # (abas Movimentações, Resumo, Posições, Fontes, Monitor mensal, 12 meses, Entregas). Link do Excel vai no push.
-# Também regenera cvm44/matriz_cvm44.xlsx: empresas × meses, um bloco por grupo × tipo de operação (Volume/Quantidade/Preço),
+# Também regenera cvm44/matriz_cvm44_TMT.xlsx cvm44/matriz_cvm44_HC_Edu.xlsx: empresas × meses, um bloco por grupo × tipo de operação (Volume/Quantidade/Preço),
 # completando meses antigos com os dados abertos da CVM (cvm44/vlmo/, não versionado).
 # Cada formulário é comparado com os 12 meses anteriores da empresa (cvm44/analise.py): o título do push
 # diz RELEVANTE / atenção / rotina e, quando há movimentação, vai um gráfico (PNG) anexo.
@@ -104,7 +104,7 @@ jobs:
             python cvm44/mesclar_estado.py /tmp/cvm44_local.json estado/cvm44.json
             python cvm44/planilha.py gerar > /dev/null 2>&1 || true
             python cvm44/matriz.py --desde 2025-01 > /dev/null 2>&1 || true
-            git add estado/cvm44.json cvm44/pdf cvm44/dados cvm44/negociacoes_cvm44.xlsx cvm44/matriz_cvm44.xlsx
+            git add estado/cvm44.json cvm44/pdf cvm44/dados cvm44/negociacoes_cvm44.xlsx cvm44/matriz_cvm44_TMT.xlsx cvm44/matriz_cvm44_HC_Edu.xlsx
             git commit -q -m "CVM 44: $1" || true
             git push -q origin HEAD:main || echo "falha ao salvar estado"
           }

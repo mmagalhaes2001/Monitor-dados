@@ -1,0 +1,38 @@
+{
+ "empresa": "ALLIED TECNOLOGIA S.A.",
+ "tipo_form": "Individual",
+ "ref": "05/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Allied Tecnologia S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "ALLD3",
+ "nome": "Allied",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/06/2026 18:38",
+ "versao": "1",
+ "protocolo": "1533319",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1533319",
+ "pdf": "ALLD3_2026-05_individual_v1.pdf"
+}

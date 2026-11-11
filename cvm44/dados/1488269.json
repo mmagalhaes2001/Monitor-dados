@@ -1,0 +1,656 @@
+{
+ "empresa": "ALLIED TECNOLOGIA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "02/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 47529100.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 6813.0,
+     "preco": 8.0,
+     "volume": 54504.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "3",
+     "quantidade": 63129.0,
+     "preco": 8.003,
+     "volume": 505221.39
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "12",
+     "quantidade": 38124.0,
+     "preco": 7.644,
+     "volume": 291419.86
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 71754.0,
+     "preco": 7.514,
+     "volume": 539159.56
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "18",
+     "quantidade": 80016.0,
+     "preco": 7.555,
+     "volume": 604520.88
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "19",
+     "quantidade": 60157.0,
+     "preco": 7.527,
+     "volume": 452801.74
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 245122.0,
+     "preco": 7.52,
+     "volume": 1843317.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 159453.0,
+     "preco": 7.54,
+     "volume": 1202275.62
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "24",
+     "quantidade": 485244.0,
+     "preco": 7.591,
+     "volume": 3683487.2
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "25",
+     "quantidade": 66608.0,
+     "preco": 7.597,
+     "volume": 506020.98
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "26",
+     "quantidade": 22613.0,
+     "preco": 7.539,
+     "volume": 170479.41
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "27",
+     "quantidade": 241208.0,
+     "preco": 7.37,
+     "volume": 1777702.96
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 2587.0,
+     "preco": 8.0,
+     "volume": 20696.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "3",
+     "quantidade": 23971.0,
+     "preco": 8.003,
+     "volume": 191839.91
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "12",
+     "quantidade": 14476.0,
+     "preco": 7.644,
+     "volume": 110654.54
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 27246.0,
+     "preco": 7.514,
+     "volume": 204726.44
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "18",
+     "quantidade": 30384.0,
+     "preco": 7.555,
+     "volume": 229551.12
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "19",
+     "quantidade": 22843.0,
+     "preco": 7.527,
+     "volume": 171939.26
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 93078.0,
+     "preco": 7.52,
+     "volume": 699946.56
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 60547.0,
+     "preco": 7.54,
+     "volume": 456524.38
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "24",
+     "quantidade": 184256.0,
+     "preco": 7.591,
+     "volume": 1398687.3
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "25",
+     "quantidade": 25292.0,
+     "preco": 7.597,
+     "volume": 192143.32
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "26",
+     "quantidade": 8587.0,
+     "preco": 7.539,
+     "volume": 64737.39
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "27",
+     "quantidade": 91592.0,
+     "preco": 7.37,
+     "volume": 675033.04
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 45404000.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4695989.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "27",
+     "quantidade": 14558.0,
+     "preco": 7.38044,
+     "volume": 107444.45
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4681431.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 570908.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "19",
+     "quantidade": 3000.0,
+     "preco": 7.52,
+     "volume": 22560.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 3500.0,
+     "preco": 7.53,
+     "volume": 26355.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "26",
+     "quantidade": 8651.0,
+     "preco": 7.55,
+     "volume": 65315.05
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "19",
+     "quantidade": 68651.0,
+     "preco": 2.03,
+     "volume": 139361.53
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A XP",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "21",
+     "quantidade": 33333.0,
+     "preco": 2.0297,
+     "volume": 67655.99
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 20000.0,
+     "preco": 7.8863,
+     "volume": 157726.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "3",
+     "quantidade": 20000.0,
+     "preco": 7.98785,
+     "volume": 159757.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES",
+     "operacao": "Venda à vista",
+     "dia": "4",
+     "quantidade": 25000.0,
+     "preco": 7.85728,
+     "volume": 196432.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "MOBI XP INVESTIME  NTOS CORRETOR",
+     "operacao": "Venda à vista",
+     "dia": "5",
+     "quantidade": 20000.0,
+     "preco": 7.795,
+     "volume": 155900.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "A DE CÂMBIO, TÍTULOS E VALORES MOBI XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "6",
+     "quantidade": 25000.0,
+     "preco": 7.716,
+     "volume": 192900.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 15000.0,
+     "preco": 7.7816,
+     "volume": 116724.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "10",
+     "quantidade": 20000.0,
+     "preco": 7.6958,
+     "volume": 153916.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "11",
+     "quantidade": 20000.0,
+     "preco": 7.7559,
+     "volume": 155118.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "12",
+     "quantidade": 15000.0,
+     "preco": 7.75693,
+     "volume": 116354.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 16800.0,
+     "preco": 7.56333,
+     "volume": 127064.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 20000.0,
+     "preco": 7.4738,
+     "volume": 149476.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 25000.0,
+     "preco": 7.521,
+     "volume": 188025.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "VALORES MOBI XP",
+     "operacao": "Venda à vista",
+     "dia": "24",
+     "quantidade": 25000.0,
+     "preco": 7.56352,
+     "volume": 189088.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "25",
+     "quantidade": 15000.0,
+     "preco": 7.61433,
+     "volume": 114215.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES MOBI",
+     "operacao": "Venda à vista",
+     "dia": "26",
+     "quantidade": 25000.0,
+     "preco": 7.54264,
+     "volume": 188566.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP INVESTIME NTOS CORRETOR A DE CÂMBIO, TÍTULOS E VALORES",
+     "operacao": "Venda à vista",
+     "dia": "27",
+     "quantidade": 19100.0,
+     "preco": 7.42885,
+     "volume": 141891.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "MOBI Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "20",
+     "quantidade": 355137.0,
+     "preco": 2.03,
+     "volume": 720928.11
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "19",
+     "quantidade": 32262.0,
+     "preco": 2.03,
+     "volume": 65491.86
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "19",
+     "quantidade": 76654.0,
+     "preco": 2.03,
+     "volume": 155607.62
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "19",
+     "quantidade": 72778.0,
+     "preco": 2.03,
+     "volume": 147739.34
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "27",
+     "quantidade": 49900.0,
+     "preco": 2.21,
+     "volume": 110279.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "27",
+     "quantidade": 33234.0,
+     "preco": 2.21,
+     "volume": 73447.14
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "27",
+     "quantidade": 33334.0,
+     "preco": 2.21,
+     "volume": 73668.14
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "18",
+     "quantidade": 10000.0,
+     "preco": 7.54,
+     "volume": 75400.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 7000.0,
+     "preco": 7.50286,
+     "volume": 52520.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 968140.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 100.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 100.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 7
+  }
+ ],
+ "ticker": "ALLD3",
+ "nome": "Allied",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/03/2026 18:07",
+ "versao": "1",
+ "protocolo": "1488269",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488269",
+ "pdf": "ALLD3_2026-02_consolidado_v1.pdf"
+}

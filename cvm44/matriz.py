@@ -11,7 +11,7 @@ from collections import defaultdict
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DADOS = os.path.join(AQUI, "dados"); VLMO = os.path.join(AQUI, "vlmo")
-XLSX = os.path.join(AQUI, "matriz_cvm44.xlsx")
+SETORES = {"TMT": ("matriz_cvm44_TMT.xlsx", ["TMT"]), "HC_Edu": ("matriz_cvm44_HC_Edu.xlsx", ["HC", "Edu"])}
 sys.path.insert(0, AQUI)
 
 GRUPOS = [("Controlador", "Controlador"), ("Conselho Administração", "Conselho"), ("Diretoria", "Diretoria"),
@@ -116,10 +116,6 @@ def do_csv(anos, por_cnpj, cobertos):
 
 
 def gerar(desde="2025-01"):
-    from openpyxl import Workbook
-    from openpyxl.styles import Font, PatternFill, Alignment
-    from openpyxl.utils import get_column_letter
-    emps = empresas(); tickers = [e["ticker"] for e in emps]; nomes = {e["ticker"]: e["nome"] for e in emps}
     por_cnpj = {v: k for k, v in cnpjs().items() if v}
     pdf, cobertos = dos_pdfs()
     anos = sorted({int(desde[:4])} | {a for a in range(int(desde[:4]), 2027)})
@@ -128,8 +124,20 @@ def gerar(desde="2025-01"):
     for src in (pdf, csvd):
         for k, (q, v) in src.items():
             acc[k][0] += q; acc[k][1] += v
-    meses = sorted({k[1] for k in acc} | {k[1] for k in []})
-    meses = [m for m in meses if m >= desde]
+    meses = sorted({k[1] for k in acc}); meses = [m for m in meses if m >= desde]
+    out = []
+    for nome_set, (arq, setores) in SETORES.items():
+        emps = [e for e in empresas() if e.get("setor") in setores]
+        emps.sort(key=lambda e: (setores.index(e["setor"]), int(e.get("ordem") or 0)))
+        out.append(_gerar_arquivo(os.path.join(AQUI, arq), emps, acc, cobertos, meses))
+    return out
+
+
+def _gerar_arquivo(XLSX, emps, acc, cobertos, meses):
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, PatternFill, Alignment
+    from openpyxl.utils import get_column_letter
+    tickers = [e["ticker"] for e in emps]; nomes = {e["ticker"]: e["nome"] for e in emps}
     rot = lambda m: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"][int(m[5:]) - 1] + "-" + m[2:4]
 
     wb = Workbook(); wb.remove(wb.active)
@@ -161,7 +169,7 @@ def gerar(desde="2025-01"):
                     r += 1
                 linha = r + 1
         ws.freeze_panes = "C1"
-    # Fontes / cobertura
+    # Ordem dos blocos: grupo × operação, como no monitor (Controller Buy Spot, Controller Sell Spot, ...). Mantida.
     ws = wb.create_sheet("Cobertura")
     ws.append(["Mês", "Fonte dos dados"])
     for m in meses:
@@ -172,7 +180,7 @@ def gerar(desde="2025-01"):
     ws.append([]); ws.append(["Derivativos (opções, swaps) e debêntures ficam fora; só ações. Empréstimo = ações cedidas em aluguel (não é venda)."])
     ws.column_dimensions["A"].width = 40; ws.column_dimensions["B"].width = 70
     wb.save(XLSX)
-    return len(meses), len(acc)
+    return os.path.basename(XLSX), len(meses)
 
 
 if __name__ == "__main__":

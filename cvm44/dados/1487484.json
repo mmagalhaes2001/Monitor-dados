@@ -1,0 +1,59 @@
+{
+ "empresa": "GRUPO MULTI S.A.",
+ "tipo_form": "Individual",
+ "ref": "02/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 13123495.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "MOVIMENT AÇÃO DEVIDO A DECISÃO JUDICIAL",
+     "dia": "24",
+     "quantidade": 6400.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "MOVIMENT AÇÃO DEVIDO A DECISÃO JUDICIAL",
+     "dia": "25",
+     "quantidade": 6400.0,
+     "preco": 0.0,
+     "volume": 0.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 13123495.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "GRUPO MULTI S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "MLAS3",
+ "nome": "Multilaser",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/03/2026 18:06",
+ "versao": "1",
+ "protocolo": "1487484",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1487484",
+ "pdf": "MLAS3_2026-02_individual_v1.pdf"
+}

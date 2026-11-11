@@ -1,0 +1,174 @@
+{
+ "empresa": "POSITIVO TECNOLOGIA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "08/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 69307547.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 85600.0,
+     "preco": 3.27443,
+     "volume": 280291.62
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Compra à  vista",
+     "dia": "20",
+     "quantidade": 314400.0,
+     "preco": 3.36807,
+     "volume": 1058921.25
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Compra à  vista",
+     "dia": "13",
+     "quantidade": 45000.0,
+     "preco": 3.47384,
+     "volume": 156322.76
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Compra à  vista",
+     "dia": "14",
+     "quantidade": 95000.0,
+     "preco": 3.3472,
+     "volume": 317983.82
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Compra à  vista",
+     "dia": "17",
+     "quantidade": 40000.0,
+     "preco": 3.28738,
+     "volume": 131495.16
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP",
+     "operacao": "Compra à  vista",
+     "dia": "19",
+     "quantidade": 20000.0,
+     "preco": 3.32719,
+     "volume": 66543.81
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 69907547.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opções",
+     "caracteristica": "de Plano de Remuneração STOCK OPTIONS",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    },
+    {
+     "ativo": "Opções",
+     "caracteristica": "de Plano de Remuneração STOCK OPTIONS",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "POSI3",
+ "nome": "Positivo",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/09/2026 14:12",
+ "versao": "1",
+ "protocolo": "1566086",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566086",
+ "pdf": "POSI3_2026-08_consolidado_v1.pdf"
+}

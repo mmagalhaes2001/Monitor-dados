@@ -1,0 +1,475 @@
+{
+ "empresa": "ALLIED TECNOLOGIA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "04/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 43518100.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "1",
+     "quantidade": 67187.0,
+     "preco": 6.9363,
+     "volume": 466029.19
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 66535.0,
+     "preco": 6.94847,
+     "volume": 462316.69
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "6",
+     "quantidade": 104079.0,
+     "preco": 6.91928,
+     "volume": 720152.04
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "7",
+     "quantidade": 112197.0,
+     "preco": 6.79121,
+     "volume": 761953.92
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 148726.0,
+     "preco": 6.78028,
+     "volume": 1008403.67
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 94295.0,
+     "preco": 6.81546,
+     "volume": 642663.52
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "10",
+     "quantidade": 138144.0,
+     "preco": 6.81103,
+     "volume": 940902.71
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 130751.0,
+     "preco": 6.83934,
+     "volume": 894250.63
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "14",
+     "quantidade": 100745.0,
+     "preco": 6.82584,
+     "volume": 687669.37
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "15",
+     "quantidade": 85017.0,
+     "preco": 6.7752,
+     "volume": 576007.17
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "16",
+     "quantidade": 2754.0,
+     "preco": 6.77711,
+     "volume": 18664.17
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 122343.0,
+     "preco": 6.75771,
+     "volume": 826758.95
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 87047.0,
+     "preco": 6.7946,
+     "volume": 591449.91
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "1",
+     "quantidade": 25513.0,
+     "preco": 6.9363,
+     "volume": 176965.81
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 25265.0,
+     "preco": 6.94848,
+     "volume": 175553.31
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "6",
+     "quantidade": 39521.0,
+     "preco": 6.91928,
+     "volume": 273456.96
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "7",
+     "quantidade": 42603.0,
+     "preco": 6.79121,
+     "volume": 289326.08
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 56474.0,
+     "preco": 6.78028,
+     "volume": 382909.33
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 35805.0,
+     "preco": 6.81546,
+     "volume": 244027.48
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "10",
+     "quantidade": 52456.0,
+     "preco": 6.81103,
+     "volume": 357279.29
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 49649.0,
+     "preco": 6.83934,
+     "volume": 339566.37
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "14",
+     "quantidade": 38255.0,
+     "preco": 6.82584,
+     "volume": 261122.63
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "15",
+     "quantidade": 32283.0,
+     "preco": 6.7752,
+     "volume": 218723.83
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "16",
+     "quantidade": 1046.0,
+     "preco": 6.77708,
+     "volume": 7088.83
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "17",
+     "quantidade": 46457.0,
+     "preco": 6.75771,
+     "volume": 313943.05
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 33053.0,
+     "preco": 6.79461,
+     "volume": 224582.09
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 41779900.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4681431.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4681431.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 866662.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "1",
+     "quantidade": 10000.0,
+     "preco": 6.96,
+     "volume": 69600.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 5000.0,
+     "preco": 6.77,
+     "volume": 33850.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora  de Valores",
+     "operacao": "Ações decorrentes de exercício de opção de compra",
+     "dia": "6",
+     "quantidade": 121047.0,
+     "preco": 2.06,
+     "volume": 249356.82
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "16",
+     "quantidade": 14.0,
+     "preco": 6.85,
+     "volume": 95.9
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 60033.0,
+     "preco": 6.85001,
+     "volume": 411226.71
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 11700.0,
+     "preco": 6.8,
+     "volume": 79560.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 10000.0,
+     "preco": 6.85,
+     "volume": 68500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "14",
+     "quantidade": 6900.0,
+     "preco": 6.85,
+     "volume": 47265.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 10000.0,
+     "preco": 6.85,
+     "volume": 68500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "16",
+     "quantidade": 2940.0,
+     "preco": 6.7,
+     "volume": 19698.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "2",
+     "quantidade": 24000.0,
+     "preco": 6.98917,
+     "volume": 167740.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 847122.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 100.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 100.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 4
+  }
+ ],
+ "ticker": "ALLD3",
+ "nome": "Allied",
+ "tipo": "Posição Consolidada",
+ "entrega": "08/05/2026 18:01",
+ "versao": "1",
+ "protocolo": "1519007",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519007",
+ "pdf": "ALLD3_2026-04_consolidado_v1.pdf"
+}

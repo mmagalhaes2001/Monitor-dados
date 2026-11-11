@@ -1,0 +1,109 @@
+{
+ "empresa": "VALID SOLUÇÕES S.A.",
+ "tipo_form": "Individual",
+ "ref": "06/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3665747.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à  vista",
+     "dia": "9",
+     "quantidade": 30000.0,
+     "preco": 17.0894,
+     "volume": 512682.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à  vista",
+     "dia": "11",
+     "quantidade": 10000.0,
+     "preco": 17.3896,
+     "volume": 173896.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à  vista",
+     "dia": "16",
+     "quantidade": 24500.0,
+     "preco": 17.25759,
+     "volume": 422811.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "CANCELAM ENTO DE AÇÕES",
+     "dia": "17",
+     "quantidade": 2000000.0,
+     "preco": 0.0,
+     "volume": 0.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à  vista RECOMPRA DE AÇÕES",
+     "dia": "18",
+     "quantidade": 10000.0,
+     "preco": 17.1463,
+     "volume": 171463.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "PELA COMPANHI A NOS TERMOS DO ILP APÓS DESLIGAME NTO DE FUNCIONAR IO",
+     "dia": "18",
+     "quantidade": 6585.0,
+     "preco": 10.63022,
+     "volume": 70000.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú",
+     "operacao": "AÇÕES ALIENADAS COM BASE NO PLANO  DE INCENTIVO EM LOGO PRAZO.",
+     "dia": "12",
+     "quantidade": 153534.0,
+     "preco": 10.76847,
+     "volume": 1653326.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1593298.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "VALID SOLUÇÕES E SERV. SEG. MEIOS PAG. IDENT. S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "VLID3",
+ "nome": "Valid",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "06/07/2026 17:40",
+ "versao": "1",
+ "protocolo": "1542094",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1542094",
+ "pdf": "VLID3_2026-06_individual_v1.pdf"
+}

@@ -1,0 +1,119 @@
+{
+ "empresa": "GRUPO MULTILASER S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 13848295.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "14",
+     "quantidade": 150000.0,
+     "preco": 2.28983,
+     "volume": 343474.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "15",
+     "quantidade": 150000.0,
+     "preco": 2.37441,
+     "volume": 356161.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "19",
+     "quantidade": 150000.0,
+     "preco": 2.46043,
+     "volume": 369064.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "20",
+     "quantidade": 200000.0,
+     "preco": 2.55348,
+     "volume": 510695.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "21",
+     "quantidade": 200000.0,
+     "preco": 2.59317,
+     "volume": 518633.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "22",
+     "quantidade": 200000.0,
+     "preco": 2.4864,
+     "volume": 497280.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "23",
+     "quantidade": 200000.0,
+     "preco": 2.4937,
+     "volume": 498739.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "26",
+     "quantidade": 200000.0,
+     "preco": 1.89961,
+     "volume": 379921.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 15298295.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "GRUPO MULTILASER S.A. - Companhia - Tesouraria"
+  }
+ ],
+ "ticker": "MLAS3",
+ "nome": "Multilaser",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "06/11/2026 22:31",
+ "versao": "1",
+ "protocolo": "1585898",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585898",
+ "pdf": "MLAS3_2026-10_individual_v1.pdf"
+}

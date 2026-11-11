@@ -1,0 +1,59 @@
+{
+ "empresa": "VALID SOLUÇÕES S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1703298.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "8",
+     "quantidade": 50000.0,
+     "preco": 19.4805,
+     "volume": 974025.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual",
+     "operacao": "Compra à vista",
+     "dia": "13",
+     "quantidade": 30000.0,
+     "preco": 19.5945,
+     "volume": 587835.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1783298.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "VALID SOLUÇÕES E SERV. SEG. MEIOS PAG. IDENT. S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "VLID3",
+ "nome": "Valid",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "09/11/2026 18:11",
+ "versao": "1",
+ "protocolo": "1586343",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586343",
+ "pdf": "VLID3_2026-10_individual_v1.pdf"
+}

@@ -1,0 +1,193 @@
+{
+ "empresa": "ALLIED TECNOLOGIA S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 7254588.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "XP Investimentos Corretora de  Câmbio, Títulos e Valores Mobi",
+     "operacao": "Compra à vista",
+     "dia": "2",
+     "quantidade": 40000.0,
+     "preco": 5.30075,
+     "volume": 212030.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "8",
+     "quantidade": 94600.0,
+     "preco": 5.2451,
+     "volume": 496186.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "13",
+     "quantidade": 53600.0,
+     "preco": 6.35343,
+     "volume": 340544.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "20",
+     "quantidade": 16000.0,
+     "preco": 6.8925,
+     "volume": 110280.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "21",
+     "quantidade": 22500.0,
+     "preco": 6.9204,
+     "volume": 155709.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "22",
+     "quantidade": 10500.0,
+     "preco": 7.06952,
+     "volume": 74230.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 10000.0,
+     "preco": 6.99,
+     "volume": 69900.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Compra à vista",
+     "dia": "26",
+     "quantidade": 30000.0,
+     "preco": 5.22297,
+     "volume": 156689.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 7306588.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 798798.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 2800.0,
+     "preco": 7.13,
+     "volume": 19964.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "8",
+     "quantidade": 10000.0,
+     "preco": 5.25,
+     "volume": 52500.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Itaú Corretora de  Valores S/A",
+     "operacao": "Venda à vista",
+     "dia": "23",
+     "quantidade": 2700.0,
+     "preco": 7.33,
+     "volume": 19791.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 783298.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Órgãos Técnicos ou Consultivos",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 100.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 100.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "ALLD3",
+ "nome": "Allied",
+ "tipo": "Posição Consolidada",
+ "entrega": "09/11/2026 18:12",
+ "versao": "1",
+ "protocolo": "1586346",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586346",
+ "pdf": "ALLD3_2026-10_consolidado_v1.pdf"
+}

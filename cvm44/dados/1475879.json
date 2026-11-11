@@ -1,0 +1,119 @@
+{
+ "empresa": "VALID SOLUÇÕES S.A.",
+ "tipo_form": "Individual",
+ "ref": "01/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3376430.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "6",
+     "quantidade": 10000.0,
+     "preco": 20.8436,
+     "volume": 208436.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "8",
+     "quantidade": 10000.0,
+     "preco": 20.7289,
+     "volume": 207289.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "13",
+     "quantidade": 15000.0,
+     "preco": 20.3405,
+     "volume": 305107.5
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "15",
+     "quantidade": 10000.0,
+     "preco": 20.4926,
+     "volume": 204926.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "20",
+     "quantidade": 10000.0,
+     "preco": 20.9294,
+     "volume": 209294.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "22",
+     "quantidade": 200.0,
+     "preco": 21.49,
+     "volume": 4298.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "27",
+     "quantidade": 10000.0,
+     "preco": 22.6521,
+     "volume": 226521.0
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG",
+     "operacao": "Compra à  vista",
+     "dia": "29",
+     "quantidade": 20000.0,
+     "preco": 22.2922,
+     "volume": 445844.0
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 3461630.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "VALID SOLUÇÕES E SERV. SEG. MEIOS PAG. IDENT. S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "VLID3",
+ "nome": "Valid",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/02/2026 18:27",
+ "versao": "1",
+ "protocolo": "1475879",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475879",
+ "pdf": "VLID3_2026-01_individual_v1.pdf"
+}
