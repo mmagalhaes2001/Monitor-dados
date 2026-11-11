@@ -139,8 +139,9 @@ def coletar(operadora, pracas):
         for uf, cidade, ddd in pracas:
             praca_ok = True
             erro_praca = ""
-            if operadora == "claro":
-                # sessão nova por cidade: o seletor "Alterar cidade" só aparece na primeira visita
+            if operadora in ("claro", "vivo"):
+                # sessão nova por cidade: Claro só mostra "Alterar cidade" na primeira visita;
+                # Vivo guarda a praça da primeira visita além dos cookies
                 ctx.close()
                 ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo",
                                       viewport={"width": 1366, "height": 900})
