@@ -4,10 +4,6 @@ name: Teste - planos das operadoras (descoberta)
 # Abre as páginas de planos com navegador e guarda HTML, print e respostas JSON como artefato
 # (aba Actions > execução > Artifacts). Não manda aviso nem grava nada no repositório.
 on:
-  push:
-    paths:
-      - ".github/workflows/teste-planos.yml"
-      - "planos/descobrir*.py"
   workflow_dispatch:
     inputs:
       alvos:
