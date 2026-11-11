@@ -22,7 +22,7 @@ CAMPOS_COMPARA = ["preco", "preco_de", "preco_depois", "condicao", "gb_total", "
 NOMES = {"preco": "preço", "preco_de": "preço De", "preco_depois": "preço após promoção", "condicao": "condição",
          "gb_total": "GB", "gb_detalhe": "composição dos GB", "velocidade_mega": "velocidade (Mega)",
          "linhas": "linhas", "beneficios": "benefícios", "selo": "selo/promoção", "plano": "nome"}
-COLS = ["operadora", "uf", "cidade", "segmento", "chave", "plano", "preco", "preco_de", "preco_depois",
+COLS = ["operadora", "tipo", "linha", "uf", "cidade", "segmento", "chave", "plano", "preco", "preco_de", "preco_depois",
         "condicao", "gb_total", "gb_detalhe", "velocidade_mega", "linhas", "rs_por_gb", "beneficios", "selo",
         "pagina", "url", "extra", "inicio", "fim", "visto_ultimo"]
 COLS_LOG = ["data", "hora", "operadora", "uf", "cidade", "pagina", "ok", "n", "praca_tela", "erro"]
@@ -92,19 +92,19 @@ def atualizar():
             if velho is None:
                 hist.append(novo)
                 if not primeira_vez:
-                    mudancas.append({"tipo": "novo", "operadora": op_nome, "uf": novo["uf"], "segmento": novo["segmento"],
+                    mudancas.append({"tipo": "novo", "operadora": op_nome, "uf": novo["uf"], "segmento": novo["segmento"], "linha": novo.get("linha", ""),
                                      "plano": novo["plano"], "chave": novo["chave"], "data": data,
                                      "detalhe": "R$ %s | %s" % (novo["preco"], (novo["gb_total"] + " GB") if novo["gb_total"] else (novo["velocidade_mega"] + " Mega"))})
                 continue
             difs = [(f, velho[f], novo[f]) for f in CAMPOS_COMPARA if velho[f] != novo[f]]
             if not difs:
                 velho["visto_ultimo"] = data
-                for f in ("plano", "url", "extra", "rs_por_gb", "cidade", "pagina"):
+                for f in ("plano", "url", "extra", "rs_por_gb", "cidade", "pagina", "tipo", "linha"):
                     velho[f] = novo[f]
                 continue
             velho["fim"] = velho["visto_ultimo"]
             hist.append(novo)
-            mudancas.append({"tipo": "mudou", "operadora": op_nome, "uf": novo["uf"], "segmento": novo["segmento"],
+            mudancas.append({"tipo": "mudou", "operadora": op_nome, "uf": novo["uf"], "segmento": novo["segmento"], "linha": novo.get("linha", ""),
                              "plano": novo["plano"], "chave": novo["chave"], "data": data,
                              "campos": [{"campo": NOMES[f], "antes": a, "depois": b} for f, a, b in difs]})
         for k, velho in vigentes.items():
@@ -113,7 +113,7 @@ def atualizar():
             if (velho["uf"], velho["pagina"]) not in ok_paginas:
                 continue  # página não foi lida hoje: não dá para dizer que saiu
             velho["fim"] = velho["visto_ultimo"]
-            mudancas.append({"tipo": "saiu", "operadora": op_nome, "uf": velho["uf"], "segmento": velho["segmento"],
+            mudancas.append({"tipo": "saiu", "operadora": op_nome, "uf": velho["uf"], "segmento": velho["segmento"], "linha": velho.get("linha", ""),
                              "plano": velho["plano"], "chave": velho["chave"], "data": data,
                              "detalhe": "último preço R$ %s" % velho["preco"]})
     hist.sort(key=lambda r: (r["operadora"], r["segmento"], r["chave"], r["uf"], r["inicio"]))

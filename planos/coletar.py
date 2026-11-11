@@ -18,6 +18,7 @@ from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, str(Path(__file__).parent))
 import extrair  # noqa: E402
+import taxonomia  # noqa: E402
 
 AQUI = Path(__file__).parent
 SAIDA = AQUI / "_coleta"
@@ -40,11 +41,14 @@ PAGINAS = {
         ("pos", "https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/planos-pos-pago"),
         ("controle", "https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/planos-controle"),
         ("pre", "https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre"),
+        ("lite", "https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/planos-lite"),
         ("fibra", "https://vivo.com.br/para-voce/produtos-e-servicos/para-casa/internet"),
     ],
     "claro": [
         ("pos", "https://www.claro.com.br/celular/pos"),
         ("controle", "https://www.claro.com.br/celular/controle"),
+        ("pre", "https://www.claro.com.br/celular/planos-pre"),
+        ("flex", "https://www.claro.com.br/celular/flex"),
         ("fibra", "https://www.claro.com.br/internet"),
     ],
     "tim": [
@@ -177,6 +181,10 @@ def coletar(operadora, pracas):
                         if esperado not in sem_acento(reg["praca_tela"]).lower():
                             reg["erro"] = "página mostrou outra praça: %s" % reg["praca_tela"]
                             planos = []
+                        elif status == 404:
+                            reg["ok"] = True  # página não existe (nesta praça ou em geral): fica registrado, sem plano
+                            reg["erro"] = "404 (página não existe)"
+                            planos = []
                         elif status and status >= 400:
                             reg["erro"] = "HTTP %s" % status
                             planos = []
@@ -188,8 +196,11 @@ def coletar(operadora, pracas):
                         else:
                             reg["ok"] = True
                         extrair.chaves_unicas(planos)
+                        op_nome = {"vivo": "Vivo", "claro": "Claro", "tim": "TIM"}[operadora]
                         for pl in planos:
-                            pl.update(uf=uf, cidade=cidade, pagina=seg, url=url)
+                            tipo, linha = taxonomia.classificar(op_nome, seg, pl["plano"], pl.get("linhas"))
+                            pl.update(uf=uf, cidade=cidade, pagina=seg, url=url, tipo=tipo, linha=linha,
+                                      segmento=taxonomia.SEG.get(tipo, pl["segmento"]))
                         reg["n"] = len(planos)
                         res["planos"].extend(planos)
                         if uf in ("SP", "RJ"):  # guarda amostra do HTML para conferência

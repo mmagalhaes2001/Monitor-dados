@@ -23,5 +23,7 @@ Fonte (a mesma base que o painel de acessos da Anatel oferece para download):
 - Coleta pré, controle, pós, família e fibra nas 27 capitais direto dos sites (navegador), uma operadora por máquina em paralelo.
 - Histórico por vigência em `planos/dados/historico.csv` (cada mudança de preço, GB, condição, benefício ou selo abre uma nova linha);
   log de cada página lida em `planos/dados/coletas.csv`.
-- Planilha: `planos/planos_operadoras.xlsx` (abas Atual, Preços por praça, Mudanças, Histórico, Coletas), vai anexa no push e no e-mail.
+- Cada plano é classificado num **tipo** padronizado (Pré, Controle, Lite/Anual, Flex, Pós, Família, Fibra) e na **linha comercial** da operadora
+  (ex.: TIM Black × TIM Black Express, Claro Pré (Prezão), Vivo Lite) — regras em `planos/taxonomia.py`.
+- Planilha: `planos/planos_operadoras.xlsx` (abas Linhas comerciais, uma aba por tipo com o preço nas 27 capitais, Atual, Mudanças, Histórico, Coletas), vai anexa no push e no e-mail.
 - Scripts: `planos/coletar.py` (navega), `planos/extrair.py` (lê os cards), `planos/historico.py`, `planos/planilha.py`, `planos/avisar.py`.

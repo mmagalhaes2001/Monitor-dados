@@ -170,7 +170,7 @@ def claro(html, segmento_pagina):
                                 condicao=cond, velocidade_mega=mega(titulo), beneficios="; ".join(itens)[:500], selo=tags))
         else:
             texto_card = limpa(card.get_text(" "))
-            rotulo = {"pos": "Claro Pós", "controle": "Claro Controle", "pre": "Claro Pré"}.get(segmento_pagina, "Claro")
+            rotulo = {"pos": "Claro Pós", "controle": "Claro Controle", "pre": "Claro Pré", "flex": "Claro Flex"}.get(segmento_pagina, "Claro")
             nome = "%s %s" % (rotulo, titulo)
             if re.search(r"GeForce", texto_card + tags, re.I):
                 nome += " GeForce"
