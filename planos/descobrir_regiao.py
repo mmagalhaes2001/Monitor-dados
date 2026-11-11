@@ -19,28 +19,50 @@ def novo_ctx(nav):
 
 def claro(nav):
     out = {}
-    for cid in ["sao-paulo-SP-11", "recife-PE-81", "porto-alegre-RS-51", "manaus-AM-92", "belo-horizonte-MG-31"]:
+    for cidade, uf in [("Recife", "PE"), ("Porto Alegre", "RS")]:
         ctx = novo_ctx(nav)
-        ctx.add_cookies([{"name": "clr_hcms_city", "value": cid, "domain": ".claro.com.br", "path": "/"},
-                         {"name": "clr_hcms_prehome", "value": "false", "domain": ".claro.com.br", "path": "/"}])
         page = ctx.new_page()
-        r = {}
-        for nome, url in [("fibra", "https://www.claro.com.br/internet"), ("controle", "https://www.claro.com.br/celular/controle"),
-                          ("pos", "https://www.claro.com.br/celular/pos")]:
+        r = {"reqs": []}
+        try:
+            page.goto("https://www.claro.com.br/internet", wait_until="networkidle", timeout=60000)
+        except Exception:
+            pass
+        try:
+            time.sleep(3)
+            page.on("request", lambda q: r["reqs"].append(q.method + " " + q.url[:250])
+                    if q.resource_type in ("xhr", "fetch", "document") and "claro" in q.url else None)
+            page.locator(":visible:text-is('Alterar cidade')").first.click(timeout=15000)
+            time.sleep(2)
+            caixa = page.locator("input:visible").first
+            r["input"] = caixa.evaluate("e => e.outerHTML.slice(0,300)")
+            caixa.click(); caixa.type(cidade, delay=150); time.sleep(4)
+            opc = page.locator(":visible:text-matches('^%s', 'i')" % cidade).all()
+            r["opcoes"] = [o.evaluate("e => e.tagName + '.' + e.className.toString().slice(0,60) + ' :: ' + e.innerText.slice(0,60)") for o in opc[:10]]
+            alvo = [o for o in opc if uf in o.inner_text() and o.evaluate("e => e.tagName") != "INPUT"]
+            (alvo or opc)[-1].click(timeout=8000)
+            time.sleep(2)
+            for txt in ["Confirmar", "Continuar", "Salvar", "Ver ofertas"]:
+                b = page.locator("button:visible:has-text('%s')" % txt)
+                if b.count():
+                    b.first.click(timeout=5000); break
             try:
-                page.goto(url, wait_until="networkidle", timeout=60000)
+                page.wait_for_load_state("networkidle", timeout=30000)
             except Exception:
                 pass
-            time.sleep(4)
+            time.sleep(5)
             t = page.inner_text("body")
-            cab = re.search(r"Para você\s+Pequenas.*?\n(.+?)\n/ ?([A-Z]{2})", t, re.S)
-            r[nome] = {"cidade_na_tela": (cab.group(1).strip() + "/" + cab.group(2)) if cab else None,
-                       "precos": re.findall(r"R\$\s*\n?(\d{2,4})\s*\n?,(\d{2})", t)[:20]}
-            (SAIDA / ("claro_%s_%s.txt" % (cid, nome))).write_text(t, encoding="utf-8")
-        r["cookie_depois"] = {c["name"]: c["value"] for c in ctx.cookies() if c["name"] == "clr_hcms_city"}
+            r["url"] = page.url
+            r["cabecalho"] = t[:400]
+            r["precos"] = re.findall(r"R\$\s*\n?(\d{2,4})\s*\n?,(\d{2})", t)[:20]
+            r["cookies"] = {c["name"]: c["value"][:150] for c in ctx.cookies() if c["name"].startswith("clr_")}
+            r["storage"] = page.evaluate("() => Object.fromEntries(Object.entries(localStorage).filter(([k]) => /cit|uf|ddd|loc|reg/i.test(k)).map(([k,v]) => [k, v.slice(0,200)]))")
+            page.screenshot(path=str(SAIDA / ("claro_%s.png" % uf)))
+        except Exception:
+            r["erro"] = traceback.format_exc()[-900:]
+            page.screenshot(path=str(SAIDA / ("claro_%s_erro.png" % uf)))
         ctx.close()
-        out[cid] = r
-        print("claro", cid, json.dumps(r, ensure_ascii=False)[:900], flush=True)
+        out[cidade] = r
+        print("claro", cidade, json.dumps(r, ensure_ascii=False)[:2500], flush=True)
     return out
 
 
@@ -99,7 +121,7 @@ def main():
     res = {}
     with sync_playwright() as p:
         nav = p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-        for nome, f in [("claro", claro), ("vivo", vivo)]:
+        for nome, f in [("claro", claro)]:
             try:
                 res[nome] = f(nav)
             except Exception:
