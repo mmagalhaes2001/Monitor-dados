@@ -165,50 +165,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1474358": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=999064&numVersao=1&numProtocolo=1474358&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/02/2026 16:47",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1474358",
-   "nome": "Positivo",
-   "protocolo": "1474358",
-   "ref": "01/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1474360": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=999066&numVersao=1&numProtocolo=1474360&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/02/2026 16:48",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1474360",
-   "nome": "Positivo",
-   "protocolo": "1474360",
-   "ref": "01/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1474481": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=999187&numVersao=1&numProtocolo=1474481&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/02/2026 18:24",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1474481",
-   "nome": "Multilaser",
-   "protocolo": "1474481",
-   "ref": "01/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1474483": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=999189&numVersao=1&numProtocolo=1474483&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/02/2026 18:27",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1474483",
-   "nome": "Multilaser",
-   "protocolo": "1474483",
-   "ref": "01/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1474860": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=999566&numVersao=1&numProtocolo=1474860&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "09/02/2026 11:42",
@@ -294,28 +250,6 @@
    "protocolo": "1475203",
    "ref": "01/2026",
    "ticker": "SAUD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1475239": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=999945&numVersao=1&numProtocolo=1475239&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/02/2026 20:14",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475239",
-   "nome": "Allied",
-   "protocolo": "1475239",
-   "ref": "01/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1475242": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=999948&numVersao=1&numProtocolo=1475242&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/02/2026 20:16",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475242",
-   "nome": "Allied",
-   "protocolo": "1475242",
-   "ref": "01/2026",
-   "ticker": "ALLD3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -451,28 +385,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1475879": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1000585&numVersao=1&numProtocolo=1475879&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/02/2026 18:27",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475879",
-   "nome": "Valid",
-   "protocolo": "1475879",
-   "ref": "01/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1475881": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1000587&numVersao=1&numProtocolo=1475881&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/02/2026 18:28",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1475881",
-   "nome": "Valid",
-   "protocolo": "1475881",
-   "ref": "01/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1475912": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1000618&numVersao=1&numProtocolo=1475912&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/02/2026 18:38",
@@ -536,17 +448,6 @@
    "protocolo": "1476077",
    "ref": "01/2026",
    "ticker": "TIMS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1476078": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1000784&numVersao=1&numProtocolo=1476078&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/02/2026 19:12",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1476078",
-   "nome": "TIM Brasil",
-   "protocolo": "1476078",
-   "ref": "01/2026",
-   "ticker": "TIMB",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -682,28 +583,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1487119": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1011825&numVersao=1&numProtocolo=1487119&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/03/2026 09:22",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1487119",
-   "nome": "Positivo",
-   "protocolo": "1487119",
-   "ref": "02/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1487120": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1011826&numVersao=1&numProtocolo=1487120&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/03/2026 09:28",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1487120",
-   "nome": "Positivo",
-   "protocolo": "1487120",
-   "ref": "02/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1487166": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1011872&numVersao=1&numProtocolo=1487166&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "09/03/2026 11:10",
@@ -745,50 +624,6 @@
    "protocolo": "1487182",
    "ref": "02/2026",
    "ticker": "BLAU3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1487368": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012074&numVersao=1&numProtocolo=1487368&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/03/2026 17:39",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1487368",
-   "nome": "Valid",
-   "protocolo": "1487368",
-   "ref": "02/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1487370": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012076&numVersao=1&numProtocolo=1487370&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/03/2026 17:40",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1487370",
-   "nome": "Valid",
-   "protocolo": "1487370",
-   "ref": "02/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1487484": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012190&numVersao=1&numProtocolo=1487484&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/03/2026 18:06",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1487484",
-   "nome": "Multilaser",
-   "protocolo": "1487484",
-   "ref": "02/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1487494": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012200&numVersao=1&numProtocolo=1487494&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/03/2026 18:12",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1487494",
-   "nome": "Multilaser",
-   "protocolo": "1487494",
-   "ref": "02/2026",
-   "ticker": "MLAS3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -979,17 +814,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1488190": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012896&numVersao=1&numProtocolo=1488190&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/03/2026 18:03",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488190",
-   "nome": "TIM Brasil",
-   "protocolo": "1488190",
-   "ref": "02/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1488213": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012919&numVersao=1&numProtocolo=1488213&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/03/2026 18:04",
@@ -1010,28 +834,6 @@
    "ref": "02/2026",
    "ticker": "TIMS3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1488269": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012975&numVersao=1&numProtocolo=1488269&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/03/2026 18:07",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488269",
-   "nome": "Allied",
-   "protocolo": "1488269",
-   "ref": "02/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1488275": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1012981&numVersao=1&numProtocolo=1488275&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/03/2026 18:08",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1488275",
-   "nome": "Allied",
-   "protocolo": "1488275",
-   "ref": "02/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1488293": {
@@ -1177,28 +979,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1501646": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1026352&numVersao=1&numProtocolo=1501646&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/04/2026 18:59",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1501646",
-   "nome": "Allied",
-   "protocolo": "1501646",
-   "ref": "03/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1501648": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1026354&numVersao=1&numProtocolo=1501648&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/04/2026 19:00",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1501648",
-   "nome": "Allied",
-   "protocolo": "1501648",
-   "ref": "03/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
   "1501658": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1026364&numVersao=1&numProtocolo=1501658&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "06/04/2026 19:09",
@@ -1218,28 +998,6 @@
    "protocolo": "1501659",
    "ref": "03/2026",
    "ticker": "BMOB3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1502364": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1027070&numVersao=1&numProtocolo=1502364&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/04/2026 12:13",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1502364",
-   "nome": "Positivo",
-   "protocolo": "1502364",
-   "ref": "03/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1502365": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1027071&numVersao=1&numProtocolo=1502365&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/04/2026 12:15",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1502365",
-   "nome": "Positivo",
-   "protocolo": "1502365",
-   "ref": "03/2026",
-   "ticker": "POSI3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -1331,28 +1089,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1502716": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1027422&numVersao=1&numProtocolo=1502716&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/04/2026 19:18",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1502716",
-   "nome": "Multilaser",
-   "protocolo": "1502716",
-   "ref": "03/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1502717": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1027423&numVersao=1&numProtocolo=1502717&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/04/2026 19:18",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1502717",
-   "nome": "Multilaser",
-   "protocolo": "1502717",
-   "ref": "03/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1503144": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1027850&numVersao=1&numProtocolo=1503144&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "09/04/2026 17:45",
@@ -1439,28 +1175,6 @@
    "ref": "03/2026",
    "ticker": "VIVT3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1503361": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1028067&numVersao=1&numProtocolo=1503361&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/04/2026 08:29",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1503361",
-   "nome": "Valid",
-   "protocolo": "1503361",
-   "ref": "03/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1503362": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1028068&numVersao=1&numProtocolo=1503362&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/04/2026 08:30",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1503362",
-   "nome": "Valid",
-   "protocolo": "1503362",
-   "ref": "03/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1503376": {
@@ -1593,17 +1307,6 @@
    "ref": "03/2026",
    "ticker": "TIMS3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1503987": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1028693&numVersao=1&numProtocolo=1503987&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/04/2026 18:32",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1503987",
-   "nome": "TIM Brasil",
-   "protocolo": "1503987",
-   "ref": "03/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
    "versao": "1"
   },
   "1503989": {
@@ -1793,28 +1496,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1518576": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043282&numVersao=1&numProtocolo=1518576&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 11:17",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1518576",
-   "nome": "Positivo",
-   "protocolo": "1518576",
-   "ref": "04/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1518577": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043283&numVersao=1&numProtocolo=1518577&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 11:19",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1518577",
-   "nome": "Positivo",
-   "protocolo": "1518577",
-   "ref": "04/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1518777": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043483&numVersao=1&numProtocolo=1518777&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "08/05/2026 16:39",
@@ -1892,17 +1573,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1518963": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043669&numVersao=1&numProtocolo=1518963&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 17:40",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1518963",
-   "nome": "Multilaser",
-   "protocolo": "1518963",
-   "ref": "04/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
   "1518964": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043670&numVersao=1&numProtocolo=1518964&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "08/05/2026 17:40",
@@ -1911,17 +1581,6 @@
    "protocolo": "1518964",
    "ref": "04/2026",
    "ticker": "DASA3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1518965": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043671&numVersao=1&numProtocolo=1518965&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 17:40",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1518965",
-   "nome": "Multilaser",
-   "protocolo": "1518965",
-   "ref": "04/2026",
-   "ticker": "MLAS3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -1944,28 +1603,6 @@
    "protocolo": "1518983",
    "ref": "04/2026",
    "ticker": "DASA3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1519007": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043713&numVersao=1&numProtocolo=1519007&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 18:01",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519007",
-   "nome": "Allied",
-   "protocolo": "1519007",
-   "ref": "04/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1519013": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043719&numVersao=1&numProtocolo=1519013&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 18:01",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519013",
-   "nome": "Allied",
-   "protocolo": "1519013",
-   "ref": "04/2026",
-   "ticker": "ALLD3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
@@ -2002,17 +1639,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1519050": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043756&numVersao=1&numProtocolo=1519050&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 18:07",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519050",
-   "nome": "TIM Brasil",
-   "protocolo": "1519050",
-   "ref": "04/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1519051": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043757&numVersao=1&numProtocolo=1519051&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "08/05/2026 18:08",
@@ -2022,28 +1648,6 @@
    "ref": "04/2026",
    "ticker": "TIMS3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1519092": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043798&numVersao=1&numProtocolo=1519092&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 18:20",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519092",
-   "nome": "Valid",
-   "protocolo": "1519092",
-   "ref": "04/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1519093": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1043799&numVersao=1&numProtocolo=1519093&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/05/2026 18:20",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1519093",
-   "nome": "Valid",
-   "protocolo": "1519093",
-   "ref": "04/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1519115": {
@@ -2321,28 +1925,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1531573": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1056279&numVersao=1&numProtocolo=1531573&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/06/2026 10:31",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1531573",
-   "nome": "Positivo",
-   "protocolo": "1531573",
-   "ref": "05/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1531574": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1056280&numVersao=1&numProtocolo=1531574&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/06/2026 10:34",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1531574",
-   "nome": "Positivo",
-   "protocolo": "1531574",
-   "ref": "05/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1531734": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1056440&numVersao=1&numProtocolo=1531734&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "08/06/2026 16:32",
@@ -2352,28 +1934,6 @@
    "ref": "05/2026",
    "ticker": "VTRU3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1531901": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1056607&numVersao=1&numProtocolo=1531901&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/06/2026 18:01",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1531901",
-   "nome": "Multilaser",
-   "protocolo": "1531901",
-   "ref": "05/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1531902": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1056608&numVersao=1&numProtocolo=1531902&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/06/2026 18:01",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1531902",
-   "nome": "Multilaser",
-   "protocolo": "1531902",
-   "ref": "05/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1531907": {
@@ -2462,28 +2022,6 @@
    "ref": "05/2026",
    "ticker": "INTB3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1532435": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1057141&numVersao=1&numProtocolo=1532435&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/06/2026 17:16",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1532435",
-   "nome": "Valid",
-   "protocolo": "1532435",
-   "ref": "05/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1532442": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1057148&numVersao=1&numProtocolo=1532442&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/06/2026 17:17",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1532442",
-   "nome": "Valid",
-   "protocolo": "1532442",
-   "ref": "05/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
    "versao": "1"
   },
   "1532503": {
@@ -2651,17 +2189,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1533151": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1057857&numVersao=1&numProtocolo=1533151&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/06/2026 18:02",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1533151",
-   "nome": "TIM Brasil",
-   "protocolo": "1533151",
-   "ref": "05/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1533158": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1057864&numVersao=1&numProtocolo=1533158&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/06/2026 18:03",
@@ -2714,28 +2241,6 @@
    "protocolo": "1533175",
    "ref": "05/2026",
    "ticker": "FLRY3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1533317": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1058023&numVersao=1&numProtocolo=1533317&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/06/2026 18:37",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1533317",
-   "nome": "Allied",
-   "protocolo": "1533317",
-   "ref": "05/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1533319": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1058025&numVersao=1&numProtocolo=1533319&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/06/2026 18:38",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1533319",
-   "nome": "Allied",
-   "protocolo": "1533319",
-   "ref": "05/2026",
-   "ticker": "ALLD3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
@@ -2803,28 +2308,6 @@
    "ref": "05/2026",
    "ticker": "COGN3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1541076": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1065782&numVersao=1&numProtocolo=1541076&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "02/07/2026 14:47",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1541076",
-   "nome": "Positivo",
-   "protocolo": "1541076",
-   "ref": "06/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1541078": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1065784&numVersao=1&numProtocolo=1541078&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "02/07/2026 14:48",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1541078",
-   "nome": "Positivo",
-   "protocolo": "1541078",
-   "ref": "06/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1541683": {
@@ -2926,17 +2409,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1542057": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1066763&numVersao=2&numProtocolo=1542057&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/07/2026 17:18",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1542057",
-   "nome": "Valid",
-   "protocolo": "1542057",
-   "ref": "05/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "2"
-  },
   "1542092": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1066798&numVersao=1&numProtocolo=1542092&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "06/07/2026 17:38",
@@ -2957,28 +2429,6 @@
    "ref": "06/2026",
    "ticker": "BMOB3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1542094": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1066800&numVersao=1&numProtocolo=1542094&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/07/2026 17:40",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1542094",
-   "nome": "Valid",
-   "protocolo": "1542094",
-   "ref": "06/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1542095": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1066801&numVersao=1&numProtocolo=1542095&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/07/2026 17:40",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1542095",
-   "nome": "Valid",
-   "protocolo": "1542095",
-   "ref": "06/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
    "versao": "1"
   },
   "1542376": {
@@ -3003,28 +2453,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1542601": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1067307&numVersao=1&numProtocolo=1542601&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "07/07/2026 18:05",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1542601",
-   "nome": "Multilaser",
-   "protocolo": "1542601",
-   "ref": "06/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1542602": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1067308&numVersao=1&numProtocolo=1542602&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "07/07/2026 18:05",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1542602",
-   "nome": "Multilaser",
-   "protocolo": "1542602",
-   "ref": "06/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1543091": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1067797&numVersao=1&numProtocolo=1543091&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "08/07/2026 17:34",
@@ -3045,28 +2473,6 @@
    "ref": "06/2026",
    "ticker": "VIVT3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1543116": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1067822&numVersao=1&numProtocolo=1543116&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/07/2026 18:03",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1543116",
-   "nome": "Allied",
-   "protocolo": "1543116",
-   "ref": "06/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1543119": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1067825&numVersao=1&numProtocolo=1543119&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/07/2026 18:03",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1543119",
-   "nome": "Allied",
-   "protocolo": "1543119",
-   "ref": "06/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1543154": {
@@ -3311,17 +2717,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1544020": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1068726&numVersao=1&numProtocolo=1544020&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/07/2026 18:01",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1544020",
-   "nome": "TIM Brasil",
-   "protocolo": "1544020",
-   "ref": "06/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1544022": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1068728&numVersao=1&numProtocolo=1544022&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/07/2026 18:01",
@@ -3498,50 +2893,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1554469": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079175&numVersao=1&numProtocolo=1554469&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "07/08/2026 18:10",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1554469",
-   "nome": "Multilaser",
-   "protocolo": "1554469",
-   "ref": "07/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1554470": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079176&numVersao=1&numProtocolo=1554470&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "07/08/2026 18:11",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1554470",
-   "nome": "Multilaser",
-   "protocolo": "1554470",
-   "ref": "07/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1554592": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079298&numVersao=1&numProtocolo=1554592&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/08/2026 07:23",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1554592",
-   "nome": "Valid",
-   "protocolo": "1554592",
-   "ref": "07/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1554593": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079299&numVersao=1&numProtocolo=1554593&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/08/2026 07:24",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1554593",
-   "nome": "Valid",
-   "protocolo": "1554593",
-   "ref": "07/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1554656": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079362&numVersao=1&numProtocolo=1554656&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/08/2026 08:45",
@@ -3561,28 +2912,6 @@
    "protocolo": "1554657",
    "ref": "07/2026",
    "ticker": "RADL3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1554755": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079461&numVersao=1&numProtocolo=1554755&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/08/2026 10:45",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1554755",
-   "nome": "Positivo",
-   "protocolo": "1554755",
-   "ref": "07/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1554758": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079464&numVersao=1&numProtocolo=1554758&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/08/2026 10:46",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1554758",
-   "nome": "Positivo",
-   "protocolo": "1554758",
-   "ref": "07/2026",
-   "ticker": "POSI3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -3696,17 +3025,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1555183": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079889&numVersao=1&numProtocolo=1555183&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/08/2026 18:02",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1555183",
-   "nome": "TIM Brasil",
-   "protocolo": "1555183",
-   "ref": "07/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1555187": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079893&numVersao=1&numProtocolo=1555187&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/08/2026 18:03",
@@ -3751,17 +3069,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1555218": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079924&numVersao=1&numProtocolo=1555218&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/08/2026 18:10",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1555218",
-   "nome": "Allied",
-   "protocolo": "1555218",
-   "ref": "07/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
   "1555220": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079926&numVersao=1&numProtocolo=1555220&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/08/2026 18:10",
@@ -3770,17 +3077,6 @@
    "protocolo": "1555220",
    "ref": "07/2026",
    "ticker": "COGN3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1555236": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1079942&numVersao=1&numProtocolo=1555236&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/08/2026 18:14",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1555236",
-   "nome": "Allied",
-   "protocolo": "1555236",
-   "ref": "07/2026",
-   "ticker": "ALLD3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -4026,28 +3322,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1564863": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1089569&numVersao=1&numProtocolo=1564863&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "03/09/2026 20:29",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1564863",
-   "nome": "Multilaser",
-   "protocolo": "1564863",
-   "ref": "08/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1564872": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1089578&numVersao=1&numProtocolo=1564872&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "03/09/2026 21:05",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1564872",
-   "nome": "Multilaser",
-   "protocolo": "1564872",
-   "ref": "08/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1565100": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1089806&numVersao=1&numProtocolo=1565100&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "04/09/2026 15:41",
@@ -4147,28 +3421,6 @@
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
-  "1565717": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1090423&numVersao=1&numProtocolo=1565717&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/09/2026 17:23",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1565717",
-   "nome": "Valid",
-   "protocolo": "1565717",
-   "ref": "08/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1565719": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1090425&numVersao=1&numProtocolo=1565719&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/09/2026 17:29",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1565719",
-   "nome": "Valid",
-   "protocolo": "1565719",
-   "ref": "08/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
   "1565747": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1090453&numVersao=1&numProtocolo=1565747&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "08/09/2026 18:10",
@@ -4188,28 +3440,6 @@
    "protocolo": "1565748",
    "ref": "08/2026",
    "ticker": "SEER3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1566086": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1090792&numVersao=1&numProtocolo=1566086&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/09/2026 14:12",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566086",
-   "nome": "Positivo",
-   "protocolo": "1566086",
-   "ref": "08/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1566087": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1090793&numVersao=1&numProtocolo=1566087&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/09/2026 14:13",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566087",
-   "nome": "Positivo",
-   "protocolo": "1566087",
-   "ref": "08/2026",
-   "ticker": "POSI3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
@@ -4266,28 +3496,6 @@
    "ref": "08/2026",
    "ticker": "VTRU3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1566387": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1091093&numVersao=1&numProtocolo=1566387&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/09/2026 18:52",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566387",
-   "nome": "Allied",
-   "protocolo": "1566387",
-   "ref": "08/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1566388": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1091094&numVersao=1&numProtocolo=1566388&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/09/2026 18:52",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566388",
-   "nome": "Allied",
-   "protocolo": "1566388",
-   "ref": "08/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1566396": {
@@ -4444,17 +3652,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1566975": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1091681&numVersao=1&numProtocolo=1566975&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/09/2026 18:07",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1566975",
-   "nome": "TIM Brasil",
-   "protocolo": "1566975",
-   "ref": "08/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1567053": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1091759&numVersao=1&numProtocolo=1567053&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/09/2026 18:16",
@@ -4572,39 +3769,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1574881": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1099587&numVersao=2&numProtocolo=1574881&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/10/2026 19:50",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1574881",
-   "nome": "Allied",
-   "protocolo": "1574881",
-   "ref": "08/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "2"
-  },
-  "1575214": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1099920&numVersao=1&numProtocolo=1575214&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "07/10/2026 18:35",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575214",
-   "nome": "Multilaser",
-   "protocolo": "1575214",
-   "ref": "09/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1575225": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1099931&numVersao=1&numProtocolo=1575225&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "07/10/2026 18:40",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575225",
-   "nome": "Multilaser",
-   "protocolo": "1575225",
-   "ref": "09/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
   "1575229": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1099935&numVersao=1&numProtocolo=1575229&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "07/10/2026 19:07",
@@ -4613,28 +3777,6 @@
    "protocolo": "1575229",
    "ref": "09/2026",
    "ticker": "VTRU3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1575309": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100015&numVersao=1&numProtocolo=1575309&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/10/2026 09:25",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575309",
-   "nome": "Positivo",
-   "protocolo": "1575309",
-   "ref": "09/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1575310": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100016&numVersao=1&numProtocolo=1575310&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/10/2026 09:28",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575310",
-   "nome": "Positivo",
-   "protocolo": "1575310",
-   "ref": "09/2026",
-   "ticker": "POSI3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -4656,28 +3798,6 @@
    "ref": "09/2026",
    "ticker": "SAUD3",
    "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1575585": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100291&numVersao=1&numProtocolo=1575585&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/10/2026 18:00",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575585",
-   "nome": "Allied",
-   "protocolo": "1575585",
-   "ref": "09/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1575586": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100292&numVersao=1&numProtocolo=1575586&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/10/2026 18:01",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575586",
-   "nome": "Allied",
-   "protocolo": "1575586",
-   "ref": "09/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
   "1575598": {
@@ -4721,28 +3841,6 @@
    "protocolo": "1575608",
    "ref": "09/2026",
    "ticker": "SEER3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1575629": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100335&numVersao=1&numProtocolo=1575629&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/10/2026 18:34",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575629",
-   "nome": "Valid",
-   "protocolo": "1575629",
-   "ref": "09/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1575641": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100347&numVersao=1&numProtocolo=1575641&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "08/10/2026 18:36",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1575641",
-   "nome": "Valid",
-   "protocolo": "1575641",
-   "ref": "09/2026",
-   "ticker": "VLID3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
    "versao": "1"
   },
@@ -4946,17 +4044,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1576228": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1100934&numVersao=1&numProtocolo=1576228&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/10/2026 18:01",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576228",
-   "nome": "TIM Brasil",
-   "protocolo": "1576228",
-   "ref": "09/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1576233": {
    "entrega": "09/10/2026 18:02",
    "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1576233",
@@ -5143,28 +4230,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1585898": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1110604&numVersao=1&numProtocolo=1585898&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/11/2026 22:31",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585898",
-   "nome": "Multilaser",
-   "protocolo": "1585898",
-   "ref": "10/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1585899": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1110605&numVersao=1&numProtocolo=1585899&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "06/11/2026 22:31",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1585899",
-   "nome": "Multilaser",
-   "protocolo": "1585899",
-   "ref": "10/2026",
-   "ticker": "MLAS3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1586080": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1110786&numVersao=1&numProtocolo=1586080&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "09/11/2026 13:53",
@@ -5184,39 +4249,6 @@
    "protocolo": "1586085",
    "ref": "10/2026",
    "ticker": "VIVT3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1586342": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111048&numVersao=1&numProtocolo=1586342&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/11/2026 18:10",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586342",
-   "nome": "Valid",
-   "protocolo": "1586342",
-   "ref": "10/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
-  "1586343": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111049&numVersao=1&numProtocolo=1586343&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/11/2026 18:11",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586343",
-   "nome": "Valid",
-   "protocolo": "1586343",
-   "ref": "10/2026",
-   "ticker": "VLID3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1586346": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111052&numVersao=1&numProtocolo=1586346&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/11/2026 18:12",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586346",
-   "nome": "Allied",
-   "protocolo": "1586346",
-   "ref": "10/2026",
-   "ticker": "ALLD3",
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
@@ -5319,39 +4351,6 @@
    "tipo": "Posição Consolidada",
    "versao": "1"
   },
-  "1586627": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111333&numVersao=1&numProtocolo=1586627&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "09/11/2026 20:05",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586627",
-   "nome": "Allied",
-   "protocolo": "1586627",
-   "ref": "10/2026",
-   "ticker": "ALLD3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1586782": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111488&numVersao=1&numProtocolo=1586782&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/11/2026 09:17",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586782",
-   "nome": "Positivo",
-   "protocolo": "1586782",
-   "ref": "10/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1586785": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111491&numVersao=1&numProtocolo=1586785&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/11/2026 09:20",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1586785",
-   "nome": "Positivo",
-   "protocolo": "1586785",
-   "ref": "10/2026",
-   "ticker": "POSI3",
-   "tipo": "Posição Consolidada",
-   "versao": "1"
-  },
   "1586855": {
    "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111561&numVersao=1&numProtocolo=1586855&descTipo=IPE&CodigoInstituicao=1",
    "entrega": "10/11/2026 11:02",
@@ -5405,17 +4404,6 @@
    "ref": "10/2026",
    "ticker": "TIMS3",
    "tipo": "Posição Individual - Cia, Controladas e Coligadas",
-   "versao": "1"
-  },
-  "1587131": {
-   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1111837&numVersao=1&numProtocolo=1587131&descTipo=IPE&CodigoInstituicao=1",
-   "entrega": "10/11/2026 18:00",
-   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587131",
-   "nome": "TIM Brasil",
-   "protocolo": "1587131",
-   "ref": "10/2026",
-   "ticker": "TIMB",
-   "tipo": "Posição Consolidada",
    "versao": "1"
   },
   "1587133": {
