@@ -134,6 +134,13 @@ def coletar(operadora, pracas):
         page = ctx.new_page()
         for uf, cidade, ddd in pracas:
             praca_ok = True
+            erro_praca = ""
+            if operadora == "claro":
+                # sessão nova por cidade: o seletor "Alterar cidade" só aparece na primeira visita
+                ctx.close()
+                ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo",
+                                      viewport={"width": 1366, "height": 900})
+                page = ctx.new_page()
             try:
                 if operadora == "vivo":
                     vivo_cookies(ctx, uf, cidade, ddd)
@@ -148,6 +155,7 @@ def coletar(operadora, pracas):
                 if not praca_ok:
                     reg["erro"] = "não consegui trocar a praça: " + erro_praca
                     res["paginas"].append(reg)
+                    print("%s %s %-8s ok=False n=0 %s" % (operadora, uf, seg, reg["erro"][-160:].replace("\n", " ")), flush=True)
                     continue
                 for tentativa in range(2):
                     try:

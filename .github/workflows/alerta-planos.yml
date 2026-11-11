@@ -1,7 +1,7 @@
 name: Alerta - planos das operadoras (Vivo, Claro, TIM)
 
 # Coleta diária dos planos de celular (pré, controle, pós, família) e fibra de Vivo, Claro e TIM
-# nas 27 capitais, direto dos sites (navegador Playwright). Cada operadora roda em paralelo.
+# nas 27 capitais, direto dos sites (navegador Playwright). As três operadoras rodam em paralelo na mesma máquina.
 # Junta ao histórico por vigência (planos/dados/historico.csv), regenera planos/planos_operadoras.xlsx
 # e avisa no ntfy (tópico mm-planos-5a4d74767443) + Gmail com a planilha anexa quando algo muda.
 # Sem mudança: push discreto de "robô ok". Falha em >20% das páginas de uma operadora: aviso de atenção.
@@ -32,7 +32,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: alerta-planos
+  group: alerta-planos-v2
   cancel-in-progress: false
 
 env:
@@ -41,11 +41,7 @@ env:
 jobs:
   coletar:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
-    strategy:
-      fail-fast: false
-      matrix:
-        operadora: [vivo, claro, tim]
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -53,47 +49,25 @@ jobs:
           python-version: "3.12"
       - name: Instalar navegador
         run: |
-          pip install -q playwright==1.48.0 beautifulsoup4==4.12.3 lxml==5.3.0
+          pip install -q playwright==1.48.0 beautifulsoup4==4.12.3 lxml==5.3.0 openpyxl==3.1.5
           python -m playwright install --with-deps chromium > /dev/null
-      - name: Coletar ${{ matrix.operadora }}
-        timeout-minutes: 75
+      - name: Coletar Vivo, Claro e TIM (em paralelo)
         run: |
-          if [ -n "${{ inputs.pracas }}" ]; then
-            python planos/coletar.py ${{ matrix.operadora }} --pracas "${{ inputs.pracas }}"
-          else
-            python planos/coletar.py ${{ matrix.operadora }}
-          fi
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: coleta-${{ matrix.operadora }}
-          path: planos/_coleta
-          retention-days: 14
-
-  consolidar:
-    needs: coletar
-    if: always()
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install -q openpyxl==3.1.5 beautifulsoup4==4.12.3 lxml==5.3.0
-      - uses: actions/download-artifact@v4
-        with:
-          pattern: coleta-*
-          path: /tmp/coletas
+          arg=""; [ -n "${{ inputs.pracas }}" ] && arg="--pracas ${{ inputs.pracas }}"
+          for op in vivo claro tim; do
+            timeout 80m python planos/coletar.py $op $arg > /tmp/log_$op.txt 2>&1 &
+          done
+          wait || true
+          for op in vivo claro tim; do echo "===== $op"; cat /tmp/log_$op.txt; done
       - name: Histórico, planilha e aviso
+        if: always()
         env:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           TESTE: ${{ inputs.teste || github.event_name == 'push' }}
         run: |
-          mkdir -p planos/_coleta
-          cp /tmp/coletas/coleta-*/*.json planos/_coleta/ 2>/dev/null || true
           ls planos/_coleta
+          cp planos/_coleta/*.json /tmp/ 2>/dev/null || true
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           for i in 1 2 3 4 5; do
@@ -106,3 +80,10 @@ jobs:
             sleep 15
           done
           if [ "$TESTE" = "true" ]; then python planos/avisar.py --teste; else python planos/avisar.py; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: coleta-planos
+          path: planos/_coleta
+          retention-days: 14
