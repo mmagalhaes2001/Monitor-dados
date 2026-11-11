@@ -4526,6 +4526,28 @@
    "ticker": "COGN3",
    "tipo": "Posição Consolidada",
    "versao": "1"
+  },
+  "1587603": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1112309&numVersao=1&numProtocolo=1587603&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 21:00",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587603",
+   "nome": "Rede D'Or",
+   "protocolo": "1587603",
+   "ref": "10/2026",
+   "ticker": "RDOR3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1587605": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1112311&numVersao=1&numProtocolo=1587605&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "10/11/2026 21:00",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587605",
+   "nome": "Rede D'Or",
+   "protocolo": "1587605",
+   "ref": "10/2026",
+   "ticker": "RDOR3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
   }
  }
 }

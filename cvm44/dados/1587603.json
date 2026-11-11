@@ -1,0 +1,69 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Individual",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Companhia (cia, controladas e coligadas)",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 67663841.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à vista",
+     "dia": "26",
+     "quantidade": 2800000.0,
+     "preco": 34.548,
+     "volume": 96734390.78
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à vista",
+     "dia": "27",
+     "quantidade": 1534200.0,
+     "preco": 34.64344,
+     "volume": 53149962.12
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Itaú",
+     "operacao": "Compra à vista",
+     "dia": "28",
+     "quantidade": 1089800.0,
+     "preco": 33.67765,
+     "volume": 36701901.61
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 73087841.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1,
+   "entidade": "Rede Dor São Luiz S.A. - Saldo Inicial"
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+ "entrega": "10/11/2026 21:00",
+ "versao": "1",
+ "protocolo": "1587603",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587603",
+ "pdf": "RDOR3_2026-10_individual_v1.pdf"
+}

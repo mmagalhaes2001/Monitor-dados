@@ -1,0 +1,182 @@
+{
+ "empresa": "Rede D‘Or São Luiz S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Controlador",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1126116967.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 1126116967.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": false,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 20585107.0
+    }
+   ],
+   "movimentacoes": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "Banco Santander",
+     "operacao": "Venda à vista",
+     "dia": "7",
+     "quantidade": 1000000.0,
+     "preco": 44.55235,
+     "volume": 44552350.11
+    },
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "intermediario": "BTG Pactual  CTVM S.A.",
+     "operacao": "Venda à vista",
+     "dia": "9",
+     "quantidade": 1000000.0,
+     "preco": 45.45054,
+     "volume": 45450535.26
+    }
+   ],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 18585107.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4725505.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23L1737623",
+     "quantidade": 941.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 4725505.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027402",
+     "quantidade": 5000.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23H0027403",
+     "quantidade": 371.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22D1289007",
+     "quantidade": 194.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136327",
+     "quantidade": 330.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 21K0001806",
+     "quantidade": 80.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136254",
+     "quantidade": 114.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 22G1136492",
+     "quantidade": 215.0
+    },
+    {
+     "ativo": "Outros",
+     "caracteristica": "CRI 23L1737623",
+     "quantidade": 941.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "RDOR3",
+ "nome": "Rede D'Or",
+ "tipo": "Posição Consolidada",
+ "entrega": "10/11/2026 21:00",
+ "versao": "1",
+ "protocolo": "1587605",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1587605",
+ "pdf": "RDOR3_2026-10_consolidado_v1.pdf"
+}
