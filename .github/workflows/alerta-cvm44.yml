@@ -67,12 +67,13 @@ jobs:
           TESTE: ${{ inputs.teste || github.event_name == 'push' }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
 
           push() { # titulo, prioridade, tags, click, mensagem, [anexo png]
-            bash cvm44/issue.sh "$1" "$4" "$5"   # segundo canal: issue no GitHub → e-mail (independe do ntfy/Apple)
+            python cvm44/enviar_email.py "$1" "$4" "$5" "$6"   # segundo canal: e-mail pelo Gmail (precisa do secret GMAIL_APP_PASSWORD)
             for i in 1 2 3; do
               if [ -n "$6" ] && [ -f "$6" ]; then
                 # com anexo: o arquivo vai no corpo e a mensagem no cabeçalho
