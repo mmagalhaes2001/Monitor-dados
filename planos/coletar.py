@@ -61,17 +61,19 @@ def sem_acento(t):
     return unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
 
 
-def abrir(page, url, rolar=True):
+def abrir(page, url, rolar=True, espera=8000):
+    """Abre e espera os cards. Sites com rastreadores quase nunca ficam 'quietos', então a espera é curta."""
     r = page.goto(url, wait_until="domcontentloaded", timeout=60000)
-    try:
-        page.wait_for_load_state("networkidle", timeout=25000)
-    except Exception:
-        pass
+    if espera:
+        try:
+            page.wait_for_load_state("networkidle", timeout=espera)
+        except Exception:
+            pass
     if rolar:
-        for _ in range(6):
-            page.mouse.wheel(0, 1600)
-            time.sleep(0.5)
-    time.sleep(2.5)
+        for _ in range(4):
+            page.mouse.wheel(0, 2000)
+            time.sleep(0.4)
+        time.sleep(1.5)
     return r.status if r else None
 
 
@@ -149,7 +151,7 @@ def coletar(operadora, pracas):
                     continue
                 for tentativa in range(2):
                     try:
-                        status = abrir(page, url)
+                        status = abrir(page, url, rolar=(operadora != "tim"), espera=(0 if operadora == "tim" else 8000))
                         reg["status"] = status
                         html = page.content()
                         if operadora == "vivo":
@@ -189,6 +191,7 @@ def coletar(operadora, pracas):
                         reg["erro"] = traceback.format_exc()[-300:]
                         time.sleep(5)
                 res["paginas"].append(reg)
+                (SAIDA / ("%s.json" % operadora)).write_text(json.dumps(res, ensure_ascii=False), encoding="utf-8")  # parcial
                 print("%s %s %-8s ok=%s n=%s %s %s" % (operadora, uf, seg, reg["ok"], reg["n"], reg["praca_tela"], reg["erro"][:120]), flush=True)
         ctx.close()
         nav.close()
