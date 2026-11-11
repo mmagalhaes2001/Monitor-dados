@@ -47,7 +47,7 @@ PAGINAS = {
     "claro": [
         ("pos", "https://www.claro.com.br/celular/pos"),
         ("controle", "https://www.claro.com.br/celular/controle"),
-        ("pre", "https://www.claro.com.br/celular/planos-pre"),
+        ("pre", "https://www.claro.com.br/celular/planos-pre/prezao"),
         ("flex", "https://www.claro.com.br/celular/flex"),
         ("fibra", "https://www.claro.com.br/internet"),
     ],

@@ -60,6 +60,8 @@ def atualizar():
     hist = ler(HIST, COLS)
     log = ler(LOG, COLS_LOG)
     primeira_vez = not hist
+    # páginas (operadora, UF, página) já lidas com sucesso antes: a 1ª leitura de uma página nova é base, não "novo"
+    ja_lidas = {(r["operadora"], r["uf"], r["pagina"]) for r in log if r["ok"] == "sim"}
     mudancas = []
     resumo = {"operadoras": {}, "primeira_vez": primeira_vez}
     for arq in sorted((AQUI / "_coleta").glob("*.json")):
@@ -91,7 +93,7 @@ def atualizar():
             velho = vigentes.get(k)
             if velho is None:
                 hist.append(novo)
-                if not primeira_vez:
+                if not primeira_vez and (op_nome, novo["uf"], novo.get("pagina", "")) in ja_lidas:
                     mudancas.append({"tipo": "novo", "operadora": op_nome, "uf": novo["uf"], "segmento": novo["segmento"], "linha": novo.get("linha", ""),
                                      "plano": novo["plano"], "chave": novo["chave"], "data": data,
                                      "detalhe": "R$ %s | %s" % (novo["preco"], (novo["gb_total"] + " GB") if novo["gb_total"] else (novo["velocidade_mega"] + " Mega"))})

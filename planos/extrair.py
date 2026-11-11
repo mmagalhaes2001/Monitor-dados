@@ -177,6 +177,7 @@ def claro(html, segmento_pagina):
             ml = re.search(r"(\d)\s*linhas? inclusa", texto_card)
             out.append(registro("Claro", segmento_pagina, nome, preco=preco, preco_de=num(de.group(1)) if de else None,
                                 condicao=cond, gb_total=gb(titulo),
+                                velocidade_mega=None if gb(titulo) else mega(titulo),
                                 gb_detalhe="; ".join(i for i in itens if re.search(r"\d+\s*GB", i)),
                                 linhas=(int(ml.group(1)) + 1) if ml else None,
                                 beneficios="; ".join(i for i in itens if not re.search(r"^Para uso livre", i))[:500], selo=tags))
