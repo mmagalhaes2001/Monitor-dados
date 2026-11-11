@@ -7,7 +7,7 @@ on:
   push:
     paths:
       - ".github/workflows/teste-planos.yml"
-      - "planos/descobrir.py"
+      - "planos/descobrir*.py"
   workflow_dispatch:
     inputs:
       alvos:
@@ -33,6 +33,9 @@ jobs:
           python -m playwright install --with-deps chromium > /dev/null
       - name: Abrir os sites
         run: python planos/descobrir.py ${{ inputs.alvos }}
+      - name: Testar troca de praça
+        if: always()
+        run: python planos/descobrir_regiao.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
