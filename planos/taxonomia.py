@@ -7,7 +7,7 @@ Para incluir um nome novo: uma linha em REGRAS (operadora, padrão no nome do pl
 """
 import re
 
-TIPOS = ["Pré", "Controle", "Lite/Anual", "Flex", "Pós", "Família", "Fibra"]
+TIPOS = ["Pré", "Controle", "Lite/Anual", "Flex", "Pós", "Família", "Fibra", "FWA (5G residencial)"]
 
 # (operadora, regex no nome do plano ou "" para qualquer, página de origem ou None, tipo, linha)
 REGRAS = [
@@ -23,6 +23,7 @@ REGRAS = [
     ("TIM", r"beta", None, "Pré", "TIM Beta / BetaCreator"),
     ("TIM", r"pr[ée]|xip", None, "Pré", "TIM Pré XIP"),
     # Vivo
+    ("Vivo", r"box 5g|fwa", None, "FWA (5G residencial)", "Vivo Box 5G"),
     ("Vivo", r"fibra.*tv|tv por assinatura", None, "Fibra", "Vivo Fibra + TV"),
     ("Vivo", r"", "fibra", "Fibra", "Vivo Fibra"),
     ("Vivo", r"fam[ií]lia", None, "Família", "Vivo Família"),
@@ -41,7 +42,7 @@ REGRAS = [
 ]
 
 SEG = {"Pré": "pre", "Controle": "controle", "Pós": "pos", "Família": "familia", "Lite/Anual": "lite",
-       "Flex": "flex", "Fibra": "fibra"}
+       "Flex": "flex", "Fibra": "fibra", "FWA (5G residencial)": "fwa"}
 
 
 def classificar(operadora, pagina, nome, linhas=None):

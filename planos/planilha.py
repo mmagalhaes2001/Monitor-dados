@@ -27,9 +27,9 @@ from historico import CAMPOS_COMPARA, COLS, COLS_LOG, HIST, LOG, NOMES, ler  # n
 ARQ = AQUI / "planos_operadoras.xlsx"
 UFS = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE",
        "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"]
-ORD_SEG = {"pre": 0, "controle": 1, "lite": 2, "flex": 3, "pos": 4, "familia": 5, "fibra": 6}
+ORD_SEG = {"pre": 0, "controle": 1, "lite": 2, "flex": 3, "pos": 4, "familia": 5, "fibra": 6, "fwa": 7}
 SEG_NOME = {"pre": "Pré", "controle": "Controle", "lite": "Lite/Anual", "flex": "Flex", "pos": "Pós",
-            "familia": "Família", "fibra": "Fibra"}
+            "familia": "Família", "fibra": "Fibra", "fwa": "FWA (5G residencial)"}
 CAB = Font(bold=True, color="FFFFFF")
 FUNDO = PatternFill("solid", fgColor="1F3864")
 
@@ -81,7 +81,7 @@ def gerar():
         dim = f(r["gb_total"]) or f(r["velocidade_mega"])
         if isinstance(dim, float):
             d["dims"].append(dim)
-    ord_tipo = {t: i for i, t in enumerate(["Pré", "Controle", "Lite/Anual", "Flex", "Pós", "Família", "Fibra"])}
+    ord_tipo = {t: i for i, t in enumerate(["Pré", "Controle", "Lite/Anual", "Flex", "Pós", "Família", "Fibra", "FWA (5G residencial)"])}
     aba(wb, "Linhas comerciais", ["Tipo", "Operadora", "Linha comercial", "Nº planos", "Preço mín (R$)", "Preço máx (R$)",
                                   "GB/Mega mín", "GB/Mega máx"],
         [[k[0], k[1], k[2], len(v["planos"]), min(v["precos"]) if v["precos"] else None, max(v["precos"]) if v["precos"] else None,
@@ -105,7 +105,7 @@ def gerar():
             m_ = meta_t[(tipo,) + k]
             linhas_t.append([k[0], k[1], m_[0], m_[1], m_[2], len(val), min(val) if val else None,
                              max(val) if val else None] + precos)
-        ws = aba(wb, tipo.replace("/", "-"), ["Operadora", "Linha comercial", "Plano", "GB / Mega", "Condição", "Nº praças",
+        ws = aba(wb, tipo.replace("/", "-").replace(" (5G residencial)", "")[:31], ["Operadora", "Linha comercial", "Plano", "GB / Mega", "Condição", "Nº praças",
                                               "Mín", "Máx"] + UFS, linhas_t, {2: 26, 3: 34, 5: 16},
                  num_cols=range(7, 9 + len(UFS)))
         for i in range(9, 9 + len(UFS)):

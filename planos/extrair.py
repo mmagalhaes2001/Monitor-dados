@@ -214,16 +214,26 @@ def tim(html, segmento_pagina, uf):
         if regioes and uf not in regioes:
             continue  # oferta não vale nesta UF
         titulo_interno = _v(o, "title")
-        nome = limpa(_v(o, "field_nome_da_oferta")) or limpa(_v(o, "field_subtitle")) or titulo_interno
+        # nome a partir do título interno (o campo "nome da oferta" às vezes vem vazio ou trocado, ex.: Família VIP = "TIM Black Plus")
+        nome = re.sub(r"^\s*\d+\s*Card(\s*HOME)?\s*-\s*", "", titulo_interno, flags=re.I)
+        nome = re.sub(r"\s*\[.*$", "", nome)
+        nome = re.sub(r"\b(TOOGLE|TOGGLE)\b", "", nome, flags=re.I)
+        nome = re.sub(r"\s+-\s+|\s+", " ", nome).strip(" -")
+        nome = nome or limpa(_v(o, "field_nome_da_oferta")) or limpa(_v(o, "field_subtitle"))
         gbtxt = limpa(_v(o, "field_titulo")) or limpa(_v(o, "field_oferta_adicional"))
         preco = num(_v(o, "field_preco_card_oferta"))
         principal = limpa(_v(o, "field_preco_principal_7_1_3"))
         adicional = limpa(_v(o, "field_preco_adicional_original"))
         if preco is None:
             preco = num(principal)
+        total = re.search(r"R\$\s*([\d.,]+)\s*/\s*m[eê]s no total", principal)
+        pessoa = re.search(r"R\$\s*([\d.,]+)\s*/\s*m[eê]s por pessoa", principal)
         m = re.search(r"R\$\s*[\d.,]+\s*/?\s*([^R]{0,50})", principal)
         cond = limpa(m.group(1)) if m else ""
-        cond = re.split(r"\s*(Incluso|Inclu[ií]do|Trazer|Benef|Conferir|Contratar|\d+\s*GB)", cond)[0].strip()
+        cond = re.split(r"\s*(Incluso|Inclu[ií]do|Trazer|Benef|Conferir|Contratar|Assinatura|Sua recarga|B[ôo]nus|\d+\s*GB)", cond)[0].strip()
+        if total:  # Família: preço do plano é o total; por pessoa vai na condição
+            preco = num(total.group(1))
+            cond = "total/mês" + ("; R$ %s por pessoa" % pessoa.group(1) if pessoa else "")
         benef = [limpa(b.get("name", [{}])[0].get("value", "")) for b in (o.get("field_outros_beneficios") or []) + (o.get("field_beneficios_destaque") or [])]
         info = limpa(_v(o, "field_information_text"))
         seg = segmento_pagina
@@ -236,12 +246,12 @@ def tim(html, segmento_pagina, uf):
         if adicional and num(adicional) and num(adicional) != preco:
             extra["preco_alternativo"] = adicional[:120]
         if seg == "fibra":
-            vel = mega(gbtxt) or mega(titulo_interno) or mega(nome)
-            out.append(registro("TIM", "fibra", "%s %s" % (nome, gbtxt), preco=preco, condicao=cond[:80],
+            vel = mega(nome) or mega(gbtxt) or mega(titulo_interno)
+            out.append(registro("TIM", "fibra", nome if re.search(r"mega|giga", nome, re.I) else "%s %s" % (nome, gbtxt), preco=preco, condicao=cond[:80],
                                 velocidade_mega=vel, beneficios="; ".join(filter(None, benef))[:500],
                                 extra=json.dumps(extra, ensure_ascii=False), chave=slug("tim-fibra-" + extra["nid"])))
         else:
-            out.append(registro("TIM", seg, "%s %s" % (nome, gbtxt), preco=preco, condicao=cond[:80],
+            out.append(registro("TIM", seg, nome if re.search(r"\d+\s*GB", nome, re.I) else "%s %s" % (nome, gbtxt), preco=preco, condicao=cond[:80],
                                 gb_total=gb(gbtxt), gb_detalhe=info[:200], linhas=linhas,
                                 beneficios="; ".join(filter(None, benef))[:500],
                                 extra=json.dumps(extra, ensure_ascii=False), chave=slug("tim-%s-%s" % (seg, extra["nid"]))))
