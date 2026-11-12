@@ -4988,6 +4988,28 @@
    "ticker": "FLRY3",
    "tipo": "Posição Consolidada",
    "versao": "2"
+  },
+  "1588222": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1112928&numVersao=1&numProtocolo=1588222&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "12/11/2026 10:58",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1588222",
+   "nome": "Oncoclínicas",
+   "protocolo": "1588222",
+   "ref": "10/2026",
+   "ticker": "ONCO3",
+   "tipo": "Posição Individual - Cia, Controladas e Coligadas",
+   "versao": "1"
+  },
+  "1588223": {
+   "download": "https://www.rad.cvm.gov.br/ENETWeb/frmDownloadDocumento.aspx?Tela=ext&numSequencia=1112929&numVersao=1&numProtocolo=1588223&descTipo=IPE&CodigoInstituicao=1",
+   "entrega": "12/11/2026 10:59",
+   "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1588223",
+   "nome": "Oncoclínicas",
+   "protocolo": "1588223",
+   "ref": "10/2026",
+   "ticker": "ONCO3",
+   "tipo": "Posição Consolidada",
+   "versao": "1"
   }
  }
 }

@@ -1,0 +1,81 @@
+{
+ "empresa": "ONCOCLÍNICAS DO BRASIL SERVIÇOS MÉDICOS S.A.",
+ "tipo_form": "Consolidado",
+ "ref": "10/2026",
+ "paginas": [
+  {
+   "orgao": "Conselho Administração",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 1
+  },
+  {
+   "orgao": "Diretoria",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 995158.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 995158.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 2
+  },
+  {
+   "orgao": "Conselho Fiscal",
+   "sem_movimentacao": true,
+   "saldo_inicial": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "movimentacoes": [],
+   "saldo_final": [
+    {
+     "ativo": "Ações",
+     "caracteristica": "ON",
+     "quantidade": 0.0
+    }
+   ],
+   "_secao": "saldo_final",
+   "_limites": null,
+   "pagina": 3
+  }
+ ],
+ "ticker": "ONCO3",
+ "nome": "Oncoclínicas",
+ "tipo": "Posição Consolidada",
+ "entrega": "12/11/2026 10:59",
+ "versao": "1",
+ "protocolo": "1588223",
+ "link": "https://www.rad.cvm.gov.br/ENETWeb/frmExibirArquivoIPEExterno.aspx?NumeroProtocoloEntrega=1588223",
+ "pdf": "ONCO3_2026-10_consolidado_v1.pdf"
+}
