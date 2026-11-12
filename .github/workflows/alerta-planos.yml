@@ -1,6 +1,6 @@
 name: Alerta - planos das operadoras (Vivo, Claro, TIM)
 
-# Coleta diária dos planos de celular (pré, controle, pós, família) e fibra de Vivo, Claro e TIM
+# Coleta diária (uma por dia) dos planos de celular (pré, controle, pós, família) e fibra de Vivo, Claro e TIM
 # nas 27 capitais, direto dos sites (navegador Playwright). As três operadoras rodam em paralelo na mesma máquina.
 # Junta ao histórico por vigência (planos/dados/historico.csv), regenera planos/planos_operadoras.xlsx
 # e avisa no ntfy (tópico mm-planos-5a4d74767443) + Gmail com a planilha anexa quando algo muda.
@@ -8,7 +8,9 @@ name: Alerta - planos das operadoras (Vivo, Claro, TIM)
 # Teste manual: Actions > este robô > Run workflow (marque "teste"; dá para limitar as praças, ex.: SP,RJ).
 on:
   schedule:
-    - cron: "23 10 * * *"   # 07:23 em Brasília, todo dia
+    # O agendamento do GitHub falha às vezes (em 12/11 a rodada das 07:23 não foi disparada).
+    # Por isso tenta a cada 30 min das 06:23 às 17:53 (Brasília); se a coleta do dia já foi feita, sai em segundos.
+    - cron: "23,53 9-20 * * *"
   push:
     paths:
       - ".github/workflows/alerta-planos.yml"
@@ -44,14 +46,26 @@ jobs:
     timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
+      - name: Já coletou hoje?
+        id: hoje
+        run: |
+          d=$(TZ=America/Sao_Paulo date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "^$d," planos/dados/coletas.csv 2>/dev/null; then
+            echo "Coleta de $d já feita; nada a fazer."; echo "pular=sim" >> $GITHUB_OUTPUT
+          else
+            echo "pular=nao" >> $GITHUB_OUTPUT
+          fi
       - uses: actions/setup-python@v5
+        if: steps.hoje.outputs.pular == 'nao'
         with:
           python-version: "3.12"
       - name: Instalar navegador
+        if: steps.hoje.outputs.pular == 'nao'
         run: |
           pip install -q playwright==1.48.0 beautifulsoup4==4.12.3 lxml==5.3.0 openpyxl==3.1.5
           python -m playwright install --with-deps chromium > /dev/null
       - name: Coletar Vivo, Claro e TIM (em paralelo)
+        if: steps.hoje.outputs.pular == 'nao'
         run: |
           arg=""; [ -n "${{ inputs.pracas }}" ] && arg="--pracas ${{ inputs.pracas }}"
           for op in vivo claro tim; do
@@ -60,11 +74,11 @@ jobs:
           wait || true
           for op in vivo claro tim; do echo "===== $op"; cat /tmp/log_$op.txt; done
       - name: Histórico, planilha e aviso
-        if: success() || failure()   # não consolida rodada cancelada
+        if: (success() || failure()) && steps.hoje.outputs.pular == 'nao'   # não consolida rodada cancelada
         env:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          TESTE: ${{ inputs.teste || github.event_name == 'push' }}
+          TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste }}
         run: |
           ls planos/_coleta
           cp planos/_coleta/*.json /tmp/ 2>/dev/null || true
@@ -81,7 +95,7 @@ jobs:
           done
           if [ "$TESTE" = "true" ]; then python planos/avisar.py --teste; else python planos/avisar.py; fi
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.hoje.outputs.pular == 'nao'
         continue-on-error: true
         with:
           name: coleta-planos

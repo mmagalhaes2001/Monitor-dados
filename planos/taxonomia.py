@@ -27,7 +27,7 @@ REGRAS = [
     ("Vivo", r"fibra.*tv|tv por assinatura", None, "Fibra", "Vivo Fibra + TV"),
     ("Vivo", r"", "fibra", "Fibra", "Vivo Fibra"),
     ("Vivo", r"fam[ií]lia", None, "Família", "Vivo Família"),
-    ("Vivo", r"", "lite", "Lite/Anual", "Vivo Lite"),
+    ("Vivo", r"", "lite", "Lite/Anual", "Vivo Lite (antigo Vivo Easy Lite)"),
     ("Vivo", r"easy", None, "Controle", "Vivo Easy"),
     ("Vivo", r"", "controle", "Controle", "Vivo Controle"),
     ("Vivo", r"", "pre", "Pré", "Vivo Pré"),

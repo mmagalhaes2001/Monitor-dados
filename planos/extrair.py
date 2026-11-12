@@ -256,3 +256,20 @@ def tim(html, segmento_pagina, uf):
                                 beneficios="; ".join(filter(None, benef))[:500],
                                 extra=json.dumps(extra, ensure_ascii=False), chave=slug("tim-%s-%s" % (seg, extra["nid"]))))
     return out
+
+
+def tim_fit(html):
+    """TIM Controle Fit (mensal e anual): aparece só como texto na página de Controle, fora do cadastro de ofertas.
+    Ex.: 'TIM Controle Fit Anual 2.0 | Tenha 46GB por 12x R$30/mês'."""
+    t = limpa(BeautifulSoup(html, "lxml").get_text(" "))
+    out, vistos = [], set()
+    for m in re.finditer(r"(TIM Controle Fit (Anual|Mensal)\s*[\d.]*)\s+Tenha\s+(\d+)\s*GB\s+por\s+(12x\s*)?R\$\s*([\d.,]+)\s*/\s*m[eê]s([^|]{0,60}?)(?:Saber mais|Contratar|$)", t, re.I):
+        nome = re.sub(r"\s+", " ", m.group(1)).strip()
+        if nome in vistos:
+            continue
+        vistos.add(nome)
+        anual = m.group(2).lower() == "anual"
+        cond = "12x no cartão (contrato anual)" if anual else "mês, cartão"
+        out.append(registro("TIM", "lite" if anual else "controle", "%s %sGB" % (nome, m.group(3)), preco=num(m.group(5)),
+                            condicao=cond[:80], gb_total=int(m.group(3)), chave=slug("tim-fit-" + nome)))
+    return out

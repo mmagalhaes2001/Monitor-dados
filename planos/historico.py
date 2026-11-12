@@ -25,6 +25,9 @@ NOMES = {"preco": "preço", "preco_de": "preço De", "preco_depois": "preço ap�
 COLS = ["operadora", "tipo", "linha", "uf", "cidade", "segmento", "chave", "plano", "preco", "preco_de", "preco_depois",
         "condicao", "gb_total", "gb_detalhe", "velocidade_mega", "linhas", "rs_por_gb", "beneficios", "selo",
         "pagina", "url", "extra", "inicio", "fim", "visto_ultimo"]
+# Planos que passaram a ser lidos numa página que já era coletada: na data da inclusão entram como base, não como "novo".
+INCLUSOES = {("TIM", "tim-fit-"): "2026-11-12"}
+
 COLS_LOG = ["data", "hora", "operadora", "uf", "cidade", "pagina", "ok", "n", "praca_tela", "erro"]
 
 
@@ -93,7 +96,9 @@ def atualizar():
             velho = vigentes.get(k)
             if velho is None:
                 hist.append(novo)
-                if not primeira_vez and (op_nome, novo["uf"], novo.get("pagina", "")) in ja_lidas:
+                inclusao = any(op_nome == o and novo["chave"].startswith(pref) and data <= d
+                               for (o, pref), d in INCLUSOES.items())
+                if not primeira_vez and not inclusao and (op_nome, novo["uf"], novo.get("pagina", "")) in ja_lidas:
                     mudancas.append({"tipo": "novo", "operadora": op_nome, "uf": novo["uf"], "segmento": novo["segmento"], "linha": novo.get("linha", ""),
                                      "plano": novo["plano"], "chave": novo["chave"], "data": data,
                                      "detalhe": "R$ %s | %s" % (novo["preco"], (novo["gb_total"] + " GB") if novo["gb_total"] else (novo["velocidade_mega"] + " Mega"))})

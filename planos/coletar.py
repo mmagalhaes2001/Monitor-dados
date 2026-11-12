@@ -178,6 +178,8 @@ def coletar(operadora, pracas):
                         else:
                             reg["praca_tela"] = uf
                             planos = extrair.tim(html, seg, uf.lower())
+                            if seg == "controle":
+                                planos += extrair.tim_fit(html)
                             esperado = uf.lower()
                         if esperado not in sem_acento(reg["praca_tela"]).lower():
                             reg["erro"] = "página mostrou outra praça: %s" % reg["praca_tela"]

@@ -19,7 +19,7 @@ Fonte (a mesma base que o painel de acessos da Anatel oferece para download):
 
 ## Planos das operadoras (Vivo, Claro, TIM)
 
-- Robô: `.github/workflows/alerta-planos.yml` (tópico ntfy `mm-planos-5a4d74767443`), todo dia às 07:23.
+- Robô: `.github/workflows/alerta-planos.yml` (tópico ntfy `mm-planos-5a4d74767443`), uma coleta por dia: tenta a cada 30 min das 06:23 às 17:53 e pula se a do dia já foi feita (o cron do GitHub às vezes não dispara).
 - Coleta pré, controle, pós, família e fibra nas 27 capitais direto dos sites (navegador), uma operadora por máquina em paralelo.
 - Histórico por vigência em `planos/dados/historico.csv` (cada mudança de preço, GB, condição, benefício ou selo abre uma nova linha);
   log de cada página lida em `planos/dados/coletas.csv`.
