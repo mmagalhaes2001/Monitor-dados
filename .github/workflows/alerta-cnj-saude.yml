@@ -13,6 +13,11 @@ name: Alerta - CNJ painel saúde
 # Em qualquer dos dois casos, guarda uma foto completa (com pendentes e tempos médios mês a mês)
 # em estado/cnj-saude-sup/ e refaz a planilha resultados/cnj/cnj_saude_suplementar.xlsx.
 #
+# Se a leitura quebrar (CNJ mudou o painel), roda cnj/recapturar.py na hora: abre o painel num
+# navegador, refaz o mapeamento das consultas, testa a consistência e, se passar, segue sozinho.
+# Se não conseguir em 1h: push urgente + issue "[CNJ saúde] leitura quebrada" (uma tarefa agendada
+# do Claude olha essas issues e corrige).
+#
 # Roda em "corrente" (~5h50 por execução, depois dispara a próxima); o cron é rede de segurança.
 # Toda alteração no código (push) roda uma checagem de teste e manda um push "Teste CNJ saúde".
 on:
@@ -88,7 +93,7 @@ jobs:
           }
           campo() { python -c "import json;print(json.load(open('cmp.json'))['$1'])"; }
 
-          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""
+          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""; ultimo_conserto=""; playwright_ok=""
           while :; do
             agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
             if python cnj/saude_dados.py > nova.json && python cnj/saude_compara.py nova.json "$FOTOS" > cmp.json; then
@@ -120,9 +125,36 @@ jobs:
             else
               echo "$agora falha na leitura: $(head -c 300 nova.json)"
               [ -z "$falha_desde" ] && falha_desde=$(date +%s)
+              # Conserto automático: remapeia as consultas na estrutura nova do painel (no máx. 1x por hora)
+              if [ -z "$ultimo_conserto" ] || [ $(( $(date +%s) - ultimo_conserto )) -gt 3600 ]; then
+                ultimo_conserto=$(date +%s)
+                if [ -z "$playwright_ok" ]; then
+                  pip install -q playwright==1.48.0 && python -m playwright install --with-deps chromium > /dev/null && playwright_ok=1
+                fi
+                if python cnj/recapturar.py > conserto.json; then
+                  echo "$agora conserto automático: $(cat conserto.json)"
+                  mud=$(python -c "import json;d=json.load(open('conserto.json'));print('; '.join(d['mudancas']) or 'só endereço/chave/IDs do relatório')")
+                  git add cnj/templates_saude.json
+                  git commit -q -m "CNJ saúde: conserto automático após mudança no painel" || true
+                  git pull --rebase -q || true
+                  git push -q || echo "falha ao salvar"
+                  push "CNJ saúde: painel mudou e o robô se ajustou" default wrench \
+                    "A leitura quebrou ($agora) e foi refeita na estrutura nova, com teste de consistência ok. Mudanças: $mud"
+                  falha_desde=""; avisou_falha=""
+                  continue
+                else
+                  echo "$agora conserto automático falhou: $(cat conserto.json)"
+                fi
+              fi
               if [ -z "$avisou_falha" ] && [ $(( $(date +%s) - falha_desde )) -gt 3600 ]; then
-                push "CNJ saúde: não consigo ler o painel" default warning \
-                  "Há mais de 1h sem conseguir ler os dados ($agora). Pode ser fora do ar ou mudança no painel."
+                det=$(python -c "import json;print(json.load(open('conserto.json')).get('detalhe',''))" 2>/dev/null)
+                push "CNJ saúde: não consigo ler o painel" urgent warning \
+                  "Há mais de 1h sem conseguir ler os dados ($agora), e o conserto automático não resolveu: $det"
+                aberta=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "[CNJ saúde] leitura quebrada in:title" --json number --jq length 2>/dev/null || echo 0)
+                if [ "$aberta" = "0" ]; then
+                  gh issue create --repo "$GITHUB_REPOSITORY" --title "[CNJ saúde] leitura quebrada - precisa de conserto" \
+                    --body "Leitura falhando desde $(TZ=America/Sao_Paulo date -d @$falha_desde '+%d/%m %H:%M'). Conserto automático: $det" || true
+                fi
                 avisou_falha=1
               fi
             fi
