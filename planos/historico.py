@@ -123,6 +123,7 @@ def atualizar():
             mudancas.append({"tipo": "saiu", "operadora": op_nome, "uf": velho["uf"], "segmento": velho["segmento"], "linha": velho.get("linha", ""),
                              "plano": velho["plano"], "chave": velho["chave"], "data": data,
                              "detalhe": "último preço R$ %s" % velho["preco"]})
+    mudancas = parear(mudancas)
     hist.sort(key=lambda r: (r["operadora"], r["segmento"], r["chave"], r["uf"], r["inicio"]))
     gravar(HIST, hist, COLS)
     gravar(LOG, log, COLS_LOG)
@@ -130,6 +131,28 @@ def atualizar():
     resumo["n_vigentes"] = sum(1 for r in hist if not r["fim"])
     (AQUI / "_coleta" / "mudancas.json").write_text(json.dumps(resumo, ensure_ascii=False, indent=1), encoding="utf-8")
     return resumo
+
+
+def parear(mudancas):
+    """Quando a operadora troca o nome do plano junto com os GB/velocidade (ex.: 'Pós 60GB' vira 'Pós 80GB'),
+    o plano antigo 'sai' e o novo 'entra'. Se na mesma operadora, praça e tipo saiu um e entrou outro com o MESMO preço,
+    vira uma mudança só: nome/GB antes → depois, preço igual."""
+    novos = [m for m in mudancas if m["tipo"] == "novo"]
+    usados, out = set(), []
+    for m in mudancas:
+        if m["tipo"] != "saiu":
+            continue
+        preco = m.get("detalhe", "").replace("último preço R$ ", "").strip()
+        par = next((n for n in novos if id(n) not in usados and n["operadora"] == m["operadora"] and n["uf"] == m["uf"]
+                    and n["segmento"] == m["segmento"] and n.get("detalhe", "").startswith("R$ %s |" % preco)), None)
+        if par:
+            usados.add(id(par))
+            usados.add(id(m))
+            out.append({"tipo": "mudou", "operadora": m["operadora"], "uf": m["uf"], "segmento": m["segmento"],
+                        "linha": par.get("linha", ""), "plano": "%s → %s" % (m["plano"], par["plano"]), "chave": par["chave"],
+                        "data": par["data"], "campos": [{"campo": "plano/GB", "antes": m["plano"], "depois": par["plano"]},
+                                                        {"campo": "preço", "antes": preco, "depois": preco + " (igual)"}]})
+    return [m for m in mudancas if id(m) not in usados] + out
 
 
 def agrupar(mudancas):

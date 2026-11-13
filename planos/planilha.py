@@ -139,6 +139,20 @@ def gerar():
         if vs[-1]["fim"]:
             mud.append([vs[-1]["fim"], vs[-1]["operadora"], tipo_de(vs[-1]), linha_de(vs[-1]), vs[-1]["plano"], vs[-1]["uf"],
                         "Saiu (visto pela última vez)", "", "R$ %s" % vs[-1]["preco"], ""])
+    # junta "saiu" + "novo" do mesmo dia/operadora/praça/tipo com o mesmo preço numa linha "Mudou (nome/GB)"
+    novos = [l for l in mud if l[6] == "Novo"]
+    datas = sorted({r["visto_ultimo"] for r in hist} | {r["inicio"] for r in hist})
+    prox = {d: datas[i + 1] for i, d in enumerate(datas[:-1])}
+    usados, pares = set(), []
+    for l in mud:
+        if not l[6].startswith("Saiu"):
+            continue
+        n = next((x for x in novos if id(x) not in usados and x[1] == l[1] and x[5] == l[5] and x[2] == l[2]
+                  and x[9] == l[8] and x[0] == prox.get(l[0])), None)
+        if n:
+            usados.update({id(n), id(l)})
+            pares.append([n[0], n[1], n[2], n[3], "%s → %s" % (l[4], n[4]), n[5], "Mudou", "plano/GB (preço igual)", l[4], n[4]])
+    mud = [l for l in mud if id(l) not in usados] + pares
     mud.sort(key=lambda l: (l[0], l[1], l[4], l[5]), reverse=True)
     aba(wb, "Mudanças", ["Data", "Operadora", "Tipo de plano", "Linha comercial", "Plano", "UF", "Mudança", "Campo", "Antes", "Depois"],
         mud, {4: 26, 5: 34, 9: 40, 10: 40})
