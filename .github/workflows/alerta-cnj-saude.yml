@@ -1,16 +1,19 @@
 name: Alerta - CNJ painel saúde
 
-# Avisa (push no app ntfy) quando o painel de saúde do CNJ (Justiça em Números, Power BI)
-# é atualizado: https://justica-em-numeros.cnj.jus.br/painel-saude/
+# Acompanha o painel de saúde do CNJ (Justiça em Números, Power BI público):
+# https://justica-em-numeros.cnj.jus.br/painel-saude/  - recorte Saúde Suplementar.
 #
-# Como detecta: abre o painel num navegador headless e lê a frase "Painel atualizado em DD/MM/AAAA".
-# Se a data mudar, avisa.
+# Como lê: consulta a mesma API que o painel usa (cnj/saude_dados.py), sem navegador:
+# frase "Painel atualizado em ...", cards (pendentes, tempos médios, baixados, casos novos) e
+# a série mensal de casos novos e baixados desde 2020.
 #
-# Janela: checa a cada 10 min do dia 5 ao dia 30 (horário de Brasília). Do dia 1 ao 4 fica
-# "aquecido" (rodando sem checar). Depois que avisar no mês, para até o dia 1 do mês seguinte.
+# A cada 10 min, o mês inteiro:
+#  - mudou a data do painel        -> push urgente "painel atualizado" + revisões dos meses anteriores
+#  - mesma data, números mudaram   -> push "números revisados"
+# Em qualquer dos dois casos, guarda uma foto completa (com pendentes e tempos médios mês a mês)
+# em estado/cnj-saude-sup/ e refaz a planilha resultados/cnj/cnj_saude_suplementar.xlsx.
 #
 # Roda em "corrente" (~5h50 por execução, depois dispara a próxima); o cron é rede de segurança.
-# Estado em estado/cnj-saude.env.
 # Toda alteração no código (push) roda uma checagem de teste e manda um push "Teste CNJ saúde".
 on:
   schedule:
@@ -22,7 +25,7 @@ on:
   workflow_dispatch:
     inputs:
       teste:
-        description: "Teste: uma checagem só, ignorando a janela, e manda push de teste"
+        description: "Teste: uma checagem só e manda push de teste"
         type: boolean
         default: false
 
@@ -38,10 +41,10 @@ concurrency:
 env:
   NTFY_TOPIC: mm-cnj-395edfecd355
   LINK: https://justica-em-numeros.cnj.jus.br/painel-saude/
+  FOTOS: estado/cnj-saude-sup
+  PLANILHA: resultados/cnj/cnj_saude_suplementar.xlsx
   INTERVALO: "600"
   DURACAO: "21000"
-  DIA_INICIO: "5"
-  DIA_FIM: "30"
 
 jobs:
   checar:
@@ -50,114 +53,85 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Está na época?
-        id: epoca
-        env:
-          TESTE: ${{ inputs.teste || github.event_name == 'push' }}
-        run: |
-          touch estado/cnj-saude.env 2>/dev/null || { mkdir -p estado; touch estado/cnj-saude.env; }
-          source estado/cnj-saude.env
-          d=$(TZ=America/Sao_Paulo date +%-d); mes=$(TZ=America/Sao_Paulo date +%Y-%m)
-          if [ "$TESTE" = "true" ]; then
-            echo "rodar=1" >> $GITHUB_OUTPUT
-          elif [ "$MES_AVISADO" = "$mes" ]; then
-            echo "Já avisou a atualização de $mes. Volta no dia 1 do mês que vem."
-          elif [ "$d" -le "$DIA_FIM" ]; then
-            echo "rodar=1" >> $GITHUB_OUTPUT
-          else
-            echo "Dia $d: fora da janela."
-          fi
-
       - uses: actions/setup-python@v5
-        if: steps.epoca.outputs.rodar == '1'
         with:
           python-version: "3.12"
 
-      - name: Instalar navegador
-        if: steps.epoca.outputs.rodar == '1'
-        run: |
-          pip install -q playwright==1.48.0
-          python -m playwright install --with-deps chromium > /dev/null
+      - name: Instalar dependências
+        run: pip install -q openpyxl
 
       - name: Checar em loop
         id: loop
-        if: steps.epoca.outputs.rodar == '1'
         env:
           TESTE: ${{ inputs.teste || github.event_name == 'push' }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
         run: |
           [ "$TESTE" = "true" ] && DURACAO=1
-          source estado/cnj-saude.env
+          mkdir -p "$FOTOS"
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
+          PLAN_LINK="https://github.com/$GITHUB_REPOSITORY/raw/main/$PLANILHA"
 
-          push() { # titulo, prioridade, tags, mensagem
+          push() { # titulo, prioridade, tags, mensagem, link
             for t in 1 2 3; do
-              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $LINK" \
+              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: ${5:-$LINK}" \
                    ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
                    --data-binary "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
               sleep 20
             done
             echo "falha no ntfy: $1"
             if [ "$2" != "low" ]; then
-              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$4 ($LINK)" || echo "falha na issue"
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$4 (${5:-$LINK})" || echo "falha na issue"
             fi
           }
-          salvar() {
-            printf 'ATUALIZADO_VISTO="%s"\nDADOS_ATE_VISTO="%s"\nMES_AVISADO="%s"\n' \
-              "$ATUALIZADO_VISTO" "$DADOS_ATE_VISTO" "$MES_AVISADO" > estado/cnj-saude.env
-            git add estado/cnj-saude.env
-            git commit -q -m "CNJ saúde: $1" || true
-            git pull --rebase -q || true
-            git push -q || echo "falha ao salvar"
-          }
+          campo() { python -c "import json;print(json.load(open('cmp.json'))['$1'])"; }
 
           fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""
           while :; do
-            dia=$(TZ=America/Sao_Paulo date +%-d); mes=$(TZ=America/Sao_Paulo date +%Y-%m)
             agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
-            if [ "$TESTE" != "true" ]; then
-              if [ "$dia" -gt "$DIA_FIM" ]; then echo "$agora janela encerrada."; exit 0; fi
-              if [ "$dia" -lt "$DIA_INICIO" ]; then
-                [ "$(date +%s)" -ge "$fim" ] && break
-                sleep "$INTERVALO"; continue   # aquecendo
-              fi
-            fi
-
-            r=$(python cnj/painel_saude.py 2>/dev/null); echo "$agora $r"
-            ok=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin).get('ok',False))" 2>/dev/null)
-            if [ "$ok" = "True" ]; then
+            if python cnj/saude_dados.py > nova.json && python cnj/saude_compara.py nova.json "$FOTOS" > cmp.json; then
               falha_desde=""; avisou_falha=""
-              atu=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin)['atualizado'])")
-              ate=$(echo "$r" | python -c "import sys,json;print(json.load(sys.stdin)['dados_ate'])")
+              ev=$(campo evento); echo "$agora evento=$ev"
               if [ "$TESTE" = "true" ]; then
-                push "Teste CNJ saúde" high test_tube "Leitura ok. Painel atualizado em $atu, dados até $ate."
-              elif [ -z "$ATUALIZADO_VISTO" ]; then
-                echo "Primeira leitura ($atu), guardada como referência."
-                ATUALIZADO_VISTO="$atu"; DADOS_ATE_VISTO="$ate"; salvar "referência $atu"
-              elif [ "$atu" != "$ATUALIZADO_VISTO" ]; then
-                push "CNJ saúde: painel atualizado" urgent rotating_light \
-                  "Painel atualizado em $atu (antes: $ATUALIZADO_VISTO). Dados até ${ate:-?}. Detectado às $agora."
-                ATUALIZADO_VISTO="$atu"; DADOS_ATE_VISTO="$ate"; MES_AVISADO="$mes"
-                salvar "atualizado em $atu"
-                echo "parar=1" >> $GITHUB_OUTPUT
-                exit 0
+                pend=$(python -c "import json;print(json.load(open('nova.json'))['cards']['pendentes'])")
+                push "Teste CNJ saúde" high test_tube "Leitura ok (evento: $ev). Pendentes Saúde Suplementar: $pend. Toque para abrir a planilha." "$PLAN_LINK"
+              elif [ "$ev" != "nada" ]; then
+                # Foto completa (com pendentes e tempos médios mês a mês) e planilha nova
+                if python cnj/saude_dados.py --historico > foto.json && python cnj/saude_compara.py foto.json "$FOTOS" > cmp.json; then
+                  ev=$(campo evento)
+                  dp=$(python -c "import json,re;t=json.load(open('foto.json'))['data_texto'];d=re.search(r'(\d{2})/(\d{2})/(\d{4})',t).groups();print(f'{d[2]}-{d[1]}-{d[0]}')")
+                  cp foto.json "$FOTOS/${dp}_lido-$(TZ=America/Sao_Paulo date +%Y-%m-%d-%H%M).json"
+                  python cnj/saude_planilha.py "$FOTOS" "$PLANILHA"
+                  if [ "$ev" = "atualizacao" ]; then
+                    push "$(campo titulo)" urgent rotating_light "$(campo mensagem)" "$PLAN_LINK"
+                  elif [ "$ev" = "revisao" ]; then
+                    push "$(campo titulo)" default memo "$(campo mensagem)" "$PLAN_LINK"
+                  fi
+                  git add "$FOTOS" "$PLANILHA"
+                  git commit -q -m "CNJ saúde: $ev ($dp)" || true
+                  git pull --rebase -q || true
+                  git push -q || echo "falha ao salvar"
+                else
+                  echo "$agora falha na leitura completa; tento de novo na próxima."
+                fi
               fi
             else
+              echo "$agora falha na leitura: $(head -c 300 nova.json)"
               [ -z "$falha_desde" ] && falha_desde=$(date +%s)
               if [ -z "$avisou_falha" ] && [ $(( $(date +%s) - falha_desde )) -gt 3600 ]; then
                 push "CNJ saúde: não consigo ler o painel" default warning \
-                  "Há mais de 1h sem conseguir ler a data do painel ($agora). Pode ser fora do ar ou mudança de layout."
+                  "Há mais de 1h sem conseguir ler os dados ($agora). Pode ser fora do ar ou mudança no painel."
                 avisou_falha=1
               fi
             fi
 
-            # Aviso de vida: 9h, uma vez por dia, dentro da janela
+            # Aviso de vida: 9h, uma vez por dia
             hoje=$(TZ=America/Sao_Paulo date '+%d/%m'); hora=$(TZ=America/Sao_Paulo date +%H)
             if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ] && [ "$TESTE" != "true" ]; then
               n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô CNJ ok ($hoje)" || true)
-              [ "$n" = "0" ] && push "Robô CNJ ok ($hoje)" low robot "Ainda sem atualização (última: ${ATUALIZADO_VISTO:-?}). Sigo checando a cada 10 min."
+              ult=$(ls "$FOTOS" | tail -1 | cut -c1-10)
+              [ "$n" = "0" ] && push "Robô CNJ ok ($hoje)" low robot "Última publicação vista: ${ult:-?}. Sigo checando a cada 10 min (data e revisões)." "$PLAN_LINK"
               ultimo_ping=$hoje
             fi
 
@@ -167,11 +141,7 @@ jobs:
           echo "Fim do turno."
 
       - name: Disparar o próximo turno
-        if: steps.epoca.outputs.rodar == '1' && inputs.teste != true && github.event_name != 'push' && steps.loop.outputs.parar != '1' && !cancelled()
+        if: inputs.teste != true && github.event_name != 'push' && !cancelled()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          d=$(TZ=America/Sao_Paulo date +%-d)
-          if [ "$d" -le "$DIA_FIM" ]; then
-            gh workflow run alerta-cnj-saude.yml --repo "$GITHUB_REPOSITORY" --ref main
-          fi
+        run: gh workflow run alerta-cnj-saude.yml --repo "$GITHUB_REPOSITORY" --ref main
