@@ -1,0 +1,5 @@
+Executado em: 13/11 16:46
+Secret encontrado (começa com: tk_..., 32 caracteres)
+Conta ntfy: http 200, usuário: mateus.magalhaes
+Push de teste: http 200
+RESULTADO: OK
