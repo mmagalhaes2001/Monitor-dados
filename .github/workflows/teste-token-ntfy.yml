@@ -1,0 +1,50 @@
+name: Teste token ntfy
+
+# Confere se o secret NTFY_TOKEN está configurado e é aceito pelo ntfy (sem mostrar o token).
+on:
+  push:
+    paths:
+      - ".github/workflows/teste-token-ntfy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Testar token
+        env:
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          mkdir -p resultados
+          out=resultados/teste-token-ntfy.txt
+          echo "Executado em: $(TZ=America/Sao_Paulo date '+%d/%m %H:%M')" > $out
+          if [ -z "$NTFY_TOKEN" ]; then
+            echo "RESULTADO: secret NTFY_TOKEN não encontrado no repositório" >> $out
+          else
+            echo "Secret encontrado (começa com: ${NTFY_TOKEN:0:3}..., ${#NTFY_TOKEN} caracteres)" >> $out
+            conta=$(curl -sS -m 20 -H "Authorization: Bearer $NTFY_TOKEN" https://ntfy.sh/v1/account -w "\n%{http_code}")
+            code=$(echo "$conta" | tail -1)
+            user=$(echo "$conta" | sed '$d' | python3 -c "import sys,json;print(json.load(sys.stdin).get('username',''))" 2>/dev/null)
+            echo "Conta ntfy: http $code, usuário: ${user:-desconhecido}" >> $out
+            pub=$(curl -sS -m 20 -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $NTFY_TOKEN" \
+              -H "Title: Teste token ntfy" -H "Priority: high" -H "Tags: key" \
+              -d "Token ok: este push saiu do GitHub usando a sua conta ntfy (${user:-?})." \
+              https://ntfy.sh/mm-cnj-395edfecd355)
+            echo "Push de teste: http $pub" >> $out
+            if [ "$code" = "200" ] && [ -n "$user" ] && [ "$user" != "*" ] && [ "$pub" = "200" ]; then
+              echo "RESULTADO: OK" >> $out
+            else
+              echo "RESULTADO: PROBLEMA" >> $out
+            fi
+          fi
+          cat $out
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add $out
+          git commit -q -m "Teste do token do ntfy" || true
+          git pull --rebase -q || true
+          git push -q
