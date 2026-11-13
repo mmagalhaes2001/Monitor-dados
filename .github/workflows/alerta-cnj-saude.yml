@@ -35,7 +35,8 @@ permissions:
   issues: write
 
 concurrency:
-  group: alerta-cnj-saude
+  # testes (push / teste manual) têm fila própria, para não esperar o turno do robô terminar
+  group: alerta-cnj-saude-${{ (github.event_name == 'push' || inputs.teste) && 'teste' || 'robo' }}
   cancel-in-progress: false
 
 env:
