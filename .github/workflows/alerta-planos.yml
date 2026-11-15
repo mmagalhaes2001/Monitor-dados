@@ -32,6 +32,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: alerta-planos-v2
@@ -43,6 +45,8 @@ env:
 jobs:
   coletar:
     runs-on: ubuntu-latest
+    outputs:
+      pular: ${{ steps.hoje.outputs.pular }}
     timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
@@ -101,3 +105,28 @@ jobs:
           name: coleta-planos
           path: planos/_coleta
           retention-days: 14
+
+  site:
+    # Publica o site (GitHub Pages) com os dados atualizados. Precisa do Pages ligado em Settings > Pages > Source: GitHub Actions.
+    needs: coletar
+    if: (success() || failure()) && needs.coletar.outputs.pular == 'nao'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q openpyxl==3.1.5 matplotlib==3.9.2
+      - name: Montar o site
+        run: |
+          python planos/painel.py
+          python planos/site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: planos/_site
+      - uses: actions/deploy-pages@v4
