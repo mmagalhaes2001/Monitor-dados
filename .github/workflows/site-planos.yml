@@ -1,0 +1,50 @@
+name: Site - planos das operadoras
+
+# Publica o site estático do monitor de planos (gráficos, tabelas e downloads) no Cloudflare Pages,
+# em endereço neutro (painel-planos-br.pages.dev). Roda depois de cada coleta de planos e pode ser disparado à mão.
+# Precisa dos secrets CLOUDFLARE_API_TOKEN (permissão Cloudflare Pages: Edit) e CLOUDFLARE_ACCOUNT_ID.
+on:
+  workflow_run:
+    workflows: ["Alerta - planos das operadoras (Vivo, Claro, TIM)"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-planos
+  cancel-in-progress: true
+
+env:
+  PROJETO: painel-planos-br
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q openpyxl==3.1.5 matplotlib==3.9.2
+      - name: Montar o site
+        run: |
+          python planos/painel.py
+          python planos/site.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Publicar no Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "Faltam os secrets CLOUDFLARE_API_TOKEN e/ou CLOUDFLARE_ACCOUNT_ID: site não publicado."; exit 0
+          fi
+          npx -y wrangler@3 pages project create "$PROJETO" --production-branch=main 2>/dev/null || true
+          npx -y wrangler@3 pages deploy planos/_site --project-name="$PROJETO" --branch=main --commit-dirty=true
