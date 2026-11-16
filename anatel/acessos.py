@@ -253,6 +253,19 @@ def gerar(saida):
 
     meses_m = sorted(mov["mes"].unique())[-N_MESES:]
     meses_b = sorted(blf["mes"].unique())[-N_MESES:]
+    # O último mês vem do próprio dado: o _Total.csv às vezes é atualizado depois da base detalhada
+    # (em out/2026 o do móvel ficou parado em agosto com setembro já publicado).
+    mes_tot_m, mes_tot_b = mes_m, mes_b
+    mes_m, mes_b = meses_m[-1], meses_b[-1]
+
+    def oficial(serie, mes):
+        a, m = int(mes[:4]), int(mes[5:])
+        s = serie[(serie["Ano"] == a) & (serie["Mês"] == m)]["Acessos"]
+        return int(s.iloc[0]) if len(s) else None
+
+    # Confere no mês mais recente que existe nos dois (planilha e _Total.csv)
+    conf_m = mes_m if oficial(serie_m, mes_m) is not None else mes_tot_m
+    conf_b = mes_b if oficial(serie_b, mes_b) is not None else mes_tot_b
 
     base_m = mov[~mov["Tipo de Produto"].isin(MOVEL_FORA_DO_TOTAL)]
     abas = [
@@ -287,8 +300,11 @@ def gerar(saida):
     ws["A1"] = "Notas"
     ws["A1"].font = F_T
     lt_m, lt_b = pos["Móvel"][1], pos["BLF"][1]
-    col_m = get_column_letter(3 + pos["Móvel"][2] - 1)
-    col_b = get_column_letter(3 + pos["BLF"][2] - 1)
+    col_m = get_column_letter(3 + meses_m.index(conf_m)) if conf_m in meses_m else None
+    col_b = get_column_letter(3 + meses_b.index(conf_b)) if conf_b in meses_b else None
+    rot = lambda m: f"{m[5:]}/{m[2:4]}"
+    aviso_m = "" if conf_m == mes_m else f" (o _Total.csv do móvel ainda para em {rot(mes_tot_m)}; conferido nesse mês)"
+    aviso_b = "" if conf_b == mes_b else f" (o _Total.csv da BLF ainda para em {rot(mes_tot_b)}; conferido nesse mês)"
     linhas = [
         ("Gerado em", hoje),
         ("Fonte móvel", ZIP_MOVEL),
@@ -299,12 +315,12 @@ def gerar(saida):
         ("Último mês BLF", mes_b),
         ("", ""),
         ("Conferência com o total oficial (arquivos _Total.csv do zip)", ""),
-        ("Móvel: total oficial Anatel", tot_m_ofic),
-        ("Móvel: total desta planilha", f"='Móvel'!{col_m}{lt_m}"),
-        ("Móvel: diferença", "=B12-B11"),
-        ("BLF: total oficial Anatel", tot_b_ofic),
-        ("BLF: total desta planilha", f"=BLF!{col_b}{lt_b}"),
-        ("BLF: diferença", "=B15-B14"),
+        (f"Móvel {rot(conf_m)}: total oficial Anatel{aviso_m}", oficial(serie_m, conf_m)),
+        (f"Móvel {rot(conf_m)}: total desta planilha", f"='Móvel'!{col_m}{lt_m}" if col_m else "n/d"),
+        ("Móvel: diferença", "=B12-B11" if col_m else "n/d"),
+        (f"BLF {rot(conf_b)}: total oficial Anatel{aviso_b}", oficial(serie_b, conf_b)),
+        (f"BLF {rot(conf_b)}: total desta planilha", f"=BLF!{col_b}{lt_b}" if col_b else "n/d"),
+        ("BLF: diferença", "=B15-B14" if col_b else "n/d"),
         ("Obs.", "Móvel lido dos arquivos '_Colunas' (batem com o total oficial); BLF lida dos arquivos longos, porque o '_Colunas' da BLF soma alguns milhares de acessos a menos que o total oficial."),
         ("", ""),
         ("Definições", ""),
