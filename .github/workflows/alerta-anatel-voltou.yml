@@ -1,20 +1,26 @@
-name: Alerta - painel Anatel voltou
+name: Alerta - painel Anatel (página e carga)
 
-# O agendamento do GitHub (cron) não é confiável para checagens frequentes: em repositório novo
-# ele chega a rodar uma vez a cada várias horas. Por isso este robô roda em "corrente":
-# cada execução fica ~5h50 checando o painel a cada 2 min e, ao terminar, dispara a próxima.
-# O cron abaixo é só uma rede de segurança para religar a corrente se ela quebrar.
-#
-# Quando o painel sair da manutenção: push no app ntfy + issue no repositório,
-# grava estado/anatel-voltou.txt e para de vez.
-# Aviso de vida: um push por dia por volta das 9h (Brasília) enquanto estiver em manutenção.
+# Vigia o painel de acessos da Anatel por dois sinais, com push próprio para cada um:
+#  1) Página-índice (https://informacoes.anatel.gov.br/paineis/acessos), a cada 2 min:
+#     avisa quando entra em manutenção e quando volta.
+#  2) Carga do app Qlik por trás do painel (anatel/qlik_reload.py), a cada ~10 min:
+#     avisa quando a data da última carga muda. É o sinal de dado novo: em nov/2026 a carga com
+#     setembro saiu em 03/11 enquanto a página-índice seguia em manutenção até 16/11.
+# Estado em estado/anatel-painel.env. Roda em "corrente" (~5h50 por execução, depois dispara a
+# próxima); o cron é rede de segurança. Aviso de vida às 9h.
 on:
   schedule:
     - cron: "*/30 * * * *"
   push:
     paths:
       - ".github/workflows/alerta-anatel-voltou.yml"
+      - "anatel/qlik_reload.py"
   workflow_dispatch:
+    inputs:
+      teste:
+        description: "Teste: uma checagem só e manda push de teste"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,8 +35,9 @@ env:
   NTFY_TOPIC: mm-anatel-1972ee28a387
   NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
   PAINEL: https://informacoes.anatel.gov.br/paineis/acessos
-  INTERVALO: "120"      # segundos entre checagens
-  DURACAO: "21000"      # ~5h50 por execução (limite do GitHub é 6h)
+  PAINEL_MOVEL: https://informacoes.anatel.gov.br/paineis/acessos/telefonia-movel
+  INTERVALO: "120"
+  DURACAO: "21000"
 
 jobs:
   checar:
@@ -39,73 +46,94 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Já avisou antes?
-        id: estado
-        run: |
-          if [ -f estado/anatel-voltou.txt ]; then
-            echo "ja=1" >> $GITHUB_OUTPUT
-            echo "Já avisado em: $(cat estado/anatel-voltou.txt). Nada a fazer."
-          fi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: Checar o painel em loop
-        id: loop
-        if: steps.estado.outputs.ja != '1'
-        run: |
-          fim=$(( $(date +%s) + DURACAO ))
-          while [ "$(date +%s)" -lt "$fim" ]; do
-            res=$(curl -sS -L -m 30 -A "Mozilla/5.0" -o pagina.html -w "%{http_code} %{url_effective}" "$PAINEL" 2>/dev/null || echo "000 erro")
-            code=${res%% *}; final=${res#* }
-            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
-            if [ "$code" = "200" ] && [[ "$final" != *"/aviso/"* ]] && ! grep -qi "manuten" pagina.html; then
-              echo "$agora PAINEL VOLTOU ($code $final)"
-              echo "voltou=1" >> $GITHUB_OUTPUT
-              echo "quando=$agora" >> $GITHUB_OUTPUT
-              exit 0
-            fi
-            echo "$agora ainda fora/em manutenção ($code)"
+      - name: Instalar dependências
+        run: pip install -q "websockets>=13"
 
-            # Aviso de vida: entre 9h00 e 9h59 (Brasília), uma vez por dia (marcado no ntfy pelo título do dia)
-            hora=$(TZ=America/Sao_Paulo date '+%H'); dia=$(TZ=America/Sao_Paulo date '+%d/%m')
-            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$dia" ]; then
-              ja_mandou=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô Anatel funcionando ($dia)" || true)
-              if [ "$ja_mandou" = "0" ]; then
-                curl -sS -m 20 -H "Title: Robô Anatel funcionando ($dia)" -H "Priority: low" -H "Tags: robot" ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
-                  -d "Painel ainda em manutenção. Sigo checando a cada 2 min." "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || true
-              fi
-              ultimo_ping=$dia
-            fi
-            sleep "$INTERVALO"
-          done
-          echo "Fim do turno sem novidade."
-
-      - name: Avisar (push no celular + issue no GitHub)
-        if: steps.loop.outputs.voltou == '1'
+      - name: Checar em loop
         env:
+          TESTE: ${{ inputs.teste }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          QUANDO: ${{ steps.loop.outputs.quando }}
         run: |
-          curl -sS -m 20 \
-            -H "Title: Painel da Anatel VOLTOU" \
-            -H "Priority: urgent" \
-            -H "Tags: rotating_light" \
-            -H "Click: $PAINEL" \
-            ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
-            -d "O painel de acessos saiu da manutenção ($QUANDO). Confira se o mês novo já está lá." \
-            "https://ntfy.sh/$NTFY_TOPIC" || echo "falha no ntfy"
-          gh issue create --repo "$GITHUB_REPOSITORY" \
-            --title "Painel da Anatel voltou ($QUANDO)" \
-            --body "O painel de acessos saiu da manutenção em $QUANDO (horário de Brasília): $PAINEL" || echo "falha na issue"
-          mkdir -p estado
-          echo "$QUANDO" > estado/anatel-voltou.txt
+          if [ "$TESTE" = "true" ]; then DURACAO=1; fi
+          mkdir -p estado; touch estado/anatel-painel.env
+          source estado/anatel-painel.env   # PAG_STATUS (no_ar|manutencao), RELOAD_VISTO
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add estado/
-          git commit -m "Painel da Anatel voltou ($QUANDO)"
-          git pull --rebase -q || true
-          git push
+
+          push() { # titulo, prioridade, tags, mensagem, link
+            for t in 1 2 3; do
+              if curl -sSf -m 20 -H "Title: $1" -H "Priority: $2" -H "Tags: $3" -H "Click: $5" \
+                   ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} \
+                   --data-binary "$4" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null; then return 0; fi
+              sleep 20
+            done
+            echo "falha no ntfy: $1"
+            [ "$2" != "low" ] && { gh issue create --repo "$GITHUB_REPOSITORY" --title "$1" --body "$4 ($5)" || true; }
+          }
+          salvar() {
+            printf 'PAG_STATUS="%s"\nRELOAD_VISTO="%s"\n' "$PAG_STATUS" "$RELOAD_VISTO" > estado/anatel-painel.env
+            git add estado/anatel-painel.env
+            git commit -q -m "Painel Anatel: $1" || true
+            git pull --rebase -q || true
+            git push -q || echo "falha ao salvar"
+          }
+
+          fim=$(( $(date +%s) + DURACAO )); volta=0; ultimo_ping=""
+          while :; do
+            agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
+
+            # 1) Página-índice
+            res=$(curl -sS -L -m 30 -A "Mozilla/5.0" -o pagina.html -w "%{http_code} %{url_effective}" "$PAINEL" 2>/dev/null || echo "000 erro")
+            code=${res%% *}; final=${res#* }
+            if [ "$code" = "200" ] && [[ "$final" != *"/aviso/"* ]] && ! grep -qi "manuten" pagina.html; then st=no_ar;
+            elif [ "$code" = "200" ]; then st=manutencao; else st=""; fi   # sem resposta: não muda o estado
+            echo "$agora página: ${st:-sem resposta} ($code)"
+            if [ -n "$st" ] && [ "$st" != "$PAG_STATUS" ]; then
+              if [ -z "$PAG_STATUS" ]; then echo "primeira leitura da página: $st"
+              elif [ "$st" = "no_ar" ]; then push "Painel da Anatel VOLTOU ($agora)" high white_check_mark "A página de acessos saiu da manutenção." "$PAINEL"
+              else push "Painel da Anatel em manutenção ($agora)" default construction "A página-índice de acessos entrou em manutenção. A carga de dados segue vigiada à parte." "$PAINEL"; fi
+              PAG_STATUS=$st; salvar "página $st"
+            fi
+
+            # 2) Carga do Qlik (a cada ~10 min)
+            if [ $(( volta % 5 )) -eq 0 ]; then
+              if r=$(python anatel/qlik_reload.py 2>qlik.err); then
+                rl=$(python -c "import json,sys;print(json.loads(sys.argv[1])['reload'] or '')" "$r")
+                quando=$(python -c "import sys,datetime as d;t=d.datetime.fromisoformat(sys.argv[1].replace('Z','+00:00'));print((t-d.timedelta(hours=3)).strftime('%d/%m %H:%M'))" "$rl")
+                echo "$agora carga Qlik: $rl"
+                if [ "$TESTE" = "true" ]; then
+                  push "Teste: painel Anatel (carga de $quando)" low test_tube "Última carga do painel: $quando (Brasília). Página-índice: ${PAG_STATUS:-?}." "$PAINEL_MOVEL"
+                fi
+                if [ -n "$rl" ] && [ "$rl" != "$RELOAD_VISTO" ]; then
+                  if [ -z "$RELOAD_VISTO" ]; then echo "primeira leitura da carga: $rl"
+                  else push "Painel da Anatel recarregado ($quando)" urgent rotating_light "Dados do painel atualizados em $quando (Brasília). Confira se o mês novo entrou. Página-índice: ${PAG_STATUS:-?}." "$PAINEL_MOVEL"; fi
+                  RELOAD_VISTO=$rl; salvar "carga $quando"
+                fi
+              else
+                echo "$agora carga Qlik: sem resposta ($(tail -1 qlik.err))"
+              fi
+            fi
+            volta=$(( volta + 1 ))
+
+            # Aviso de vida: 9h, uma vez por dia
+            hoje=$(TZ=America/Sao_Paulo date '+%d/%m'); hora=$(TZ=America/Sao_Paulo date +%H)
+            if [ "$hora" = "09" ] && [ "$ultimo_ping" != "$hoje" ] && [ "$TESTE" != "true" ]; then
+              n=$(curl -sS -m 20 "https://ntfy.sh/$NTFY_TOPIC/json?poll=1&since=2h" | grep -c "Robô painel Anatel ok ($hoje)" || true)
+              [ "$n" = "0" ] && push "Robô painel Anatel ok ($hoje)" low robot "Página: ${PAG_STATUS:-?}. Última carga: ${RELOAD_VISTO:-?}." "$PAINEL"
+              ultimo_ping=$hoje
+            fi
+
+            [ "$(date +%s)" -ge "$fim" ] && break
+            sleep "$INTERVALO"
+          done
+          echo "Fim do turno."
 
       - name: Disparar o próximo turno
-        if: steps.estado.outputs.ja != '1' && steps.loop.outputs.voltou != '1' && !cancelled()
+        if: inputs.teste != true && !cancelled()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run alerta-anatel-voltou.yml --repo "$GITHUB_REPOSITORY" --ref main
