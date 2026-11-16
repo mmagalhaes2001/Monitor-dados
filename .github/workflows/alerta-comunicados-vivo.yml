@@ -1,12 +1,12 @@
 name: Alerta - comunicados da Vivo (reajustes e condições comerciais)
 
-# Checa 3x por dia (8h, 13h e 19h de Brasília) os comunicados públicos da Vivo
+# Checa a cada 2h, das 7h às 21h de Brasília (o cron do GitHub às vezes falha; horários extras cobrem), os comunicados públicos da Vivo
 # (vivo.com.br/para-voce/comunicados/...) e manda push no ntfy quando aparece um novo.
 # Prioridade alta quando o título fala de preço, valores, reajuste, franquia ou condição comercial.
 # Estado em estado/comunicados_vivo.json; lista em comunicados/comunicados_vivo.csv.
 on:
   schedule:
-    - cron: "37 11,16,22 * * *"
+    - cron: "37 10-23/2 * * *"
   push:
     paths:
       - ".github/workflows/alerta-comunicados-vivo.yml"

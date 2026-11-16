@@ -1,4 +1,22 @@
 data,operadora,tipo,linha,plano,mudanca,campo,antes,depois,n_pracas,pracas
+2026-11-16,Claro,Fibra,Claro Fibra,750 Mega,Mudou,selo/promoção,Claro Day,Multi Friday,14,"AC,AP,DF,MS,MT,PE,PI,PR,RN,RO,RR,RS,SC,TO"
+2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,Mudou,preço,69.9,59.9,1,RR
+2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,Mudou,selo/promoção,Melhor oferta,Oferta Relâmpago,1,RR
+2026-11-15,Claro,Fibra,Claro Fibra,600 Mega,Saiu (visto pela última vez),,R$ 99.9,,13,"AC,AP,DF,MS,MT,PE,PI,PR,RN,RO,RS,SC,TO"
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,Novo,,,R$ 400,21,"AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,RN,RS,SC,SE,TO"
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,Novo,,,R$ 2000,21,"AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,RN,RS,SC,SE,TO"
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra 700 Mega → Vivo Fibra Com Wi-Fi 6 700 Mega,Mudou,plano/GB (preço igual),Vivo Fibra 700 Mega,Vivo Fibra Com Wi-Fi 6 700 Mega,24,"AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RS,SC,SE,SP,TO"
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra 1 Giga → Vivo Fibra Com Wi-Fi 6 1 Giga,Mudou,plano/GB (preço igual),Vivo Fibra 1 Giga,Vivo Fibra Com Wi-Fi 6 1 Giga,24,"AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RS,SC,SE,SP,TO"
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 80GB,Mudou,preço,119.9,99.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 80GB,Mudou,preço De,,119.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 55GB,Mudou,preço,69.9,59.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 55GB,Mudou,preço De,,69.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 50GB,Mudou,preço,59.9,49.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 50GB,Mudou,preço De,,59.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 40GB,Mudou,preço,44.9,34.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 40GB,Mudou,preço De,,44.9,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 40GB,Mudou,composição dos GB,Para uso livre: 30GB; Para redes sociais e apps: 5GB; Bônus Claro Day uso livre: 5GB,Para uso livre: 30GB; Para redes sociais e apps: 5GB; Bônus especial uso livre: 5GB,27,todas
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 40GB,Mudou,benefícios,,(texto mudou),27,todas
 2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,Mudou,preço após promoção,,120,1,PB
 2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,Mudou,condição,/mês,/mês; após 1 ano: R$ 120,1,PB
 2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,Mudou,benefícios,,(texto mudou),1,PB
@@ -23,7 +41,8 @@ data,operadora,tipo,linha,plano,mudanca,campo,antes,depois,n_pracas,pracas
 2026-11-13,Claro,Controle,Claro Controle,Claro Controle 50GB,Mudou,selo/promoção,Claro Day,Multi Friday,27,todas
 2026-11-13,Claro,Controle,Claro Controle,Claro Controle 45GB → Claro Controle 55GB,Mudou,plano/GB (preço igual),Claro Controle 45GB,Claro Controle 55GB,1,AL
 2026-11-13,Claro,Controle,Claro Controle,Claro Controle 35GB GeForce → Claro Controle 55GB GeForce,Mudou,plano/GB (preço igual),Claro Controle 35GB GeForce,Claro Controle 55GB GeForce,27,todas
-2026-11-13,Claro,Fibra,Claro Fibra,750 Mega → 600 Mega,Mudou,plano/GB (preço igual),750 Mega,600 Mega,26,"AC,AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RO,RS,SC,SE,SP,TO"
+2026-11-13,Claro,Fibra,Claro Fibra,750 Mega → 600 Mega,Mudou,plano/GB (preço igual),750 Mega,600 Mega,13,"AL,AM,BA,CE,ES,GO,MA,MG,PA,PB,RJ,SE,SP"
+2026-11-13,Claro,Fibra,Claro Fibra,600 Mega,Novo,,,R$ 99.9,13,"AC,AP,DF,MS,MT,PE,PI,PR,RN,RO,RS,SC,TO"
 2026-11-13,Claro,Fibra,Claro Fibra,500 Mega,Novo,,,R$ 119.9,26,"AC,AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RO,RS,SC,SE,SP,TO"
 2026-11-13,Claro,Fibra,Claro Fibra,500 Mega,Novo,,,R$ 69.9,1,RR
 2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,Mudou,preço após promoção,120,,1,PB
@@ -46,4 +65,3 @@ data,operadora,tipo,linha,plano,mudanca,campo,antes,depois,n_pracas,pracas
 2026-11-12,Claro,Controle,Claro Controle,Claro Controle 40GB,Novo,,,R$ 59.9,1,AL
 2026-11-12,Claro,Controle,Claro Controle,Claro Controle 40GB,Saiu (visto pela última vez),,R$ 59.9,,1,AL
 2026-11-12,Claro,Controle,Claro Controle,Claro Controle 35GB GeForce,Mudou,benefícios,,(texto mudou),1,AL
-2026-11-12,Claro,Fibra,Claro Fibra,750 Mega,Saiu (visto pela última vez),,R$ 99.9,,1,RR
