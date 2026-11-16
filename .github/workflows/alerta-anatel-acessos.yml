@@ -6,6 +6,9 @@ name: Alerta - acessos Anatel (arquivos)
 # Como detecta: lê só o cabeçalho "Last-Modified" dos zips (não baixa nada) a cada 2 min.
 # Também vigia a base de portabilidade numérica (portabilidade.zip), com push próprio
 # ("portabilidade de MM/AA saiu"); estado em estado/anatel-portabilidade.env.
+# E vigia os acessos da Nucel (credenciada na Claro), que só existem no painel Qlik da Anatel e podem
+# sair em dia diferente do zip: anatel/nucel.py a cada ~10 min, push próprio ("Nucel de MM/AA saiu"),
+# série em resultados/anatel/nucel_acessos.csv, estado em estado/anatel-nucel.env.
 # Quando muda, roda anatel/acessos.py, que lê do zip só os arquivos do período recente (~1 min).
 #  - Mês novo  -> push urgente "acessos de MM/AA saíram" com os principais shares.
 #  - Mesmo mês -> push normal "base revisada" (a Anatel às vezes republica e revisa meses antigos).
@@ -20,6 +23,7 @@ on:
     paths:
       - ".github/workflows/alerta-anatel-acessos.yml"
       - "anatel/portabilidade.py"
+      - "anatel/nucel.py"
   workflow_dispatch:
     inputs:
       teste:
@@ -170,6 +174,47 @@ jobs:
                 git push -q || echo "falha ao salvar"
               else
                 echo "$agora portabilidade mudou mas falhou ao baixar/ler; tento de novo."
+              fi
+            fi
+
+            # ---- Nucel (painel Qlik, sai em data própria; push separado) a cada ~10 min ----
+            volta=$(( ${volta:-0} + 1 ))
+            if [ $(( volta % 5 )) -eq 1 ] || [ "$TESTE" = "true" ]; then
+              if python anatel/nucel.py --csv resultados/anatel/nucel_acessos.csv > nucel.json 2>nucel.err; then
+                nmes=$(python -c "import json;print(json.load(open('nucel.json'))['mes'])")
+                nval=$(python -c "import json;print(json.load(open('nucel.json'))['nucel'])")
+                touch estado/anatel-nucel.env
+                N_MES=$(. estado/anatel-nucel.env; echo "$MES_VISTO"); N_VAL=$(. estado/anatel-nucel.env; echo "$VAL_VISTO")
+                if [ "$nmes" != "$N_MES" ] || [ "$nval" != "$N_VAL" ] || [ "$TESTE" = "true" ]; then
+                  nref="${nmes:5:2}/${nmes:2:2}"
+                  ntxt=$(python - <<'PY'
+          import json
+          d = json.load(open("nucel.json"))
+          f = lambda v: f"{v:,}".replace(",", ".")
+          a = d["adicoes_mm"]
+          print(f"Nucel {d['mes'][5:]}/{d['mes'][2:4]}: {f(d['nucel'])} acessos"
+                + (f" ({'+' if a >= 0 else ''}{f(a)} m/m)" if a is not None else "")
+                + f"; 5G {f(d['nucel_5g'])}; {d['share_nas_credenciadas_claro']*100:.0f}% das credenciadas da Claro.")
+          PY
+                  )
+                  nlink="https://github.com/$GITHUB_REPOSITORY/blob/main/resultados/anatel/nucel_acessos.csv"
+                  if [ "$TESTE" = "true" ] && [ "$nmes" = "$N_MES" ] && [ "$nval" = "$N_VAL" ]; then
+                    push "Teste: Nucel Anatel ($nref)" low test_tube "$ntxt" "$nlink"
+                  elif [ -z "$N_MES" ]; then
+                    echo "Nucel: primeira leitura guardada ($nref)."
+                  elif [ "$nmes" != "$N_MES" ]; then
+                    push "Anatel: Nucel de $nref saiu (painel)" urgent rotating_light "$ntxt" "$nlink"
+                  else
+                    push "Anatel: Nucel $nref revisada no painel" default memo "Antes: $N_VAL. $ntxt" "$nlink"
+                  fi
+                  printf 'MES_VISTO="%s"\nVAL_VISTO="%s"\n' "$nmes" "$nval" > estado/anatel-nucel.env
+                  git add estado/anatel-nucel.env resultados/anatel/nucel_acessos.csv
+                  git commit -q -m "Nucel Anatel: $nref" || true
+                  git pull --rebase -q || true
+                  git push -q || echo "falha ao salvar"
+                fi
+              else
+                echo "$agora Nucel: painel não respondeu ($(tail -1 nucel.err))"
               fi
             fi
 
