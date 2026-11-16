@@ -28,6 +28,13 @@ INDICES = [
     "/para-empresas/comunicados",
 ]
 SITEMAPS = ["/sitemap.xml", "/sitemap_index.xml", "/robots.txt"]
+# comunicados de reajuste que nem sempre aparecem nas listas
+SEMENTES = [
+    BASE + "/para-voce/comunicados/regulatorios/comunicado-nova-condicao-comercial-controle-2026",
+    BASE + "/para-voce/comunicados/regulatorios/comunicado_publico_ncc_2026_controle",
+    BASE + "/para-voce/comunicados/regulatorios/novos-valores-vivo-pos-e-controle",
+    BASE + "/para-voce/comunicados/planos/reajuste-dos-planos-controle",
+]
 RELEVANTE = re.compile(r"reajust|novos?[ -]valor|novo[ -]pre|pre[cç]o|condi[cç][aã]o[ -]comercial|franquia|"
                        r"altera[cç][aã]o|regulariza|encerramento|descontinu", re.I)
 
@@ -76,10 +83,23 @@ def ler_pagina(pg, url):
         titulo = (pg.title() or "").strip()
     m = re.search(r"(?:Publicado|Data da Publica[cç][aã]o:?)\s*(?:em\s*)?(\d{2}/\d{2}/\d{4})", texto)
     pub = m.group(1) if m else ""
-    linhas = [l.strip() for l in texto.splitlines() if len(l.strip()) > 40 and "libras" not in l.lower()]
+    linhas = [l.strip() for l in texto.splitlines() if len(l.strip()) > 40 and not re.search(
+        r"libras|cookie|navegador|acessibilidade", l, re.I)]
     resumo = " ".join(linhas[:3])[:500]
     hrefs = pg.eval_on_selector_all("a[href]", "els => els.map(e => e.href)") if texto else []
     return status, titulo[:200], pub, resumo, hrefs
+
+
+def expandir(pg):
+    """Clica em "ver mais"/"carregar mais" enquanto existir (listas paginadas)."""
+    for _ in range(30):
+        b = pg.locator("button, a").filter(has_text=re.compile(r"(ver|carregar|mostrar) mais", re.I))
+        try:
+            if not b.count() or not b.first.is_visible():
+                return
+            b.first.click(timeout=3000); pg.wait_for_timeout(1500)
+        except Exception:
+            return
 
 
 def coletar_urls(pg, ctx, fontes):
@@ -111,6 +131,9 @@ def coletar_urls(pg, ctx, fontes):
     for i in INDICES:
         try:
             status, _, _, _, hrefs = ler_pagina(pg, BASE + i)
+            if status < 400:
+                expandir(pg)
+                hrefs = pg.eval_on_selector_all("a[href]", "els => els.map(e => e.href)")
         except Exception:
             status, hrefs = 0, []
         achados = {normal(h) for h in hrefs} - {None}
@@ -130,28 +153,32 @@ def main():
         nav = p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
         ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo")
         pg = ctx.new_page()
-        urls = coletar_urls(pg, ctx, fontes)
-        pendentes = [u for u in sorted(urls) if u not in itens]
-        # primeira vez: base sem abrir tudo (abre no máximo 400); depois abre cada novo
-        limite = 400 if primeira else 60
-        for u in pendentes[:limite]:
+        urls = coletar_urls(pg, ctx, fontes) | {normal(u) for u in SEMENTES}
+        if primeira:
+            # tudo o que já está publicado hoje é base: entra sem aviso, os detalhes são lidos aos poucos
+            for u in urls:
+                itens[u] = {"titulo": "", "publicado": "", "visto_em": agora, "resumo": "", "base": True}
+        else:
+            for u in urls:
+                if u not in itens:
+                    itens[u] = {"titulo": "", "publicado": "", "visto_em": agora, "resumo": "", "base": False}
+                    novos.append(u)
+        sem_detalhe = [u for u in novos] + [u for u in sorted(itens) if not itens[u]["titulo"] and u not in novos]
+        for u in sem_detalhe[:250]:
             try:
                 status, titulo, pub, resumo, hrefs = ler_pagina(pg, u)
-            except Exception as e:
+            except Exception:
                 status, titulo, pub, resumo, hrefs = 0, "", "", "", []
-            if status >= 400 or status == 0:
-                continue  # tenta de novo na próxima
-            itens[u] = {"titulo": titulo, "publicado": pub, "visto_em": agora, "resumo": resumo}
-            novos.append(u)
-            # links de um comunicado para outro (ex.: lista de comunicados relacionados)
-            for h in hrefs:
-                n = normal(h)
-                if n and n not in itens and n not in pendentes:
-                    pendentes.append(n)
+            itens[u]["status"] = status
+            if 0 < status < 400:
+                itens[u].update({"titulo": titulo, "publicado": pub, "resumo": resumo})
         nav.close()
 
     ok = sum(1 for f in fontes.values() if f.get("comunicados")) > 0
-    est.update({"itens": itens, "ultima_checagem": agora, "fontes": fontes, "ok": ok})
+    if not ok and not primeira:
+        novos = []  # lista não abriu: não confundir com comunicado novo
+    est.update({"itens": itens, "ultima_checagem": agora, "fontes": fontes, "ok": ok,
+                "sem_detalhe": sum(1 for d in itens.values() if not d["titulo"])})
     ESTADO.parent.mkdir(exist_ok=True)
     ESTADO.write_text(json.dumps(est, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
 
@@ -174,7 +201,8 @@ def main():
         return
     if primeira or teste:
         recentes = sorted(itens, key=chave, reverse=True)[:5]
-        msg = "%d comunicados na base. Mais recentes:\n" % len(itens) + "\n".join(
+        msg = "%d comunicados na base (%d ainda sem título). Mais recentes:\n" % (
+            len(itens), est["sem_detalhe"]) + "\n".join(
             "%s %s" % (itens[u]["publicado"] or "s/ data", itens[u]["titulo"][:90]) for u in recentes)
         ntfy(pre + "Comunicados Vivo: base montada" if primeira else pre + "Comunicados Vivo: ok", msg,
              tags="white_check_mark")
@@ -182,6 +210,8 @@ def main():
             return
     for u in novos:
         d = itens[u]
+        if d.get("status") and d["status"] >= 400:
+            continue  # link quebrado na lista; não avisa
         rel = bool(RELEVANTE.search(d["titulo"] + " " + u))
         ntfy("%sVivo: novo comunicado%s" % (pre, " (preço/oferta)" if rel else ""),
              "%s\nPublicado: %s\n%s" % (d["titulo"], d["publicado"] or "sem data", d["resumo"][:600]),
