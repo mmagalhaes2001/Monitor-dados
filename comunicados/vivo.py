@@ -119,7 +119,7 @@ def expandir(pg):
             return
 
 
-def coletar_urls(pg, ctx, fontes):
+def coletar_urls(pg, ctx, fontes, origem):
     urls = set()
     # sitemap (com sub-sitemaps)
     fila, vistos = [BASE + s for s in SITEMAPS], set()
@@ -142,7 +142,7 @@ def coletar_urls(pg, ctx, fontes):
             else:
                 u = normal(l)
                 if u:
-                    urls.add(u); n += 1
+                    urls.add(u); n += 1; origem.setdefault(u, set()).add("sitemap")
         fontes[urlparse(s).path] = {"ok": bool(corpo), "comunicados": n}
     # páginas índice
     for i in INDICES:
@@ -155,6 +155,8 @@ def coletar_urls(pg, ctx, fontes):
             status, hrefs = 0, []
         achados = {normal(h) for h in hrefs} - {None}
         urls |= achados
+        for u in achados:
+            origem.setdefault(u, set()).add(i)
         fontes[i] = {"status": status, "comunicados": len(achados)}
     return urls
 
@@ -168,21 +170,45 @@ def main():
     fontes, novos = {}, []
     with sync_playwright() as p:
         nav = p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-        ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo")
-        pg = ctx.new_page()
-        urls = coletar_urls(pg, ctx, fontes) | {normal(u) for u in SEMENTES}
+        for tentativa in range(3):
+            # site às vezes devolve 403 para robô: espera e tenta com navegador limpo
+            if tentativa:
+                ctx.close()
+                import time; time.sleep(90)
+            ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo")
+            pg = ctx.new_page()
+            fontes, origem = {}, {}
+            urls = coletar_urls(pg, ctx, fontes, origem)
+            if urls:
+                break
+        if not urls:
+            nav.close()
+            est.update({"ultima_checagem": agora, "fontes": fontes, "ok": False})
+            if est["itens"]:  # sem base ainda: não grava nada, a próxima checagem monta a base
+                ESTADO.write_text(json.dumps(est, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+            print(json.dumps({"fontes": fontes}, ensure_ascii=False))
+            ntfy(("Teste - " if teste else "") + "Comunicados Vivo: não consegui ler a lista",
+                 "O site da Vivo não respondeu às listas de comunicados (%s). Tento de novo na próxima checagem." % agora,
+                 prioridade="low", tags="warning")
+            return
+        urls |= {normal(u) for u in SEMENTES}
         if primeira:
             # tudo o que já está publicado hoje é base: entra sem aviso, os detalhes são lidos aos poucos
             for u in urls:
                 itens[u] = {"titulo": "", "publicado": "", "visto_em": agora, "resumo": "", "base": True}
         else:
+            # lista que nunca tinha aberto (ou estava fora): o que vier dela é base, não novidade
+            ja_ok = set(est.get("fontes_ok", []))
             for u in urls:
-                if u not in itens:
+                if u not in itens and not (origem.get(u, set()) & ja_ok) and u not in SEMENTES:
+                    itens[u] = {"titulo": "", "publicado": "", "visto_em": agora, "resumo": "", "base": True}
+                elif u not in itens:
                     itens[u] = {"titulo": "", "publicado": "", "visto_em": agora, "resumo": "", "base": False}
                     novos.append(u)
         ordem = lambda u: ("/para-voce/" not in u, ".pdf" in u.lower(), u)
         sem_detalhe = novos + sorted((u for u in itens if not itens[u]["titulo"] and u not in novos), key=ordem)
-        for u in sem_detalhe[:300]:
+        for u in sem_detalhe[:150]:
+            pg.wait_for_timeout(800)
             try:
                 status, titulo, pub, resumo, hrefs = ler_pagina(pg, u)
             except Exception:
@@ -195,6 +221,9 @@ def main():
     ok = sum(1 for f in fontes.values() if f.get("comunicados")) > 0
     if not ok and not primeira:
         novos = []  # lista não abriu: não confundir com comunicado novo
+    est["fontes_ok"] = sorted(set(est.get("fontes_ok", [])) | {f for f, v in fontes.items() if v.get("comunicados")}
+                              | ({"sitemap"} if any(f.endswith(".xml") or f.endswith(".txt") for f, v in fontes.items()
+                                                    if v.get("comunicados")) else set()))
     est.update({"itens": itens, "ultima_checagem": agora, "fontes": fontes, "ok": ok,
                 "sem_detalhe": sum(1 for d in itens.values() if not d["titulo"])})
     ESTADO.parent.mkdir(exist_ok=True)
