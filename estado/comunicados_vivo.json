@@ -1,0 +1,73 @@
+{
+ "fontes": {
+  "/para-empresas/comunicados": {
+   "comunicados": 0,
+   "status": 403
+  },
+  "/para-voce/ajuda/comunicados": {
+   "comunicados": 0,
+   "status": 403
+  },
+  "/para-voce/comunicados": {
+   "comunicados": 0,
+   "status": 403
+  },
+  "/para-voce/comunicados/planos": {
+   "comunicados": 0,
+   "status": 403
+  },
+  "/para-voce/comunicados/regulatorios": {
+   "comunicados": 0,
+   "status": 403
+  },
+  "/robots.txt": {
+   "comunicados": 0,
+   "ok": false
+  },
+  "/sitemap.xml": {
+   "comunicados": 0,
+   "ok": false
+  },
+  "/sitemap_index.xml": {
+   "comunicados": 0,
+   "ok": false
+  }
+ },
+ "itens": {
+  "https://www.vivo.com.br/para-voce/comunicados/planos/reajuste-dos-planos-controle": {
+   "base": true,
+   "publicado": "",
+   "resumo": "",
+   "status": 403,
+   "titulo": "",
+   "visto_em": "2026-11-16 10:30"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-nova-condicao-comercial-controle-2026": {
+   "base": true,
+   "publicado": "",
+   "resumo": "",
+   "status": 403,
+   "titulo": "",
+   "visto_em": "2026-11-16 10:30"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado_publico_ncc_2026_controle": {
+   "base": true,
+   "publicado": "",
+   "resumo": "",
+   "status": 403,
+   "titulo": "",
+   "visto_em": "2026-11-16 10:30"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/novos-valores-vivo-pos-e-controle": {
+   "base": true,
+   "publicado": "",
+   "resumo": "",
+   "status": 403,
+   "titulo": "",
+   "visto_em": "2026-11-16 10:30"
+  }
+ },
+ "ok": false,
+ "sem_detalhe": 4,
+ "ultima_checagem": "2026-11-16 10:30"
+}
