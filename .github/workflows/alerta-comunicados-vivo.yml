@@ -1,0 +1,57 @@
+name: Alerta - comunicados da Vivo (reajustes e condições comerciais)
+
+# Checa 3x por dia (8h, 13h e 19h de Brasília) os comunicados públicos da Vivo
+# (vivo.com.br/para-voce/comunicados/...) e manda push no ntfy quando aparece um novo.
+# Prioridade alta quando o título fala de preço, valores, reajuste, franquia ou condição comercial.
+# Estado em estado/comunicados_vivo.json; lista em comunicados/comunicados_vivo.csv.
+on:
+  schedule:
+    - cron: "37 11,16,22 * * *"
+  push:
+    paths:
+      - ".github/workflows/alerta-comunicados-vivo.yml"
+      - "comunicados/*.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alerta-comunicados-vivo
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-planos-5a4d74767443
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar navegador
+        run: |
+          pip install -q playwright==1.48.0
+          python -m playwright install --with-deps chromium > /dev/null
+      - name: Checar comunicados
+        env:
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: python comunicados/vivo.py ${{ github.event_name == 'push' && '--teste' || '' }}
+      - name: Salvar
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          for i in 1 2 3; do
+            cp estado/comunicados_vivo.json /tmp/e.json 2>/dev/null || exit 0
+            cp comunicados/comunicados_vivo.csv /tmp/c.csv
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp /tmp/e.json estado/comunicados_vivo.json; cp /tmp/c.csv comunicados/comunicados_vivo.csv
+            git add estado/comunicados_vivo.json comunicados/comunicados_vivo.csv
+            git commit -q -m "Comunicados Vivo: checagem [skip ci]" || exit 0
+            git push -q origin HEAD:main && exit 0
+            sleep 10
+          done
