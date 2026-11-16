@@ -1,0 +1,886 @@
+{
+ "fontes": {
+  "/para-empresas/comunicados": {
+   "comunicados": 254,
+   "status": 200
+  },
+  "/para-voce/ajuda/comunicados": {
+   "comunicados": 0,
+   "status": 404
+  },
+  "/para-voce/comunicados": {
+   "comunicados": 5,
+   "status": 200
+  },
+  "/para-voce/comunicados/planos": {
+   "comunicados": 64,
+   "status": 200
+  },
+  "/para-voce/comunicados/regulatorios": {
+   "comunicados": 273,
+   "status": 200
+  },
+  "/robots.txt": {
+   "comunicados": 0,
+   "ok": false
+  },
+  "/sitemap.xml": {
+   "comunicados": 0,
+   "ok": false
+  },
+  "/sitemap_index.xml": {
+   "comunicados": 0,
+   "ok": false
+  }
+ },
+ "itens": {
+  "https://www.vivo.com.br/content/dam/vivo-sites/vivo-com-br/para-empresas/pdf/comunicados/psabl-124-pos-scm-vivo-internet%20Fixa-rural-1-mbps-estado-sp-al-ce-mg-pb-pe-pi-rn-se.pdf": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "As melhores ofertas para o seu dia a dia",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/alteracao-nos-planos-de-voz-fixa": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento A Telefônica Brasil S.A., denominada Vivo, informa a todos os clientes do segmento Empresas que, com o objetivo de seguir as recentes alterações regulatórias promovidas pela Anatel, as chamadas de curta duração, como as inferiores a três segundos, passarão a ser tarifadas. Com isso, a chama",
+   "titulo": "Alteração nos planos de voz fixa",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/alteracoes-areas-stfc": {
+   "publicado": "30/09/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Comunicado Importante – Alteração nas Áreas Tarifárias",
+   "titulo": "Comunicado Importante – Alteração nas Áreas Tarifárias",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/alteracoes-planos-bl-empresas": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Alterações Planos de Banda Larga Empresas",
+   "titulo": "Alterações Planos de Banda Larga Empresas",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/comunicado-desligue-da-tecnologia-cobre-em-sp": {
+   "publicado": "01/04/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Desligue da tecnologia Atual",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/comunicado-encerramento-pble": {
+   "publicado": "18/12/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Comunicado: Encerramento Programa Banda Larga nas Escolas - PBLE",
+   "titulo": "Comunicado: Encerramento Programa Banda Larga nas Escolas - PBLE",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/comunicado-nova-condicao-movel-b2b": {
+   "publicado": "11/02/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Nova Condição Móvel B2B",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/comunicado-resolucao-anatel-765-2023": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento O RGC é o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 765/2023. Trata-se de um conjunto de regras com direitos e obrigações estabelecidas pela Anatel para regular a prestação de serviços de telecomunicações de telefonia móvel (SMP)",
+   "titulo": "Resolução Anatel n° 765/2023",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/desligue-das-tecnologias-fibra-e-iptv": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Desligue das tecnologias Fibra e IPTV - Legados",
+   "titulo": "Desligue das tecnologias Fibra e IPTV - Legados",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/falha-sistemica-cobranca-outubro-2022": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Falha sistêmica na Cobrança de Outubro/2022",
+   "titulo": "Falha sistêmica na Cobrança de Outubro/2022",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/informacoes-sobre-o-9-digito": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Comunicados Vivo: Informações sobre o 9º dígito",
+   "titulo": "Comunicados Vivo: Informações sobre o 9º dígito",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/reajuste-chamadas-fixo-movel": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento A TELEFÔNICA BRASIL S.A., doravante denominada Vivo, comunica antecipadamente aos seus clientes das classes residencial, não residencial e tronco que está providenciando os ajustes necessários para a aplicação de novos valores para as chamadas fixo-móvel SMP (VC1) do Plano Básico Local, que",
+   "titulo": "Reajuste de chamadas Fixo-móvel",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/repasse-da-desoneracao-do-icms-vivo-movel": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Repasse da Majoração do ICMS - NOVOS VALORES DO SERVIÇO VIVO MÓVEL",
+   "titulo": "Repasse da Majoração do ICMS - NOVOS VALORES DO SERVIÇO VIVO MÓVEL",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/repasse-da-desoneracao-do-icms-voz-e-internet": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Majoração do ICMS - NOVOS VALORES DOS SERVIÇOS VIVO VOZ E INTERNET",
+   "titulo": "Majoração do ICMS - NOVOS VALORES DOS SERVIÇOS VIVO VOZ E INTERNET",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/resolucao-611": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Área Tarifária: área geograficamente contínua, constituída por um conjunto de áreas locais agrupadas segundo critérios sócio-geo-econômicos e contidas em uma mesma área de numeração, utilizada como referência para tarifação das chamadas de longa distância nacional originadas de acessos vinc",
+   "titulo": "Comunicados Vivo: Resolução 611 - Anatel",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/resolucao-620": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Resolução 620 – Alteração de Tratamento Local",
+   "titulo": "Resolução 620 – Alteração de Tratamento Local",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/resolucao-755": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento RESOLUÇÃO N°755/2022 - TARIFAÇÃO DE ÁREAS LOCAIS",
+   "titulo": "RESOLUÇÃO N°755/2022 - TARIFAÇÃO DE ÁREAS LOCAIS",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/tarifa-areas-locais": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Despacho Decisório nº 17/2023 - TARIFAÇÃO DE ÁREAS LOCAIS",
+   "titulo": "Despacho Decisório nº 17/2023 - TARIFAÇÃO DE ÁREAS LOCAIS",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/tarifa-areas-locais-2025": {
+   "publicado": "03/04/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Revisão Anual de Áreas Tarifárias e de Tratamento Local",
+   "titulo": "Revisão Anual de Áreas Tarifárias e de Tratamento Local",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-empresas/comunicados/vita-it-agora-e-vivo-vita": {
+   "publicado": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Aquisição da Vita IT fortalece atuação da Vivo como integradora de soluções de rede e provedora de serviços de networking",
+   "titulo": "Vita IT agora é Vivo Vita",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicados Planos Vivo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-fibra-21novembro-2023": {
+   "publicado": "21/11/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-fibra-25fevereiro-2024": {
+   "publicado": "25/02/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-fibra-abr-2023": {
+   "publicado": "30/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Adesão Oferta Vivo Fibra Abril 2023",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-fibra-fev-2023": {
+   "publicado": "30/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Adesão Oferta Vivo Fibra Fevereiro 2023",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-fibra-julho-2023": {
+   "publicado": "30/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Adesão Oferta Vivo Fibra Julho 2023",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-fibra-novembro-2023": {
+   "publicado": "07/11/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-total-21novembro-2023": {
+   "publicado": "21/11/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Total",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-total-25fevereiro-2024": {
+   "publicado": "25/02/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-total-abr-2023": {
+   "publicado": "30/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Adesão Oferta Vivo Total Abril 2023",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-total-fev-2023": {
+   "publicado": "30/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Adesão Oferta Vivo Total Fevereiro 2023",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-total-julho-2023": {
+   "publicado": "30/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Adesão Oferta Vivo Total Julho 2023",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/adesao-oferta-vivo-total-novembro-2023": {
+   "publicado": "07/11/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Total",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/alteracao-servicos-avulsos-roaming-internacional-vivo-pre-controle": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração serviços avulsos Roaming Internacional Vivo Pré e Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/alteracoes-dos-servicos-digitais-vivo-pre": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alterações Serviços Digitais - Promoções Vivo Móvel e Internet Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-alteracao-beneficio-pos-12gb": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de benefício Plano Pós 12GB",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-alteracao-beneficio-pos-8gb": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de benefício Plano Pós 8GB",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-alteracao-nome-selfie-pos": {
+   "publicado": "15/04/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração do nome dos planos Vivo Selfie para Vivo Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-alteracao-pos-familia-totalizacao-170gb": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração Benefício Vivo Pós Família",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-atualizacao-planos-controles": {
+   "publicado": "25/04/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização dos Planos Vivo Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-controle-pre-pago-bonus-internet-compra-chip": {
+   "publicado": "18/09/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Controle e Pré-Pago: Bônus de internet na compra de chip",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-controle-sva-grupo-4": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado - Planos Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-controle-sva-grupo-5": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado - Planos Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-controle-sva-grupo-6": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado - Planos Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-planos-controle-aplicativos-1": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Lista de aplicativos inclusos nos planos Controle da Vivo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-planos-controle-aplicativos-2": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Lista de aplicativos inclusos nos planos Controle da Vivo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-planos-controle-aplicativos-3": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Lista de aplicativos inclusos nos planos Controle da Vivo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-pos-familia-sva-grupo-1": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado - Planos Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-pos-familia-sva-grupo-2": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado - Planos Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-pos-familia-sva-grupo-3": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado - Planos Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/comunicado-pos-novo-aplicativo-skeelo": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado - Planos Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/controle-vantagens": {
+   "publicado": "08/01/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Seu plano Controle Vantagens agora com Vale Bonus",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/desmembramento-de-faturas": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Desmembramento de Faturas",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/encerramento_promocao_produto_atendimento_rural_voz": {
+   "publicado": "14/04/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Encerramento de Promoção - Produto Atendimento Rural Voz – SP",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/internet-novas-velocidades": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Pode comemorar! Aumentamos sua internet para 300 MEGA!",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/novo-plano-controle-agosto-2022": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Novo Plano Controle!",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/novo-plano-controle-agosto-2023": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Novo Plano Controle!",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/oferta-vivo-fibra": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/oferta-vivo-total": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público Vivo Total",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/servicos-digitais-vivo-controle": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Informação importante sobre seu plano Vivo Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/servicos-digitais-vivo-pos": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Serviços Digitais Vivo Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/titular-provisorio": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Escolha do Titular Provisório",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/planos/vivo-turbo-alteracao-oferta-quinzenal-mar-2021": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração Oferta Quinzenal",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Vivo: Regulatórios",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/a-vivo-operadora": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Vivo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-aliquota-icms-rj-e-se": {
+   "publicado": "31/05/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Novos valores de serviços devido às alterações das alíquotas de ICMS",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-babbel-controle": {
+   "publicado": "13/09/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Inclusão do aplicativo Babbel Exercise Books e alteração do aplicativo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-de-aliquota-de-icms-para-tv-por-assinatura-no-estado-de-rs": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de Alíquota de ICMS para TV por assinatura no Estado de RS",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-de-aliquota-de-icms-para-tv-por-assinatura-no-estado-de-sp": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de Alíquota de ICMS para TV por assinatura no Estado de SP",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-de-icms-para-servicos-vivo": {
+   "publicado": "08/11/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de ICMS para seus serviços Vivo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-de-preco-nba": {
+   "publicado": "28/05/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de preço NBA",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-de-valor-pos": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Vivo: Veja as alterações em seu plano Pós-Pago",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-do-plano-smartvivo-v": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Vivo: Alteração do plano Smartvivo V",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-nome-servico-digital-max": {
+   "publicado": "10/07/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração do nome do serviço Max",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-planos-mvno-smp-e-longa-distancia-nacional": {
+   "publicado": "23/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de Planos MVNO de Serviço SMP e Longa Distância Nacional",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-planos-servico-mvno-smp-e-longa-distancia-nacional": {
+   "publicado": "06/09/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de Planos de Serviço SMP MVNO",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-planos-servicos-smp-e-longa-distancia-nacional": {
+   "publicado": "23/06/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração Planos B2C de serviço SMP e Longa Distância Nacional",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-servicos-digitais": {
+   "publicado": "15/12/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração dos Serviços Digitais dos Planos Vivo Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracao-servicos-digitais-controle-cartao": {
+   "publicado": "15/12/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração Serviços Digitais dos Planos Vivo Controle Cartão",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/alteracoes-de-franquia-pos": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Veja as alterações nos planos Vivo Pós-Pago",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/aplicativo-watch-espn": {
+   "publicado": "20/03/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Descontinuação do aplicativo Watch ESPN.",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/area-campina-grande-esperanca": {
+   "publicado": "15/02/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Unificação áreas locais de Campina Grande e Esperança",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/atualizacao-de-tecnologia-tv-mediaroom": {
+   "publicado": "10/09/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização de tecnologia TV (Mediaroom)",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/atualizacao-planos-smp": {
+   "publicado": "24/08/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização Planos de Serviço SMP B2C",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/atualizacao-produtos-casa": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização de Sistema: Produtos para sua Casa (Banda Larga, TV e Voz)",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/atualizacao-servicos-digitais-planos-controle": {
+   "publicado": "15/12/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização dos Serviços Digitais dos Planos Vivo Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/atualizacao-tecnologia-dth": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização de tecnologia TV Satélite (DTH)",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/atualizacao_no_bonus_da_sua_oferta_vivo_fibra": {
+   "publicado": "29/01/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização no bônus da sua oferta Vivo Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/cadastramento-de-pre-pago/recadastro-de-pre-pago": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Vivo: Portal Pré-Pago",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/clientes-vivo-tv-publico-em-geral": {
+   "publicado": "15/03/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Clientes Vivo TV e ao público em geral",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/cobranca-indevida-fibra": {
+   "publicado": "22/12/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Informativo de Cobrança Indevida de Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunica_publico_mantoman": {
+   "publicado": "20/03/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Descontinuidade do serviço MANTOMAN",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-acao-civil-publica-ministerio-publico-do-rio-grande-do-sul": {
+   "publicado": "25/07/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Ação Civil Pública - Ministério Público do Rio Grande do Sul",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-adesao-bonificada-bonus-velocidade": {
+   "publicado": "28/01/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização no bônus da sua oferta Vivo Fibra",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-ajuste-pos-controle-icms-rj-mar-2020": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Ajuste de preço do plano Vivo Pós e Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-de-preco-cindie": {
+   "publicado": "21/11/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de preço Cindie",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-de-servico-digital-das-ofertas-vivo-controle": {
+   "publicado": "14/08/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de serviço digital das ofertas Vivo Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-de-servico-digital-das-ofertas-vivo-pos": {
+   "publicado": "14/08/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de serviço digital das ofertas Vivo Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-de-servico-digital-das-ofertas-vivo-total": {
+   "publicado": "14/08/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de serviço digital das ofertas Vivo Total",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-de-servico-digital-do-pacote-de-redes-sociais-e-video-no-vivo-controle": {
+   "publicado": "14/08/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de serviço digital do pacote de Redes Sociais e Vídeo",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-de-valor-do-servico-nba-league-pass": {
+   "publicado": "23/02/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração de valor do serviço NBA League Pass",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-disney": {
+   "publicado": "07/07/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração nos planos Disney +",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-do-valor-de-mensalidade-do-servico-avulso-netflix": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração de preço do serviço avulso Netflix",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-hbo": {
+   "publicado": "03/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado público",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-icms-alagoas": {
+   "publicado": "19/02/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração no ICMS para o Estado de Alagoas",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-icms-estado-rondonia": {
+   "publicado": "15/07/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de ICMS do Estado de Rondônia",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-icms-rj-mar-2020": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração na cobrança do ICMS do Estado do Rio de Janeiro Mar/20",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-icms-rondonia": {
+   "publicado": "19/02/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração no ICMS para o Estado de Rondônia",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-nome-selfie-pos": {
+   "publicado": "15/04/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração do nome dos planos Vivo Selfie para Vivo Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-oferta-descricao-portfolio-pos-pago": {
+   "publicado": "20/01/2022",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado de alteração planos Pós Pago",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-oferta-planos-pos-basico-essencial": {
+   "publicado": "19/11/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração dos planos Vivo Pós Básico e Essencial",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-pacote-gigas-redes-sociais": {
+   "publicado": "13/02/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração do nome do pacote de Gigas para Redes Sociais",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-planos-pos-familia-vivo-total": {
+   "publicado": "16/10/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado sobre alteração das ofertas Vivo Família Pós e Vivo Total",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-preco-apple-music": {
+   "publicado": "16/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado de alteração de preço Apple Music",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-preco-max-hbo": {
+   "publicado": "20/12/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de preço Max (serviço digital) e HBO (pacote adicional TV)",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-preco-microsoft-family": {
+   "publicado": "14/07/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração no valor de Microsoft 365 Family",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-inclusos-controle": {
+   "publicado": "04/09/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de serviços digitais inclusos em planos Controle",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-inclusos-planos-controle-pos-pago": {
+   "publicado": "08/08/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de serviços digitais inclusos em planos Controle e Pós-Pago",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-ofertas-vivo-controle-cartao": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração serviços digitais da oferta Vivo Controle Cartão",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-ofertas-vivo-controle-conectado": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração serviços digitais de Vivo Controle Conectado",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-ofertas-vivo-controle-fatura": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração serviços digitais da oferta Vivo Controle Fatura",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-ofertas-vivo-easy-prime": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração serviços digitais das ofertas Vivo Easy Prime",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-ofertas-vivo-pos": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração dos serviços digitais das ofertas Vivo Pós",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-ofertas-vivo-pos-jeri-conectado": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração serviços digitais das ofertas Vivo Pós Conectado",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-servicos-digitais-ofertas-vivo-total": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração dos serviços digitais das ofertas Vivo Total",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-tarifas-telefonia-fixa": {
+   "publicado": "22/09/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Alteração nas Áreas Tarifárias da telefonia Fixa",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-valor-amazon-prime-avulso": {
+   "publicado": "10/04/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de valor do serviço Amazon Prime Avulso",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-valor-globoplay": {
+   "publicado": "03/02/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de valor do serviço Globoplay",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-valor-netflix-avulso": {
+   "publicado": "26/06/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração do valor da assinatura Netflix",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-valor-spotify-premium-07-2025": {
+   "publicado": "04/07/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de valor Spotify Premium",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-valor-suporte-remoto": {
+   "publicado": "23/10/2024",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de Valor Suporte Remoto",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-vigencia": {
+   "publicado": "29/08/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Alteração Vigência dos planos de Serviços Voz Fixa",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-vivo-play": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado público",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-altercao-nome-vida-v": {
+   "publicado": "18/07/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Alteração de nome do serviço Vida V incluso no plano Controle Saúde",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-aos-clientes-atualizacao-de-icms-nas-ofertas-rurais-pi-al-rn": {
+   "publicado": "02/10/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado aos Clientes – Atualização no % de ICMS nas Ofertas Rurais",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-atualizacao-disney-padrao": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Público – Atualização de conteúdo do Disney+ Padrão",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-atualizacao-grade-tv-novo-canal": {
+   "publicado": "31/07/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização da grade de TV com novo canal Combate",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-atualizacao-oferta-rural-satelite": {
+   "publicado": "21/01/2026",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Atualização de informação na oferta internet rural – satélite",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-atualizacao-servicos-digitais-oferta-pre-pago": {
+   "publicado": "31/10/2025",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado: Atualização de serviços digitais oferta pré-pago",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-banda-larga-popular": {
+   "publicado": "",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado Vivo: Banda Larga Popular",
+   "visto_em": "2026-11-16 09:57"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-cliente-tv-e-publico-geral": {
+   "publicado": "18/01/2023",
+   "resumo": "Usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao clicar em “Aceitar”, você concorda que podemos usar esses cookies. Clique em políticas de privacidade para consultar mais informações. Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas",
+   "titulo": "Comunicado clientes TV e ao público geral",
+   "visto_em": "2026-11-16 09:57"
+  }
+ },
+ "ok": true,
+ "ultima_checagem": "2026-11-16 09:57"
+}
