@@ -65,8 +65,25 @@ def ntfy(titulo, msg, prioridade="default", tags="loudspeaker", click=""):
     print("falha no ntfy:", titulo)
 
 
+def ler_pdf(ctx, url):
+    """PDF: título pelo nome do arquivo, data pelo Last-Modified do servidor."""
+    from email.utils import parsedate_to_datetime
+    r = ctx.request.head(url, timeout=30000)
+    pub = ""
+    try:
+        pub = parsedate_to_datetime(r.headers.get("last-modified", "")).astimezone(BRT).strftime("%d/%m/%Y")
+    except Exception:
+        pass
+    nome = re.sub(r"\.pdf(\.html)?$", "", url.rsplit("/", 1)[-1], flags=re.I)
+    pasta = url.rsplit("/", 2)[-2]
+    titulo = re.sub(r"[-_]+", " ", nome if pasta == "comunicados" else pasta + " / " + nome).strip()
+    return r.status, "(PDF) " + titulo[:180], pub, "", []
+
+
 def ler_pagina(pg, url):
     """Abre o comunicado e devolve (titulo, publicado, resumo, links internos)."""
+    if re.search(r"\.pdf(\.html)?$", url, re.I):
+        return ler_pdf(pg.context, url)
     r = pg.goto(url, wait_until="domcontentloaded", timeout=45000)
     pg.wait_for_timeout(2500)
     status = r.status if r else 0
@@ -163,8 +180,9 @@ def main():
                 if u not in itens:
                     itens[u] = {"titulo": "", "publicado": "", "visto_em": agora, "resumo": "", "base": False}
                     novos.append(u)
-        sem_detalhe = [u for u in novos] + [u for u in sorted(itens) if not itens[u]["titulo"] and u not in novos]
-        for u in sem_detalhe[:250]:
+        ordem = lambda u: ("/para-voce/" not in u, ".pdf" in u.lower(), u)
+        sem_detalhe = novos + sorted((u for u in itens if not itens[u]["titulo"] and u not in novos), key=ordem)
+        for u in sem_detalhe[:300]:
             try:
                 status, titulo, pub, resumo, hrefs = ler_pagina(pg, u)
             except Exception:
