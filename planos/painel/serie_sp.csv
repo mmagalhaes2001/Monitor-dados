@@ -443,6 +443,7 @@ data,operadora,tipo,linha,plano,preco,gb,mega,valor_unidade,unidade,dias,rs_gb_d
 2026-11-16,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
 2026-11-16,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,
 2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,
+2026-11-16,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,
 2026-11-16,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,
 2026-11-16,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
 2026-11-16,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,
@@ -457,6 +458,9 @@ data,operadora,tipo,linha,plano,preco,gb,mega,valor_unidade,unidade,dias,rs_gb_d
 2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
 2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
 2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
+2026-11-16,NuCel,Controle,NuCel,NuCel 35GB,45.0,35.0,,1.29,R$/GB,,,nucel-plano-1-35,"mês, sem fidelidade (preço sem Nubank+)"
+2026-11-16,NuCel,Controle,NuCel,NuCel 40GB,60.0,40.0,,1.5,R$/GB,,,nucel-plano-2-40,"mês, sem fidelidade (preço sem Nubank+)"
+2026-11-16,NuCel,Controle,NuCel,NuCel 45GB,70.0,45.0,,1.56,R$/GB,,,nucel-plano-3-45,"mês, sem fidelidade (preço sem Nubank+)"
 2026-11-16,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
 2026-11-16,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
 2026-11-16,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês

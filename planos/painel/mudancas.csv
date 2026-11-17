@@ -1,5 +1,6 @@
 data,operadora,tipo,linha,plano,mudanca,campo,antes,depois,n_pracas,pracas
-2026-11-16,Claro,Fibra,Claro Fibra,750 Mega,Mudou,selo/promoção,Claro Day,Multi Friday,14,"AC,AP,DF,MS,MT,PE,PI,PR,RN,RO,RR,RS,SC,TO"
+2026-11-16,Claro,Fibra,Claro Fibra,750 Mega,Mudou,selo/promoção,Claro Day,Multi Friday,27,todas
+2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,Saiu (visto pela última vez),,R$ 99.9,,13,"AL,AM,BA,CE,ES,GO,MA,MG,PA,PB,RJ,SE,SP"
 2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,Mudou,preço,69.9,59.9,1,RR
 2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,Mudou,selo/promoção,Melhor oferta,Oferta Relâmpago,1,RR
 2026-11-15,Claro,Fibra,Claro Fibra,600 Mega,Saiu (visto pela última vez),,R$ 99.9,,13,"AC,AP,DF,MS,MT,PE,PI,PR,RN,RO,RS,SC,TO"
@@ -41,8 +42,7 @@ data,operadora,tipo,linha,plano,mudanca,campo,antes,depois,n_pracas,pracas
 2026-11-13,Claro,Controle,Claro Controle,Claro Controle 50GB,Mudou,selo/promoção,Claro Day,Multi Friday,27,todas
 2026-11-13,Claro,Controle,Claro Controle,Claro Controle 45GB → Claro Controle 55GB,Mudou,plano/GB (preço igual),Claro Controle 45GB,Claro Controle 55GB,1,AL
 2026-11-13,Claro,Controle,Claro Controle,Claro Controle 35GB GeForce → Claro Controle 55GB GeForce,Mudou,plano/GB (preço igual),Claro Controle 35GB GeForce,Claro Controle 55GB GeForce,27,todas
-2026-11-13,Claro,Fibra,Claro Fibra,750 Mega → 600 Mega,Mudou,plano/GB (preço igual),750 Mega,600 Mega,13,"AL,AM,BA,CE,ES,GO,MA,MG,PA,PB,RJ,SE,SP"
-2026-11-13,Claro,Fibra,Claro Fibra,600 Mega,Novo,,,R$ 99.9,13,"AC,AP,DF,MS,MT,PE,PI,PR,RN,RO,RS,SC,TO"
+2026-11-13,Claro,Fibra,Claro Fibra,600 Mega,Novo,,,R$ 99.9,26,"AC,AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RO,RS,SC,SE,SP,TO"
 2026-11-13,Claro,Fibra,Claro Fibra,500 Mega,Novo,,,R$ 119.9,26,"AC,AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RO,RS,SC,SE,SP,TO"
 2026-11-13,Claro,Fibra,Claro Fibra,500 Mega,Novo,,,R$ 69.9,1,RR
 2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,Mudou,preço após promoção,120,,1,PB
@@ -51,11 +51,6 @@ data,operadora,tipo,linha,plano,mudanca,campo,antes,depois,n_pracas,pracas
 2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,Mudou,selo/promoção,Oferta Purple Friday 💜,,1,PB
 2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 500 Mega,Novo,,,R$ 100,1,PB
 2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 500 Mega,Saiu (visto pela última vez),,R$ 100,,1,PB
-2026-11-12,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,Novo,,,R$ 45,4,"CE,RN,SC,SP"
-2026-11-12,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 35GB,Novo,,,R$ 45,23,"AC,AL,AM,AP,BA,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RO,RR,RS,SE,TO"
-2026-11-12,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,Novo,,,R$ 35,27,todas
-2026-11-12,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,Novo,,,R$ 30,4,"CE,RN,SC,SP"
-2026-11-12,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 40GB,Novo,,,R$ 30,23,"AC,AL,AM,AP,BA,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RO,RR,RS,SE,TO"
 2026-11-12,Claro,Flex,Claro Flex,Claro Flex 45GB,Saiu (visto pela última vez),,R$ 59.9,,27,todas
 2026-11-12,Claro,Controle,Claro Controle,Claro Controle 45GB,Saiu (visto pela última vez),,R$ 59.9,,26,"AC,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RO,RR,RS,SC,SE,SP,TO"
 2026-11-12,Claro,Controle,Claro Controle,Claro Controle 45GB,Mudou,preço,59.9,69.9,1,AL

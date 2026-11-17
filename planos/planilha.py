@@ -22,7 +22,7 @@ AQUI = Path(__file__).parent
 sys_path = AQUI
 import sys  # noqa: E402
 sys.path.insert(0, str(AQUI))
-from historico import CAMPOS_COMPARA, COLS, COLS_LOG, HIST, LOG, NOMES, ler  # noqa: E402
+from historico import CAMPOS_COMPARA, COLS, COLS_LOG, HIST, INCLUSOES, LOG, NOMES, ler  # noqa: E402
 
 ARQ = AQUI / "planos_operadoras.xlsx"
 UFS = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE",
@@ -126,9 +126,21 @@ def gerar():
     for r in hist:
         por[(r["operadora"], r["uf"], r["chave"])].append(r)
     mud = []
+    # 1ª leitura com sucesso de cada página (operadora, UF, página): o que aparece nela é base, não "Novo"
+    pri_ok = {}
+    for r in log:
+        if r["ok"] == "sim":
+            k_ = (r["operadora"], r["uf"], r["pagina"])
+            pri_ok[k_] = min(pri_ok.get(k_, r["data"]), r["data"])
+
+    def e_base(r):
+        if r["inicio"] <= pri_ok.get((r["operadora"], r["uf"], r["pagina"]), ""):
+            return True
+        return any(r["operadora"] == o and r["chave"].startswith(pref) and r["inicio"] <= d for (o, pref), d in INCLUSOES.items())
+
     for k, vs in por.items():
         vs.sort(key=lambda r: r["inicio"])
-        if vs[0]["inicio"] > base:
+        if vs[0]["inicio"] > base and not e_base(vs[0]):
             mud.append([vs[0]["inicio"], vs[0]["operadora"], tipo_de(vs[0]), linha_de(vs[0]), vs[0]["plano"], vs[0]["uf"],
                         "Novo", "", "", "R$ %s" % vs[0]["preco"]])
         for a, b in zip(vs, vs[1:]):
