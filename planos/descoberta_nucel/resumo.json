@@ -1,0 +1,132 @@
+[
+ {
+  "url": "https://nubank.com.br/nucel",
+  "final": "https://nubank.com.br/nucel",
+  "status": 404,
+  "links": [],
+  "json": [
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
+   "https://sessions.bugsnag.com/",
+   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fnucel&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
+   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%7D&cb=1794880346988&dep=2%2CPAGE_LOAD",
+   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880346991&dep=5%2CEVENT_TAGS_ABSENT",
+   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
+  ]
+ },
+ {
+  "url": "https://nubank.com.br/nucel/",
+  "final": "https://nubank.com.br/nucel",
+  "status": 404,
+  "links": [],
+  "json": [
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
+   "https://sessions.bugsnag.com/",
+   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fnucel&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
+   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880353053&dep=5%2CEVENT_TAGS_ABSENT",
+   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%2C%22pin_unauth%22%3A%22dWlkPVlqVmhZVEk1T1RFdFlXRTFZUzAwT1RJekxUazBNalF0WlRWaU1tRTVOVGswTm1RMw%22%7D&cb=1794880353050&dep=2%2CPAGE_LOAD",
+   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
+  ]
+ },
+ {
+  "url": "https://nubank.com.br/nucel/planos",
+  "final": "https://nubank.com.br/nucel/planos",
+  "status": 404,
+  "links": [],
+  "json": [
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
+   "https://sessions.bugsnag.com/",
+   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fnucel%2Fplanos&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
+   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%2C%22pin_unauth%22%3A%22dWlkPVlqVmhZVEk1T1RFdFlXRTFZUzAwT1RJekxUazBNalF0WlRWaU1tRTVOVGswTm1RMw%22%7D&cb=1794880359192&dep=2%2CPAGE_LOAD",
+   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880359195&dep=5%2CEVENT_TAGS_ABSENT",
+   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
+  ]
+ },
+ {
+  "url": "https://nubank.com.br/celular",
+  "final": "https://nubank.com.br/celular",
+  "status": 404,
+  "links": [],
+  "json": [
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
+   "https://sessions.bugsnag.com/",
+   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fcelular&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
+   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880364987&dep=5%2CEVENT_TAGS_ABSENT",
+   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%2C%22pin_unauth%22%3A%22dWlkPVlqVmhZVEk1T1RFdFlXRTFZUzAwT1RJekxUazBNalF0WlRWaU1tRTVOVGswTm1RMw%22%7D&cb=1794880364984&dep=2%2CPAGE_LOAD",
+   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
+  ]
+ },
+ {
+  "url": "https://nubank.com.br/nucel-planos",
+  "final": "https://nubank.com.br/nucel-planos",
+  "status": 404,
+  "links": [],
+  "json": [
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
+   "https://sessions.bugsnag.com/",
+   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fnucel-planos&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
+   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880370749&dep=5%2CEVENT_TAGS_ABSENT",
+   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%2C%22pin_unauth%22%3A%22dWlkPVlqVmhZVEk1T1RFdFlXRTFZUzAwT1RJekxUazBNalF0WlRWaU1tRTVOVGswTm1RMw%22%7D&cb=1794880370746&dep=2%2CPAGE_LOAD",
+   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
+  ]
+ },
+ {
+  "url": "https://blog.nubank.com.br/nucel-vale-a-pena/",
+  "final": "https://blog.nubank.com.br/nucel-vale-a-pena/",
+  "status": 200,
+  "links": [
+   "https://blog.nubank.com.br/nucel-vale-a-pena/",
+   "https://blog.nubank.com.br/nucel-vale-a-pena/#",
+   "https://blog.nubank.com.br/nucel-vale-a-pena/#maincontent",
+   "https://blog.nubank.com.br/plano-de-celular-sem-fidelidade/",
+   "https://blog.nubank.com.br/portabilidade-celular-como-funciona/",
+   "https://nubank.com.br/ajuda-e-seguranca?utm_source=blog&utm_medium=blog&utm_campaign=nucel-h2&utm_content=aon__blog__saiba-mais&utm_term=core__sc__na__blog-readers__2025",
+   "https://nubank.com.br/nu/nucel",
+   "https://nubank.com.br/nu/nucel?utm_source=blog&utm_medium=blog&utm_campaign=nucel-h2&utm_content=aon__blog__saiba-mais&utm_term=core__sc__na__blog-readers__2025"
+  ],
+  "json": [
+   "https://backend.blog.nubank.com.br/wp-json/wp/v2/get-comments/145682?page=1&per_page=5",
+   "https://googleads.g.doubleclick.net/pagead/id",
+   "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+   "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+   "https://googleads.g.doubleclick.net/pagead/id",
+   "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+   "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+  ]
+ },
+ {
+  "url": "https://nubank.com.br/contratos/contrato-nucel-plano-dez-gb",
+  "final": "https://nubank.com.br/contratos/contratos-nucel-17-gb",
+  "status": 200,
+  "links": [
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftn1",
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftn2",
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftn3",
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftn4",
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftnref1",
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftnref2",
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftnref3",
+   "https://nubank.com.br/contratos/contratos-nucel-17-gb#_ftnref4",
+   "https://www.datocms-assets.com/120597/1791288158-1790965283-etiqueta-padrao-nucel-17gb-clr202600005293.pdf"
+  ],
+  "json": [
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
+   "https://sessions.bugsnag.com/",
+   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fcontratos%2Fcontratos-nucel-17-gb&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
+   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%2C%22pin_unauth%22%3A%22dWlkPVlqVmhZVEk1T1RFdFlXRTFZUzAwT1RJekxUazBNalF0WlRWaU1tRTVOVGswTm1RMw%22%7D&cb=1794880384280&dep=2%2CPAGE_LOAD",
+   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880384283&dep=5%2CEVENT_TAGS_ABSENT",
+   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
+  ]
+ }
+]
