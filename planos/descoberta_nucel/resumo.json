@@ -1,46 +1,33 @@
 [
  {
   "url": "https://nubank.com.br/nu/nucel",
-  "erro": "Page.goto: Timeout 60000ms exceeded.\nCall log:\nnavigating to \"https://nubank.com.br/nu/nucel\", waiting until \"networkidle\"\n"
- },
- {
-  "url": "https://nubank.com.br/nu/nucel/planos",
-  "final": "https://nubank.com.br/nu/nucel/planos",
-  "status": 404,
-  "links": [],
-  "json": [
-   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
-   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
-   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
-   "https://sessions.bugsnag.com/",
-   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fnu%2Fnucel%2Fplanos&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
-   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880602972&dep=5%2CEVENT_TAGS_ABSENT",
-   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%2C%22pin_unauth%22%3A%22dWlkPU9ESmpPRGt3TVRZdE5XRm1OUzAwWmpRM0xUazVaVGd0TVRrM05EbGpNMlkwTW1Fdw%22%7D&cb=1794880602969&dep=2%2CPAGE_LOAD",
-   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
-  ]
- },
- {
-  "url": "https://blog.nubank.com.br/nucel-vale-a-pena/",
-  "final": "https://blog.nubank.com.br/nucel-vale-a-pena/",
+  "final": "https://nubank.com.br/nu/nucel",
   "status": 200,
   "links": [
    "https://blog.nubank.com.br/nucel-vale-a-pena/",
-   "https://blog.nubank.com.br/nucel-vale-a-pena/#",
-   "https://blog.nubank.com.br/nucel-vale-a-pena/#maincontent",
    "https://blog.nubank.com.br/plano-de-celular-sem-fidelidade/",
    "https://blog.nubank.com.br/portabilidade-celular-como-funciona/",
-   "https://nubank.com.br/ajuda-e-seguranca?utm_source=blog&utm_medium=blog&utm_campaign=nucel-h2&utm_content=aon__blog__saiba-mais&utm_term=core__sc__na__blog-readers__2025",
-   "https://nubank.com.br/nu/nucel",
-   "https://nubank.com.br/nu/nucel?utm_source=blog&utm_medium=blog&utm_campaign=nucel-h2&utm_content=aon__blog__saiba-mais&utm_term=core__sc__na__blog-readers__2025"
+   "https://blog.nubank.com.br/tag/tudo-sobre-nucel"
   ],
   "json": [
-   "https://backend.blog.nubank.com.br/wp-json/wp/v2/get-comments/145682?page=1&per_page=5",
-   "https://googleads.g.doubleclick.net/pagead/id",
    "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-   "https://www.youtube.com/youtubei/v1/log_event?alt=json",
-   "https://googleads.g.doubleclick.net/pagead/id",
-   "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-   "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://o13389.ingest.us.sentry.io/api/4507312738402304/envelope/?sentry_version=7&sentry_key=1c0acf6335cb882c33fc9b446279e841&sentry_client=sentry.javascript.nextjs%2F10.75.2",
+   "https://prod-global-discovery-cf.nubank.com.br/api/discovery",
+   "https://prod-global-discovery-cf.nubank.com.br/api/discovery",
+   "https://prod-global-discovery-cf.nubank.com.br/api/discovery",
+   "https://prod-global-discovery-cf.nubank.com.br/api/discovery",
+   "https://tracking-settings.figpii.com/38739501377e81c62a010d8bbbc58432.json",
+   "https://sessions.bugsnag.com/",
+   "https://prod-global-web-cookie.prod-waf.nubank.com.br/api/public/keys/:device-id/experiments/groups",
+   "https://prod-global-nu-website-br-xp.prod-waf.nubank.com.br/api/public/keys/:device-id/experiments/groups",
+   "https://prod-global-web-cookie.prod-waf.nubank.com.br/api/public/keys/:device-id/experiments/groups",
+   "https://cm.teads.tv/v2/advertiser?referer=https%3A%2F%2Fnubank.com.br%2Fnu%2Fnucel&tag_version=8.16.2_12d5006&buyer_pixel_id=3897&gtm_consent=false&has_consent=true&cht=timeout&zone=usCanada",
+   "https://ct.pinterest.com/user/?tid=2613819446648&pd=%7B%22em%22%3A%2224aba99b2defbb47ee981b4200313f61f3ae31541d8717bdac1e463c838939b0%22%7D&cb=1794880667527&dep=2%2CPAGE_LOAD",
+   "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22line_items%22%3A%5B%7B%22product_id%22%3A%221414%22%7D%5D%7D&tid=2613819446648&cb=1794880667530&dep=5%2CEVENT_TAGS_ABSENT",
+   "https://prod-global-nu-website-br-xp.prod-waf.nubank.com.br/api/public/keys/:device-id/experiments/groups",
+   "https://www.youtube-nocookie.com/youtubei/v1/log_event?alt=json",
+   "https://md-eecad2978f7a43f5b7838c919258e6de.ecs.us-east-2.on.aws/events?cee=no"
   ]
  }
 ]
