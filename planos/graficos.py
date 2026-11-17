@@ -65,6 +65,12 @@ def comparar(serie, tipos, d0, d1, campo="gb"):
             for k, v in pontos(serie, tipos, dt, campo).items():
                 if k not in a and k in b:
                     a[k] = v
+    # operadora que entrou no monitor depois de d0 (ex.: NuCel em 16/11): a 1ª leitura dela é a base
+    ops_a = {v["op"] for v in a.values()}
+    for op in {v["op"] for v in b.values()} - ops_a:
+        pri = min((r["data"] for r in serie if r["operadora"] == op and r["tipo"] in tipos and r["data"] > d0), default=None)
+        if pri:
+            a.update({k: v for k, v in pontos(serie, tipos, pri, campo).items() if v["op"] == op})
     res, sa, sb = [], set(a), set(b)
 
     def casa(ka, kb, estado):
