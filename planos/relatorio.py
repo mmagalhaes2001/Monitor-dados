@@ -189,6 +189,16 @@ def gerar(arg=None):
             t=e(tit), m=e(nome_mes), frase=e(frase), nc=e(nome_c), cards="".join(cards), svg=graficos.svg(fig),
             d0=dia(d0), d1=dia(d1), lista=lista))
 
+    # R$/GB no tempo
+    tempos = []
+    for tit, tipos_t, campo in graficos.TEMPO:
+        f = graficos.tempo(serie, tipos_t, campo, tamanho=(6.4, 2.05))
+        if f:
+            tempos.append("<div><h3>%s</h3>%s</div>" % (e(tit), graficos.svg(f).replace('class="graf"', 'class="g2"')))
+    paginas.append("""<section class="pg"><div class="topo"><span>R$ por GB no tempo</span><span>{m}</span></div>
+<h2>R$ por GB (e por 100 Mega na fibra) ao longo do tempo, por operadora</h2>
+<p class="nota">{n}</p><div class="grade">{t}</div></section>""".format(m=e(nome_mes), n=e(graficos.NOTA_TEMPO), t="".join(tempos)))
+
     # pré por dia
     pre = sorted([r for r in serie if r["data"] == d1 and r["tipo"] == "Pré" and r.get("rs_gb_dia")],
                  key=lambda r: (num(r["dias"]), num(r["rs_gb_dia"])))
@@ -291,7 +301,8 @@ h1{{font-size:24px;margin:30px 0 8px}} h2{{font-size:17px;font-weight:600;margin
 .graf{{width:62%;height:auto;float:left;margin-right:12px}} h3+ul{{font-size:11px}}
 table{{border-collapse:collapse;width:100%;font-size:11px}} th,td{{border-bottom:1px solid #eee;padding:3px 6px;text-align:left;vertical-align:top}}
 th{{background:#f3f3f3}} table.peq{{font-size:9.5px}}
-.capa h3{{margin-top:18px}}
+.capa h3{{margin-top:18px}} .grade{{display:grid;grid-template-columns:1fr 1fr;gap:2px 14px}} .grade h3{{margin:2px 0}}
+.g2{{width:100%;height:auto}}
 </style></head><body>{c}{p}</body></html>""".format(m=e(nome_mes), c=capa, p="".join(paginas))
     SAIDA.mkdir(exist_ok=True)
     base = SAIDA / ("relatorio_planos_%04d-%02d" % (ano, mes))

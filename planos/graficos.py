@@ -19,6 +19,11 @@ import matplotlib.pyplot as plt  # noqa: E402
 
 OPS = ["Vivo", "Claro", "TIM", "NuCel"]
 COR = {"Vivo": "#7B2CBF", "Claro": "#D62828", "TIM": "#1D4ED8", "NuCel": "#E0A100"}
+TEMPO = [("Pré (recarga de ~30 dias)", ["Pré"], "gb"), ("Híbridos (Lite, Fit Anual, Flex)", ["Lite/Anual", "Flex"], "gb"),
+         ("Controle", ["Controle"], "gb"), ("Pós", ["Pós"], "gb"), ("Fibra", ["Fibra"], "mega")]
+NOTA_TEMPO = ("Linha cheia = mediana do R$/GB dos planos da operadora no segmento; tracejada = R$/GB do plano de entrada "
+              "(no Controle, o tradicional mais barato). A mediana também se move quando um plano entra ou sai. "
+              "SP; diário até ~75 dias de histórico, depois média mensal.")
 MARCA = {"Pré": "s", "Controle": "o", "Lite/Anual": "D", "Flex": "^", "Pós": "o", "Família": "o", "Fibra": "o",
          "FWA (5G residencial)": "o"}
 
@@ -177,3 +182,83 @@ def entrada(serie, tipos, data, campo="gb"):
                 out[o] = {"preco": num(r["preco"]), "x": num(r[campo]), "plano": r["plano"],
                           "unid": num(r["valor_unidade"])}
     return out
+
+
+def tempo(serie, tipos, campo="gb", tamanho=(8.2, 3.4), entrada_tipos=None):
+    """R$ por GB (ou por 100 Mega) ao longo do tempo, uma cor por operadora.
+    Linha cheia = mediana dos planos do grupo; tracejada = plano de entrada. Diário enquanto o histórico tem
+    até ~75 dias; depois, média do mês (eixo em meses)."""
+    import statistics
+    import matplotlib.dates as mdates
+    datas = sorted({r["data"] for r in serie})
+    if len(datas) < 2:
+        return None
+    mensal = (datetime.strptime(datas[-1], "%Y-%m-%d") - datetime.strptime(datas[0], "%Y-%m-%d")).days > 75
+    med, ent = defaultdict(dict), defaultdict(dict)
+    for d in datas:
+        uns = defaultdict(list)
+        for r in serie:
+            if r["data"] != d or r["tipo"] not in tipos:
+                continue
+            if r["tipo"] == "Pré" and num(r.get("dias")) and num(r["dias"]) < 28:
+                continue
+            u = num(r["valor_unidade"])
+            if u:
+                uns[r["operadora"]].append(u)
+        for op, v in uns.items():
+            med[op][d] = statistics.median(v)
+        for op, e in entrada(serie, entrada_tipos or tipos, d, campo).items():
+            if e["unid"]:
+                ent[op][d] = e["unid"]
+
+    def agrega(ser):
+        if not mensal:
+            return sorted((datetime.strptime(d, "%Y-%m-%d"), v) for d, v in ser.items())
+        m = defaultdict(list)
+        for d, v in ser.items():
+            m[d[:7]].append(v)
+        return sorted((datetime.strptime(k + "-15", "%Y-%m-%d"), sum(v) / len(v)) for k, v in m.items())
+
+    fig, ax = plt.subplots(figsize=tamanho)
+    ultimo = []
+    for op in OPS:
+        for ser, estilo_ in ((med.get(op), "-"), (ent.get(op), "--")):
+            if not ser:
+                continue
+            pts = agrega(ser)
+            xs, ys = zip(*pts)
+            ax.plot(xs, ys, estilo_, color=COR[op], linewidth=2 if estilo_ == "-" else 1.3, marker="o" if len(xs) < 40 else None,
+                    markersize=3)
+            if estilo_ == "-":
+                ultimo.append((ys[-1], op, xs[-1]))
+    # rótulos à direita, afastados para não sobrepor
+    ys_todos = [y for y, _, _ in ultimo]
+    if ys_todos:
+        lo, hi = min(ys_todos), max(ys_todos)
+        gap = max((hi - lo), hi * 0.15) * 0.12
+        pos = []
+        for y, op, x in sorted(ultimo):
+            yy = max(y, pos[-1] + gap) if pos else y
+            pos.append(yy)
+            ax.annotate(" %s %s" % (op, ("R$ %.2f" % y).replace(".", ",")), xy=(x, y), xytext=(x, yy),
+                        textcoords="data", fontsize=8, color=COR[op], va="center",
+                        xycoords="data")
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.grid(color="#ececec", linewidth=0.8)
+    ax.set_axisbelow(True)
+    ax.tick_params(labelsize=9, colors="#555")
+    lo, hi = ax.get_ylim()
+    ax.set_ylim(max(0, lo - (hi - lo) * 0.3), hi + (hi - lo) * 0.1)  # eixo não começa em zero: destaca a variação
+    ax.set_ylabel("R$ por 100 Mega" if campo == "mega" else "R$ por GB", fontsize=9, color="#555")
+    if mensal:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%m/%y"))
+        ax.xaxis.set_major_locator(mdates.MonthLocator())
+    else:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%d/%m"))
+        ax.xaxis.set_major_locator(mdates.DayLocator(interval=max(1, len(datas) // 8)))
+    x0, x1 = ax.get_xlim()
+    ax.set_xlim(x0, x1 + (x1 - x0) * 0.18)  # espaço para os rótulos à direita
+    from matplotlib.lines import Line2D
+    ax.legend([Line2D([], [], color="#777", lw=2), Line2D([], [], color="#777", lw=1.3, ls="--")],
+              ["mediana dos planos", "plano de entrada"], frameon=False, fontsize=7.5, loc="best")
+    return fig

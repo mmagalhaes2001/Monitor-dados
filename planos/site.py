@@ -189,6 +189,13 @@ def gerar():
             cards.append("<div class='card' style='border-top:4px solid %s'><div class='op'>%s · %s</div><div class='big'>%s%s</div>"
                          "<div class='nota'>%s · %s</div></div>" % (COR[op], op, nome_c, real(b["preco"]), dif, e(xs), e(b["plano"])))
         mapas.append("<h3>%s</h3><div class='cards'>%s</div>%s" % (e(tit), "".join(cards), graficos.svg(fig)))
+    # R$/GB no tempo
+    tempos = []
+    for tit, tipos_t, campo in graficos.TEMPO:
+        f = graficos.tempo(serie, tipos_t, campo, tamanho=(7.5, 3.0))
+        if f:
+            tempos.append("<div class='tempo'><h3>%s</h3>%s</div>" % (e(tit), graficos.svg(f)))
+
     # pré: R$/GB por dia
     pre = sorted([r for r in serie if r["data"] == d1 and r["tipo"] == "Pré" and r.get("rs_gb_dia")],
                  key=lambda r: (num(r["dias"]), OPS.index(r["operadora"]) if r["operadora"] in OPS else 9))
@@ -262,6 +269,7 @@ h1{{font-size:26px;font-weight:600;margin:0 0 6px}} h2{{font-size:19px;margin:28
 .tw{{overflow-x:auto}} table{{border-collapse:collapse;width:100%;font-size:13px;background:#fff}}
 th,td{{text-align:left;padding:5px 8px;border-bottom:1px solid #eee;vertical-align:top;white-space:nowrap}} th{{background:#f2f2f2;position:sticky;top:0}}
 td:nth-child(n+8){{white-space:normal;min-width:120px}}
+.tempos{{display:grid;grid-template-columns:repeat(auto-fit,minmax(460px,1fr));gap:8px}}
 .cards{{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}} .card{{background:#fff;border:1px solid #eee;border-radius:8px;padding:8px 12px;min-width:150px}}
 .card .op{{font-size:12px;color:#666}} .card .big{{font-size:20px;font-weight:600}} .var{{font-size:13px;color:#b45309}}
 .dl a{{display:inline-block;margin:4px 10px 4px 0;padding:6px 12px;border:1px solid #ccc;border-radius:6px;background:#fff;color:#1f1f1f;text-decoration:none;font-size:14px}}
@@ -276,6 +284,10 @@ footer{{color:#888;font-size:12px;margin:30px 0 10px}}
 <h2>Mapa de preços em SP: hoje × {dia(d0)}</h2>
 <p class="nota">Cada ponto é um plano. Ponto vazado = posição em {dia(d0)}; a seta mostra para onde o plano foi (direita = mais GB, cima = mais caro). Anel = plano novo. Nos cartões, o plano mais barato de cada operadora no grupo (no pré, recarga de 30 dias).</p>
 {"".join(mapas)}
+<h2>R$ por GB ao longo do tempo (SP)</h2>
+<p class="nota">{e(graficos.NOTA_TEMPO)}</p>
+<div class="tempos">{"".join(tempos)}</div>
+
 <h3>Pré: custo por GB por dia de validade (recargas de prazos diferentes)</h3>
 {tab_pre}
 
