@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 OUT = Path(__file__).parent / "descoberta_nucel"
 OUT.mkdir(exist_ok=True)
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
-URLS = ["https://nubank.com.br/nu/nucel", "https://nubank.com.br/nu/nucel/planos", "https://blog.nubank.com.br/nucel-vale-a-pena/"]
+URLS = ["https://nubank.com.br/nu/nucel"]
 res = []
 with sync_playwright() as p:
     nav = p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
@@ -16,7 +16,7 @@ with sync_playwright() as p:
         pg = ctx.new_page(); js = []
         pg.on("response", lambda r: js.append(r.url) if "json" in (r.headers.get("content-type") or "") else None)
         try:
-            r = pg.goto(u, wait_until="networkidle", timeout=60000); pg.wait_for_timeout(3000)
+            r = pg.goto(u, wait_until="domcontentloaded", timeout=60000); pg.wait_for_timeout(9000)
             txt = pg.inner_text("body")
             links = sorted({h for h in pg.eval_on_selector_all("a[href]", "e=>e.map(x=>x.href)") if re.search("nucel|celular", h, re.I)})
             res.append({"url": u, "final": pg.url, "status": r.status if r else 0, "links": links, "json": js[:40]})
