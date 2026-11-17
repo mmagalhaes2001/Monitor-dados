@@ -1,24 +1,24 @@
 {
  "fontes": {
   "/para-empresas/comunicados": {
-   "comunicados": 0,
-   "status": 403
+   "comunicados": 254,
+   "status": 200
   },
   "/para-voce/ajuda/comunicados": {
    "comunicados": 0,
-   "status": 403
+   "status": 404
   },
   "/para-voce/comunicados": {
-   "comunicados": 0,
-   "status": 403
+   "comunicados": 5,
+   "status": 200
   },
   "/para-voce/comunicados/planos": {
-   "comunicados": 0,
-   "status": 403
+   "comunicados": 64,
+   "status": 200
   },
   "/para-voce/comunicados/regulatorios": {
-   "comunicados": 0,
-   "status": 403
+   "comunicados": 274,
+   "status": 200
   },
   "/robots.txt": {
    "comunicados": 0,
@@ -44,6 +44,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -51,6 +52,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -58,6 +60,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -65,6 +68,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -72,6 +76,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -79,6 +84,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -86,6 +92,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -93,6 +100,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -100,6 +108,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -107,6 +116,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -114,6 +124,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -121,6 +132,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -128,6 +140,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -135,6 +148,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -142,6 +156,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -149,6 +164,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -156,6 +172,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -163,6 +180,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -170,6 +188,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -177,6 +196,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -184,6 +204,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -191,6 +212,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -198,6 +220,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -205,6 +228,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -212,6 +236,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -219,6 +244,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -226,6 +252,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -233,6 +260,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -240,6 +268,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -247,6 +276,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -254,6 +284,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -261,6 +292,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -268,6 +300,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -275,6 +308,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -282,6 +316,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -289,6 +324,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -296,6 +332,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -303,6 +340,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -310,6 +348,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -317,6 +356,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -324,6 +364,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -331,6 +372,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -338,6 +380,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -345,6 +388,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -352,6 +396,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -359,6 +404,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -366,6 +412,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -373,6 +420,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -380,6 +428,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -387,6 +436,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -394,6 +444,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -401,6 +452,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -408,6 +460,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -415,6 +468,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -422,6 +476,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -429,6 +484,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -436,6 +492,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -443,6 +500,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -450,6 +508,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -457,6 +516,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -464,6 +524,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -471,6 +532,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -478,6 +540,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -485,6 +548,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -492,6 +556,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -499,6 +564,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -506,6 +572,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -513,6 +580,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -520,6 +588,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -527,6 +596,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -534,6 +604,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -541,6 +612,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -548,6 +620,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -555,6 +628,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -562,6 +636,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -569,6 +644,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -576,6 +652,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -583,6 +660,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -590,6 +668,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -597,6 +676,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -604,6 +684,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -611,6 +692,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -618,6 +700,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -625,6 +708,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -632,6 +716,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -639,6 +724,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -646,6 +732,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -653,6 +740,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -660,6 +748,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -667,6 +756,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -674,6 +764,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -681,6 +772,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -688,6 +780,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -695,6 +788,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1682,6 +1776,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1689,6 +1784,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1696,6 +1792,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1703,6 +1800,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1710,6 +1808,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1717,6 +1816,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1724,6 +1824,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1731,6 +1832,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1738,6 +1840,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1745,6 +1848,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1752,6 +1856,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1759,6 +1864,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1766,6 +1872,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1773,6 +1880,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1780,6 +1888,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1787,6 +1896,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1794,6 +1904,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1801,6 +1912,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1808,6 +1920,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1815,6 +1928,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1822,6 +1936,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1829,6 +1944,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1836,6 +1952,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1843,6 +1960,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1850,6 +1968,7 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
@@ -1857,140 +1976,160 @@
    "base": true,
    "publicado": "",
    "resumo": "",
+   "status": 403,
    "titulo": "",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/alteracao-nos-planos-de-voz-fixa": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento A Telefônica Brasil S.A., denominada Vivo, informa a todos os clientes do segmento Empresas que, com o objetivo de seguir as recentes alterações regulatórias promovidas pela Anatel, as chamadas de curta duração, como as inferiores a três segundos, passarão a ser tarifadas. Com isso, a chama",
+   "status": 200,
+   "titulo": "Alteração nos planos de voz fixa",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/alteracoes-areas-stfc": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "30/09/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Comunicado Importante – Alteração nas Áreas Tarifárias",
+   "status": 200,
+   "titulo": "Comunicado Importante – Alteração nas Áreas Tarifárias",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/alteracoes-planos-bl-empresas": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Alterações Planos de Banda Larga Empresas",
+   "status": 200,
+   "titulo": "Alterações Planos de Banda Larga Empresas",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/comunicado-desligue-da-tecnologia-cobre-em-sp": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "01/04/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas A TELEFÔNICA BRASIL S.A., denominada Vivo, comunica aos seus clientes residenciais, não residenciais e usuários em geral, que a partir de 02/05/2025 realizará a modernização da sua rede no Estado de São Paulo, nos termos da resolução vigente.",
+   "status": 200,
+   "titulo": "Desligue da tecnologia Atual",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/comunicado-encerramento-pble": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "18/12/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Comunicado: Encerramento Programa Banda Larga nas Escolas - PBLE",
+   "status": 200,
+   "titulo": "Comunicado: Encerramento Programa Banda Larga nas Escolas - PBLE",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/comunicado-nova-condicao-movel-b2b": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "11/02/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas A Telefônica Brasil S/A (VIVO) informa a todos os seus clientes pessoa jurídica e ao público em geral que o Serviço Móvel Pessoal (SMP), bem como as Ofertas/Promoções associadas ao Plano do Serviço listado, terão nova condição a partir de 11/03/2025.",
+   "status": 200,
+   "titulo": "Nova Condição Móvel B2B",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/comunicado-resolucao-anatel-765-2023": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento O RGC é o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 765/2023. Trata-se de um conjunto de regras com direitos e obrigações estabelecidas pela Anatel para regular a prestação de serviços de telecomunicações de telefonia móvel (SMP)",
+   "status": 200,
+   "titulo": "Resolução Anatel n° 765/2023",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/desligue-das-tecnologias-fibra-e-iptv": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Desligue das tecnologias Fibra e IPTV - Legados",
+   "status": 200,
+   "titulo": "Desligue das tecnologias Fibra e IPTV - Legados",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/falha-sistemica-cobranca-outubro-2022": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Falha sistêmica na Cobrança de Outubro/2022",
+   "status": 200,
+   "titulo": "Falha sistêmica na Cobrança de Outubro/2022",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/informacoes-sobre-o-9-digito": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Comunicados Vivo: Informações sobre o 9º dígito",
+   "status": 200,
+   "titulo": "Comunicados Vivo: Informações sobre o 9º dígito",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/reajuste-chamadas-fixo-movel": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento A TELEFÔNICA BRASIL S.A., doravante denominada Vivo, comunica antecipadamente aos seus clientes das classes residencial, não residencial e tronco que está providenciando os ajustes necessários para a aplicação de novos valores para as chamadas fixo-móvel SMP (VC1) do Plano Básico Local, que",
+   "status": 200,
+   "titulo": "Reajuste de chamadas Fixo-móvel",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/repasse-da-desoneracao-do-icms-vivo-movel": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Repasse da Majoração do ICMS - NOVOS VALORES DO SERVIÇO VIVO MÓVEL",
+   "status": 200,
+   "titulo": "Repasse da Majoração do ICMS - NOVOS VALORES DO SERVIÇO VIVO MÓVEL",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/repasse-da-desoneracao-do-icms-voz-e-internet": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Majoração do ICMS - NOVOS VALORES DOS SERVIÇOS VIVO VOZ E INTERNET",
+   "status": 200,
+   "titulo": "Majoração do ICMS - NOVOS VALORES DOS SERVIÇOS VIVO VOZ E INTERNET",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/resolucao-611": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Área Tarifária: área geograficamente contínua, constituída por um conjunto de áreas locais agrupadas segundo critérios sócio-geo-econômicos e contidas em uma mesma área de numeração, utilizada como referência para tarifação das chamadas de longa distância nacional originadas de acessos vinc",
+   "status": 200,
+   "titulo": "Comunicados Vivo: Resolução 611 - Anatel",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/resolucao-620": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Resolução 620 – Alteração de Tratamento Local",
+   "status": 200,
+   "titulo": "Resolução 620 – Alteração de Tratamento Local",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/resolucao-755": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento RESOLUÇÃO N°755/2022 - TARIFAÇÃO DE ÁREAS LOCAIS",
+   "status": 200,
+   "titulo": "RESOLUÇÃO N°755/2022 - TARIFAÇÃO DE ÁREAS LOCAIS",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/tarifa-areas-locais": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Despacho Decisório nº 17/2023 - TARIFAÇÃO DE ÁREAS LOCAIS",
+   "status": 200,
+   "titulo": "Despacho Decisório nº 17/2023 - TARIFAÇÃO DE ÁREAS LOCAIS",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/tarifa-areas-locais-2025": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "03/04/2025",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Revisão Anual de Áreas Tarifárias e de Tratamento Local",
+   "status": 200,
+   "titulo": "Revisão Anual de Áreas Tarifárias e de Tratamento Local",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-empresas/comunicados/vita-it-agora-e-vivo-vita": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Produtos e Serviços  Soluções Digitais  Por tipo de Empresa  Ajuda e Benefícios  Melhores Ofertas Autoatendimento Aquisição da Vita IT fortalece atuação da Vivo como integradora de soluções de rede e provedora de serviços de networking",
+   "status": 200,
+   "titulo": "Vita IT agora é Vivo Vita",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/planos": {
@@ -2664,6 +2803,14 @@
    "status": 200,
    "titulo": "Comunicado: Alteração de preço do serviço avulso Netflix",
    "visto_em": "2026-11-16 10:41"
+  },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-do-valor-mensal-avulso-netflix": {
+   "base": false,
+   "publicado": "17/11/2026",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Comunicado: Alteração de preço do serviço avulso Netflix",
+   "status": 200,
+   "titulo": "Comunicado: Alteração de preço do serviço avulso Netflix",
+   "visto_em": "2026-11-17 16:21"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/comunicado-alteracao-hbo": {
    "base": true,
@@ -4396,75 +4543,85 @@
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/suspensao-interconexao-hello-brazil": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Suspensão parcial do provimento de interconexão da Hello Brazil",
+   "status": 200,
+   "titulo": "Suspensão parcial do provimento de interconexão da Hello Brazil",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/suspensao-interconexao-wcs-telecom": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "11/12/2023",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Suspensão parcial do provimento de Interconexão da WCS",
+   "status": 200,
+   "titulo": "Suspensão parcial do provimento de Interconexão da WCS",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/suspensao-sete-meia-telecomunicacoes": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "04/03/2024",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Suspensão parcial do provimento de interconexão da Sete Meia Telecom",
+   "status": 200,
+   "titulo": "Suspensão parcial do provimento de interconexão da Sete Meia Telecom",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/tabela-de-reajustes-de-servicos": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Confira a tabela com o novo valor das assinaturas dos Serviços de Valor Adicional da Vivo.",
+   "status": 200,
+   "titulo": "Comunicado Vivo: Reajustes de serviços",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/tarifas-de-voz-local-excedentes-pos-pago": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Comunicado Vivo: Tarifas de voz local excedentes – Pós-Pago",
+   "status": 200,
+   "titulo": "Comunicado Vivo: Tarifas de voz local excedentes – Pós-Pago",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/termo-ajustamento-conduta": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas No dia 28/02/2022, a TELEFÔNICA BRASIL S.A. e a Anatel firmaram o Termo de Compromisso de Ajustamento de Conduta - TAC, nº 1/2022, com vigência de 4 anos, no qual a Telefônica se compromete a assumir compromissos de ajuste de irregularidades visando a melhoria do serviço e do atendimento ao usuário e a realizar investimentos em",
+   "status": 200,
+   "titulo": "Termo de Ajustamento de Conduta",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/valores-vivo-total-fevereiro-24": {
    "base": true,
-   "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "publicado": "27/02/2024",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Novos Valores Vivo Total – Fevereiro/2024",
+   "status": 200,
+   "titulo": "Novos Valores Vivo Total – Fevereiro/2024",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/vivo-empresa-relacionamento": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas O relacionamento da Vivo com seus clientes é pautado nos princípios da transparência e confiança. Por este motivo, reunimos neste espaço tudo o que você precisa saber sobre o reajuste dos serviços contratados:",
+   "status": 200,
+   "titulo": "Comunicado Vivo Empresas",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/tecnologia": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas 5G, internet Fibra, TV, vários apps e serviços com ofertas imperdíveis.",
+   "status": 200,
+   "titulo": "Comunicado Vivo: Tecnologia",
    "visto_em": "2026-11-16 10:41"
   },
   "https://www.vivo.com.br/para-voce/comunicados/tecnologia/celular-legal": {
    "base": true,
    "publicado": "",
-   "resumo": "",
-   "titulo": "",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Celular Legal | Iniciativa que combate aparelhos irregulares no Brasil",
+   "status": 200,
+   "titulo": "Celular Legal | Iniciativa que combate aparelhos irregulares no Brasil",
    "visto_em": "2026-11-16 10:41"
   }
  },
- "ok": false,
- "sem_detalhe": 289,
- "ultima_checagem": "2026-11-17 01:46"
+ "ok": true,
+ "sem_detalhe": 260,
+ "ultima_checagem": "2026-11-17 16:21"
 }
