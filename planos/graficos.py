@@ -76,6 +76,11 @@ def comparar(serie, tipos, d0, d1, campo="gb"):
         pri = min((r["data"] for r in serie if r["operadora"] == op and r["tipo"] in tipos and r["data"] > d0), default=None)
         if pri:
             a.update({k: v for k, v in pontos(serie, tipos, pri, campo).items() if v["op"] == op})
+    # planos que já existiam no site e só passaram a ser lidos depois (INCLUSOES do histórico) são base
+    from historico import INCLUSOES
+    for k in list(b):
+        if k not in a and any(b[k]["op"] == o and k[1].startswith(pref) for (o, pref) in INCLUSOES):
+            a[k] = b[k]
     res, sa, sb = [], set(a), set(b)
 
     def casa(ka, kb, estado):
@@ -180,7 +185,7 @@ def entrada(serie, tipos, data, campo="gb"):
             o = r["operadora"]
             if o not in out or num(r["preco"]) < out[o]["preco"]:
                 out[o] = {"preco": num(r["preco"]), "x": num(r[campo]), "plano": r["plano"],
-                          "unid": num(r["valor_unidade"])}
+                          "unid": num(r["valor_unidade"]), "livre": num(r.get("gb_livre"))}
     return out
 
 

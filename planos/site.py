@@ -186,6 +186,8 @@ def gerar():
             a, b = ent0.get(op), ent1[op]
             dif = "" if not a or a["preco"] == b["preco"] else " <span class='var'>(%s)</span>" % (("+" if b["preco"] > a["preco"] else "–") + real(abs(b["preco"] - a["preco"]))[3:])
             xs = ("%g %s" % (b["x"], "Mega" if campo == "mega" else "GB")) if b["x"] else ""
+            if b.get("livre") and b["x"] and b["livre"] != b["x"]:
+                xs += " (%g livres)" % b["livre"]
             cards.append("<div class='card' style='border-top:4px solid %s'><div class='op'>%s · %s</div><div class='big'>%s%s</div>"
                          "<div class='nota'>%s · %s</div></div>" % (COR[op], op, nome_c, real(b["preco"]), dif, e(xs), e(b["plano"])))
         mapas.append("<h3>%s</h3><div class='cards'>%s</div>%s" % (e(tit), "".join(cards), graficos.svg(fig)))

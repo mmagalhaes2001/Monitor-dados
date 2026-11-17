@@ -26,7 +26,9 @@ COLS = ["operadora", "tipo", "linha", "uf", "cidade", "segmento", "chave", "plan
         "condicao", "gb_total", "gb_detalhe", "velocidade_mega", "linhas", "rs_por_gb", "beneficios", "selo",
         "pagina", "url", "extra", "inicio", "fim", "visto_ultimo"]
 # Planos que passaram a ser lidos numa página que já era coletada: na data da inclusão entram como base, não como "novo".
-INCLUSOES = {("TIM", "tim-fit-"): "2026-11-12"}
+INCLUSOES = {("TIM", "tim-fit-"): "2026-11-12",
+             # planos que já existiam no site e passaram a ser lidos em 18/11 (lacunas vistas na comparação com a XP)
+             ("Vivo", "vivo-pre-saldo-"): "2026-11-18", ("Vivo", "vivo-lite-mensal-sem-fidelidade-"): "2026-11-18"}
 
 COLS_LOG = ["data", "hora", "operadora", "uf", "cidade", "pagina", "ok", "n", "praca_tela", "erro"]
 

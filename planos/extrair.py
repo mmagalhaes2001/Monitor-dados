@@ -9,6 +9,7 @@ Cada plano vira um dicionário com:
 """
 import html as html_mod
 import json
+import base64
 import re
 import unicodedata
 
@@ -32,6 +33,31 @@ def num(txt):
         return None
     inteiro = m.group(1).replace(".", "")
     return round(float(inteiro + "." + (m.group(2) or "00")), 2)
+
+
+RE_CARIMBADO = re.compile(r"redes? sociais|\bapps?\b|youtube|tiktok|whats|instagram|exclusiv|dedicad", re.I)
+
+
+def gb_livre(gb_total, gb_detalhe):
+    """Franquia de uso livre = total menos os GB carimbados (só redes sociais/apps/YouTube etc.).
+    É o critério dos relatórios de mercado (ex.: Claro Controle 45GB = 40GB livres + 5GB redes sociais).
+    Bônus de uso livre (inclusive de campanha, como Claro Day/Multi Friday) continuam contando."""
+    try:
+        total = float(gb_total)
+    except (TypeError, ValueError):
+        return None
+    tirar = 0.0
+    for parte in re.split(r"[;+]", gb_detalhe or ""):
+        if RE_CARIMBADO.search(parte) and not re.search(r"uso livre|como quiser", parte, re.I):
+            m = re.search(r"(\d+(?:[.,]\d+)?)\s*GB", parte, re.I)
+            if m:
+                tirar += float(m.group(1).replace(",", "."))
+    return round(total - tirar, 1) if tirar < total else total
+
+
+def fmt(v):
+    """17.0 -> '17'; 44.9 -> '44,90'"""
+    return ("%d" % v) if float(v).is_integer() else ("%.2f" % v).replace(".", ",")
 
 
 def gb(txt):
@@ -126,6 +152,49 @@ def vivo(html, segmento_pagina):
                                 gb_total=gb(titulo), gb_detalhe=next((i for i in itens if re.search(r"GB", i)), ""),
                                 linhas=linhas, beneficios="; ".join([i for i in itens if not re.search(r"\d+\s*GB de franquia", i)] + apps)[:500],
                                 selo=selo))
+            # Vivo Lite: o mesmo card tem "Plano anual" (preço mostrado) e "Plano mensal / sem fidelidade", cujo
+            # acréscimo vem em base64 no data-value do botão (ex.: "MTU=" = +15 -> R$ 45 no plano de R$ 30)
+            for rb in card.select('input[type=radio][aria-label="Plano mensal"]'):
+                try:
+                    extra = float(base64.b64decode(rb.get("data-value", "")).decode())
+                except Exception:
+                    continue
+                if preco and extra > 0:
+                    out.append(registro("Vivo", seg, nome + " mensal sem fidelidade (%sGB)" % gb(titulo), preco=preco + extra,
+                                        condicao="/mês; sem fidelidade (o card mostra o anual: 12x de R$ %s)" % fmt(preco),
+                                        gb_total=gb(titulo), gb_detalhe=next((i for i in itens if re.search(r"GB", i)), ""),
+                                        beneficios="; ".join(itens + apps)[:500], selo=selo,
+                                        chave="vivo-lite-mensal-sem-fidelidade-%s" % gb(titulo)))
+    if segmento_pagina == "pre":
+        out += vivo_pre_tabela(soup, out)
+    return out
+
+
+def vivo_pre_tabela(soup, cards):
+    """Tabela 'Renovação automática da oferta Vivo Pré' (Preço | Dias | Franquia | Benefício): todas as recargas,
+    inclusive as que não têm card (ex.: R$ 17 por 15 dias). Entram as de 15 dias ou mais que não estão nos cards."""
+    out = []
+    ja = {(c["preco"], re.search(r"(\d+)\s*dias", c["condicao"] or "") and re.search(r"(\d+)\s*dias", c["condicao"]).group(1))
+          for c in cards}
+    for t in soup.find_all("table"):
+        linhas = t.find_all("tr")
+        cab = [c.get_text(" ", strip=True).lower() for c in linhas[0].find_all(["th", "td"])] if linhas else []
+        if not (cab[:3] == ["preço", "dias", "franquia"]):
+            continue
+        for tr in linhas[1:]:
+            cel = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
+            if len(cel) < 3:
+                continue
+            preco, dias = num(cel[0]), int(num(cel[1]) or 0)
+            mgb = re.search(r"([\d.,]+)\s*(GB|MB)", cel[2], re.I)
+            if not preco or dias < 15 or not mgb:
+                continue
+            g = num(mgb.group(1)) / (1000 if mgb.group(2).upper() == "MB" else 1)
+            if (preco, str(dias)) in ja:
+                continue
+            out.append(registro("Vivo", "pre", "Vivo Pré %gGB (recarga de R$ %s)" % (g, fmt(preco)), preco=preco,
+                                condicao="Por %d dias (tabela de renovação por saldo)" % dias, gb_total=g,
+                                beneficios=cel[3] if len(cel) > 3 else "", chave="vivo-pre-saldo-%d-dias-%s" % (dias, fmt(preco))))
     return out
 
 

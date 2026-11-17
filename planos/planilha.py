@@ -22,6 +22,7 @@ AQUI = Path(__file__).parent
 sys_path = AQUI
 import sys  # noqa: E402
 sys.path.insert(0, str(AQUI))
+from extrair import gb_livre  # noqa: E402
 from historico import CAMPOS_COMPARA, COLS, COLS_LOG, HIST, INCLUSOES, LOG, NOMES, ler  # noqa: E402
 
 ARQ = AQUI / "planos_operadoras.xlsx"
@@ -57,6 +58,11 @@ def aba(wb, nome, cab, linhas, larguras=None, num_cols=()):
         for (cel,) in ws.iter_rows(min_row=2, min_col=col, max_col=col):
             cel.number_format = "#,##0.00"
     return ws
+
+
+def gl(r):
+    """GB de uso livre (sem os GB só para redes sociais/apps/YouTube), critério dos relatórios de mercado."""
+    return gb_livre(r["gb_total"], r["gb_detalhe"]) if r["gb_total"] else None
 
 
 def gerar():
@@ -112,13 +118,15 @@ def gerar():
             ws.column_dimensions[get_column_letter(i)].width = 8
 
     aba(wb, "Atual", ["Operadora", "Tipo", "Linha comercial", "Plano", "UF", "Cidade", "Preço (R$)", "Preço De (R$)",
-                      "Preço após promo (R$)", "Condição", "GB", "R$/GB", "Composição dos GB", "Velocidade (Mega)",
+                      "Preço após promo (R$)", "Condição", "GB", "R$/GB", "Composição dos GB", "GB de uso livre",
+                      "R$/GB livre", "Velocidade (Mega)",
                       "Linhas", "Selo/promoção", "Benefícios", "Desde", "Visto em", "Link"],
         [[r["operadora"], tipo_de(r), linha_de(r), r["plano"], r["uf"], r["cidade"], f(r["preco"]),
           f(r["preco_de"]), f(r["preco_depois"]), r["condicao"], f(r["gb_total"]), f(r["rs_por_gb"]), r["gb_detalhe"],
+          gl(r), round(f(r["preco"]) / gl(r), 2) if gl(r) and f(r["preco"]) else None,
           f(r["velocidade_mega"]), f(r["linhas"]), r["selo"], r["beneficios"], r["inicio"], r["visto_ultimo"], r["url"]]
          for r in sorted(vig, key=chave_ord)],
-        {3: 26, 4: 34, 10: 18, 13: 40, 16: 22, 17: 60}, num_cols=(7, 8, 9, 12))
+        {3: 26, 4: 34, 10: 18, 13: 40, 18: 22, 19: 60}, num_cols=(7, 8, 9, 12, 15))
 
     # Mudanças (todas, desde o início)
     base = min((r["inicio"] for r in hist), default="")
@@ -186,6 +194,7 @@ def gerar():
     nota = wb.create_sheet("Notas")
     for l in [
         "Fonte: sites de Vivo, Claro e TIM, lidos todo dia pelo robô nas 27 capitais (o mesmo que um cliente vê na vitrine).",
+        "GB de uso livre: franquia total menos os GB que só valem para redes sociais/apps/YouTube (critério dos relatórios de mercado, ex.: XP). Bônus de uso livre, inclusive de campanha (Claro Day, Multi Friday), continuam contando.",
         "NuCel (Nubank, rede Claro): preço nacional da página nubank.com.br/nu/nucel, repetido nas 27 capitais; é o preço público, sem o desconto de Nubank+/Ultravioleta (que só aparece no app). Classificado como Controle.",
         "Fibra: é o preço de vitrine da cidade; a disponibilidade de fato depende do CEP. A TIM mostra as ofertas 'gerais' de Ultrafibra em todas as UFs.",
         "TIM: a grade vem do cadastro de ofertas do site, com a lista de UFs onde cada uma aparece.",

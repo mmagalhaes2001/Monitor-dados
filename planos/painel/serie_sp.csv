@@ -1,619 +1,619 @@
-data,operadora,tipo,linha,plano,preco,gb,mega,valor_unidade,unidade,dias,rs_gb_dia,chave,condicao
-2026-11-11,Claro,Controle,Claro Controle,Claro Controle 35GB GeForce,99.9,35.0,,2.85,R$/GB,,,claro-controle-claro-controle-35gb-geforce,
-2026-11-11,Claro,Controle,Claro Controle,Claro Controle 45GB,59.9,45.0,,1.33,R$/GB,,,claro-controle-claro-controle-45gb,
-2026-11-11,Claro,Controle,Claro Controle,Claro Controle 50GB,69.9,50.0,,1.4,R$/GB,,,claro-controle-claro-controle-50gb,
-2026-11-11,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,
-2026-11-11,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,
-2026-11-11,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,
-2026-11-11,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
-2026-11-11,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,
-2026-11-11,Claro,Flex,Claro Flex,Claro Flex 40GB,44.9,40.0,,1.12,R$/GB,,,claro-flex-claro-flex-40gb,
-2026-11-11,Claro,Flex,Claro Flex,Claro Flex 45GB,59.9,45.0,,1.33,R$/GB,,,claro-flex-claro-flex-45gb,
-2026-11-11,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
-2026-11-11,Claro,Flex,Claro Flex,Claro Flex 50GB,69.9,50.0,,1.4,R$/GB,,,claro-flex-claro-flex-50gb,
-2026-11-11,Claro,Flex,Claro Flex,Claro Flex 60GB,119.9,60.0,,2.0,R$/GB,,,claro-flex-claro-flex-60gb,
-2026-11-11,Claro,Pós,Claro Pós,Claro Pós 110GB,179.9,110.0,,1.64,R$/GB,,,claro-pos-claro-pos-110gb,
-2026-11-11,Claro,Pós,Claro Pós,Claro Pós 170GB,239.9,170.0,,1.41,R$/GB,,,claro-pos-claro-pos-170gb,
-2026-11-11,Claro,Pós,Claro Pós,Claro Pós 220GB,339.9,220.0,,1.54,R$/GB,,,claro-pos-claro-pos-220gb,
-2026-11-11,Claro,Pós,Claro Pós,Claro Pós 50GB GeForce,164.9,50.0,,3.3,R$/GB,,,claro-pos-claro-pos-50gb-geforce,
-2026-11-11,Claro,Pós,Claro Pós,Claro Pós 60GB,124.9,60.0,,2.08,R$/GB,,,claro-pos-claro-pos-60gb,
-2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias
-2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
-2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
-2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
-2026-11-11,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
-2026-11-11,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
-2026-11-11,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês
-2026-11-11,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês
-2026-11-11,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês
-2026-11-11,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa"
-2026-11-11,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa"
-2026-11-11,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa"
-2026-11-11,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa"
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês
-2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês
-2026-11-11,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão
-2026-11-11,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão
-2026-11-11,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura
-2026-11-11,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura
-2026-11-11,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura
-2026-11-11,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão
-2026-11-11,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias
-2026-11-11,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias
-2026-11-11,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês
-2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês
-2026-11-11,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês
-2026-11-11,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês
-2026-11-11,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês
-2026-11-11,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-1-giga-1000,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120
-2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-700-mega,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês
-2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês
-2026-11-11,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês
-2026-11-11,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês
-2026-11-11,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês
-2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês
-2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês
-2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês
-2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês
-2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês
-2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês
-2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês
-2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias
-2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias
-2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias
-2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias
-2026-11-12,Claro,Controle,Claro Controle,Claro Controle 35GB GeForce,99.9,35.0,,2.85,R$/GB,,,claro-controle-claro-controle-35gb-geforce,
-2026-11-12,Claro,Controle,Claro Controle,Claro Controle 45GB,59.9,45.0,,1.33,R$/GB,,,claro-controle-claro-controle-45gb,
-2026-11-12,Claro,Controle,Claro Controle,Claro Controle 50GB,69.9,50.0,,1.4,R$/GB,,,claro-controle-claro-controle-50gb,
-2026-11-12,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,
-2026-11-12,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,
-2026-11-12,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,
-2026-11-12,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
-2026-11-12,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,
-2026-11-12,Claro,Flex,Claro Flex,Claro Flex 40GB,44.9,40.0,,1.12,R$/GB,,,claro-flex-claro-flex-40gb,
-2026-11-12,Claro,Flex,Claro Flex,Claro Flex 45GB,59.9,45.0,,1.33,R$/GB,,,claro-flex-claro-flex-45gb,
-2026-11-12,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
-2026-11-12,Claro,Flex,Claro Flex,Claro Flex 50GB,69.9,50.0,,1.4,R$/GB,,,claro-flex-claro-flex-50gb,
-2026-11-12,Claro,Flex,Claro Flex,Claro Flex 60GB,119.9,60.0,,2.0,R$/GB,,,claro-flex-claro-flex-60gb,
-2026-11-12,Claro,Pós,Claro Pós,Claro Pós 110GB,179.9,110.0,,1.64,R$/GB,,,claro-pos-claro-pos-110gb,
-2026-11-12,Claro,Pós,Claro Pós,Claro Pós 170GB,239.9,170.0,,1.41,R$/GB,,,claro-pos-claro-pos-170gb,
-2026-11-12,Claro,Pós,Claro Pós,Claro Pós 220GB,339.9,220.0,,1.54,R$/GB,,,claro-pos-claro-pos-220gb,
-2026-11-12,Claro,Pós,Claro Pós,Claro Pós 50GB GeForce,164.9,50.0,,3.3,R$/GB,,,claro-pos-claro-pos-50gb-geforce,
-2026-11-12,Claro,Pós,Claro Pós,Claro Pós 60GB,124.9,60.0,,2.08,R$/GB,,,claro-pos-claro-pos-60gb,
-2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias
-2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
-2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
-2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
-2026-11-12,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
-2026-11-12,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
-2026-11-12,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês
-2026-11-12,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês
-2026-11-12,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês
-2026-11-12,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão"
-2026-11-12,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão"
-2026-11-12,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa"
-2026-11-12,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa"
-2026-11-12,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa"
-2026-11-12,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa"
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês
-2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês
-2026-11-12,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual)
-2026-11-12,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão
-2026-11-12,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão
-2026-11-12,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura
-2026-11-12,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura
-2026-11-12,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura
-2026-11-12,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão
-2026-11-12,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias
-2026-11-12,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias
-2026-11-12,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês
-2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês
-2026-11-12,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês
-2026-11-12,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês
-2026-11-12,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês
-2026-11-12,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-1-giga-1000,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120
-2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-700-mega,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês
-2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês
-2026-11-12,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês
-2026-11-12,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês
-2026-11-12,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês
-2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês
-2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês
-2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês
-2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês
-2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês
-2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês
-2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês
-2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias
-2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias
-2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias
-2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias
-2026-11-13,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,
-2026-11-13,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,
-2026-11-13,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,
-2026-11-13,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,
-2026-11-13,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,
-2026-11-13,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,
-2026-11-13,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
-2026-11-13,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,
-2026-11-13,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,
-2026-11-13,Claro,Flex,Claro Flex,Claro Flex 40GB,44.9,40.0,,1.12,R$/GB,,,claro-flex-claro-flex-40gb,
-2026-11-13,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
-2026-11-13,Claro,Flex,Claro Flex,Claro Flex 50GB,59.9,50.0,,1.2,R$/GB,,,claro-flex-claro-flex-50gb,
-2026-11-13,Claro,Flex,Claro Flex,Claro Flex 55GB,69.9,55.0,,1.27,R$/GB,,,claro-flex-claro-flex-55gb,
-2026-11-13,Claro,Flex,Claro Flex,Claro Flex 80GB,119.9,80.0,,1.5,R$/GB,,,claro-flex-claro-flex-80gb,
-2026-11-13,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,
-2026-11-13,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,
-2026-11-13,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,
-2026-11-13,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,
-2026-11-13,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,
-2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias
-2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
-2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
-2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
-2026-11-13,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
-2026-11-13,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
-2026-11-13,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês
-2026-11-13,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês
-2026-11-13,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês
-2026-11-13,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão"
-2026-11-13,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão"
-2026-11-13,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa"
-2026-11-13,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa"
-2026-11-13,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa"
-2026-11-13,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa"
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês
-2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês
-2026-11-13,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual)
-2026-11-13,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão
-2026-11-13,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão
-2026-11-13,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura
-2026-11-13,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura
-2026-11-13,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura
-2026-11-13,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão
-2026-11-13,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias
-2026-11-13,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias
-2026-11-13,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês
-2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês
-2026-11-13,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês
-2026-11-13,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês
-2026-11-13,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês
-2026-11-13,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-1-giga-1000,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120
-2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-700-mega,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês
-2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês
-2026-11-13,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês
-2026-11-13,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês
-2026-11-13,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês
-2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês
-2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês
-2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês
-2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês
-2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês
-2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês
-2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês
-2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias
-2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias
-2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias
-2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias
-2026-11-14,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,
-2026-11-14,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,
-2026-11-14,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,
-2026-11-14,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,
-2026-11-14,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,
-2026-11-14,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,
-2026-11-14,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
-2026-11-14,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,
-2026-11-14,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,
-2026-11-14,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,
-2026-11-14,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
-2026-11-14,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,
-2026-11-14,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,
-2026-11-14,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,
-2026-11-14,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,
-2026-11-14,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,
-2026-11-14,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,
-2026-11-14,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,
-2026-11-14,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,
-2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias
-2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
-2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
-2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
-2026-11-14,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
-2026-11-14,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
-2026-11-14,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês
-2026-11-14,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês
-2026-11-14,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês
-2026-11-14,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão"
-2026-11-14,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão"
-2026-11-14,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa"
-2026-11-14,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa"
-2026-11-14,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa"
-2026-11-14,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa"
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês
-2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês
-2026-11-14,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual)
-2026-11-14,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão
-2026-11-14,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão
-2026-11-14,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura
-2026-11-14,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura
-2026-11-14,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura
-2026-11-14,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão
-2026-11-14,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias
-2026-11-14,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias
-2026-11-14,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês
-2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês
-2026-11-14,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês
-2026-11-14,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês
-2026-11-14,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês
-2026-11-14,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120
-2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês
-2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês
-2026-11-14,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês
-2026-11-14,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês
-2026-11-14,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês
-2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês
-2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês
-2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês
-2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês
-2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês
-2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês
-2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês
-2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias
-2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias
-2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias
-2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias
-2026-11-15,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,
-2026-11-15,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,
-2026-11-15,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,
-2026-11-15,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,
-2026-11-15,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,
-2026-11-15,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,
-2026-11-15,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
-2026-11-15,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,
-2026-11-15,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,
-2026-11-15,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,
-2026-11-15,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
-2026-11-15,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,
-2026-11-15,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,
-2026-11-15,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,
-2026-11-15,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,
-2026-11-15,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,
-2026-11-15,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,
-2026-11-15,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,
-2026-11-15,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,
-2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias
-2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
-2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
-2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
-2026-11-15,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
-2026-11-15,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
-2026-11-15,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês
-2026-11-15,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês
-2026-11-15,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês
-2026-11-15,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão"
-2026-11-15,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão"
-2026-11-15,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa"
-2026-11-15,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa"
-2026-11-15,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa"
-2026-11-15,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa"
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês
-2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês
-2026-11-15,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual)
-2026-11-15,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão
-2026-11-15,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão
-2026-11-15,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura
-2026-11-15,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura
-2026-11-15,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura
-2026-11-15,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão
-2026-11-15,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias
-2026-11-15,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias
-2026-11-15,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês
-2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês
-2026-11-15,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês
-2026-11-15,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês
-2026-11-15,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês
-2026-11-15,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120
-2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês
-2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês
-2026-11-15,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês
-2026-11-15,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês
-2026-11-15,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês
-2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês
-2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês
-2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês
-2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês
-2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês
-2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês
-2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês
-2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias
-2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias
-2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias
-2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias
-2026-11-16,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,
-2026-11-16,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,
-2026-11-16,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,
-2026-11-16,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,
-2026-11-16,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,
-2026-11-16,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,
-2026-11-16,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
-2026-11-16,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,
-2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,
-2026-11-16,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,
-2026-11-16,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,
-2026-11-16,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
-2026-11-16,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,
-2026-11-16,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,
-2026-11-16,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,
-2026-11-16,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,
-2026-11-16,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,
-2026-11-16,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,
-2026-11-16,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,
-2026-11-16,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,
-2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias
-2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
-2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
-2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
-2026-11-16,NuCel,Controle,NuCel,NuCel 35GB,45.0,35.0,,1.29,R$/GB,,,nucel-plano-1-35,"mês, sem fidelidade (preço sem Nubank+)"
-2026-11-16,NuCel,Controle,NuCel,NuCel 40GB,60.0,40.0,,1.5,R$/GB,,,nucel-plano-2-40,"mês, sem fidelidade (preço sem Nubank+)"
-2026-11-16,NuCel,Controle,NuCel,NuCel 45GB,70.0,45.0,,1.56,R$/GB,,,nucel-plano-3-45,"mês, sem fidelidade (preço sem Nubank+)"
-2026-11-16,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
-2026-11-16,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
-2026-11-16,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês
-2026-11-16,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês
-2026-11-16,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês
-2026-11-16,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão"
-2026-11-16,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão"
-2026-11-16,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa"
-2026-11-16,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa"
-2026-11-16,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa"
-2026-11-16,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa"
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês
-2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês
-2026-11-16,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual)
-2026-11-16,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão
-2026-11-16,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão
-2026-11-16,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura
-2026-11-16,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura
-2026-11-16,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura
-2026-11-16,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão
-2026-11-16,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias
-2026-11-16,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias
-2026-11-16,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês
-2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês
-2026-11-16,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês
-2026-11-16,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês
-2026-11-16,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês
-2026-11-16,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120
-2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês
-2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês
-2026-11-16,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês
-2026-11-16,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês
-2026-11-16,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês
-2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês
-2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês
-2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês
-2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês
-2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês
-2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês
-2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês
-2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias
-2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias
-2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias
-2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias
-2026-11-17,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,
-2026-11-17,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,
-2026-11-17,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,
-2026-11-17,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,
-2026-11-17,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,
-2026-11-17,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,
-2026-11-17,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,
-2026-11-17,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,
-2026-11-17,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,
-2026-11-17,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,
-2026-11-17,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de
-2026-11-17,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,
-2026-11-17,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,
-2026-11-17,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,
-2026-11-17,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,
-2026-11-17,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,
-2026-11-17,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,
-2026-11-17,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,
-2026-11-17,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,
-2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias
-2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias
-2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias
-2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias
-2026-11-17,NuCel,Controle,NuCel,NuCel 35GB,45.0,35.0,,1.29,R$/GB,,,nucel-plano-1-35,"mês, sem fidelidade (preço sem Nubank+)"
-2026-11-17,NuCel,Controle,NuCel,NuCel 40GB,60.0,40.0,,1.5,R$/GB,,,nucel-plano-2-40,"mês, sem fidelidade (preço sem Nubank+)"
-2026-11-17,NuCel,Controle,NuCel,NuCel 45GB,70.0,45.0,,1.56,R$/GB,,,nucel-plano-3-45,"mês, sem fidelidade (preço sem Nubank+)"
-2026-11-17,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês
-2026-11-17,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês
-2026-11-17,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês
-2026-11-17,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês
-2026-11-17,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês
-2026-11-17,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão"
-2026-11-17,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão"
-2026-11-17,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa"
-2026-11-17,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa"
-2026-11-17,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa"
-2026-11-17,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa"
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês
-2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês
-2026-11-17,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual)
-2026-11-17,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão
-2026-11-17,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão
-2026-11-17,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura
-2026-11-17,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura
-2026-11-17,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura
-2026-11-17,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão
-2026-11-17,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias
-2026-11-17,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias
-2026-11-17,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês
-2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês
-2026-11-17,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês
-2026-11-17,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês
-2026-11-17,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês
-2026-11-17,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120
-2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês
-2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês
-2026-11-17,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês
-2026-11-17,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês
-2026-11-17,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês
-2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês
-2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês
-2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês
-2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês
-2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês
-2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês
-2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês
-2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias
-2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias
-2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias
-2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias
+data,operadora,tipo,linha,plano,preco,gb,mega,valor_unidade,unidade,dias,rs_gb_dia,chave,condicao,gb_livre,rs_gb_livre
+2026-11-11,Claro,Controle,Claro Controle,Claro Controle 35GB GeForce,99.9,35.0,,2.85,R$/GB,,,claro-controle-claro-controle-35gb-geforce,,30.0,3.33
+2026-11-11,Claro,Controle,Claro Controle,Claro Controle 45GB,59.9,45.0,,1.33,R$/GB,,,claro-controle-claro-controle-45gb,,40.0,1.5
+2026-11-11,Claro,Controle,Claro Controle,Claro Controle 50GB,69.9,50.0,,1.4,R$/GB,,,claro-controle-claro-controle-50gb,,45.0,1.55
+2026-11-11,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,,,
+2026-11-11,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,,,
+2026-11-11,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,,,
+2026-11-11,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,,,
+2026-11-11,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,,,
+2026-11-11,Claro,Flex,Claro Flex,Claro Flex 40GB,44.9,40.0,,1.12,R$/GB,,,claro-flex-claro-flex-40gb,,35.0,1.28
+2026-11-11,Claro,Flex,Claro Flex,Claro Flex 45GB,59.9,45.0,,1.33,R$/GB,,,claro-flex-claro-flex-45gb,,40.0,1.5
+2026-11-11,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de,,
+2026-11-11,Claro,Flex,Claro Flex,Claro Flex 50GB,69.9,50.0,,1.4,R$/GB,,,claro-flex-claro-flex-50gb,,45.0,1.55
+2026-11-11,Claro,Flex,Claro Flex,Claro Flex 60GB,119.9,60.0,,2.0,R$/GB,,,claro-flex-claro-flex-60gb,,60.0,2.0
+2026-11-11,Claro,Pós,Claro Pós,Claro Pós 110GB,179.9,110.0,,1.64,R$/GB,,,claro-pos-claro-pos-110gb,,110.0,1.64
+2026-11-11,Claro,Pós,Claro Pós,Claro Pós 170GB,239.9,170.0,,1.41,R$/GB,,,claro-pos-claro-pos-170gb,,170.0,1.41
+2026-11-11,Claro,Pós,Claro Pós,Claro Pós 220GB,339.9,220.0,,1.54,R$/GB,,,claro-pos-claro-pos-220gb,,220.0,1.54
+2026-11-11,Claro,Pós,Claro Pós,Claro Pós 50GB GeForce,164.9,50.0,,3.3,R$/GB,,,claro-pos-claro-pos-50gb-geforce,,50.0,3.3
+2026-11-11,Claro,Pós,Claro Pós,Claro Pós 60GB,124.9,60.0,,2.08,R$/GB,,,claro-pos-claro-pos-60gb,,60.0,2.08
+2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias,8.0,2.5
+2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias,10.0,2.5
+2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias,17.0,1.76
+2026-11-11,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias,5.0,3.0
+2026-11-11,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês,46.0,1.41
+2026-11-11,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês,45.0,1.31
+2026-11-11,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês,50.0,1.7
+2026-11-11,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês,45.0,1.36
+2026-11-11,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês,46.0,1.41
+2026-11-11,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa",150.0,1.47
+2026-11-11,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa",210.0,1.5
+2026-11-11,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa",250.0,1.6
+2026-11-11,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa",180.0,1.47
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês,,
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês,,
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês,,
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês,,
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês,,
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês,,
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês,,
+2026-11-11,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês,,
+2026-11-11,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão,92.0,1.58
+2026-11-11,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão,117.0,1.41
+2026-11-11,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura,70.0,1.86
+2026-11-11,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura,100.0,1.5
+2026-11-11,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura,115.0,1.48
+2026-11-11,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão,77.0,1.56
+2026-11-11,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias,12.0,2.5
+2026-11-11,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias,8.0,3.12
+2026-11-11,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias,6.0,3.33
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês,50.0,1.18
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês,65.0,1.23
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês,63.0,1.19
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês,65.0,1.38
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês,65.0,1.69
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês,65.0,1.38
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês,65.0,1.46
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês,65.0,1.38
+2026-11-11,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês,65.0,1.38
+2026-11-11,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês,120.0,2.25
+2026-11-11,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês,180.0,1.89
+2026-11-11,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês,240.0,1.79
+2026-11-11,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês,300.0,1.77
+2026-11-11,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês,,
+2026-11-11,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês,,
+2026-11-11,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês,,
+2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-1-giga-1000,/mês,,
+2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120,,
+2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês,,
+2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-700-mega,/mês,,
+2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês,,
+2026-11-11,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês,,
+2026-11-11,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês,35.0,0.86
+2026-11-11,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês,45.0,0.89
+2026-11-11,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês,45.0,1.22
+2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês,65.0,2.31
+2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês,65.0,2.77
+2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês,65.0,2.54
+2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês,65.0,2.77
+2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês,65.0,2.77
+2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês,65.0,2.54
+2026-11-11,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês,75.0,2.87
+2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias,15.0,1.67
+2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias,20.0,1.5
+2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias,25.0,1.4
+2026-11-11,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias,5.0,4.0
+2026-11-12,Claro,Controle,Claro Controle,Claro Controle 35GB GeForce,99.9,35.0,,2.85,R$/GB,,,claro-controle-claro-controle-35gb-geforce,,30.0,3.33
+2026-11-12,Claro,Controle,Claro Controle,Claro Controle 45GB,59.9,45.0,,1.33,R$/GB,,,claro-controle-claro-controle-45gb,,40.0,1.5
+2026-11-12,Claro,Controle,Claro Controle,Claro Controle 50GB,69.9,50.0,,1.4,R$/GB,,,claro-controle-claro-controle-50gb,,45.0,1.55
+2026-11-12,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,,,
+2026-11-12,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,,,
+2026-11-12,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,,,
+2026-11-12,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,,,
+2026-11-12,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,,,
+2026-11-12,Claro,Flex,Claro Flex,Claro Flex 40GB,44.9,40.0,,1.12,R$/GB,,,claro-flex-claro-flex-40gb,,35.0,1.28
+2026-11-12,Claro,Flex,Claro Flex,Claro Flex 45GB,59.9,45.0,,1.33,R$/GB,,,claro-flex-claro-flex-45gb,,40.0,1.5
+2026-11-12,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de,,
+2026-11-12,Claro,Flex,Claro Flex,Claro Flex 50GB,69.9,50.0,,1.4,R$/GB,,,claro-flex-claro-flex-50gb,,45.0,1.55
+2026-11-12,Claro,Flex,Claro Flex,Claro Flex 60GB,119.9,60.0,,2.0,R$/GB,,,claro-flex-claro-flex-60gb,,60.0,2.0
+2026-11-12,Claro,Pós,Claro Pós,Claro Pós 110GB,179.9,110.0,,1.64,R$/GB,,,claro-pos-claro-pos-110gb,,110.0,1.64
+2026-11-12,Claro,Pós,Claro Pós,Claro Pós 170GB,239.9,170.0,,1.41,R$/GB,,,claro-pos-claro-pos-170gb,,170.0,1.41
+2026-11-12,Claro,Pós,Claro Pós,Claro Pós 220GB,339.9,220.0,,1.54,R$/GB,,,claro-pos-claro-pos-220gb,,220.0,1.54
+2026-11-12,Claro,Pós,Claro Pós,Claro Pós 50GB GeForce,164.9,50.0,,3.3,R$/GB,,,claro-pos-claro-pos-50gb-geforce,,50.0,3.3
+2026-11-12,Claro,Pós,Claro Pós,Claro Pós 60GB,124.9,60.0,,2.08,R$/GB,,,claro-pos-claro-pos-60gb,,60.0,2.08
+2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias,8.0,2.5
+2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias,10.0,2.5
+2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias,17.0,1.76
+2026-11-12,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias,5.0,3.0
+2026-11-12,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês,46.0,1.41
+2026-11-12,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês,45.0,1.31
+2026-11-12,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês,50.0,1.7
+2026-11-12,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês,45.0,1.36
+2026-11-12,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês,46.0,1.41
+2026-11-12,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão",30.0,1.17
+2026-11-12,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão",40.0,1.12
+2026-11-12,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa",150.0,1.47
+2026-11-12,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa",210.0,1.5
+2026-11-12,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa",250.0,1.6
+2026-11-12,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa",180.0,1.47
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês,,
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês,,
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês,,
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês,,
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês,,
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês,,
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês,,
+2026-11-12,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês,,
+2026-11-12,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual),46.0,0.65
+2026-11-12,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão,92.0,1.58
+2026-11-12,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão,117.0,1.41
+2026-11-12,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura,70.0,1.86
+2026-11-12,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura,100.0,1.5
+2026-11-12,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura,115.0,1.48
+2026-11-12,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão,77.0,1.56
+2026-11-12,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias,12.0,2.5
+2026-11-12,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias,8.0,3.12
+2026-11-12,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias,6.0,3.33
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês,50.0,1.18
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês,65.0,1.23
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês,63.0,1.19
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês,65.0,1.38
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês,65.0,1.69
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês,65.0,1.38
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês,65.0,1.46
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês,65.0,1.38
+2026-11-12,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês,65.0,1.38
+2026-11-12,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês,120.0,2.25
+2026-11-12,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês,180.0,1.89
+2026-11-12,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês,240.0,1.79
+2026-11-12,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês,300.0,1.77
+2026-11-12,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês,,
+2026-11-12,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês,,
+2026-11-12,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês,,
+2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-1-giga-1000,/mês,,
+2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120,,
+2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês,,
+2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-700-mega,/mês,,
+2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês,,
+2026-11-12,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês,,
+2026-11-12,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês,35.0,0.86
+2026-11-12,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês,45.0,0.89
+2026-11-12,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês,45.0,1.22
+2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês,65.0,2.31
+2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês,65.0,2.77
+2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês,65.0,2.54
+2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês,65.0,2.77
+2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês,65.0,2.77
+2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês,65.0,2.54
+2026-11-12,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês,75.0,2.87
+2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias,15.0,1.67
+2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias,20.0,1.5
+2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias,25.0,1.4
+2026-11-12,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias,5.0,4.0
+2026-11-13,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,,45.0,1.33
+2026-11-13,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,,50.0,1.4
+2026-11-13,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,,50.0,2.0
+2026-11-13,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,,,
+2026-11-13,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,,,
+2026-11-13,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,,,
+2026-11-13,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,,,
+2026-11-13,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,,,
+2026-11-13,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,,,
+2026-11-13,Claro,Flex,Claro Flex,Claro Flex 40GB,44.9,40.0,,1.12,R$/GB,,,claro-flex-claro-flex-40gb,,35.0,1.28
+2026-11-13,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de,,
+2026-11-13,Claro,Flex,Claro Flex,Claro Flex 50GB,59.9,50.0,,1.2,R$/GB,,,claro-flex-claro-flex-50gb,,45.0,1.33
+2026-11-13,Claro,Flex,Claro Flex,Claro Flex 55GB,69.9,55.0,,1.27,R$/GB,,,claro-flex-claro-flex-55gb,,50.0,1.4
+2026-11-13,Claro,Flex,Claro Flex,Claro Flex 80GB,119.9,80.0,,1.5,R$/GB,,,claro-flex-claro-flex-80gb,,80.0,1.5
+2026-11-13,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,,150.0,1.2
+2026-11-13,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,,200.0,1.2
+2026-11-13,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,,250.0,1.36
+2026-11-13,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,,80.0,1.56
+2026-11-13,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,,80.0,2.06
+2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias,8.0,2.5
+2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias,10.0,2.5
+2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias,17.0,1.76
+2026-11-13,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias,5.0,3.0
+2026-11-13,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês,46.0,1.41
+2026-11-13,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês,45.0,1.31
+2026-11-13,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês,50.0,1.7
+2026-11-13,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês,45.0,1.36
+2026-11-13,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês,46.0,1.41
+2026-11-13,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão",30.0,1.17
+2026-11-13,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão",40.0,1.12
+2026-11-13,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa",150.0,1.47
+2026-11-13,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa",210.0,1.5
+2026-11-13,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa",250.0,1.6
+2026-11-13,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa",180.0,1.47
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês,,
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês,,
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês,,
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês,,
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês,,
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês,,
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês,,
+2026-11-13,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês,,
+2026-11-13,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual),46.0,0.65
+2026-11-13,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão,92.0,1.58
+2026-11-13,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão,117.0,1.41
+2026-11-13,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura,70.0,1.86
+2026-11-13,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura,100.0,1.5
+2026-11-13,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura,115.0,1.48
+2026-11-13,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão,77.0,1.56
+2026-11-13,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias,12.0,2.5
+2026-11-13,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias,8.0,3.12
+2026-11-13,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias,6.0,3.33
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês,50.0,1.18
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês,65.0,1.23
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês,63.0,1.19
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês,65.0,1.38
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês,65.0,1.69
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês,65.0,1.38
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês,65.0,1.46
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês,65.0,1.38
+2026-11-13,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês,65.0,1.08
+2026-11-13,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês,120.0,2.25
+2026-11-13,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês,180.0,1.89
+2026-11-13,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês,240.0,1.79
+2026-11-13,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês,300.0,1.77
+2026-11-13,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês,,
+2026-11-13,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês,,
+2026-11-13,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês,,
+2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-1-giga-1000,/mês,,
+2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120,,
+2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês,,
+2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-700-mega,/mês,,
+2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês,,
+2026-11-13,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês,,
+2026-11-13,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês,35.0,0.86
+2026-11-13,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês,45.0,0.89
+2026-11-13,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês,45.0,1.22
+2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês,65.0,2.31
+2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês,65.0,2.77
+2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês,65.0,2.54
+2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês,65.0,2.77
+2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês,65.0,2.77
+2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês,65.0,2.54
+2026-11-13,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês,75.0,2.87
+2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias,15.0,1.67
+2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias,20.0,1.5
+2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias,25.0,1.4
+2026-11-13,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias,5.0,4.0
+2026-11-14,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,,45.0,1.33
+2026-11-14,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,,50.0,1.4
+2026-11-14,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,,50.0,2.0
+2026-11-14,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,,,
+2026-11-14,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,,,
+2026-11-14,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,,,
+2026-11-14,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,,,
+2026-11-14,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,,,
+2026-11-14,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,,,
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,,35.0,1.0
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de,,
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,,45.0,1.11
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,,50.0,1.2
+2026-11-14,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,,80.0,1.25
+2026-11-14,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,,150.0,1.2
+2026-11-14,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,,200.0,1.2
+2026-11-14,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,,250.0,1.36
+2026-11-14,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,,80.0,1.56
+2026-11-14,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,,80.0,2.06
+2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias,8.0,2.5
+2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias,10.0,2.5
+2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias,17.0,1.76
+2026-11-14,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias,5.0,3.0
+2026-11-14,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês,46.0,1.41
+2026-11-14,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês,45.0,1.31
+2026-11-14,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês,50.0,1.7
+2026-11-14,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês,45.0,1.36
+2026-11-14,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês,46.0,1.41
+2026-11-14,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão",30.0,1.17
+2026-11-14,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão",40.0,1.12
+2026-11-14,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa",150.0,1.47
+2026-11-14,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa",210.0,1.5
+2026-11-14,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa",250.0,1.6
+2026-11-14,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa",180.0,1.47
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês,,
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês,,
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês,,
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês,,
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês,,
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês,,
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês,,
+2026-11-14,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês,,
+2026-11-14,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual),46.0,0.65
+2026-11-14,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão,92.0,1.58
+2026-11-14,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão,117.0,1.41
+2026-11-14,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura,70.0,1.86
+2026-11-14,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura,100.0,1.5
+2026-11-14,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura,115.0,1.48
+2026-11-14,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão,77.0,1.56
+2026-11-14,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias,12.0,2.5
+2026-11-14,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias,8.0,3.12
+2026-11-14,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias,6.0,3.33
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês,50.0,1.18
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês,65.0,1.23
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês,63.0,1.19
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês,65.0,1.38
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês,65.0,1.69
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês,65.0,1.38
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês,65.0,1.46
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês,65.0,1.38
+2026-11-14,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês,65.0,1.08
+2026-11-14,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês,120.0,2.25
+2026-11-14,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês,180.0,1.89
+2026-11-14,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês,240.0,1.79
+2026-11-14,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês,300.0,1.77
+2026-11-14,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês,,
+2026-11-14,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês,,
+2026-11-14,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês,,
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120,,
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês,,
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês,,
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês,,
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês,,
+2026-11-14,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês,,
+2026-11-14,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês,35.0,0.86
+2026-11-14,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês,45.0,0.89
+2026-11-14,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês,45.0,1.22
+2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês,65.0,2.31
+2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês,65.0,2.77
+2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês,65.0,2.54
+2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês,65.0,2.77
+2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês,65.0,2.77
+2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês,65.0,2.54
+2026-11-14,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês,75.0,2.87
+2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias,15.0,1.67
+2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias,20.0,1.5
+2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias,25.0,1.4
+2026-11-14,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias,5.0,4.0
+2026-11-15,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,,45.0,1.33
+2026-11-15,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,,50.0,1.4
+2026-11-15,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,,50.0,2.0
+2026-11-15,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,,,
+2026-11-15,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,,,
+2026-11-15,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,,,
+2026-11-15,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,,,
+2026-11-15,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,,,
+2026-11-15,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,,,
+2026-11-15,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,,35.0,1.0
+2026-11-15,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de,,
+2026-11-15,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,,45.0,1.11
+2026-11-15,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,,50.0,1.2
+2026-11-15,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,,80.0,1.25
+2026-11-15,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,,150.0,1.2
+2026-11-15,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,,200.0,1.2
+2026-11-15,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,,250.0,1.36
+2026-11-15,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,,80.0,1.56
+2026-11-15,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,,80.0,2.06
+2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias,8.0,2.5
+2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias,10.0,2.5
+2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias,17.0,1.76
+2026-11-15,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias,5.0,3.0
+2026-11-15,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês,46.0,1.41
+2026-11-15,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês,45.0,1.31
+2026-11-15,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês,50.0,1.7
+2026-11-15,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês,45.0,1.36
+2026-11-15,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês,46.0,1.41
+2026-11-15,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão",30.0,1.17
+2026-11-15,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão",40.0,1.12
+2026-11-15,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa",150.0,1.47
+2026-11-15,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa",210.0,1.5
+2026-11-15,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa",250.0,1.6
+2026-11-15,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa",180.0,1.47
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês,,
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês,,
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês,,
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês,,
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês,,
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês,,
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês,,
+2026-11-15,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês,,
+2026-11-15,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual),46.0,0.65
+2026-11-15,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão,92.0,1.58
+2026-11-15,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão,117.0,1.41
+2026-11-15,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura,70.0,1.86
+2026-11-15,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura,100.0,1.5
+2026-11-15,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura,115.0,1.48
+2026-11-15,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão,77.0,1.56
+2026-11-15,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias,12.0,2.5
+2026-11-15,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias,8.0,3.12
+2026-11-15,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias,6.0,3.33
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês,50.0,1.18
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês,65.0,1.23
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês,63.0,1.19
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês,65.0,1.38
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês,65.0,1.69
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês,65.0,1.38
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês,65.0,1.46
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês,65.0,1.38
+2026-11-15,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês,65.0,1.08
+2026-11-15,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês,120.0,2.25
+2026-11-15,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês,180.0,1.89
+2026-11-15,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês,240.0,1.79
+2026-11-15,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês,300.0,1.77
+2026-11-15,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês,,
+2026-11-15,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês,,
+2026-11-15,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês,,
+2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120,,
+2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês,,
+2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês,,
+2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês,,
+2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês,,
+2026-11-15,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês,,
+2026-11-15,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês,35.0,0.86
+2026-11-15,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês,45.0,0.89
+2026-11-15,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês,45.0,1.22
+2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês,65.0,2.31
+2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês,65.0,2.77
+2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês,65.0,2.54
+2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês,65.0,2.77
+2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês,65.0,2.77
+2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês,65.0,2.54
+2026-11-15,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês,75.0,2.87
+2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias,15.0,1.67
+2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias,20.0,1.5
+2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias,25.0,1.4
+2026-11-15,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias,5.0,4.0
+2026-11-16,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,,45.0,1.33
+2026-11-16,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,,50.0,1.4
+2026-11-16,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,,50.0,2.0
+2026-11-16,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,,,
+2026-11-16,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,,,
+2026-11-16,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,,,
+2026-11-16,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,,,
+2026-11-16,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,,,
+2026-11-16,Claro,Fibra,Claro Fibra,600 Mega,99.9,,600.0,16.65,R$ por 100 Mega,,,claro-fibra-600-mega,,,
+2026-11-16,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,,,
+2026-11-16,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,,35.0,1.0
+2026-11-16,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de,,
+2026-11-16,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,,45.0,1.11
+2026-11-16,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,,50.0,1.2
+2026-11-16,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,,80.0,1.25
+2026-11-16,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,,150.0,1.2
+2026-11-16,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,,200.0,1.2
+2026-11-16,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,,250.0,1.36
+2026-11-16,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,,80.0,1.56
+2026-11-16,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,,80.0,2.06
+2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias,8.0,2.5
+2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias,10.0,2.5
+2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias,17.0,1.76
+2026-11-16,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias,5.0,3.0
+2026-11-16,NuCel,Controle,NuCel,NuCel 35GB,45.0,35.0,,1.29,R$/GB,,,nucel-plano-1-35,"mês, sem fidelidade (preço sem Nubank+)",35.0,1.29
+2026-11-16,NuCel,Controle,NuCel,NuCel 40GB,60.0,40.0,,1.5,R$/GB,,,nucel-plano-2-40,"mês, sem fidelidade (preço sem Nubank+)",40.0,1.5
+2026-11-16,NuCel,Controle,NuCel,NuCel 45GB,70.0,45.0,,1.56,R$/GB,,,nucel-plano-3-45,"mês, sem fidelidade (preço sem Nubank+)",45.0,1.56
+2026-11-16,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês,46.0,1.41
+2026-11-16,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês,45.0,1.31
+2026-11-16,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês,50.0,1.7
+2026-11-16,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês,45.0,1.36
+2026-11-16,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês,46.0,1.41
+2026-11-16,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão",30.0,1.17
+2026-11-16,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão",40.0,1.12
+2026-11-16,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa",150.0,1.47
+2026-11-16,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa",210.0,1.5
+2026-11-16,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa",250.0,1.6
+2026-11-16,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa",180.0,1.47
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês,,
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês,,
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês,,
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês,,
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês,,
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês,,
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês,,
+2026-11-16,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês,,
+2026-11-16,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual),46.0,0.65
+2026-11-16,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão,92.0,1.58
+2026-11-16,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão,117.0,1.41
+2026-11-16,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura,70.0,1.86
+2026-11-16,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura,100.0,1.5
+2026-11-16,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura,115.0,1.48
+2026-11-16,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão,77.0,1.56
+2026-11-16,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias,12.0,2.5
+2026-11-16,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias,8.0,3.12
+2026-11-16,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias,6.0,3.33
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês,50.0,1.18
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês,65.0,1.23
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês,63.0,1.19
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês,65.0,1.38
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês,65.0,1.69
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês,65.0,1.38
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês,65.0,1.46
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês,65.0,1.38
+2026-11-16,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês,65.0,1.08
+2026-11-16,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês,120.0,2.25
+2026-11-16,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês,180.0,1.89
+2026-11-16,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês,240.0,1.79
+2026-11-16,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês,300.0,1.77
+2026-11-16,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês,,
+2026-11-16,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês,,
+2026-11-16,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês,,
+2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120,,
+2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês,,
+2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês,,
+2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês,,
+2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês,,
+2026-11-16,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês,,
+2026-11-16,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês,35.0,0.86
+2026-11-16,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês,45.0,0.89
+2026-11-16,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês,45.0,1.22
+2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês,65.0,2.31
+2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês,65.0,2.77
+2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês,65.0,2.54
+2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês,65.0,2.77
+2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês,65.0,2.77
+2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês,65.0,2.54
+2026-11-16,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês,75.0,2.87
+2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias,15.0,1.67
+2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias,20.0,1.5
+2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias,25.0,1.4
+2026-11-16,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias,5.0,4.0
+2026-11-17,Claro,Controle,Claro Controle,Claro Controle 50GB,59.9,50.0,,1.2,R$/GB,,,claro-controle-claro-controle-50gb,,45.0,1.33
+2026-11-17,Claro,Controle,Claro Controle,Claro Controle 55GB,69.9,55.0,,1.27,R$/GB,,,claro-controle-claro-controle-55gb,,50.0,1.4
+2026-11-17,Claro,Controle,Claro Controle,Claro Controle 55GB GeForce,99.9,55.0,,1.82,R$/GB,,,claro-controle-claro-controle-55gb-geforce,,50.0,2.0
+2026-11-17,Claro,Fibra,Claro Fibra,1 Giga,179.9,,1000.0,17.99,R$ por 100 Mega,,,claro-fibra-1-giga-1000,,,
+2026-11-17,Claro,Fibra,Claro Fibra,10 Giga,1999.9,,10000.0,20.0,R$ por 100 Mega,,,claro-fibra-10-giga-10000,,,
+2026-11-17,Claro,Fibra,Claro Fibra,350 Mega,89.9,,350.0,25.69,R$ por 100 Mega,,,claro-fibra-350-mega,,,
+2026-11-17,Claro,Fibra,Claro Fibra,5 Giga,499.9,,5000.0,10.0,R$ por 100 Mega,,,claro-fibra-5-giga-5000,,,
+2026-11-17,Claro,Fibra,Claro Fibra,500 Mega,119.9,,500.0,23.98,R$ por 100 Mega,,,claro-fibra-500-mega,,,
+2026-11-17,Claro,Fibra,Claro Fibra,750 Mega,99.9,,750.0,13.32,R$ por 100 Mega,,,claro-fibra-750-mega,,,
+2026-11-17,Claro,Flex,Claro Flex,Claro Flex 40GB,34.9,40.0,,0.87,R$/GB,,,claro-flex-claro-flex-40gb,,35.0,1.0
+2026-11-17,Claro,Flex,Claro Flex,Claro Flex 500 Mega,95.0,,500.0,19.0,R$ por 100 Mega,,,claro-flex-claro-flex-500-mega,Plano semestral 6 parcelas de,,
+2026-11-17,Claro,Flex,Claro Flex,Claro Flex 50GB,49.9,50.0,,1.0,R$/GB,,,claro-flex-claro-flex-50gb,,45.0,1.11
+2026-11-17,Claro,Flex,Claro Flex,Claro Flex 55GB,59.9,55.0,,1.09,R$/GB,,,claro-flex-claro-flex-55gb,,50.0,1.2
+2026-11-17,Claro,Flex,Claro Flex,Claro Flex 80GB,99.9,80.0,,1.25,R$/GB,,,claro-flex-claro-flex-80gb,,80.0,1.25
+2026-11-17,Claro,Pós,Claro Pós,Claro Pós 150GB,179.9,150.0,,1.2,R$/GB,,,claro-pos-claro-pos-150gb,,150.0,1.2
+2026-11-17,Claro,Pós,Claro Pós,Claro Pós 200GB,239.9,200.0,,1.2,R$/GB,,,claro-pos-claro-pos-200gb,,200.0,1.2
+2026-11-17,Claro,Pós,Claro Pós,Claro Pós 250GB,339.9,250.0,,1.36,R$/GB,,,claro-pos-claro-pos-250gb,,250.0,1.36
+2026-11-17,Claro,Pós,Claro Pós,Claro Pós 80GB,124.9,80.0,,1.56,R$/GB,,,claro-pos-claro-pos-80gb,,80.0,1.56
+2026-11-17,Claro,Pós,Claro Pós,Claro Pós 80GB GeForce,164.9,80.0,,2.06,R$/GB,,,claro-pos-claro-pos-80gb-geforce,,80.0,2.06
+2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 10GB,20.0,10.0,,2.0,R$/GB,20,0.1,claro-pre-claro-pre-10gb,Por 20 dias,8.0,2.5
+2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 12GB,25.0,12.0,,2.08,R$/GB,25,0.083,claro-pre-claro-pre-12gb,Por 25 dias,10.0,2.5
+2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 20GB,30.0,20.0,,1.5,R$/GB,30,0.05,claro-pre-claro-pre-20gb,Por 30 dias,17.0,1.76
+2026-11-17,Claro,Pré,Claro Pré (Prezão),Claro Pré 5GB,15.0,5.0,,3.0,R$/GB,15,0.2,claro-pre-claro-pre-5gb,Por 15 dias,5.0,3.0
+2026-11-17,NuCel,Controle,NuCel,NuCel 35GB,45.0,35.0,,1.29,R$/GB,,,nucel-plano-1-35,"mês, sem fidelidade (preço sem Nubank+)",35.0,1.29
+2026-11-17,NuCel,Controle,NuCel,NuCel 40GB,60.0,40.0,,1.5,R$/GB,,,nucel-plano-2-40,"mês, sem fidelidade (preço sem Nubank+)",40.0,1.5
+2026-11-17,NuCel,Controle,NuCel,NuCel 45GB,70.0,45.0,,1.56,R$/GB,,,nucel-plano-3-45,"mês, sem fidelidade (preço sem Nubank+)",45.0,1.56
+2026-11-17,TIM,Controle,TIM Controle,TIM Controle Redes Sociais 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-180746,mês,46.0,1.41
+2026-11-17,TIM,Controle,TIM Controle,TIM Controle Smart 45GB,58.99,45.0,,1.31,R$/GB,,,tim-controle-190571,mês,45.0,1.31
+2026-11-17,TIM,Controle,TIM Controle,TIM Controle Premium 55GB,84.99,55.0,,1.55,R$/GB,,,tim-controle-192366,mês,50.0,1.7
+2026-11-17,TIM,Controle,TIM Controle Express (cartão),TIM Controle Light Express 45GB,60.99,45.0,,1.36,R$/GB,,,tim-controle-192371,mês,45.0,1.36
+2026-11-17,TIM,Controle,TIM Controle Express (cartão),TIM Controle Pro Express 46GB,64.99,46.0,,1.41,R$/GB,,,tim-controle-192376,mês,46.0,1.41
+2026-11-17,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 1.0 30GB,35.0,30.0,,1.17,R$/GB,,,tim-fit-tim-controle-fit-mensal-1-0,"mês, cartão",30.0,1.17
+2026-11-17,TIM,Controle,TIM Controle Fit,TIM Controle Fit Mensal 2.0 40GB,45.0,40.0,,1.12,R$/GB,,,tim-fit-tim-controle-fit-mensal-2-0,"mês, cartão",40.0,1.12
+2026-11-17,TIM,Família,TIM Black Família,TIM Black Família 150GB,219.99,150.0,,1.47,R$/GB,,,tim-familia-167121,"total/mês; R$ 109,99 por pessoa",150.0,1.47
+2026-11-17,TIM,Família,TIM Black Família,TIM Black Família Premium 210GB,314.99,210.0,,1.5,R$/GB,,,tim-familia-167126,"total/mês; R$ 77,00 por pessoa",210.0,1.5
+2026-11-17,TIM,Família,TIM Black Família,TIM Black Família VIP 250GB,399.99,250.0,,1.6,R$/GB,,,tim-familia-167131,"total/mês; R$ 62,00 por pessoa",250.0,1.6
+2026-11-17,TIM,Família,TIM Black Família,TIM Black Família Plus 180GB,264.99,180.0,,1.47,R$/GB,,,tim-familia-167136,"total/mês; R$ 82,00 por pessoa",180.0,1.47
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA SEM PARAMOUNT,149.99,,1000.0,15.0,R$ por 100 Mega,,,tim-fibra-161741,mês,,
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 800 MEGA YOUTUBE,129.99,,800.0,16.25,R$ por 100 Mega,,,tim-fibra-167026,mês,,
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 400 MEGA,79.99,,400.0,20.0,R$ por 100 Mega,,,tim-fibra-184046,mês,,
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA GLOBOPLAY,119.99,,600.0,20.0,R$ por 100 Mega,,,tim-fibra-184051,mês,,
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 600 MEGA PARAMOUNT,109.99,,600.0,18.33,R$ por 100 Mega,,,tim-fibra-187421,mês,,
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA,99.99,,1000.0,10.0,R$ por 100 Mega,,,tim-fibra-51721,mês,,
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 2 GIGA,369.99,,2000.0,18.5,R$ por 100 Mega,,,tim-fibra-51726,mês,,
+2026-11-17,TIM,Fibra,TIM Ultrafibra,TIM Ultrafibra 1 GIGA HBO MAX,159.99,,1000.0,16.0,R$ por 100 Mega,,,tim-fibra-52321,mês,,
+2026-11-17,TIM,Lite/Anual,TIM Controle Fit Anual,TIM Controle Fit Anual 2.0 46GB,30.0,46.0,,0.65,R$/GB,,,tim-fit-tim-controle-fit-anual-2-0,12x no cartão (contrato anual),46.0,0.65
+2026-11-17,TIM,Pós,TIM Black Express (cartão),TIM Black B Express 92GB,144.99,92.0,,1.58,R$/GB,,,tim-pos-52146,mês no cartão,92.0,1.58
+2026-11-17,TIM,Pós,TIM Black Express (cartão),TIM Black C Express 117GB,164.99,117.0,,1.41,R$/GB,,,tim-pos-52151,mês no cartão,117.0,1.41
+2026-11-17,TIM,Pós,TIM Black,TIM Black 80GB,129.99,80.0,,1.62,R$/GB,,,tim-pos-54206,mês na fatura,70.0,1.86
+2026-11-17,TIM,Pós,TIM Black,TIM Black Plus 110GB,149.99,110.0,,1.36,R$/GB,,,tim-pos-54256,mês na fatura,100.0,1.5
+2026-11-17,TIM,Pós,TIM Black,TIM Black Premium 125GB,169.99,125.0,,1.36,R$/GB,,,tim-pos-54261,mês na fatura,115.0,1.48
+2026-11-17,TIM,Pós,TIM Black Express (cartão),TIM Black A Express 77GB,119.99,77.0,,1.56,R$/GB,,,tim-pos-55121,mês no cartão,77.0,1.56
+2026-11-17,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 16GB,30.0,16.0,,1.88,R$/GB,30,0.062,tim-pre-106306,por 30 dias,12.0,2.5
+2026-11-17,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 8GB,25.0,8.0,,3.12,R$/GB,22,0.142,tim-pre-59901,por 22 dias,8.0,3.12
+2026-11-17,TIM,Pré,TIM Pré XIP,TIM Pré XIP Plus 6GB,20.0,6.0,,3.33,R$/GB,17,0.196,tim-pre-59906,por 17 dias,6.0,3.33
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle,59.0,50.0,,1.18,R$/GB,,,vivo-controle-vivo-controle-50,/mês,50.0,1.18
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle,80.0,65.0,,1.23,R$/GB,,,vivo-controle-vivo-controle-65,/mês,65.0,1.23
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Amazon,75.0,63.0,,1.19,R$/GB,,,vivo-controle-vivo-controle-amazon-63,/mês,63.0,1.19
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Educação,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-educacao-65,/mês,65.0,1.38
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Entretenimento,110.0,65.0,,1.69,R$/GB,,,vivo-controle-vivo-controle-entretenimento-65,/mês,65.0,1.69
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Música,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-musica-65,/mês,65.0,1.38
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Netflix,95.0,65.0,,1.46,R$/GB,,,vivo-controle-vivo-controle-netflix-65,/mês,65.0,1.46
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle Saúde,90.0,65.0,,1.38,R$/GB,,,vivo-controle-vivo-controle-saude-65,/mês,65.0,1.38
+2026-11-17,Vivo,Controle,Vivo Controle,Vivo Controle YouTube Premium,70.0,65.0,,1.08,R$/GB,,,vivo-controle-vivo-controle-youtube-premium-65,/mês,65.0,1.08
+2026-11-17,Vivo,Família,Vivo Família,Vivo Família 2,270.0,120.0,,2.25,R$/GB,,,vivo-familia-vivo-familia-2-120,/mês,120.0,2.25
+2026-11-17,Vivo,Família,Vivo Família,Vivo Família 3,340.0,180.0,,1.89,R$/GB,,,vivo-familia-vivo-familia-3-180,/mês,180.0,1.89
+2026-11-17,Vivo,Família,Vivo Família,Vivo Família 4,430.0,240.0,,1.79,R$/GB,,,vivo-familia-vivo-familia-4-240,/mês,240.0,1.79
+2026-11-17,Vivo,Família,Vivo Família,Vivo Família 5,530.0,300.0,,1.77,R$/GB,,,vivo-familia-vivo-familia-5-300,/mês,300.0,1.77
+2026-11-17,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 1 Giga de Vivo Fibra,370.0,,1000.0,37.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-1-giga-de-vivo-fibra-1000,/mês,,
+2026-11-17,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 600 Mega de Vivo Fibra,270.0,,600.0,45.0,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-600-mega-de-vivo-fibra,/mês,,
+2026-11-17,Vivo,Fibra,Vivo Fibra + TV,Fibra + TV por assinatura 700 Mega de Vivo Fibra,320.0,,700.0,45.71,R$ por 100 Mega,,,vivo-fibra-fibra-tv-por-assinatura-700-mega-de-vivo-fibra,/mês,,
+2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega,/mês; após 1 ano: R$ 120,,
+2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra 600 Mega,100.0,,600.0,16.67,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-600-mega-2,/mês,,
+2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 1 Giga,200.0,,1000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-1-giga-1000,/mês,,
+2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Com Wi-Fi 6 700 Mega,150.0,,700.0,21.43,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-com-wi-fi-6-700-mega,/mês,,
+2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 10 Giga,2000.0,,10000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-10-giga-10000,/mês,,
+2026-11-17,Vivo,Fibra,Vivo Fibra,Vivo Fibra Ultravelocidade 2 Giga,400.0,,2000.0,20.0,R$ por 100 Mega,,,vivo-fibra-vivo-fibra-ultravelocidade-2-giga-2000,/mês,,
+2026-11-17,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,30.0,35.0,,0.86,R$/GB,,,vivo-lite-vivo-lite-35,/mês,35.0,0.86
+2026-11-17,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite,40.0,45.0,,0.89,R$/GB,,,vivo-lite-vivo-lite-45,/mês,45.0,0.89
+2026-11-17,Vivo,Lite/Anual,Vivo Lite (antigo Vivo Easy Lite),Vivo Lite mensal,55.0,45.0,,1.22,R$/GB,,,vivo-lite-vivo-lite-mensal-45,/mês,45.0,1.22
+2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Amazon,150.0,65.0,,2.31,R$/GB,,,vivo-pos-vivo-pos-com-amazon-65,/mês,65.0,2.31
+2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Disney+,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-disney-65,/mês,65.0,2.77
+2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Globoplay,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-globoplay-65,/mês,65.0,2.54
+2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Netflix,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-netflix-65,/mês,65.0,2.77
+2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Premiere,180.0,65.0,,2.77,R$/GB,,,vivo-pos-vivo-pos-com-premiere-65,/mês,65.0,2.77
+2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Spotify,165.0,65.0,,2.54,R$/GB,,,vivo-pos-vivo-pos-com-spotify-65,/mês,65.0,2.54
+2026-11-17,Vivo,Pós,Vivo Pós,Vivo Pós com Travel,215.0,75.0,,2.87,R$/GB,,,vivo-pos-vivo-pos-com-travel-75,/mês,75.0,2.87
+2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,25.0,15.0,,1.67,R$/GB,25,0.067,vivo-pre-vivo-pre-15,Por 25 dias,15.0,1.67
+2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,30.0,20.0,,1.5,R$/GB,30,0.05,vivo-pre-vivo-pre-20,Por 30 dias,20.0,1.5
+2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,35.0,25.0,,1.4,R$/GB,30,0.047,vivo-pre-vivo-pre-25,Por 30 dias,25.0,1.4
+2026-11-17,Vivo,Pré,Vivo Pré,Vivo Pré,20.0,5.0,,4.0,R$/GB,17,0.235,vivo-pre-vivo-pre-5,Por 17 dias,5.0,4.0

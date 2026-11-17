@@ -171,6 +171,8 @@ def gerar(arg=None):
             if a and a["x"] and b["x"] and a["x"] != b["x"]:
                 gbv = " (antes %g)" % a["x"]
             un = "%s/%s" % (rs(b["unid"]), "GB" if campo == "gb" else "100 Mega") if b["unid"] else ""
+            if b.get("livre") and b["x"] and b["livre"] != b["x"]:
+                gbv += " · %g livres" % b["livre"]
             cards.append("<div class='card' style='border-top:4px solid %s'><div class='op'>%s</div><div class='big'>%s %s</div>"
                          "<div class='sm'>%g %s%s · %s</div><div class='sm'>%s</div></div>"
                          % (COR[op], op, rs(b["preco"]), var, b["x"] or 0, unid(campo), gbv, un, e(b["plano"])))
@@ -283,7 +285,8 @@ def gerar(arg=None):
 <li>Preço de vitrine (cliente novo) lido nos sites oficiais; franquia = GB totais anunciados, incluindo bônus.</li>
 <li>Pré: recargas comparadas por R$/GB por dia de validade; no mapa, só a recarga de ~30 dias.</li>
 <li>Híbridos: Vivo Lite, TIM Controle Fit, Claro Flex (pagamento no cartão, sem fatura). Controle de entrada = Controle tradicional mais barato.</li>
-<li>Mudança de nome com mudança de GB pelo mesmo preço é tratada como o mesmo plano.</li></ul>
+<li>Mudança de nome com mudança de GB pelo mesmo preço é tratada como o mesmo plano.</li>
+<li>"Livres" = franquia sem os GB que só valem para redes sociais/apps/YouTube (critério da XP); gráficos usam a franquia total.</li></ul>
 </section>""".format(m=e(nome_mes), p=" (parcial até %s)" % dia(d1) if parcial else "", ops=", ".join(ops_ativas), nd=n_dias,
                      d0=dia(d0), d1=dia(d1),
                      res="".join("<li><b>%s</b> — %s</li>" % (e(t), e(f)) for t, f in resumo))
