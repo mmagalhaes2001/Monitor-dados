@@ -3,6 +3,8 @@
   "nid": "47536",
   "titulo": "TIM Ultrafibra - 500 MEGA [B2C][GERAL]",
   "preco": "89,99",
+  "field_titulo": "500MEGA",
+  "adicional": "",
   "principal": "<p _msthash=\"1097\" _msthidden=\"1\" _msttexthash=\"221065\">Por R$ 89,99/mês</p>\r\n",
   "regioes": [
    "ac",
@@ -106,6 +108,8 @@
   "nid": "51721",
   "titulo": "TIM Ultrafibra - 1 GIGA TOGGLE [B2C][GERAL] ",
   "preco": "99,99",
+  "field_titulo": "1GIGA",
+  "adicional": "<p>1GIGA</p>\r\n",
   "principal": "<p>Por R$ 99,99/mês</p>\r\n",
   "regioes": [
    "ac",
@@ -211,6 +215,8 @@
   "nid": "54871",
   "titulo": "TIM Ultrafibra - 600 MEGA PARAMOUNT [B2C][GERAL]",
   "preco": "109,99",
+  "field_titulo": "600MEGA",
+  "adicional": "<p>600 Mega</p>\r\n",
   "principal": "<p>Por R$ 109,99/mês</p>\r\n",
   "regioes": [
    "ac",
@@ -314,6 +320,8 @@
   "nid": "64476",
   "titulo": "TIM Ultrafibra - 600 MEGA GLOBOPLAY [B2C][GERAL]",
   "preco": "119,99",
+  "field_titulo": "600MEGA",
+  "adicional": "",
   "principal": "<p _msthash=\"1097\" _msthidden=\"1\" _msttexthash=\"221065\">Por R$ 119,99/mês</p>\r\n",
   "regioes": [
    "ac",
@@ -417,6 +425,8 @@
   "nid": "167026",
   "titulo": "TIM Ultrafibra - 800 MEGA YOUTUBE[B2C][GERAL] & [PAG YOUTUBE]",
   "preco": "129,99",
+  "field_titulo": "800MEGA",
+  "adicional": "<p>800 Mega</p>\r\n",
   "principal": "<p>Por R$ 129,99/mês</p>\r\n",
   "regioes": [
    "ac",
@@ -521,6 +531,8 @@
   "nid": "161741",
   "titulo": "TIM Ultrafibra - 1 GIGA SEM TOGGLE PARAMOUNT [B2C][GERAL]",
   "preco": "149,99",
+  "field_titulo": "1GIGA",
+  "adicional": "<p>1 Giga</p>\r\n",
   "principal": "<p>Por R$ 149,99/mês</p>\r\n",
   "regioes": [
    "ac",
@@ -626,6 +638,8 @@
   "nid": "52321",
   "titulo": "TIM Ultrafibra - 1 GIGA HBO MAX [B2C][GERAL]",
   "preco": "159,99",
+  "field_titulo": "1GIGA",
+  "adicional": "<p>1 Giga MAX</p>\r\n",
   "principal": "<p>Por R$ 159,99/mês</p>\r\n",
   "regioes": [
    "ac",
@@ -731,6 +745,8 @@
   "nid": "51726",
   "titulo": "TIM Ultrafibra - 2 GIGA [B2C][GERAL]",
   "preco": "369,99",
+  "field_titulo": "2GIGA",
+  "adicional": "<p>2 Giga Max<br />\r\n<br />\r\n&nbsp;</p>\r\n",
   "principal": "<p>Por R$ 369,99/mês</p>\r\n",
   "regioes": [
    "ac",
