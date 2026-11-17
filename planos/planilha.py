@@ -22,7 +22,7 @@ AQUI = Path(__file__).parent
 sys_path = AQUI
 import sys  # noqa: E402
 sys.path.insert(0, str(AQUI))
-from extrair import gb_livre  # noqa: E402
+from taxonomia import gb_livre  # noqa: E402
 from historico import CAMPOS_COMPARA, COLS, COLS_LOG, HIST, INCLUSOES, LOG, NOMES, ler  # noqa: E402
 
 ARQ = AQUI / "planos_operadoras.xlsx"

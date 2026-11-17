@@ -16,7 +16,7 @@ from pathlib import Path
 AQUI = Path(__file__).parent
 sys.path.insert(0, str(AQUI))
 from historico import COLS, COLS_LOG, HIST, LOG, ler  # noqa: E402
-from extrair import gb_livre  # noqa: E402
+from taxonomia import gb_livre  # noqa: E402
 
 SAIDA = AQUI / "painel"
 REF = "SP"

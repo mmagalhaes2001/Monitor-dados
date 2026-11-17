@@ -61,3 +61,23 @@ def classificar(operadora, pagina, nome, linhas=None):
         return tipo, linha
     return {"pos": "Pós", "familia": "Família", "controle": "Controle", "pre": "Pré", "lite": "Lite/Anual",
             "flex": "Flex", "fibra": "Fibra"}.get(pagina, pagina), "%s (outros)" % operadora
+
+
+RE_CARIMBADO = re.compile(r"redes? sociais|\bapps?\b|youtube|tiktok|whats|instagram|exclusiv|dedicad", re.I)
+
+
+def gb_livre(gb_total, gb_detalhe):
+    """Franquia de uso livre = total menos os GB carimbados (só redes sociais/apps/YouTube etc.).
+    É o critério dos relatórios de mercado (ex.: Claro Controle 45GB = 40GB livres + 5GB redes sociais).
+    Bônus de uso livre (inclusive de campanha, como Claro Day/Multi Friday) continuam contando."""
+    try:
+        total = float(gb_total)
+    except (TypeError, ValueError):
+        return None
+    tirar = 0.0
+    for parte in re.split(r"[;+]", gb_detalhe or ""):
+        if RE_CARIMBADO.search(parte) and not re.search(r"uso livre|como quiser", parte, re.I):
+            m = re.search(r"(\d+(?:[.,]\d+)?)\s*GB", parte, re.I)
+            if m:
+                tirar += float(m.group(1).replace(",", "."))
+    return round(total - tirar, 1) if tirar < total else total
