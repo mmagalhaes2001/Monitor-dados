@@ -74,6 +74,8 @@ def comparar(serie, tipos, d0, d1, campo="gb"):
     res, sa, sb = [], set(a), set(b)
 
     def casa(ka, kb, estado):
+        if (a[ka]["x"], a[ka]["y"]) == (b[kb]["x"], b[kb]["y"]):
+            estado = "igual"  # só trocou o nome
         res.append({"atual": b[kb], "antigo": a[ka], "estado": estado})
         sa.discard(ka); sb.discard(kb)
 

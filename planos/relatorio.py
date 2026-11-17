@@ -101,9 +101,24 @@ def titulo_grupo(pts, ops_ativas):
     for op in OPS:
         if op in por:
             c = sorted(por[op].items(), key=lambda x: -x[1])
-            frases.append("%s: %s" % (op, ", ".join("%d %s" % (n, k) for k, n in c)))
-    paradas = [o for o in ops_ativas if o not in por]
-    return "; ".join(frases) + (" — %s sem mudança" % " e ".join(paradas) if paradas else "")
+            frases.append("%s: %s" % (op, ", ".join(rotulo(k, n) for k, n in c)))
+    ops_grupo = {(p["atual"] or p["antigo"])["op"] for p in pts}
+    paradas = [o for o in ops_ativas if o not in por and o in ops_grupo]
+    return "; ".join(frases) + (" — %s sem mudança" % juntar(paradas) if paradas else "")
+
+
+def juntar(xs):
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " e " + xs[-1]
+
+
+def rotulo(k, n):
+    um = {"novo": "plano novo", "saiu": "plano retirado", "preço maior": "preço maior", "preço menor": "preço menor",
+          "mais franquia, mesmo preço": "com mais franquia pelo mesmo preço",
+          "menos franquia, mesmo preço": "com menos franquia pelo mesmo preço"}[k]
+    if n == 1:
+        return "1 " + um
+    return "%d %s" % (n, {"plano novo": "planos novos", "plano retirado": "planos retirados", "preço maior": "com preço maior",
+                         "preço menor": "com preço menor"}.get(um, um))
 
 
 def periodo(arg, datas):
