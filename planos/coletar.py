@@ -10,7 +10,7 @@ Como cada site troca de praça:
 - NuCel: preço único nacional (nubank.com.br/nu/nucel), lido uma vez e repetido nas praças.
 Toda praça é conferida: se a página mostrar outra cidade, a coleta daquela praça é marcada como falha.
 """
-import base64, json, re, sys, time, traceback, unicodedata
+import base64, json, os, re, sys, time, traceback, unicodedata
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import quote_plus
@@ -132,6 +132,7 @@ def claro_praca_tela(page):
 
 # ------------------------------------------------------------------ principal
 def coletar(operadora, pracas):
+    inicio = time.time()
     SAIDA.mkdir(exist_ok=True)
     (SAIDA / "html").mkdir(exist_ok=True)
     agora = datetime.now(BRT)
@@ -143,98 +144,129 @@ def coletar(operadora, pracas):
                               viewport={"width": 1366, "height": 900})
         page = ctx.new_page()
         cache = {}  # NuCel: página nacional, lida uma vez
-        for uf, cidade, ddd in pracas:
-            praca_ok = True
-            erro_praca = ""
-            if operadora in ("claro", "vivo"):
-                # sessão nova por cidade: Claro só mostra "Alterar cidade" na primeira visita;
-                # Vivo guarda a praça da primeira visita além dos cookies
-                ctx.close()
-                ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo",
-                                      viewport={"width": 1366, "height": 900})
-                page = ctx.new_page()
-            try:
-                if operadora == "vivo":
-                    vivo_cookies(ctx, uf, cidade, ddd)
-                elif operadora == "claro":
-                    claro_trocar_cidade(page, uf, cidade)
-            except Exception:
-                praca_ok = False
-                erro_praca = traceback.format_exc()[-300:]
-            for seg, url in PAGINAS[operadora]:
-                url = url.format(uf=uf.lower())
-                reg = {"uf": uf, "cidade": cidade, "pagina": seg, "url": url, "ok": False, "n": 0, "erro": "", "praca_tela": ""}
-                if not praca_ok:
-                    reg["erro"] = "não consegui trocar a praça: " + erro_praca
+        estado = {"ctx": ctx, "page": page}
+
+        def rodada(lista, alvo=None):
+            """Lê as páginas das praças em `lista` (se `alvo`, só as páginas {uf: {pagina}} indicadas)."""
+            ctx, page = estado["ctx"], estado["page"]
+            for uf, cidade, ddd in lista:
+                praca_ok = True
+                erro_praca = ""
+                if operadora in ("claro", "vivo"):
+                    # sessão nova por cidade: Claro só mostra "Alterar cidade" na primeira visita;
+                    # Vivo guarda a praça da primeira visita além dos cookies
+                    ctx.close()
+                    ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo",
+                                          viewport={"width": 1366, "height": 900})
+                    page = ctx.new_page()
+                try:
+                    if operadora == "vivo":
+                        vivo_cookies(ctx, uf, cidade, ddd)
+                    elif operadora == "claro":
+                        claro_trocar_cidade(page, uf, cidade)
+                except Exception:
+                    praca_ok = False
+                    erro_praca = traceback.format_exc()[-300:]
+                for seg, url in PAGINAS[operadora]:
+                    if alvo is not None and seg not in alvo.get(uf, ()):
+                        continue
+                    url = url.format(uf=uf.lower())
+                    reg = {"uf": uf, "cidade": cidade, "pagina": seg, "url": url, "ok": False, "n": 0, "erro": "", "praca_tela": ""}
+                    if not praca_ok:
+                        reg["erro"] = "não consegui trocar a praça: " + erro_praca
+                        res["paginas"].append(reg)
+                        print("%s %s %-8s ok=False n=0 %s" % (operadora, uf, seg, reg["erro"][-160:].replace("\n", " ")), flush=True)
+                        continue
+                    for tentativa in range(3):
+                        try:
+                            if operadora == "nucel":
+                                if url not in cache:
+                                    st = abrir(page, url, rolar=True, espera=8000)
+                                    cache[url] = (st or 0, page.content(), page.inner_text("body"))
+                                status, html, texto = cache[url]
+                                reg.update(status=status, praca_tela="nacional (%s)" % uf)
+                                planos = extrair.nucel(texto)
+                                esperado = "nacional"
+                            else:
+                                status = abrir(page, url, rolar=(operadora != "tim"), espera=(0 if operadora == "tim" else 8000))
+                            if operadora != "nucel":
+                                reg["status"] = status
+                                html = page.content()
+                            if operadora == "nucel":
+                                pass
+                            elif operadora == "vivo":
+                                reg["praca_tela"] = vivo_praca_tela(page)
+                                planos = extrair.vivo(html, seg)
+                                esperado = sem_acento(cidade).lower()
+                            elif operadora == "claro":
+                                reg["praca_tela"] = claro_praca_tela(page)
+                                planos = extrair.claro(html, seg)
+                                esperado = sem_acento(cidade).lower()
+                            else:
+                                reg["praca_tela"] = uf
+                                planos = extrair.tim(html, seg, uf.lower())
+                                if seg == "controle":
+                                    planos += extrair.tim_fit(html)
+                                esperado = uf.lower()
+                            if esperado not in sem_acento(reg["praca_tela"]).lower():
+                                reg["erro"] = "página mostrou outra praça: %s" % reg["praca_tela"]
+                                planos = []
+                            elif status == 404:
+                                reg["ok"] = True  # página não existe (nesta praça ou em geral): fica registrado, sem plano
+                                reg["erro"] = "404 (página não existe)"
+                                planos = []
+                            elif status and status >= 400:
+                                reg["erro"] = "HTTP %s" % status
+                                planos = []
+                            elif not planos and operadora == "tim" and '"target_id":"oferta"' in html:
+                                reg["ok"] = True  # página carregou, mas nenhuma oferta vale nesta UF (ex.: fibra sem cobertura)
+                                reg["erro"] = "sem oferta para esta UF"
+                            elif not planos:
+                                reg["erro"] = "nenhum plano lido (layout mudou?)"
+                            else:
+                                reg["ok"] = True
+                            extrair.chaves_unicas(planos)
+                            op_nome = OP_NOME[operadora]
+                            for pl in planos:
+                                tipo, linha = taxonomia.classificar(op_nome, seg, pl["plano"], pl.get("linhas"))
+                                pl.update(uf=uf, cidade=cidade, pagina=seg, url=url, tipo=tipo, linha=linha,
+                                          segmento=taxonomia.SEG.get(tipo, pl["segmento"]))
+                            reg["n"] = len(planos)
+                            res["planos"].extend(planos)
+                            if uf in ("SP", "RJ") or (not reg["ok"] and not any(  # amostra p/ conferência + 1ª falha de cada página
+                                    x["pagina"] == seg and not x["ok"] for x in res["paginas"])):
+                                (SAIDA / "html" / ("%s_%s_%s.html" % (operadora, uf, seg))).write_text(html, encoding="utf-8")
+                            break
+                        except Exception:
+                            reg["erro"] = traceback.format_exc()[-300:]
+                            time.sleep(8 * (tentativa + 1))
                     res["paginas"].append(reg)
-                    print("%s %s %-8s ok=False n=0 %s" % (operadora, uf, seg, reg["erro"][-160:].replace("\n", " ")), flush=True)
-                    continue
-                for tentativa in range(3):
-                    try:
-                        if operadora == "nucel":
-                            if url not in cache:
-                                st = abrir(page, url, rolar=True, espera=8000)
-                                cache[url] = (st or 0, page.content(), page.inner_text("body"))
-                            status, html, texto = cache[url]
-                            reg.update(status=status, praca_tela="nacional (%s)" % uf)
-                            planos = extrair.nucel(texto)
-                            esperado = "nacional"
-                        else:
-                            status = abrir(page, url, rolar=(operadora != "tim"), espera=(0 if operadora == "tim" else 8000))
-                        if operadora != "nucel":
-                            reg["status"] = status
-                            html = page.content()
-                        if operadora == "nucel":
-                            pass
-                        elif operadora == "vivo":
-                            reg["praca_tela"] = vivo_praca_tela(page)
-                            planos = extrair.vivo(html, seg)
-                            esperado = sem_acento(cidade).lower()
-                        elif operadora == "claro":
-                            reg["praca_tela"] = claro_praca_tela(page)
-                            planos = extrair.claro(html, seg)
-                            esperado = sem_acento(cidade).lower()
-                        else:
-                            reg["praca_tela"] = uf
-                            planos = extrair.tim(html, seg, uf.lower())
-                            if seg == "controle":
-                                planos += extrair.tim_fit(html)
-                            esperado = uf.lower()
-                        if esperado not in sem_acento(reg["praca_tela"]).lower():
-                            reg["erro"] = "página mostrou outra praça: %s" % reg["praca_tela"]
-                            planos = []
-                        elif status == 404:
-                            reg["ok"] = True  # página não existe (nesta praça ou em geral): fica registrado, sem plano
-                            reg["erro"] = "404 (página não existe)"
-                            planos = []
-                        elif status and status >= 400:
-                            reg["erro"] = "HTTP %s" % status
-                            planos = []
-                        elif not planos and operadora == "tim" and '"target_id":"oferta"' in html:
-                            reg["ok"] = True  # página carregou, mas nenhuma oferta vale nesta UF (ex.: fibra sem cobertura)
-                            reg["erro"] = "sem oferta para esta UF"
-                        elif not planos:
-                            reg["erro"] = "nenhum plano lido (layout mudou?)"
-                        else:
-                            reg["ok"] = True
-                        extrair.chaves_unicas(planos)
-                        op_nome = OP_NOME[operadora]
-                        for pl in planos:
-                            tipo, linha = taxonomia.classificar(op_nome, seg, pl["plano"], pl.get("linhas"))
-                            pl.update(uf=uf, cidade=cidade, pagina=seg, url=url, tipo=tipo, linha=linha,
-                                      segmento=taxonomia.SEG.get(tipo, pl["segmento"]))
-                        reg["n"] = len(planos)
-                        res["planos"].extend(planos)
-                        if uf in ("SP", "RJ") or (not reg["ok"] and not any(  # amostra p/ conferência + 1ª falha de cada página
-                                x["pagina"] == seg and not x["ok"] for x in res["paginas"])):
-                            (SAIDA / "html" / ("%s_%s_%s.html" % (operadora, uf, seg))).write_text(html, encoding="utf-8")
-                        break
-                    except Exception:
-                        reg["erro"] = traceback.format_exc()[-300:]
-                        time.sleep(8 * (tentativa + 1))
-                res["paginas"].append(reg)
-                (SAIDA / ("%s.json" % operadora)).write_text(json.dumps(res, ensure_ascii=False), encoding="utf-8")  # parcial
-                print("%s %s %-8s ok=%s n=%s %s %s" % (operadora, uf, seg, reg["ok"], reg["n"], reg["praca_tela"], reg["erro"][:120]), flush=True)
+                    (SAIDA / ("%s.json" % operadora)).write_text(json.dumps(res, ensure_ascii=False), encoding="utf-8")  # parcial
+                    print("%s %s %-8s ok=%s n=%s %s %s" % (operadora, uf, seg, reg["ok"], reg["n"], reg["praca_tela"], reg["erro"][:120]), flush=True)
+            estado["ctx"], estado["page"] = ctx, page
+
+        rodada(pracas)
+        # Repescagem: site fora do ar ou bloqueando (ex.: Vivo às 23h de 16/11) -> espera e tenta de novo só o que
+        # falhou, com navegador limpo, até dar certo ou acabar o prazo da rodada (PRAZO_MIN, padrão 55 min).
+        prazo = inicio + 60 * float(os.environ.get("PRAZO_MIN", "55"))
+        espera = [int(x) for x in os.environ.get("REPESCAGEM_S", "180,420,900,1200").split(",")]
+        for n, pausa in enumerate(espera, 1):
+            falhas = [r for r in res["paginas"] if not r["ok"] and not r.get("sem_plano")]
+            if not falhas or time.time() + pausa + 120 > prazo:
+                break
+            alvo = {}
+            for r in falhas:
+                alvo.setdefault(r["uf"], set()).add(r["pagina"])
+            print("REPESCAGEM %d: %d páginas com falha em %d praças; esperando %d s" % (n, len(falhas), len(alvo), pausa), flush=True)
+            time.sleep(pausa)
+            res["paginas"] = [r for r in res["paginas"] if r["ok"] or r.get("sem_plano")]
+            estado["ctx"].close()
+            estado["ctx"] = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo",
+                                            viewport={"width": 1366, "height": 900})
+            estado["page"] = estado["ctx"].new_page()
+            cache.clear()
+            rodada([x for x in pracas if x[0] in alvo], alvo)
+        ctx = estado["ctx"]
         ctx.close()
         nav.close()
     (SAIDA / ("%s.json" % operadora)).write_text(json.dumps(res, ensure_ascii=False, indent=0), encoding="utf-8")

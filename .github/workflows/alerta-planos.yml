@@ -5,12 +5,15 @@ name: Alerta - planos das operadoras (Vivo, Claro, TIM)
 # Junta ao histórico por vigência (planos/dados/historico.csv), regenera planos/planos_operadoras.xlsx
 # e avisa no ntfy (tópico mm-planos-5a4d74767443) + Gmail com a planilha anexa quando algo muda.
 # Sem mudança: push discreto de "robô ok". Falha em >20% das páginas de uma operadora: aviso de atenção.
+# Se um site falhar (fora do ar, bloqueio), o robô tenta de novo sozinho: na própria rodada (repescagem após
+# 3, 7, 15 e 20 min) e depois a cada 30 min até 20h53, coletando só as praças que faltaram (planos/pendentes.py).
 # Teste manual: Actions > este robô > Run workflow (marque "teste"; dá para limitar as praças, ex.: SP,RJ).
 on:
   schedule:
     # O agendamento do GitHub falha às vezes (em 12/11 a rodada das 07:23 não foi disparada).
-    # Por isso tenta a cada 30 min das 06:23 às 17:53 (Brasília); se a coleta do dia já foi feita, sai em segundos.
-    - cron: "23,53 9-20 * * *"
+    # Por isso tenta a cada 30 min das 06:23 às 20:53 (Brasília); se a coleta do dia já está completa, sai em segundos;
+    # se faltou alguma operadora/praça, coleta só o que faltou.
+    - cron: "23,53 9-23 * * *"
   push:
     paths:
       - ".github/workflows/alerta-planos.yml"
@@ -51,11 +54,18 @@ jobs:
       - name: Já coletou hoje?
         id: hoje
         run: |
-          d=$(TZ=America/Sao_Paulo date +%F)
-          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "^$d," planos/dados/coletas.csv 2>/dev/null; then
-            echo "Coleta de $d já feita; nada a fazer."; echo "pular=sim" >> $GITHUB_OUTPUT
-          else
+          echo "modo=completa" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "pular=nao" >> $GITHUB_OUTPUT; exit 0; fi
+          pend=$(python3 planos/pendentes.py)
+          if [ -z "$pend" ]; then
+            echo "Coleta de hoje completa; nada a fazer."; echo "pular=sim" >> $GITHUB_OUTPUT
+          elif [ "$pend" = "todas" ]; then
             echo "pular=nao" >> $GITHUB_OUTPUT
+          else
+            echo "Faltou hoje (vou coletar só isto):"; echo "$pend"
+            echo "pular=nao" >> $GITHUB_OUTPUT
+            echo "modo=repescagem" >> $GITHUB_OUTPUT
+            echo "$pend" > /tmp/pendentes.txt
           fi
       - uses: actions/setup-python@v5
         if: steps.hoje.outputs.pular == 'nao'
@@ -69,12 +79,19 @@ jobs:
       - name: Coletar Vivo, Claro, TIM e NuCel (em paralelo)
         if: steps.hoje.outputs.pular == 'nao'
         run: |
-          arg=""; [ -n "${{ inputs.pracas }}" ] && arg="--pracas ${{ inputs.pracas }}"
-          for op in vivo claro tim nucel; do
-            timeout 80m python planos/coletar.py $op $arg > /tmp/log_$op.txt 2>&1 &
+          if [ -f /tmp/pendentes.txt ]; then
+            lista=$(cat /tmp/pendentes.txt)
+          else
+            arg=""; [ -n "${{ inputs.pracas }}" ] && arg="${{ inputs.pracas }}"
+            lista=$(for op in vivo claro tim nucel; do echo "$op $arg"; done)
+          fi
+          echo "$lista" | while read op ufs; do
+            [ -z "$op" ] && continue
+            arg=""; [ -n "$ufs" ] && arg="--pracas $ufs"
+            PRAZO_MIN=60 timeout 80m python planos/coletar.py $op $arg > /tmp/log_$op.txt 2>&1 &
           done
-          wait || true
-          for op in vivo claro tim nucel; do echo "===== $op"; cat /tmp/log_$op.txt; done
+          sleep 5; wait || true
+          for f in /tmp/log_*.txt; do echo "===== $f"; cat "$f"; done
       - name: Histórico, planilha e aviso
         if: (success() || failure()) && steps.hoje.outputs.pular == 'nao'   # não consolida rodada cancelada
         env:
@@ -95,7 +112,8 @@ jobs:
             git push -q origin HEAD:main && break
             sleep 15
           done
-          if [ "$TESTE" = "true" ]; then python planos/avisar.py --teste; else python planos/avisar.py; fi
+          extra=""; [ "${{ steps.hoje.outputs.modo }}" = "repescagem" ] && extra="--repescagem"
+          if [ "$TESTE" = "true" ]; then python planos/avisar.py --teste $extra; else python planos/avisar.py $extra; fi
       - uses: actions/upload-artifact@v4
         if: always() && steps.hoje.outputs.pular == 'nao'
         continue-on-error: true

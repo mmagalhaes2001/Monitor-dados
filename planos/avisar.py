@@ -67,6 +67,7 @@ def email(titulo, msg):
 
 def main():
     teste = "--teste" in sys.argv
+    repescagem = "--repescagem" in sys.argv  # rodada que só recoletou o que tinha falhado mais cedo
     r = json.loads((AQUI / "_coleta" / "mudancas.json").read_text(encoding="utf-8"))
     hoje = datetime.now(BRT).strftime("%d/%m")
     cobertura = "; ".join("%s %d/%d páginas" % (op, v["paginas_ok"], v["paginas"]) for op, v in sorted(r["operadoras"].items()))
@@ -85,6 +86,10 @@ def main():
         msg += "\n\nCobertura: %s" % cobertura
         ntfy(titulo, msg, prioridade="high", tags="rotating_light")
         email(titulo, msg)
+    elif repescagem:
+        titulo = "%sPlanos: coleta completada na nova tentativa (%s)" % (pre, hoje)
+        if not alertas:
+            ntfy(titulo, "Sem mudança. Recoletado: %s" % cobertura, prioridade="low", tags="ok", anexo=False)
     else:
         titulo = "%sPlanos: sem mudança (%s)" % (pre, hoje)
         ntfy(titulo, "Robô ok. Cobertura: %s" % cobertura, prioridade="low", tags="ok", anexo=False)
@@ -92,9 +97,13 @@ def main():
             email(titulo, "Robô ok. Cobertura: %s" % cobertura)
     if alertas:
         falhas = "\n".join("%s: %s" % (op, ", ".join(r["operadoras"][op]["falhas"][:15])) for op in alertas)
-        ntfy("%sPlanos: coleta incompleta (%s)" % (pre, ", ".join(alertas)),
-             "Mais de 20%% das páginas falharam. Pode ser site fora do ar, bloqueio ou mudança de layout.\n" + falhas,
-             prioridade="high", tags="warning", anexo=False)
+        if repescagem:
+            print("repescagem ainda incompleta; próxima tentativa em 30 min (sem novo push)")
+        else:
+            ntfy("%sPlanos: coleta incompleta (%s)" % (pre, ", ".join(alertas)),
+                 "Mais de 20%% das páginas falharam. Pode ser site fora do ar, bloqueio ou mudança de layout.\n"
+                 "O robô tenta de novo sozinho a cada 30 min (até 20h53) e avisa quando completar.\n" + falhas,
+                 prioridade="high", tags="warning", anexo=False)
     print(titulo)
     print("\n".join(linhas[:40]))
 
