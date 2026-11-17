@@ -85,12 +85,14 @@ jobs:
             arg=""; [ -n "${{ inputs.pracas }}" ] && arg="${{ inputs.pracas }}"
             lista=$(for op in vivo claro tim nucel; do echo "$op $arg"; done)
           fi
-          echo "$lista" | while read op ufs; do
+          # sem pipe: o "while" precisa rodar neste shell para o "wait" esperar as coletas em segundo plano
+          echo "$lista" > /tmp/lista.txt
+          while read op ufs; do
             [ -z "$op" ] && continue
             arg=""; [ -n "$ufs" ] && arg="--pracas $ufs"
             PRAZO_MIN=60 timeout 80m python planos/coletar.py $op $arg > /tmp/log_$op.txt 2>&1 &
-          done
-          sleep 5; wait || true
+          done < /tmp/lista.txt
+          wait || true
           for f in /tmp/log_*.txt; do echo "===== $f"; cat "$f"; done
       - name: Histórico, planilha e aviso
         if: (success() || failure()) && steps.hoje.outputs.pular == 'nao'   # não consolida rodada cancelada
