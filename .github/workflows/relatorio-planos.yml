@@ -1,0 +1,70 @@
+name: Relatório mensal - planos das operadoras
+
+# Dia 1 de cada mês, 9h37 de Brasília: gera o relatório em PDF do mês anterior (planos/relatorios/),
+# grava no repositório e manda push no ntfy com o PDF anexo. À mão: escolher o mês (AAAA-MM) ou "atual" (parcial).
+on:
+  schedule:
+    - cron: "37 12 1 * *"
+  workflow_dispatch:
+    inputs:
+      mes:
+        description: "Mês (AAAA-MM), 'atual' para o mês corrente parcial, vazio = mês anterior"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: relatorio-planos
+  cancel-in-progress: false
+
+env:
+  NTFY_TOPIC: mm-planos-5a4d74767443
+
+jobs:
+  relatorio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar
+        run: |
+          pip install -q openpyxl==3.1.5 matplotlib==3.9.2 playwright==1.48.0
+          python -m playwright install --with-deps chromium > /dev/null
+      - name: Gerar relatório
+        id: gerar
+        run: |
+          python planos/painel.py
+          pdf=$(python planos/relatorio.py ${{ inputs.mes }} | tail -1)
+          echo "pdf=$pdf" >> "$GITHUB_OUTPUT"
+      - name: Gravar e avisar
+        env:
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          PDF: ${{ steps.gerar.outputs.pdf }}
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          rel=${PDF#"$GITHUB_WORKSPACE/"}
+          for i in 1 2 3; do
+            cp "$PDF" /tmp/r.pdf; cp "${PDF%.pdf}.html" /tmp/r.html
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp /tmp/r.pdf "$rel"; cp /tmp/r.html "${rel%.pdf}.html"
+            git add planos/relatorios && git commit -qm "Planos: relatório mensal $(basename "$rel" .pdf) [skip ci]" || break
+            git push -q origin HEAD:main && break; sleep 10
+          done
+          nome=$(basename "$rel")
+          curl -sSf -m 60 -T /tmp/r.pdf -H "Filename: $nome" -H "Title: Planos: relatório mensal ${nome:17:7}" -H "Tags: bar_chart" \
+            -H "Message: Relatório de preços de celular e fibra do mês, com mapa de preços, plano de entrada, diferenças entre capitais e comunicados." \
+            -H "Click: https://github.com/$GITHUB_REPOSITORY/raw/main/$rel" \
+            ${NTFY_TOKEN:+-H "Authorization: Bearer $NTFY_TOKEN"} "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || echo "falha no ntfy"
+      - name: Atualizar o site
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run site-planos.yml --repo "$GITHUB_REPOSITORY" --ref main || true

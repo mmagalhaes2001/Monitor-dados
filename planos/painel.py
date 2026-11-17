@@ -49,7 +49,7 @@ def serie():
             dias = int(m.group(1)) if m and (r["tipo"] == "Pré" or r["segmento"] == "pre") else None
             gb_dia = round(preco / gb / dias, 3) if (dias and gb) else ""
             linhas.append({"data": d, "operadora": r["operadora"], "tipo": r["tipo"] or r["segmento"],
-                           "linha": r["linha"], "plano": r["plano"], "preco": preco, "gb": gb or "",
+                           "linha": r["linha"], "plano": r["plano"], "chave": r["chave"], "condicao": r["condicao"], "preco": preco, "gb": gb or "",
                            "mega": mega or "", "valor_unidade": unid if unid is not None else "", "unidade": nome_unid,
                            "dias": dias or "", "rs_gb_dia": gb_dia})
     return linhas
@@ -82,7 +82,8 @@ def gravar(nome, linhas, cols):
 
 if __name__ == "__main__":
     s = serie()
-    gravar("serie_sp.csv", s, ["data", "operadora", "tipo", "linha", "plano", "preco", "gb", "mega", "valor_unidade", "unidade", "dias", "rs_gb_dia"])
+    gravar("serie_sp.csv", s, ["data", "operadora", "tipo", "linha", "plano", "preco", "gb", "mega", "valor_unidade", "unidade", "dias", "rs_gb_dia",
+                                 "chave", "condicao"])
     m = mudancas()
     gravar("mudancas.csv", m, ["data", "operadora", "tipo", "linha", "plano", "mudanca", "campo", "antes", "depois", "n_pracas", "pracas"])
     print(len(s), "linhas na série;", len(m), "mudanças agrupadas")

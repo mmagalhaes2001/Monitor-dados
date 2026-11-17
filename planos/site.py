@@ -20,11 +20,15 @@ matplotlib.rcParams["svg.fonttype"] = "none"  # texto como texto: SVG bem menor
 matplotlib.rcParams["font.family"] = "sans-serif"
 import matplotlib.pyplot as plt  # noqa: E402
 
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+import graficos  # noqa: E402
+
 AQUI = Path(__file__).parent
 SITE = AQUI / "_site"
 BRT = timezone(timedelta(hours=-3))
-OPS = ["Vivo", "Claro", "TIM"]
-COR = {"Vivo": "#7B2CBF", "Claro": "#D62828", "TIM": "#1D4ED8"}
+OPS = graficos.OPS
+COR = graficos.COR
 TIPOS = ["Pré", "Controle", "Lite/Anual", "Flex", "Pós", "Família", "Fibra", "FWA (5G residencial)"]
 e = html.escape
 
@@ -156,9 +160,41 @@ def gerar():
     dia_mud = max((r["data"] for r in mud), default=None)
     resumo = ""
     if dia_mud:
-        n = {op: len({r["plano"] for r in mud if r["data"] == dia_mud and r["operadora"] == op}) for op in OPS}
+        n = {op: len({r["plano"] for r in mud if r["data"] == dia_mud and r["operadora"] == op}) for op in OPS if op in cob}
         resumo = "Último dia com mudança: <b>%s</b> — %s." % (
             dia(dia_mud), ", ".join("<b>%d</b> plano%s da %s" % (v, "" if v == 1 else "s", op) for op, v in n.items()))
+
+    # mapa de preços (estilo "antes → agora")
+    datas = sorted({r["data"] for r in serie})
+    d1 = datas[-1]
+    d0 = graficos.data_comparacao(datas, d1)
+    # (título, tipos no gráfico, eixo x, corte x, corte y, tipos dos cartões de entrada, nome do cartão)
+    grupos = [("Pré (recarga de 30 dias), híbridos (Lite, Fit, Flex) e Controle", ["Pré", "Lite/Anual", "Flex", "Controle"],
+               "gb", None, 130, ["Controle"], "Controle de entrada"),
+              ("Pós", ["Pós"], "gb", None, None, ["Pós"], "Pós de entrada"),
+              ("Fibra (até 1 Giga)", ["Fibra"], "mega", 1000, None, ["Fibra"], "Fibra de entrada")]
+    mapas = []
+    for tit, tipos_g, campo, xmax, ymax, tipos_c, nome_c in grupos:
+        fig, _ = graficos.mapa(serie, tipos_g, d0, d1, campo=campo, xmax=xmax, ymax=ymax)
+        if not fig:
+            continue
+        ent0, ent1 = graficos.entrada(serie, tipos_c, d0, campo), graficos.entrada(serie, tipos_c, d1, campo)
+        cards = []
+        for op in OPS:
+            if op not in ent1:
+                continue
+            a, b = ent0.get(op), ent1[op]
+            dif = "" if not a or a["preco"] == b["preco"] else " <span class='var'>(%s)</span>" % (("+" if b["preco"] > a["preco"] else "–") + real(abs(b["preco"] - a["preco"]))[3:])
+            xs = ("%g %s" % (b["x"], "Mega" if campo == "mega" else "GB")) if b["x"] else ""
+            cards.append("<div class='card' style='border-top:4px solid %s'><div class='op'>%s · %s</div><div class='big'>%s%s</div>"
+                         "<div class='nota'>%s · %s</div></div>" % (COR[op], op, nome_c, real(b["preco"]), dif, e(xs), e(b["plano"])))
+        mapas.append("<h3>%s</h3><div class='cards'>%s</div>%s" % (e(tit), "".join(cards), graficos.svg(fig)))
+    # pré: R$/GB por dia
+    pre = sorted([r for r in serie if r["data"] == d1 and r["tipo"] == "Pré" and r.get("rs_gb_dia")],
+                 key=lambda r: (num(r["dias"]), OPS.index(r["operadora"]) if r["operadora"] in OPS else 9))
+    tab_pre = tabela(["Validade", "Operadora", "Recarga", "GB", "R$/GB por dia"],
+                     [["%s dias" % r["dias"], r["operadora"], real(num(r["preco"])), "%g" % num(r["gb"]),
+                       ("R$ %.3f" % num(r["rs_gb_dia"])).replace(".", ",")] for r in pre])
 
     # abas por tipo
     tipos = [t for t in TIPOS if any(r["tipo"] == t for r in vig)]
@@ -209,6 +245,7 @@ def gerar():
     lm = [[dia(r["data"]), r["operadora"], r["tipo"], r["plano"], r["campo"] if r["mudanca"] == "Mudou" else r["mudanca"],
            r["antes"], r["depois"], "todas (27)" if r["pracas"] == "todas" else r["pracas"]] for r in mud if r["data"] >= corte]
 
+    relatorios = sorted((AQUI / "relatorios").glob("relatorio_planos_*.pdf"), reverse=True)
     agora = datetime.now(BRT).strftime("%d/%m/%Y %H:%M")
     pagina = f"""<!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -225,6 +262,8 @@ h1{{font-size:26px;font-weight:600;margin:0 0 6px}} h2{{font-size:19px;margin:28
 .tw{{overflow-x:auto}} table{{border-collapse:collapse;width:100%;font-size:13px;background:#fff}}
 th,td{{text-align:left;padding:5px 8px;border-bottom:1px solid #eee;vertical-align:top;white-space:nowrap}} th{{background:#f2f2f2;position:sticky;top:0}}
 td:nth-child(n+8){{white-space:normal;min-width:120px}}
+.cards{{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}} .card{{background:#fff;border:1px solid #eee;border-radius:8px;padding:8px 12px;min-width:150px}}
+.card .op{{font-size:12px;color:#666}} .card .big{{font-size:20px;font-weight:600}} .var{{font-size:13px;color:#b45309}}
 .dl a{{display:inline-block;margin:4px 10px 4px 0;padding:6px 12px;border:1px solid #ccc;border-radius:6px;background:#fff;color:#1f1f1f;text-decoration:none;font-size:14px}}
 input.busca{{padding:6px 10px;border:1px solid #ccc;border-radius:6px;width:260px;max-width:100%;margin:6px 0}}
 footer{{color:#888;font-size:12px;margin:30px 0 10px}}
@@ -234,8 +273,15 @@ footer{{color:#888;font-size:12px;margin:30px 0 10px}}
 <p class="lead">{resumo}</p>
 <p class="nota">Preço de vitrine dos sites de Vivo, Claro e TIM (o que se vende hoje a cliente novo), coletado uma vez por dia nas 27 capitais. Não inclui reajuste da base de clientes. Gráficos em São Paulo (no celular o preço é o mesmo em quase todas as capitais).</p>
 
+<h2>Mapa de preços em SP: hoje × {dia(d0)}</h2>
+<p class="nota">Cada ponto é um plano. Ponto vazado = posição em {dia(d0)}; a seta mostra para onde o plano foi (direita = mais GB, cima = mais caro). Anel = plano novo. Nos cartões, o plano mais barato de cada operadora no grupo (no pré, recarga de 30 dias).</p>
+{"".join(mapas)}
+<h3>Pré: custo por GB por dia de validade (recargas de prazos diferentes)</h3>
+{tab_pre}
+
 <h2>Baixar os dados</h2>
 <div class="dl"><a href="planos_operadoras.xlsx" download>Planilha completa (.xlsx)</a><a href="historico.csv" download>Histórico (.csv)</a><a href="serie_sp.csv" download>Série diária SP (.csv)</a><a href="mudancas.csv" download>Mudanças (.csv)</a></div>
+<div class="dl">{"".join('<a href="%s" download>Relatório mensal %s (PDF)</a>' % (r.name, r.stem[-7:]) for r in relatorios)}</div>
 
 <h2>Por tipo de plano</h2>
 <div class="abas">{"".join(abas)}</div>
@@ -263,6 +309,8 @@ const bu=document.getElementById('busca');bu.addEventListener('input',()=>{{cons
     shutil.copy(AQUI / "dados" / "historico.csv", SITE)
     shutil.copy(AQUI / "painel" / "serie_sp.csv", SITE)
     shutil.copy(AQUI / "painel" / "mudancas.csv", SITE)
+    for r in relatorios:
+        shutil.copy(r, SITE)
     return SITE / "index.html"
 
 
