@@ -20,3 +20,4 @@ with sync_playwright() as p:
         (OUT / ("%s.json" % uf)).write_text(json.dumps(nodes, ensure_ascii=False, indent=1), encoding="utf-8")
         (OUT / ("%s.txt" % uf)).write_text(pg.inner_text("body")[:40000], encoding="utf-8")
     nav.close()
+# rodar
