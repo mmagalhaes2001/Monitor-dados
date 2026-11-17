@@ -174,6 +174,7 @@ def gerar():
     nota = wb.create_sheet("Notas")
     for l in [
         "Fonte: sites de Vivo, Claro e TIM, lidos todo dia pelo robô nas 27 capitais (o mesmo que um cliente vê na vitrine).",
+        "NuCel (Nubank, rede Claro): preço nacional da página nubank.com.br/nu/nucel, repetido nas 27 capitais; é o preço público, sem o desconto de Nubank+/Ultravioleta (que só aparece no app). Classificado como Controle.",
         "Fibra: é o preço de vitrine da cidade; a disponibilidade de fato depende do CEP. A TIM mostra as ofertas 'gerais' de Ultrafibra em todas as UFs.",
         "TIM: a grade vem do cadastro de ofertas do site, com a lista de UFs onde cada uma aparece.",
         "Mudança = qualquer alteração em preço, preço De, preço após promoção, condição, GB, composição dos GB, velocidade, nº de linhas, benefícios ou selo.",

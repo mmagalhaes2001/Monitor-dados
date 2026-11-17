@@ -71,7 +71,7 @@ def atualizar():
         if arq.name == "mudancas.json":
             continue
         c = json.loads(arq.read_text(encoding="utf-8"))
-        op_nome = {"vivo": "Vivo", "claro": "Claro", "tim": "TIM"}[c["operadora"]]
+        op_nome = {"vivo": "Vivo", "claro": "Claro", "tim": "TIM", "nucel": "NuCel"}[c["operadora"]]
         data = c["data"]
         ok_paginas = {(p["uf"], p["pagina"]) for p in c["paginas"] if p["ok"]}
         for p in c["paginas"]:

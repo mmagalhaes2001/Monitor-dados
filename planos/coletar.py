@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Coleta os planos de uma operadora em todas as praças (capitais) e grava planos/_coleta/<operadora>.json.
 
-Uso: python planos/coletar.py vivo|claro|tim [--pracas SP,RJ]
+Uso: python planos/coletar.py vivo|claro|tim|nucel [--pracas SP,RJ]
 
 Como cada site troca de praça:
 - Vivo: cookies vivo_reg_city / vivo_reg_state / vivo_reg_ddd / vivo_pretty_city (o mesmo que o seletor grava).
 - Claro: seletor "Alterar cidade" no topo (a cidade fica no cookie clr_hcms_city).
 - TIM: a UF vai no endereço (/sp/para-voce/...) e cada oferta traz as UFs onde vale.
+- NuCel: preço único nacional (nubank.com.br/nu/nucel), lido uma vez e repetido nas praças.
 Toda praça é conferida: se a página mostrar outra cidade, a coleta daquela praça é marcada como falha.
 """
 import base64, json, re, sys, time, traceback, unicodedata
@@ -58,7 +59,12 @@ PAGINAS = {
         ("pre", "https://www.tim.com.br/{uf}/para-voce/planos/pre-pago"),
         ("fibra", "https://www.tim.com.br/{uf}/para-voce/internet/internet-para-casa/tim-ultrafibra"),
     ],
+    # NuCel: preço nacional numa página só; lida uma vez e registrada em todas as praças
+    "nucel": [
+        ("controle", "https://nubank.com.br/nu/nucel"),
+    ],
 }
+OP_NOME = {"vivo": "Vivo", "claro": "Claro", "tim": "TIM", "nucel": "NuCel"}
 
 
 def sem_acento(t):
@@ -136,6 +142,7 @@ def coletar(operadora, pracas):
         ctx = nav.new_context(user_agent=UA, locale="pt-BR", timezone_id="America/Sao_Paulo",
                               viewport={"width": 1366, "height": 900})
         page = ctx.new_page()
+        cache = {}  # NuCel: página nacional, lida uma vez
         for uf, cidade, ddd in pracas:
             praca_ok = True
             erro_praca = ""
@@ -164,10 +171,22 @@ def coletar(operadora, pracas):
                     continue
                 for tentativa in range(3):
                     try:
-                        status = abrir(page, url, rolar=(operadora != "tim"), espera=(0 if operadora == "tim" else 8000))
-                        reg["status"] = status
-                        html = page.content()
-                        if operadora == "vivo":
+                        if operadora == "nucel":
+                            if url not in cache:
+                                st = abrir(page, url, rolar=True, espera=8000)
+                                cache[url] = (st or 0, page.content(), page.inner_text("body"))
+                            status, html, texto = cache[url]
+                            reg.update(status=status, praca_tela="nacional (%s)" % uf)
+                            planos = extrair.nucel(texto)
+                            esperado = "nacional"
+                        else:
+                            status = abrir(page, url, rolar=(operadora != "tim"), espera=(0 if operadora == "tim" else 8000))
+                        if operadora != "nucel":
+                            reg["status"] = status
+                            html = page.content()
+                        if operadora == "nucel":
+                            pass
+                        elif operadora == "vivo":
                             reg["praca_tela"] = vivo_praca_tela(page)
                             planos = extrair.vivo(html, seg)
                             esperado = sem_acento(cidade).lower()
@@ -199,7 +218,7 @@ def coletar(operadora, pracas):
                         else:
                             reg["ok"] = True
                         extrair.chaves_unicas(planos)
-                        op_nome = {"vivo": "Vivo", "claro": "Claro", "tim": "TIM"}[operadora]
+                        op_nome = OP_NOME[operadora]
                         for pl in planos:
                             tipo, linha = taxonomia.classificar(op_nome, seg, pl["plano"], pl.get("linhas"))
                             pl.update(uf=uf, cidade=cidade, pagina=seg, url=url, tipo=tipo, linha=linha,

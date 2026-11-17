@@ -11,6 +11,8 @@ TIPOS = ["Pré", "Controle", "Lite/Anual", "Flex", "Pós", "Família", "Fibra", 
 
 # (operadora, regex no nome do plano ou "" para qualquer, página de origem ou None, tipo, linha)
 REGRAS = [
+    # NuCel (MVNO do Nubank na rede Claro): mensal, sem fidelidade, pago no app; os relatórios de mercado comparam com o Controle
+    ("NuCel", "", None, "Controle", "NuCel"),
     # TIM
     ("TIM", r"ultrafibra|ultracombo", None, "Fibra", "TIM Ultrafibra"),
     ("TIM", r"black.*fam[ií]lia|fam[ií]lia", None, "Família", "TIM Black Família"),

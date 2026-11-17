@@ -273,3 +273,17 @@ def tim_fit(html):
         out.append(registro("TIM", "lite" if anual else "controle", "%s %sGB" % (nome, m.group(3)), preco=num(m.group(5)),
                             condicao=cond[:80], gb_total=int(m.group(3)), chave=slug("tim-fit-" + nome)))
     return out
+
+
+# ---------------------------------------------------------------- NuCel
+def nucel(texto):
+    """Página de produto do NuCel (nubank.com.br/nu/nucel): 'Escolha o plano ideal' com 'NN GB por R$ NN'.
+    Preço público (sem desconto de Nubank+/Ultravioleta, que só aparece no app). Chave pela posição de preço
+    (1 = mais barato), para o histórico seguir o degrau quando a franquia muda."""
+    t = re.sub(r"\s+", " ", texto)
+    achados = sorted({(num(p), int(g)) for g, p in re.findall(r"(\d+)\s*GB\s+por\s+R\$\s*([\d.,]+)", t, re.I)})
+    out = []
+    for i, (preco, gb) in enumerate(achados, 1):
+        out.append(registro("NuCel", "controle", "NuCel %dGB" % gb, preco=preco, gb_total=gb,
+                            condicao="mês, sem fidelidade (preço sem Nubank+)", chave="nucel-plano-%d" % i))
+    return out

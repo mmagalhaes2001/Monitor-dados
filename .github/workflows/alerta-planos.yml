@@ -66,15 +66,15 @@ jobs:
         run: |
           pip install -q playwright==1.48.0 beautifulsoup4==4.12.3 lxml==5.3.0 openpyxl==3.1.5
           python -m playwright install --with-deps chromium > /dev/null
-      - name: Coletar Vivo, Claro e TIM (em paralelo)
+      - name: Coletar Vivo, Claro, TIM e NuCel (em paralelo)
         if: steps.hoje.outputs.pular == 'nao'
         run: |
           arg=""; [ -n "${{ inputs.pracas }}" ] && arg="--pracas ${{ inputs.pracas }}"
-          for op in vivo claro tim; do
+          for op in vivo claro tim nucel; do
             timeout 80m python planos/coletar.py $op $arg > /tmp/log_$op.txt 2>&1 &
           done
           wait || true
-          for op in vivo claro tim; do echo "===== $op"; cat /tmp/log_$op.txt; done
+          for op in vivo claro tim nucel; do echo "===== $op"; cat /tmp/log_$op.txt; done
       - name: Histórico, planilha e aviso
         if: (success() || failure()) && steps.hoje.outputs.pular == 'nao'   # não consolida rodada cancelada
         env:
