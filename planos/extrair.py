@@ -315,7 +315,13 @@ def tim(html, segmento_pagina, uf):
         if adicional and num(adicional) and num(adicional) != preco:
             extra["preco_alternativo"] = adicional[:120]
         if seg == "fibra":
-            vel = mega(nome) or mega(gbtxt) or mega(titulo_interno)
+            # velocidade do que aparece no card (field_titulo, ex.: "700MEGA"); o título interno às vezes está
+            # desatualizado (ex.: "600 MEGA PARAMOUNT" vendido como 700 Mega em SP, nov/26)
+            vel = mega(gbtxt) or mega(nome) or mega(titulo_interno)
+            vn = mega(nome)
+            if vel and vn and vel != vn:
+                rot = ("%g GIGA" % (vel / 1000)) if vel >= 1000 else ("%d MEGA" % vel)
+                nome = re.sub(r"\d+(?:[.,]\d+)?\s*(MEGA|GIGA)", rot, nome, count=1, flags=re.I)
             out.append(registro("TIM", "fibra", nome if re.search(r"mega|giga", nome, re.I) else "%s %s" % (nome, gbtxt), preco=preco, condicao=cond[:80],
                                 velocidade_mega=vel, beneficios="; ".join(filter(None, benef))[:500],
                                 extra=json.dumps(extra, ensure_ascii=False), chave=slug("tim-fibra-" + extra["nid"])))
