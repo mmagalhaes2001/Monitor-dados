@@ -3,10 +3,12 @@
 
 planos/painel/serie_sp.csv  – foto diária de cada plano em São Paulo (praça de referência: no móvel o preço
                               é igual em quase todas as capitais): data, operadora, tipo, linha, plano, preço, GB,
-                              Mega, R$/GB (ou R$ por 100 Mega na fibra)
+                              Mega, R$/GB (ou R$ por 100 Mega na fibra);
+                              no pré, validade em dias e R$/GB por dia (comparação entre recargas de prazos diferentes)
 planos/painel/mudancas.csv  – mudanças agrupadas por dia, operadora, plano e campo, com o nº de praças
 """
 import csv
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -43,9 +45,13 @@ def serie():
                 unid, nome_unid = round(preco / (mega / 100), 2), "R$ por 100 Mega"
             else:
                 unid, nome_unid = None, ""
+            m = re.search(r"(\d+)\s*dias", r["condicao"] or "", re.I)
+            dias = int(m.group(1)) if m and (r["tipo"] == "Pré" or r["segmento"] == "pre") else None
+            gb_dia = round(preco / gb / dias, 3) if (dias and gb) else ""
             linhas.append({"data": d, "operadora": r["operadora"], "tipo": r["tipo"] or r["segmento"],
                            "linha": r["linha"], "plano": r["plano"], "preco": preco, "gb": gb or "",
-                           "mega": mega or "", "valor_unidade": unid if unid is not None else "", "unidade": nome_unid})
+                           "mega": mega or "", "valor_unidade": unid if unid is not None else "", "unidade": nome_unid,
+                           "dias": dias or "", "rs_gb_dia": gb_dia})
     return linhas
 
 
@@ -76,7 +82,7 @@ def gravar(nome, linhas, cols):
 
 if __name__ == "__main__":
     s = serie()
-    gravar("serie_sp.csv", s, ["data", "operadora", "tipo", "linha", "plano", "preco", "gb", "mega", "valor_unidade", "unidade"])
+    gravar("serie_sp.csv", s, ["data", "operadora", "tipo", "linha", "plano", "preco", "gb", "mega", "valor_unidade", "unidade", "dias", "rs_gb_dia"])
     m = mudancas()
     gravar("mudancas.csv", m, ["data", "operadora", "tipo", "linha", "plano", "mudanca", "campo", "antes", "depois", "n_pracas", "pracas"])
     print(len(s), "linhas na série;", len(m), "mudanças agrupadas")
