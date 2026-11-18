@@ -267,3 +267,57 @@ def tempo(serie, tipos, campo="gb", tamanho=(8.2, 3.4), entrada_tipos=None):
     ax.legend([Line2D([], [], color="#777", lw=2), Line2D([], [], color="#777", lw=1.3, ls="--")],
               ["mediana dos planos", "plano de entrada"], frameon=False, fontsize=7.5, loc="best")
     return fig
+
+
+def evolucao(ls, grupo, tamanho=(6.4, 2.6)):
+    """Cesta: R$/GB (franquia de uso livre) de cada produto do grupo ao longo do tempo, em degraus
+    (preço/franquia valem até a próxima mudança). Uma cor por operadora; tracejado = variante (maior recarga,
+    plano mensal sem fidelidade). Diário até ~75 dias; depois o último valor de cada mês."""
+    import matplotlib.dates as mdates
+    sel = [l for l in ls if l["grupo"] == grupo and num(l["rs_gb_total"])]
+    if not sel:
+        return None
+    datas = sorted({l["data"] for l in sel})
+    mensal = (datetime.strptime(datas[-1], "%Y-%m-%d") - datetime.strptime(datas[0], "%Y-%m-%d")).days > 75
+    fig, ax = plt.subplots(figsize=tamanho)
+    rots = list(dict.fromkeys(l["rotulo"] for l in sel))
+    finais = []
+    for rot in rots:
+        ser = [(l["data"], num(l["rs_gb_total"])) for l in sel if l["rotulo"] == rot]
+        if mensal:
+            ult = {}
+            for d, v in ser:
+                ult[d[:7]] = (d, v)
+            ser = [ult[k] for k in sorted(ult)]
+        xs = [datetime.strptime(d, "%Y-%m-%d") for d, _ in ser]
+        ys = [v for _, v in ser]
+        op = next((o for o in OPS if rot.startswith(o)), rot.split()[0])
+        variante = "maior" in rot or "mensal" in rot.lower()
+        ax.step(xs, ys, where="post", color=COR.get(op, "#555"), linewidth=1.3 if variante else 2,
+                linestyle="--" if variante else "-")
+        ax.plot(xs[-1:], ys[-1:], "o", color=COR.get(op, "#555"), markersize=3.5)
+        finais.append((ys[-1], rot, xs[-1], COR.get(op, "#555")))
+    lo, hi = ax.get_ylim()
+    gap = (hi - lo) * 0.09 or 0.05
+    pos = []
+    for y, rot, x, cor in sorted(finais):
+        yy = max(y, pos[-1] + gap) if pos else y
+        pos.append(yy)
+        ax.annotate(" %s %s" % (rot, ("%.2f" % y).replace(".", ",")), xy=(x, y), xytext=(x, yy), fontsize=7.5,
+                    color=cor, va="center")
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.grid(color="#ececec", linewidth=0.8)
+    ax.set_axisbelow(True)
+    ax.tick_params(labelsize=8, colors="#555")
+    ax.set_ylabel("R$ por GB", fontsize=8, color="#555")
+    lo, hi = ax.get_ylim()
+    ax.set_ylim(max(0, lo - (hi - lo) * 0.25), hi + (hi - lo) * 0.15)
+    if mensal:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%m/%y"))
+        ax.xaxis.set_major_locator(mdates.MonthLocator())
+    else:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%d/%m"))
+        ax.xaxis.set_major_locator(mdates.DayLocator(interval=max(1, len(datas) // 7)))
+    x0, x1 = ax.get_xlim()
+    ax.set_xlim(x0, x1 + (x1 - x0) * 0.35)
+    return fig

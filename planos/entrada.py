@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Acompanhamento dos planos de entrada (SP), no formato de tabela usado no mercado:
-Controle de entrada (Vivo Controle, Claro Controle, TIM Controle, NuCel) e Digital de entrada (Vivo Lite,
-Claro Flex, TIM Fit Anual). Para cada coleta: franquia base (recorrente), bônus, total (de uso livre),
+"""Cesta mensal de produtos (SP), no formato dos trackers de mercado: o mais barato de cada operadora em
+Pré (por validade: 30, 22–25, 17–20 e 15 dias), Controle de entrada (Vivo, Claro, TIM, NuCel), Digital de
+entrada (Vivo Lite, Claro Flex, TIM Fit; anual e mensal) e Pós de entrada (Vivo, Claro, TIM Black). Para cada coleta: franquia base (recorrente), bônus, total (de uso livre),
 preço, R$/GB total, R$/GB base e se mudou desde a coleta anterior.
 
 Plano de entrada = o mais barato da linha comercial na praça de referência (SP).
@@ -15,22 +15,43 @@ from pathlib import Path
 
 AQUI = Path(__file__).parent
 sys.path.insert(0, str(AQUI))
-from historico import COLS, COLS_LOG, HIST, LOG, ler  # noqa: E402
+from historico import COLS, COLS_LOG, HIST, INCLUSOES, LOG, ler  # noqa: E402
 from taxonomia import RE_CARIMBADO, gb_livre  # noqa: E402
 
 REF = "SP"
 SAIDA = AQUI / "dados" / "entrada.csv"
-# grupo, rótulo da coluna, operadora, linha comercial (regex), excluir plano (regex)
+# Cesta mensal (formato dos trackers de mercado): o mais barato de cada operadora em cada categoria.
+# grupo, rótulo, operadora, linha comercial (regex), excluir plano (regex), validade em dias (mín, máx) ou None,
+# critério ("barato" = menor preço; "mais_gb" = maior franquia na faixa)
 PLANOS = [
-    ("Controle de entrada", "Vivo Controle", "Vivo", r"^Vivo Controle$", r"youtube|netflix|max|disney|premium"),
-    ("Controle de entrada", "Claro Controle", "Claro", r"^Claro Controle$", r"geforce"),
-    ("Controle de entrada", "TIM Controle", "TIM", r"^TIM Controle$", r"^$"),
-    ("Controle de entrada", "NuCel", "NuCel", r"^NuCel$", r"^$"),
-    ("Digital de entrada", "Vivo Lite", "Vivo", r"^Vivo Lite", r"mensal"),
-    ("Digital de entrada", "Claro Flex", "Claro", r"^Claro Flex", r"^$"),
-    ("Digital de entrada", "TIM Fit Anual", "TIM", r"^TIM Controle Fit Anual", r"^$"),
+    ("Pré 30 dias", "Vivo", "Vivo", r"^Vivo Pré", r"^$", (28, 31), "barato"),
+    ("Pré 30 dias", "Vivo (maior)", "Vivo", r"^Vivo Pré", r"^$", (28, 31), "mais_gb"),
+    ("Pré 30 dias", "Claro", "Claro", r"^Claro Pré", r"^$", (28, 31), "barato"),
+    ("Pré 30 dias", "TIM", "TIM", r"^TIM Pré", r"^$", (28, 31), "barato"),
+    ("Pré 22–25 dias", "Vivo", "Vivo", r"^Vivo Pré", r"^$", (21, 26), "barato"),
+    ("Pré 22–25 dias", "Claro", "Claro", r"^Claro Pré", r"^$", (21, 26), "barato"),
+    ("Pré 22–25 dias", "TIM", "TIM", r"^TIM Pré", r"^$", (21, 26), "barato"),
+    ("Pré 17–20 dias", "Vivo", "Vivo", r"^Vivo Pré", r"^$", (16, 20), "barato"),
+    ("Pré 17–20 dias", "Claro", "Claro", r"^Claro Pré", r"^$", (16, 20), "barato"),
+    ("Pré 17–20 dias", "TIM", "TIM", r"^TIM Pré", r"^$", (16, 20), "barato"),
+    ("Pré 15 dias", "Vivo", "Vivo", r"^Vivo Pré", r"^$", (14, 15), "barato"),
+    ("Pré 15 dias", "Claro", "Claro", r"^Claro Pré", r"^$", (14, 15), "barato"),
+    ("Pré 15 dias", "TIM", "TIM", r"^TIM Pré", r"^$", (14, 15), "barato"),
+    ("Controle de entrada", "Vivo Controle", "Vivo", r"^Vivo Controle$", r"youtube|netflix|max|disney|premium|amazon|educa|m[uú]sica|sa[uú]de|entret", None, "barato"),
+    ("Controle de entrada", "Claro Controle", "Claro", r"^Claro Controle$", r"geforce", None, "barato"),
+    ("Controle de entrada", "TIM Controle", "TIM", r"^TIM Controle$", r"^$", None, "barato"),
+    ("Controle de entrada", "NuCel", "NuCel", r"^NuCel$", r"^$", None, "barato"),
+    ("Digital de entrada", "Vivo Lite", "Vivo", r"^Vivo Lite", r"mensal", None, "barato"),
+    ("Digital de entrada", "Claro Flex", "Claro", r"^Claro Flex", r"mega", None, "barato"),
+    ("Digital de entrada", "TIM Fit Anual", "TIM", r"^TIM Controle Fit Anual", r"^$", None, "barato"),
+    ("Digital de entrada", "Vivo Lite mensal", "Vivo", r"^Vivo Lite", r"^(?!.*mensal)", None, "barato"),
+    ("Digital de entrada", "TIM Fit Mensal", "TIM", r"^TIM Controle Fit$", r"^$", None, "barato"),
+    ("Pós de entrada", "Vivo Pós", "Vivo", r"^Vivo Pós$", r"^$", None, "barato"),
+    ("Pós de entrada", "Claro Pós", "Claro", r"^Claro Pós$", r"geforce", None, "barato"),
+    ("Pós de entrada", "TIM Black", "TIM", r"^TIM Black$", r"^$", None, "barato"),
 ]
-COLS_E = ["data", "grupo", "rotulo", "operadora", "plano", "chave", "preco", "gb_base", "gb_bonus", "gb_total",
+GRUPOS = list(dict.fromkeys(p[0] for p in PLANOS))
+COLS_E = ["data", "grupo", "rotulo", "dias", "operadora", "plano", "chave", "preco", "gb_base", "gb_bonus", "gb_total",
           "gb_redes", "rs_gb_total", "rs_gb_base", "condicao", "mudou"]
 
 
@@ -71,42 +92,62 @@ def decompor(r):
     return base, bonus, redes
 
 
-def escolher(vig, op, re_linha, re_excl):
+def dias_de(r):
+    m = re.search(r"(\d+)\s*dias", r["condicao"] or "", re.I)
+    return int(m.group(1)) if m else None
+
+
+def escolher(vig, op, re_linha, re_excl, faixa=None, criterio="barato"):
     cand = [r for r in vig if r["operadora"] == op and re.search(re_linha, r["linha"] or "", re.I)
             and not re.search(re_excl, r["plano"], re.I) and f(r["preco"])]
-    return min(cand, key=lambda r: f(r["preco"])) if cand else None
+    if faixa:
+        cand = [r for r in cand if dias_de(r) and faixa[0] <= dias_de(r) <= faixa[1]]
+    if not cand:
+        return None
+    if criterio == "mais_gb":
+        return max(cand, key=lambda r: (f(r["gb_total"]) or 0, -f(r["preco"])))
+    return min(cand, key=lambda r: (f(r["preco"]), -(f(r["gb_total"]) or 0)))
 
 
 def gerar():
     hist = ler(HIST, COLS)
     datas = sorted({r["data"] for r in ler(LOG, COLS_LOG) if r["ok"] == "sim" and r["uf"] == REF})
-    out, anterior = [], {}
+    out, anterior, reinicio = [], {}, {}
     for d in datas:
         vig = [r for r in hist if r["uf"] == REF and r["inicio"] <= d and not (r["fim"] and r["fim"] < d)]
-        for grupo, rot, op, re_linha, re_excl in PLANOS:
-            r = escolher(vig, op, re_linha, re_excl)
+        for grupo, rot, op, re_linha, re_excl, faixa, criterio in PLANOS:
+            r = escolher(vig, op, re_linha, re_excl, faixa, criterio)
             if not r:
                 continue
             preco = f(r["preco"])
             base, bonus, redes = decompor(r)
             total = (base + bonus) if base is not None else gb_livre(r["gb_total"], r["gb_detalhe"])
-            linha = {"data": d, "grupo": grupo, "rotulo": rot, "operadora": op, "plano": r["plano"], "chave": r["chave"],
+            linha = {"data": d, "grupo": grupo, "rotulo": rot, "dias": dias_de(r) or "", "operadora": op, "plano": r["plano"], "chave": r["chave"],
                      "preco": preco, "gb_base": base if base is not None else "", "gb_bonus": bonus if bonus is not None else "",
                      "gb_total": total or "", "gb_redes": redes or "",
                      "rs_gb_total": round(preco / total, 2) if total else "",
                      "rs_gb_base": round(preco / base, 2) if base else "", "condicao": r["condicao"]}
-            a = anterior.get(rot)
+            chave_rot = (grupo, rot)
+            a = anterior.get(chave_rot)
             dif = []
+            incluido = any(op == o and linha["chave"].startswith(pref) and d <= dt for (o, pref), dt in INCLUSOES.items())
+            if a and a["chave"] != linha["chave"] and incluido:
+                a = None  # plano que já existia e só passou a ser lido agora: a série recomeça aqui, sem mudança
+                reinicio[chave_rot] = d
             if a:
                 if a["chave"] != linha["chave"]:
-                    dif.append("plano de entrada trocou: %s → %s" % (a["plano"], linha["plano"]))
+                    if a["preco"] == linha["preco"]:
+                        dif.append("mesmo plano com franquia nova (no site: %s → %s)" % (a["plano"], linha["plano"]))
+                    else:
+                        dif.append("plano de entrada trocou: %s → %s" % (a["plano"], linha["plano"]))
                 for campo, nome in (("preco", "preço"), ("gb_base", "base"), ("gb_bonus", "bônus"), ("gb_total", "total"),
                                     ("gb_redes", "redes sociais")):
                     if str(a[campo]) != str(linha[campo]):
                         dif.append("%s %s → %s" % (nome, a[campo] or "–", linha[campo] or "–"))
             linha["mudou"] = "; ".join(dif)
-            anterior[rot] = linha
+            anterior[chave_rot] = linha
             out.append(linha)
+    out = [l for l in out if l["data"] >= reinicio.get((l["grupo"], l["rotulo"]), "")]
     SAIDA.parent.mkdir(exist_ok=True)
     with open(SAIDA, "w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=COLS_E)

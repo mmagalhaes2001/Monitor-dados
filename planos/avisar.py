@@ -66,20 +66,18 @@ def email(titulo, msg):
 
 
 def texto_entrada():
-    """Planos de entrada (Controle e Digital, SP): mudou ou não desde a coleta anterior."""
+    """Cesta de planos (o mais barato de cada operadora por categoria, SP): mudou ou não desde a coleta anterior."""
     try:
         import entrada
         ls = entrada.gerar()
         ult = max(l["data"] for l in ls)
         dia = [l for l in ls if l["data"] == ult]
-        mud = ["%s: %s" % (l["rotulo"], l["mudou"]) for l in dia if l["mudou"]]
+        mud = ["%s – %s: %s" % (l["grupo"], l["rotulo"], l["mudou"]) for l in dia if l["mudou"]]
         if not mud:
-            return "Planos de entrada (SP): nenhum mudou (%s)." % ", ".join(
-                "%s R$%s/%sGB" % (l["rotulo"], ("%.2f" % float(l["preco"])).replace(".", ","), ("%g" % float(l["gb_total"])) if l["gb_total"] else "?")
-                for l in dia)
-        return "Planos de entrada (SP) que mudaram:\n" + "\n".join(mud)
+            return "Cesta de %d produtos (pré, controle, digital, pós; SP): nenhum mudou." % len(dia)
+        return "Cesta (SP) — mudou:\n" + "\n".join(mud)
     except Exception as e:  # o aviso principal não pode falhar por causa deste trecho
-        return "Planos de entrada: não calculado (%s)" % e
+        return "Cesta de planos: não calculada (%s)" % e
 
 
 def main():

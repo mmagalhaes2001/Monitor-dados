@@ -74,47 +74,49 @@ def aba_entrada(wb):
         return
     ws = wb.create_sheet("Planos de entrada")
     ult = max(l["data"] for l in ls)
-    hoje = {l["rotulo"]: l for l in ls if l["data"] == ult}
+    hoje = {(l["grupo"], l["rotulo"]): l for l in ls if l["data"] == ult}
     dt = lambda d: "%s/%s/%s" % (d[8:], d[5:7], d[:4])
-    # desde quando cada plano está na configuração atual
     desde = {}
-    for rot in hoje:
-        seq = [l for l in ls if l["rotulo"] == rot]
+    for k in hoje:
+        seq = [l for l in ls if (l["grupo"], l["rotulo"]) == k]
         d0 = seq[-1]["data"]
-        for l in reversed(seq[:-1]):
-            if l["mudou"] and l is not seq[-1]:
-                pass
-            nxt = seq[seq.index(l) + 1]
-            if nxt["mudou"]:
+        for i in range(len(seq) - 2, -1, -1):
+            if seq[i + 1]["mudou"]:
                 break
-            d0 = l["data"]
-        desde[rot] = d0
-    ws.append(["Planos de entrada — São Paulo, coleta de %s" % dt(ult)])
+            d0 = seq[i]["data"]
+        desde[k] = d0
+    ws.append(["Cesta de planos (o mais barato de cada operadora por categoria) — São Paulo, coleta de %s" % dt(ult)])
     ws["A1"].font = Font(bold=True, size=13)
-    ws.append(["Plano de entrada = o mais barato da linha comercial em SP. Total = base + bônus de uso livre "
-               "(sem os GB só de redes sociais/apps, como nos relatórios de mercado)."])
+    ws.append(["Total = base + bônus de uso livre (sem os GB só de redes sociais/apps, mostrados à parte). "
+               "Pré: um por faixa de validade. Controle e Pós: fatura, sem planos com streaming/serviço embutido "
+               "(exceto Vivo Pós, que sempre vem com um). Digital: cartão (anual e mensal)."])
     ws["A2"].font = Font(italic=True, color="666666")
     linha = 4
-    metricas = [("Plano no site", "plano"), ("Franquia base / recorrente (GB)", "gb_base"), ("Bônus de uso livre (GB)", "gb_bonus"),
-                ("Total de uso livre (GB)", "gb_total"), ("Só redes sociais/apps (GB)", "gb_redes"), ("Preço mensal (R$)", "preco"),
-                ("R$/GB total", "rs_gb_total"), ("R$/GB base", "rs_gb_base"), ("Condição", "condicao"),
-                ("Mudou desde a coleta anterior?", "mudou"), ("Nesta configuração desde", "desde")]
-    for grupo in ["Controle de entrada", "Digital de entrada"]:
-        rots = [p[1] for p in entrada.PLANOS if p[0] == grupo and p[1] in hoje]
+    metricas = [("Plano no site", "plano"), ("Validade (dias)", "dias"), ("Franquia base / recorrente (GB)", "gb_base"),
+                ("Bônus de uso livre (GB)", "gb_bonus"), ("Total de uso livre (GB)", "gb_total"),
+                ("Só redes sociais/apps (GB)", "gb_redes"), ("Preço (R$)", "preco"), ("R$/GB total", "rs_gb_total"),
+                ("R$/GB base", "rs_gb_base"), ("Condição", "condicao"), ("Mudou desde a coleta anterior?", "mudou"),
+                ("Nesta configuração desde", "desde")]
+    for grupo in entrada.GRUPOS:
+        rots = [p[1] for p in entrada.PLANOS if p[0] == grupo and (grupo, p[1]) in hoje]
+        if not rots:
+            continue
         ws.cell(linha, 1, grupo).font = CAB
         ws.cell(linha, 1).fill = FUNDO
         for j, rot in enumerate(rots, 2):
             c = ws.cell(linha, j, rot)
             c.font, c.fill = CAB, FUNDO
         for nome, campo in metricas:
+            if campo == "dias" and not grupo.startswith("Pré"):
+                continue
             linha += 1
             ws.cell(linha, 1, nome).font = Font(bold=True)
             for j, rot in enumerate(rots, 2):
-                l = hoje[rot]
+                l = hoje[(grupo, rot)]
                 if campo == "mudou":
                     v = l["mudou"] or "não"
                 elif campo == "desde":
-                    v = dt(desde[rot])
+                    v = dt(desde[(grupo, rot)])
                 else:
                     v = f(l[campo]) if campo not in ("plano", "condicao") else l[campo]
                 c = ws.cell(linha, j, v)
@@ -125,21 +127,21 @@ def aba_entrada(wb):
                     c.font = Font(bold=True, color="B45309")
         linha += 3
     ws.column_dimensions["A"].width = 32
-    for j in range(2, 7):
+    for j in range(2, 8):
         ws.column_dimensions[get_column_letter(j)].width = 24
-    # histórico
     ws.cell(linha, 1, "Histórico por coleta").font = Font(bold=True, size=12)
     linha += 1
-    cab = ["Data", "Grupo", "Plano de entrada", "Plano no site", "Preço (R$)", "Base (GB)", "Bônus (GB)", "Total (GB)",
-           "Redes/apps (GB)", "R$/GB total", "R$/GB base", "Mudou"]
+    cab = ["Data", "Categoria", "Produto", "Plano no site", "Validade (dias)", "Preço (R$)", "Base (GB)", "Bônus (GB)",
+           "Total (GB)", "Redes/apps (GB)", "R$/GB total", "R$/GB base", "Mudou"]
     for j, c in enumerate(cab, 1):
         x = ws.cell(linha, j, c)
         x.font, x.fill = CAB, FUNDO
-    for l in sorted(ls, key=lambda l: (l["data"], l["grupo"]), reverse=True):
+    ordem = {g: i for i, g in enumerate(entrada.GRUPOS)}
+    for l in sorted(ls, key=lambda l: (l["data"], -ordem[l["grupo"]]), reverse=True):
         linha += 1
-        for j, v in enumerate([dt(l["data"]), l["grupo"], l["rotulo"], l["plano"], f(l["preco"]), f(l["gb_base"]),
-                               f(l["gb_bonus"]), f(l["gb_total"]), f(l["gb_redes"]), f(l["rs_gb_total"]),
-                               f(l["rs_gb_base"]), l["mudou"]], 1):
+        for j, v in enumerate([dt(l["data"]), l["grupo"], l["rotulo"], l["plano"], f(l["dias"]), f(l["preco"]),
+                               f(l["gb_base"]), f(l["gb_bonus"]), f(l["gb_total"]), f(l["gb_redes"]),
+                               f(l["rs_gb_total"]), f(l["rs_gb_base"]), l["mudou"]], 1):
             ws.cell(linha, j, v)
 
 

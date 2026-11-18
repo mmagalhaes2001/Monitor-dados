@@ -192,11 +192,13 @@ def gerar():
                          "<div class='nota'>%s · %s</div></div>" % (COR[op], op, nome_c, real(b["preco"]), dif, e(xs), e(b["plano"])))
         mapas.append("<h3>%s</h3><div class='cards'>%s</div>%s" % (e(tit), "".join(cards), graficos.svg(fig)))
     # R$/GB no tempo
+    import entrada
+    ces = entrada.gerar()
     tempos = []
-    for tit, tipos_t, campo in graficos.TEMPO:
-        f = graficos.tempo(serie, tipos_t, campo, tamanho=(7.5, 3.0))
+    for grupo in entrada.GRUPOS:
+        f = graficos.evolucao(ces, grupo, tamanho=(7.0, 2.8))
         if f:
-            tempos.append("<div class='tempo'><h3>%s</h3>%s</div>" % (e(tit), graficos.svg(f)))
+            tempos.append("<div class='tempo'><h3>%s</h3>%s</div>" % (e(grupo), graficos.svg(f)))
 
     # pré: R$/GB por dia
     pre = sorted([r for r in serie if r["data"] == d1 and r["tipo"] == "Pré" and r.get("rs_gb_dia")],
@@ -286,8 +288,8 @@ footer{{color:#888;font-size:12px;margin:30px 0 10px}}
 <h2>Mapa de preços em SP: hoje × {dia(d0)}</h2>
 <p class="nota">Cada ponto é um plano. Ponto vazado = posição em {dia(d0)}; a seta mostra para onde o plano foi (direita = mais GB, cima = mais caro). Anel = plano novo. Nos cartões, o plano mais barato de cada operadora no grupo (no pré, recarga de 30 dias).</p>
 {"".join(mapas)}
-<h2>R$ por GB ao longo do tempo (SP)</h2>
-<p class="nota">{e(graficos.NOTA_TEMPO)}</p>
+<h2>Cesta: R$ por GB de cada produto ao longo do tempo (SP)</h2>
+<p class="nota">O mais barato de cada operadora por categoria (pré por validade, Controle, Digital, Pós). Franquia de uso livre. Degraus: o valor vale até a próxima mudança; tracejado = variante (maior recarga de 30 dias; Digital mensal sem fidelidade). A tabela completa está na aba "Planos de entrada" da planilha.</p>
 <div class="tempos">{"".join(tempos)}</div>
 
 <h3>Pré: custo por GB por dia de validade (recargas de prazos diferentes)</h3>

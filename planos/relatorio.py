@@ -191,15 +191,46 @@ def gerar(arg=None):
             t=e(tit), m=e(nome_mes), frase=e(frase), nc=e(nome_c), cards="".join(cards), svg=graficos.svg(fig),
             d0=dia(d0), d1=dia(d1), lista=lista))
 
-    # R$/GB no tempo
-    tempos = []
-    for tit, tipos_t, campo in graficos.TEMPO:
-        f = graficos.tempo(serie, tipos_t, campo, tamanho=(6.4, 2.05))
-        if f:
-            tempos.append("<div><h3>%s</h3>%s</div>" % (e(tit), graficos.svg(f).replace('class="graf"', 'class="g2"')))
-    paginas.append("""<section class="pg"><div class="topo"><span>R$ por GB no tempo</span><span>{m}</span></div>
-<h2>R$ por GB (e por 100 Mega na fibra) ao longo do tempo, por operadora</h2>
-<p class="nota">{n}</p><div class="grade">{t}</div></section>""".format(m=e(nome_mes), n=e(graficos.NOTA_TEMPO), t="".join(tempos)))
+    # Cesta: tabela início × fim do mês e R$/GB ao longo do tempo por categoria
+    import entrada
+    ces = entrada.gerar()
+    c0 = {(l["grupo"], l["rotulo"]): l for l in ces if l["data"] <= d0}
+    c0 = {k: v for k, v in c0.items()}
+    for l in ces:  # produto que entrou no mês: compara com a 1ª leitura
+        if l["data"] in no_mes and (l["grupo"], l["rotulo"]) not in c0:
+            c0[(l["grupo"], l["rotulo"])] = l
+    c1 = {(l["grupo"], l["rotulo"]): l for l in ces if l["data"] <= d1}
+    linhas_c, n_mud = [], 0
+    for grupo in entrada.GRUPOS:
+        for p_ in entrada.PLANOS:
+            k = (grupo, p_[1])
+            if p_[0] != grupo or k not in c1:
+                continue
+            a, b = c0.get(k, c1[k]), c1[k]
+            mudou = (a["preco"], a["gb_total"], a["chave"]) != (b["preco"], b["gb_total"], b["chave"])
+            n_mud += mudou
+            ra, rb = num(a["rs_gb_total"]), num(b["rs_gb_total"])
+            var = "%+.0f%%" % (100 * (rb / ra - 1)) if (ra and rb and ra != rb) else "–"
+            seta = lambda x, y, fmt: (fmt(x) if x == y else "%s → %s" % (fmt(x), fmt(y)))
+            linhas_c.append("<tr%s><td>%s</td><td style='color:%s'><b>%s</b></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % (
+                " class='mud'" if mudou else "", e(grupo), COR.get(p_[2], "#333"), e(p_[1]), e(b["plano"][:40]),
+                seta(num(a["preco"]), num(b["preco"]), rs), seta(num(a["gb_total"]), num(b["gb_total"]), lambda v: "%g GB" % v if v else "–"),
+                seta(ra, rb, lambda v: br("%.2f" % v) if v else "–"), var))
+    paginas.append("""<section class="pg"><div class="topo"><span>Cesta de produtos</span><span>{m}</span></div>
+<h2>{f}</h2><p class="nota">O mais barato de cada operadora por categoria, em SP: {d0} → {d1}. Franquia = uso livre (sem GB só de redes sociais). Linhas destacadas mudaram no mês.</p>
+<table class="peq"><tr><th>Categoria</th><th>Produto</th><th>Plano no site</th><th>Preço</th><th>Franquia</th><th>R$/GB</th><th>Var. R$/GB</th></tr>{l}</table></section>""".format(
+        m=e(nome_mes), d0=dia(d0), d1=dia(d1), l="".join(linhas_c),
+        f=e("%d de %d produtos da cesta mudaram no mês" % (n_mud, len(linhas_c)) if n_mud else "Nenhum produto da cesta mudou no mês")))
+    blocos = []
+    for grupo in entrada.GRUPOS:
+        fg = graficos.evolucao(ces, grupo, tamanho=(6.4, 2.05))
+        if fg:
+            blocos.append("<div><h3>%s</h3>%s</div>" % (e(grupo), graficos.svg(fg).replace('class="graf"', 'class="g2"')))
+    for k in range(0, len(blocos), 4):
+        paginas.append("""<section class="pg"><div class="topo"><span>Cesta: R$/GB no tempo</span><span>{m}</span></div>
+<h2>R$ por GB de cada produto da cesta ao longo do tempo{c}</h2>
+<p class="nota">Degraus: o valor vale até a próxima mudança. Tracejado = variante (maior recarga de 30 dias; Digital mensal sem fidelidade). Diário até ~75 dias de histórico, depois mensal.</p>
+<div class="grade">{b}</div></section>""".format(m=e(nome_mes), c=" (cont.)" if k else "", b="".join(blocos[k:k + 4])))
 
     # pré por dia
     pre = sorted([r for r in serie if r["data"] == d1 and r["tipo"] == "Pré" and r.get("rs_gb_dia")],
@@ -303,7 +334,7 @@ h1{{font-size:24px;margin:30px 0 8px}} h2{{font-size:17px;font-weight:600;margin
 .card .big{{font-size:17px;font-weight:600}} .var{{font-size:11px;color:#b45309;margin-left:4px}}
 .graf{{width:62%;height:auto;float:left;margin-right:12px}} h3+ul{{font-size:11px}}
 table{{border-collapse:collapse;width:100%;font-size:11px}} th,td{{border-bottom:1px solid #eee;padding:3px 6px;text-align:left;vertical-align:top}}
-th{{background:#f3f3f3}} table.peq{{font-size:9.5px}}
+th{{background:#f3f3f3}} tr.mud td{{background:#fff7ed}} table.peq{{font-size:9.5px}}
 .capa h3{{margin-top:18px}} .grade{{display:grid;grid-template-columns:1fr 1fr;gap:2px 14px}} .grade h3{{margin:2px 0}}
 .g2{{width:100%;height:auto}}
 </style></head><body>{c}{p}</body></html>""".format(m=e(nome_mes), c=capa, p="".join(paginas))
