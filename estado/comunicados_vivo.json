@@ -17,7 +17,7 @@
    "status": 200
   },
   "/para-voce/comunicados/regulatorios": {
-   "comunicados": 274,
+   "comunicados": 275,
    "status": 200
   },
   "/robots.txt": {
@@ -4362,6 +4362,14 @@
    "titulo": "Nova fatura dos produtos Vivo para sua casa (Telefone, internet ou TV)",
    "visto_em": "2026-11-16 10:41"
   },
+  "https://www.vivo.com.br/para-voce/comunicados/regulatorios/novas-regras-para-prevencao-de-uso-abusivo-de-chamadas-telefonicas": {
+   "base": false,
+   "publicado": "18/11/2026",
+   "resumo": "Verificamos que você está em São Paulo (SP). Quer conferir as ofertas da Vivo pra essa região? Baixe o App Vivo Produtos e Serviços  Ajuda  Por que Vivo  Melhores Ofertas Novas regras da Anatel para prevenção de uso abusivo de chamadas",
+   "status": 200,
+   "titulo": "Novas regras da Anatel para prevenção de uso abusivo de chamadas",
+   "visto_em": "2026-11-18 16:00"
+  },
   "https://www.vivo.com.br/para-voce/comunicados/regulatorios/novos-precos-vivo-easy": {
    "base": true,
    "publicado": "29/12/2023",
@@ -4653,5 +4661,5 @@
  },
  "ok": true,
  "sem_detalhe": 260,
- "ultima_checagem": "2026-11-17 23:34"
+ "ultima_checagem": "2026-11-18 16:00"
 }
