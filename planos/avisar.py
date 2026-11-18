@@ -65,6 +65,23 @@ def email(titulo, msg):
         print("falha no e-mail:", str(e)[:150])
 
 
+def texto_entrada():
+    """Planos de entrada (Controle e Digital, SP): mudou ou não desde a coleta anterior."""
+    try:
+        import entrada
+        ls = entrada.gerar()
+        ult = max(l["data"] for l in ls)
+        dia = [l for l in ls if l["data"] == ult]
+        mud = ["%s: %s" % (l["rotulo"], l["mudou"]) for l in dia if l["mudou"]]
+        if not mud:
+            return "Planos de entrada (SP): nenhum mudou (%s)." % ", ".join(
+                "%s R$%s/%sGB" % (l["rotulo"], ("%.2f" % float(l["preco"])).replace(".", ","), ("%g" % float(l["gb_total"])) if l["gb_total"] else "?")
+                for l in dia)
+        return "Planos de entrada (SP) que mudaram:\n" + "\n".join(mud)
+    except Exception as e:  # o aviso principal não pode falhar por causa deste trecho
+        return "Planos de entrada: não calculado (%s)" % e
+
+
 def main():
     teste = "--teste" in sys.argv
     repescagem = "--repescagem" in sys.argv  # rodada que só recoletou o que tinha falhado mais cedo
@@ -83,7 +100,7 @@ def main():
     elif linhas:
         titulo = "%sPlanos: %d mudança%s (%s)" % (pre, len(linhas), "s" if len(linhas) > 1 else "", hoje)
         msg = "\n".join(linhas[:25]) + ("\n… e mais %d (ver aba Mudanças)" % (len(linhas) - 25) if len(linhas) > 25 else "")
-        msg += "\n\nCobertura: %s" % cobertura
+        msg += "\n\n" + texto_entrada() + "\n\nCobertura: %s" % cobertura
         ntfy(titulo, msg, prioridade="high", tags="rotating_light")
         email(titulo, msg)
     elif repescagem:
@@ -92,7 +109,7 @@ def main():
             ntfy(titulo, "Sem mudança. Recoletado: %s" % cobertura, prioridade="low", tags="ok", anexo=False)
     else:
         titulo = "%sPlanos: sem mudança (%s)" % (pre, hoje)
-        ntfy(titulo, "Robô ok. Cobertura: %s" % cobertura, prioridade="low", tags="ok", anexo=False)
+        ntfy(titulo, "Robô ok.\n%s\nCobertura: %s" % (texto_entrada(), cobertura), prioridade="low", tags="ok", anexo=False)
         if teste:
             email(titulo, "Robô ok. Cobertura: %s" % cobertura)
     if alertas:
