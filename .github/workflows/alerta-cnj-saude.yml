@@ -107,6 +107,23 @@ jobs:
                 if python cnj/saude_dados.py --historico > foto.json && python cnj/saude_compara.py foto.json "$FOTOS" > cmp.json; then
                   ev=$(campo evento)
                   dp=$(python -c "import json,re;t=json.load(open('foto.json'))['data_texto'];d=re.search(r'(\d{2})/(\d{2})/(\d{4})',t).groups();print(f'{d[2]}-{d[1]}-{d[0]}')")
+                  # Painel publicado mas com números em branco (o CNJ às vezes publica antes de carregar a base):
+                  # não grava a foto; avisa uma vez e segue checando até os números aparecerem.
+                  vazio=$(python -c "import json;d=json.load(open('foto.json'));print('1' if any(v is None for v in d['cards'].values()) or len(d['mensal'])<24 else '')")
+                  if [ -n "$vazio" ]; then
+                    if [ "$(cat estado/cnj-saude-branco.txt 2>/dev/null)" != "$dp" ]; then
+                      push "CNJ saúde: painel publicado ($dp), mas números em branco" default hourglass \
+                        "O CNJ publicou o painel com data nova, mas os cards e a série estão vazios (Blank) no próprio painel. Sigo checando a cada 10 min e mando os números assim que aparecerem." "$LINK"
+                      echo "$dp" > estado/cnj-saude-branco.txt
+                      git add estado/cnj-saude-branco.txt
+                      git commit -q -m "CNJ saúde: publicação $dp ainda sem números" || true
+                      git pull --rebase -q || true
+                      git push -q || echo "falha ao salvar"
+                    fi
+                    echo "$agora painel com números em branco; não gravei a foto."
+                    [ "$(date +%s)" -ge "$fim" ] && break
+                    sleep "$INTERVALO"; continue
+                  fi
                   cp foto.json "$FOTOS/${dp}_lido-$(TZ=America/Sao_Paulo date +%Y-%m-%d-%H%M).json"
                   python cnj/saude_planilha.py "$FOTOS" "$PLANILHA"
                   if [ "$ev" = "atualizacao" ]; then
