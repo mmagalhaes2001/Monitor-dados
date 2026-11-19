@@ -62,13 +62,40 @@ def alias_de(q, entidade):
     return nome
 
 
+_VALOR = {}
+
+
+def valor_materia(materia):
+    """Grafia do valor no modelo. O CNJ já usou ' Saúde Suplementar' (com espaço no começo) e,
+    desde a publicação de 19/11/2026, 'Saúde Suplementar'. Testa as grafias e usa a que tem dados."""
+    if materia in _VALOR:
+        return _VALOR[materia]
+    nome = CARDS["casos_novos_no_ano"]
+    for v in (materia, " " + materia, materia.strip()):
+        t = copy.deepcopy(TPL[nome])
+        q = t["query"]["Query"]["Commands"][0]["SemanticQueryDataShapeCommand"]["Query"]
+        for w in q.get("Where", []):
+            cond = w["Condition"].get("In")
+            if cond and cond["Expressions"][0].get("Column", {}).get("Property") == COL_MATERIA:
+                cond["Values"] = [[{"Literal": {"Value": f"'{v}'"}}]]
+        try:
+            rs = linhas(*consultar(t))
+        except Exception:
+            continue
+        if rs and rs[0].get(nome) is not None:
+            _VALOR[materia] = v
+            return v
+    _VALOR[materia] = " " + materia
+    return _VALOR[materia]
+
+
 def com_materia(nome, materia):
     t = copy.deepcopy(TPL[nome])
     q = t["query"]["Query"]["Commands"][0]["SemanticQueryDataShapeCommand"]["Query"]
     for w in q.get("Where", []):
         cond = w["Condition"].get("In")
         if cond and cond["Expressions"][0].get("Column", {}).get("Property") == COL_MATERIA:
-            cond["Values"] = [[{"Literal": {"Value": f"' {materia}'"}}]]
+            cond["Values"] = [[{"Literal": {"Value": f"'{valor_materia(materia)}'"}}]]
     return t
 
 
