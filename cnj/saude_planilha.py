@@ -20,7 +20,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from saude_compara import CAMPOS_MES, ROTULO, revisoes  # noqa: E402
+from saude_compara import CAMPOS_MES, ROTULO, revisoes, valida  # noqa: E402
 
 FONTE = "Arial"
 F = Font(name=FONTE, size=10)
@@ -50,6 +50,7 @@ def cabecalho(ws, linha, nomes, larguras=None):
 
 def main(pasta, saida):
     fotos = [(p.stem, json.loads(p.read_text())) for p in sorted(pathlib.Path(pasta).glob("*.json"))]
+    fotos = [(n, d) for n, d in fotos if valida(d)]
     if not fotos:
         raise SystemExit("sem fotos")
     nome_ult, ult = fotos[-1]

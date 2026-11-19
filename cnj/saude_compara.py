@@ -20,9 +20,15 @@ ROTULO = {"casos_novos": "Casos novos", "baixados": "Baixados", "pendentes": "Pe
           "tempo_medio_primeira_baixa_dias": "T. médio 1ª baixa"}
 
 
+def valida(d):
+    """Foto com números (o painel às vezes é publicado em branco)."""
+    return all(v is not None for v in d.get("cards", {}).values()) and len(d.get("mensal", [])) >= 24
+
+
 def ultima_foto(pasta):
-    fotos = sorted(pathlib.Path(pasta).glob("*.json"))
-    return (json.loads(fotos[-1].read_text()), fotos[-1].name) if fotos else (None, None)
+    fotos = [(p, json.loads(p.read_text())) for p in sorted(pathlib.Path(pasta).glob("*.json"))]
+    fotos = [(p, d) for p, d in fotos if valida(d)]
+    return (fotos[-1][1], fotos[-1][0].name) if fotos else (None, None)
 
 
 def data_painel(texto):
