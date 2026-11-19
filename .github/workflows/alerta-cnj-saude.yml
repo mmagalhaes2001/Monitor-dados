@@ -93,7 +93,7 @@ jobs:
           }
           campo() { python -c "import json;print(json.load(open('cmp.json'))['$1'])"; }
 
-          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""; ultimo_conserto=""; playwright_ok=""
+          fim=$(( $(date +%s) + DURACAO )); ultimo_ping=""; falha_desde=""; avisou_falha=""; ultimo_conserto=""; playwright_ok=""; ultima_tela=""
           while :; do
             agora=$(TZ=America/Sao_Paulo date '+%d/%m %H:%M')
             if python cnj/saude_dados.py > nova.json && python cnj/saude_compara.py nova.json "$FOTOS" > cmp.json; then
@@ -173,6 +173,28 @@ jobs:
                     --body "Leitura falhando desde $(TZ=America/Sao_Paulo date -d @$falha_desde '+%d/%m %H:%M'). Conserto automático: $det" || true
                 fi
                 avisou_falha=1
+              fi
+            fi
+
+            # Tela do painel: enquanto estado/cnj-saude-tela.txt = "branco" (o painel mostra Blank em Saúde Suplementar
+            # mesmo com a base atualizada), abre o painel a cada 30 min e avisa quando os números aparecerem na tela.
+            if [ "$(cat estado/cnj-saude-tela.txt 2>/dev/null)" = "branco" ] && \
+               { [ -z "$ultima_tela" ] || [ $(( $(date +%s) - ultima_tela )) -gt 1800 ]; }; then
+              ultima_tela=$(date +%s)
+              if [ -z "$playwright_ok" ]; then
+                pip install -q playwright==1.48.0 && python -m playwright install --with-deps chromium > /dev/null && playwright_ok=1
+              fi
+              tela=$(python cnj/tela.py 2>/dev/null); echo "$agora tela: $tela"
+              if echo "$tela" | grep -q '"visivel": true'; then
+                pend=$(echo "$tela" | python -c "import sys,json;print(json.load(sys.stdin)['pendentes'])")
+                tit=$(echo "$tela" | python -c "import sys,json;print(json.load(sys.stdin)['titulo'])")
+                push "CNJ saúde: números já aparecem no painel" urgent white_check_mark \
+                  "Saúde Suplementar voltou a aparecer na tela do painel ($agora). $tit: $pend pendentes." "$LINK"
+                echo "ok" > estado/cnj-saude-tela.txt
+                git add estado/cnj-saude-tela.txt
+                git commit -q -m "CNJ saúde: números voltaram a aparecer na tela do painel" || true
+                git pull --rebase -q || true
+                git push -q || echo "falha ao salvar"
               fi
             fi
 
