@@ -1,24 +1,24 @@
 {
  "fontes": {
   "/para-empresas/comunicados": {
-   "comunicados": 254,
-   "status": 200
+   "comunicados": 0,
+   "status": 403
   },
   "/para-voce/ajuda/comunicados": {
    "comunicados": 0,
-   "status": 404
+   "status": 403
   },
   "/para-voce/comunicados": {
-   "comunicados": 5,
-   "status": 200
+   "comunicados": 0,
+   "status": 403
   },
   "/para-voce/comunicados/planos": {
-   "comunicados": 64,
-   "status": 200
+   "comunicados": 0,
+   "status": 403
   },
   "/para-voce/comunicados/regulatorios": {
-   "comunicados": 275,
-   "status": 200
+   "comunicados": 0,
+   "status": 403
   },
   "/robots.txt": {
    "comunicados": 0,
@@ -4659,7 +4659,7 @@
    "visto_em": "2026-11-16 10:41"
   }
  },
- "ok": true,
+ "ok": false,
  "sem_detalhe": 260,
- "ultima_checagem": "2026-11-20 22:43"
+ "ultima_checagem": "2026-11-21 14:46"
 }
